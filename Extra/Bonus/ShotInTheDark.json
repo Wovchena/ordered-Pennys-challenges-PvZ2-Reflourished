@@ -1,0 +1,512 @@
+{
+  "#comment": "Penny's Challenge - Shot in the Dark",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "LevelNumber": 5,
+        "LevelPowerupSet": "LevelPowerupsDisabled",
+        "Modules": [
+          "RTID(BeghouledIntro@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(RandomSpawner@CurrentLevel)",
+          "RTID(BeghouledSeedBank@CurrentLevel)",
+          "RTID(BeghouledArcade@LevelModules)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(GridItems@CurrentLevel)",
+          "RTID(BeghouledProps@.)"
+        ],
+        "MusicType": "MiniGame_C",
+        "Name": "Penny's Challenge - Shot in the Dark",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(LostCityNightsStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "GridItems"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 6,
+            "GridY": 0,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 6,
+            "GridY": 1,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 6,
+            "GridY": 2,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 6,
+            "GridY": 3,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 6,
+            "GridY": 4,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 5,
+            "GridY": 0,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 5,
+            "GridY": 1,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 5,
+            "GridY": 2,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 5,
+            "GridY": 3,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 5,
+            "GridY": 4,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 7,
+            "GridY": 0,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 7,
+            "GridY": 1,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 7,
+            "GridY": 2,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 7,
+            "GridY": 3,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 7,
+            "GridY": 4,
+            "TypeName": "inviscrater"
+          },
+          {
+            "GridX": 6,
+            "GridY": 0,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 6,
+            "GridY": 1,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 6,
+            "GridY": 2,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 6,
+            "GridY": 3,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 6,
+            "GridY": 4,
+            "TypeName": "goldtile"
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "BeghouledSeedBankProperties",
+      "aliases": [
+        "BeghouledSeedBank"
+      ],
+      "objdata": {
+        "PresetPlantList": [
+          {
+            "PlantType": "sunflower"
+          },
+          {
+            "PlantType": "sapfling"
+          },
+          {
+            "PlantType": "magnetshroom"
+          }
+        ],
+        "BeghouledUpgradeList": [
+          "twinsunflower"
+        ],
+        "SelectionMethod": "beghouled"
+      }
+    },
+    {
+      "objclass": "BeghouledZombieSpawnerProperties",
+      "aliases": [
+        "RandomSpawner"
+      ],
+      "objdata": {
+        "MatchCountsToStageAdvance": [
+          {
+            "MatchCount": 25,
+            "StageNumber": 1
+          },
+          {
+            "MatchCount": 50,
+            "StageNumber": 2
+          },
+          {
+            "MatchCount": 75,
+            "StageNumber": 3
+          },
+          {
+            "MatchCount": 100,
+            "StageNumber": 4
+          },
+          {
+            "MatchCount": 125,
+            "StageNumber": 5
+          },
+          {
+            "MatchCount": 150,
+            "StageNumber": 6
+          },
+          {
+            "MatchCount": 175,
+            "StageNumber": 7
+          },
+          {
+            "MatchCount": 200,
+            "StageNumber": 8
+          },
+          {
+            "MatchCount": 225,
+            "StageNumber": 9
+          },
+          {
+            "MatchCount": 250,
+            "StageNumber": 10
+          },
+          {
+            "MatchCount": 275,
+            "StageNumber": 11
+          }
+        ],
+        "Stages": [
+          {
+            "#comment": "Stage 0",
+            "Types": [
+              {
+                "ZombieType": "lostcity"
+              },
+              {
+                "ZombieType": "lostcity_imp"
+              },
+              {
+                "ZombieType": "lostcity_jane"
+              },
+              {
+                "ZombieType": "lostcity_armor1"
+              }
+            ],
+            "SpawnDelay": 3
+          },
+          {
+            "#comment": "Stage 1",
+            "Types": [
+              {
+                "ZombieType": "lostcity"
+              },
+              {
+                "ZombieType": "lostcity_armor1"
+              },
+              {
+                "ZombieType": "lostcity_jane"
+              },
+              {
+                "ZombieType": "lostcity_impporter"
+              }
+            ],
+            "SpawnDelay": 2.5
+          },
+          {
+            "#comment": "Stage 2",
+            "Types": [
+              {
+                "ZombieType": "lostcity"
+              },
+              {
+                "ZombieType": "lostcity_armor1"
+              },
+              {
+                "ZombieType": "lostcity_armor2"
+              },
+              {
+                "ZombieType": "lostcity_impporter"
+              }
+            ],
+            "SpawnDelay": 2.25
+          },
+          {
+            "#comment": "Stage 3",
+            "Types": [
+              {
+                "ZombieType": "lostcity"
+              },
+              {
+                "ZombieType": "lostcity_armor1"
+              },
+              {
+                "ZombieType": "lostcity_explorer"
+              },
+              {
+                "ZombieType": "lostcity_impporter"
+              },
+              {
+                "ZombieType": "lostcity_jane"
+              }
+            ],
+            "SpawnDelay": 2.25
+          },
+          {
+            "#comment": "Stage 4",
+            "Types": [
+              {
+                "ZombieType": "lostcity"
+              },
+              {
+                "ZombieType": "lostcity_armor1"
+              },
+              {
+                "ZombieType": "lostcity_armor2"
+              },
+              {
+                "ZombieType": "lostcity_crystalskull"
+              },
+              {
+                "ZombieType": "lostcity_explorer"
+              }
+            ],
+            "SpawnDelay": 2
+          },
+          {
+            "#comment": "Stage 5",
+            "Types": [
+              {
+                "ZombieType": "lostcity"
+              },
+              {
+                "ZombieType": "lostcity_armor1"
+              },
+              {
+                "ZombieType": "lostcity_armor2"
+              },
+              {
+                "ZombieType": "lostcity_bug"
+              },
+              {
+                "ZombieType": "lostcity_impporter"
+              }
+            ],
+            "SpawnDelay": 2
+          },
+          {
+            "#comment": "Stage 6",
+            "Types": [
+              {
+                "ZombieType": "lostcity_gargantuar"
+              }
+            ],
+            "SpawnDelay": 10
+          },
+          {
+            "#comment": "Stage 7",
+            "Types": [
+              {
+                "ZombieType": "lostcity"
+              },
+              {
+                "ZombieType": "lostcity_armor1"
+              },
+              {
+                "ZombieType": "lostcity_armor2"
+              },
+              {
+                "ZombieType": "lostcity_crystalskull"
+              },
+              {
+                "ZombieType": "lostcity_relichunter"
+              }
+            ],
+            "SpawnDelay": 1.75
+          },
+          {
+            "#comment": "Stage 8",
+            "Types": [
+              {
+                "ZombieType": "lostcity"
+              },
+              {
+                "ZombieType": "lostcity_armor1"
+              },
+              {
+                "ZombieType": "lostcity_armor2"
+              },
+              {
+                "ZombieType": "lostcity_bug_armor1"
+              },
+              {
+                "ZombieType": "lostcity_impporter"
+              },
+              {
+                "ZombieType": "lostcity_explorer"
+              }
+            ],
+            "SpawnDelay": 1.75
+          },
+          {
+            "#comment": "Stage 9",
+            "Types": [
+              {
+                "ZombieType": "lostcity"
+              },
+              {
+                "ZombieType": "lostcity_armor1"
+              },
+              {
+                "ZombieType": "lostcity_armor2"
+              },
+              {
+                "ZombieType": "lostcity_bug_armor1"
+              },
+              {
+                "ZombieType": "lostcity_relichunter"
+              },
+              {
+                "ZombieType": "lostcity_crystalskull"
+              }
+            ],
+            "SpawnDelay": 1.50
+          },
+          {
+            "#comment": "Stage 10",
+            "Types": [
+              {
+                "ZombieType": "lostcity"
+              },
+              {
+                "ZombieType": "lostcity_armor1"
+              },
+              {
+                "ZombieType": "lostcity_armor2"
+              },
+              {
+                "ZombieType": "lostcity_bug_armor2"
+              },
+              {
+                "ZombieType": "lostcity_impporter"
+              },
+              {
+                "ZombieType": "lostcity_relichunter"
+              }
+            ],
+            "SpawnDelay": 1.50
+          },
+          {
+            "#comment": "Stage 11",
+            "Types": [
+              {
+                "ZombieType": "lostcity"
+              },
+              {
+                "ZombieType": "lostcity_armor1"
+              },
+              {
+                "ZombieType": "lostcity_armor2"
+              },
+              {
+                "ZombieType": "lostcity_bug"
+              },
+              {
+                "ZombieType": "lostcity_bug_armor1"
+              },
+              {
+                "ZombieType": "lostcity_bug_armor2"
+              },
+              {
+                "ZombieType": "lostcity_impporter"
+              },
+              {
+                "ZombieType": "lostcity_explorer"
+              },
+              {
+                "ZombieType": "lostcity_relichunter"
+              },
+              {
+                "ZombieType": "lostcity_crystalskull"
+              },
+              {
+                "ZombieType": "lostcity_jane"
+              },
+              {
+                "ZombieType": "lostcity_gargantuar"
+              }
+            ],
+            "SpawnDelay": 1.25
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "BeghouledPresetProperties",
+      "aliases": [
+        "BeghouledProps"
+      ],
+      "objdata": {
+        "MatchesToWin": 300,
+        "InitialPlants": [
+          "magnifyinggrass",
+          "torchwood",
+          "chardguard",
+          "sunshroom"
+        ],
+        "UpgradeMap": [
+          {
+            "BasePlant": "torchwood",
+            "UpgradedPlant": "sapfling"
+          },
+          {
+            "BasePlant": "chardguard",
+            "UpgradedPlant": "magnetshroom"
+          },
+          {
+            "BasePlant": "sunshroom",
+            "UpgradedPlant": "sunflower"
+          },
+          {
+            "BasePlant": "sunflower",
+            "UpgradedPlant": "twinsunflower"
+          }
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

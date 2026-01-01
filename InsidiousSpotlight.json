@@ -1,0 +1,1174 @@
+{"#comment": "The Void Orchid lore is real",
+"objects": [{
+    "objclass": "LevelDefinition",
+    "objdata": {
+    "Description": "{PLAYER}'s run through Penny's Challenge",
+    "LevelPowerupSet": "LevelPowerupsDisabled",
+    "SuppressPlantfoodPurchase": true,
+    "DisablePlantBoosts": true,
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "Modules": [
+        "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+        "RTID(StandardIntro@LevelModules)",
+        "RTID(GI@.)",
+        "RTID(ChallengeModule@.)",
+        "RTID(Escalation@.)",
+        "RTID(NewWaves@.)",
+        "RTID(ChallengeSeedBank@LevelModules)",
+        "RTID(Posters@.)",
+        "RTID(CarnieFunGenerator@LevelModules)",
+        "RTID(ZombiesDeadWinCon@LevelModules)",
+        "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+     "Name": "Penny's Challenge - Insidious Spotlight",
+    "StageModule": "RTID(CarnivalStage@LevelModules)"
+}},
+{"aliases":["ChallengeModule"],
+"objclass": "StarChallengeModuleProperties",
+"objdata": {
+    "Challenges": [[
+        "RTID(IPP_Protect@.)"
+    ]],
+    "ChallengesAlwaysAvailable": true
+}},
+ {"aliases":["GI"],
+"objclass":"InitialGridItemProperties",
+"objdata":{
+    "InitialGridItemPlacements": [
+        {"GridX": 3, "GridY": 0, "TypeName":"carnie_card_unactivated"},
+        {"GridX": 2, "GridY": 2, "TypeName":"carnie_card_unactivated"},
+        {"GridX": 3, "GridY": 4, "TypeName":"carnie_card_unactivated"}
+    ]
+}},
+{"aliases":["IPP_Protect"],
+"objclass": "ProtectThePlantChallengeProperties",
+"objdata": {
+    "Plants": [
+        {"GridX": 0, "GridY": 2, "Level": 0, "PlantType":"unused_48"},
+        {"GridX": 3, "GridY": 2, "Level": 0, "PlantType":"witchhazel"}
+    ], 
+    "MustProtectCount": 2
+}},
+{"aliases": ["Posters"],
+"objclass": "CarniePosterModuleProperties",
+"objdata": {
+    "LeftPosterImageName": "IMAGE_BACKGROUNDS_CARNIVAL_POSTER_COASTER_LEFT",
+    "RightPosterImageName": "IMAGE_BACKGROUNDS_CARNIVAL_POSTER_CONEHEAD_REALFACE_RIGHT"
+}},
+ {"aliases": ["Escalation"],
+"objclass": "LevelEscalationModuleProperties",
+"objdata": {
+    "FlagCount": 5,
+    "WavesPerFlag": 9,
+    "WaveManagerProps": "RTID(WaveManager@.)"
+}},
+{"aliases": ["NewWaves"],
+"objclass": "WaveManagerModuleProperties",
+"objdata": {}
+},
+{"aliases": ["WaveManager"],
+"objclass": "WaveManagerProperties",
+"objdata": {
+    "FlagWaveInterval": 9,
+    "WaveCount": 45,
+    "SuppressFlagZombie": false,
+    "MinNextWaveHealthPercentage": 0.5,
+    "MaxNextWaveHealthPercentage": 0.55,
+    "Waves": [
+         ["RTID(Wave1@.)", "RTID(CardReveal@.)", "RTID(Wave1JumpscareLmao@.)", "RTID(CysTrapeze@.)"],
+        ["RTID(Wave2@.)"],
+        ["RTID(Wave3@.)"],
+        ["RTID(Wave4@.)"],
+        ["RTID(Wave5@.)"],
+        ["RTID(Wave6@.)"],
+        ["RTID(Wave7@.)"],
+        ["RTID(Wave8@.)"],
+        ["RTID(Wave9@.)", "RTID(CardSpawn9@.)"],
+        ["RTID(Wave10@.)", "RTID(JackSpawn10@.)"],
+        ["RTID(Wave11@.)"],
+        ["RTID(Wave12@.)"],
+        ["RTID(Wave13@.)"],
+        ["RTID(Wave14@.)"],
+        ["RTID(Wave15@.)", "RTID(JackSpawn15@.)"],
+        ["RTID(Wave16@.)"],
+        ["RTID(Wave17@.)"],
+        ["RTID(Wave18@.)", "RTID(CardSpawn18@.)", "RTID(JackSpawn18@.)"],
+        ["RTID(Wave19@.)"],
+        ["RTID(Wave20@.)"],
+        ["RTID(Wave21@.)", "RTID(JackSpawn21@.)"],
+        ["RTID(Wave22@.)"],
+        ["RTID(Wave23@.)"],
+        ["RTID(Wave24@.)", "RTID(JackSpawn24@.)"],
+        ["RTID(Wave25@.)"],
+        ["RTID(Wave26@.)"],
+        ["RTID(Wave27@.)", "RTID(CardSpawn27@.)", "RTID(JackSpawn27@.)"],
+        ["RTID(Wave28@.)"],
+        ["RTID(Wave29@.)"],
+        ["RTID(Wave30@.)", "RTID(JackSpawn30@.)"],
+        ["RTID(Wave31@.)"],
+        ["RTID(Wave32@.)"],
+        ["RTID(Wave33@.)", "RTID(JackSpawn33@.)"],
+        ["RTID(Wave34@.)"],
+        ["RTID(Wave35@.)"],
+        ["RTID(Wave36@.)", "RTID(CardSpawn36@.)", "RTID(JackSpawn36@.)"],
+        ["RTID(Wave37@.)"],
+        ["RTID(Wave38@.)"],
+        ["RTID(Wave39@.)", "RTID(JackSpawn39@.)"],
+        ["RTID(Wave40@.)"],
+        ["RTID(Wave41@.)"],
+        ["RTID(Wave42@.)", "RTID(JackSpawn42@.)"],
+        ["RTID(Wave43@.)"],
+        ["RTID(Wave44@.)"],
+        ["RTID(Wave45@.)", "RTID(CardSpawn45@.)"] 
+    ]
+}},
+ {"aliases":["Wave1"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "5", "Type": "RTID(carnie@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(ra@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave3"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave4"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave5"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave6"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave7"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave8"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave9"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave10"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_trapeze_duo@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave11"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave12"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_duo@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(ra@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave13"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(future_protector_generator@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave14"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave15"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_duo@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_duo@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave16"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "5", "Type": "RTID(carnie_gargantuar@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave17"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave18"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_trapeze_duo@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_trio@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave19"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave20"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_firebreather@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave21"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_trio@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_trapeze_duo@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(ra@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave22"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave23"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave24"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(future_protector_generator@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave25"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_trio@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_trio@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_trio@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave26"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave27"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_trapeze_trio@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_trio@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_trapeze_trio@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave28"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave29"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_firebreather@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave30"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_trapeze_trio@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_trio@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave31"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave32"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave33"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(ra@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave34"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_trio@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave35"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave36"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave37"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave38"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(future_protector_generator@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave39"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave40"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zcorp_consultant@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave41"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave42"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave43"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_firebreather@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_firebreather@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave44"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(future_protector_generator@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(ra@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave45"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zcorp_consultant@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_quad@ZombieTypes)"}
+    ]
+}},
+ {"aliases":["CardReveal"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 3, "Type": "RTID(carnie_card_sunify@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 3, "mY": 0}, {"mX": 2, "mY": 2}, {"mX": 3, "mY": 4}],
+        "SpawnEffectAnimID": "",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": ["GridItemCrater"]
+}},
+{"aliases":["Wave1JumpscareLmao"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 3, "Type": "RTID(jackinthebox_candy_hp_jumpscare@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(jackinthebox_balls_jumpscare@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 6, "mY": 2}, {"mX": 6, "mY": 4}, {"mX": 6, "mY": 1}, {"mX": 6, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["CysTrapeze"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "GridTypes": [],
+    "Zombies": [
+        {"Type":"RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Type":"RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Type":"RTID(carnie_trapeze_yellow@ZombieTypes)"}
+    ]
+}},
+{"aliases":["CardSpawn9"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 2, "Type": "RTID(carnie_card_basic@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(carnie_card_armor2@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 2, "mY": 1}, {"mX": 2, "mY": 3}, {"mX": 4, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_WITCH_HAZEL_ATTACK_CARNIE",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["JackSpawn10"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(jackinthebox_monkeys@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_candy_speed@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 7, "mY": 1}, {"mX": 7, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["JackSpawn15"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(jackinthebox_candy_hp@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_balls_jumpscare@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_teeth@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 7, "mY": 0}, {"mX": 8, "mY": 2}, {"mX": 7, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["CardSpawn18"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 2, "Type": "RTID(carnie_card_armor2@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(carnie_card_armor4@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 5, "mY": 0}, {"mX": 5, "mY": 4}, {"mX": 5, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_WITCH_HAZEL_ATTACK_CARNIE",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["JackSpawn18"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 4, "Type": "RTID(jackinthebox_balls_jumpscare@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_balls@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 8, "mY": 1}, {"mX": 7, "mY": 3}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["JackSpawn21"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(jackinthebox_monkeys_jumpscare@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_teeth@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_balls_jumpscare@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_monkeys@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["JackSpawn24"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 5, "Type": "RTID(jackinthebox_teeth_jumpscare@GridItemTypes)"},
+            {"Count": 3, "Type": "RTID(jackinthebox_candy_speed_jumpscare@GridItemTypes)"},
+            {"Count": 5, "Type": "RTID(jackinthebox_balls_jumpscare@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(jackinthebox_candy_hp_jumpscare@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 6, "mY": 1}, {"mX": 6, "mY": 2}, {"mX": 6, "mY": 3}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 0}, {"mX": 7, "mY": 2}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 0}, {"mX": 8, "mY": 1}, {"mX": 8, "mY": 2}, {"mX": 8, "mY": 3}, {"mX": 8, "mY": 4}, {"mX": 7, "mY": 1}, {"mX": 7, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["CardSpawn27"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 2, "Type": "RTID(carnie_card_armor2@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(carnie_card_PFify@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 0, "mY": 0}, {"mX": 0, "mY": 4}, {"mX": 1, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_WITCH_HAZEL_ATTACK_CARNIE",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["JackSpawn27"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 5, "Type": "RTID(jackinthebox_monkeys@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(jackinthebox_candy_hp_jumpscare@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(jackinthebox_candy_speed_jumpscare@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 7, "mY": 0}, {"mX": 7, "mY": 1}, {"mX": 6, "mY": 2}, {"mX": 6, "mY": 3}, {"mX": 8, "mY": 4}, {"mX": 8, "mY": 0}, {"mX": 7, "mY": 2}, {"mX": 7, "mY": 3}, {"mX": 6, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["JackSpawn30"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 4, "Type": "RTID(jackinthebox_teeth@GridItemTypes)"},
+            {"Count": 4, "Type": "RTID(jackinthebox_balls@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 8, "mY": 1}, {"mX": 7, "mY": 2}, {"mX": 7, "mY": 4}, {"mX": 7, "mY": 1}, {"mX": 6, "mY": 2}, {"mX": 6, "mY": 3}, {"mX": 8, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["JackSpawn33"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(jackinthebox_candy_hp_jumpscare@GridItemTypes)"},
+            {"Count": 3, "Type": "RTID(jackinthebox_teeth@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_candy_speed_jumpscare@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_balls_jumpscare@GridItemTypes)"},
+            {"Count": 3, "Type": "RTID(jackinthebox_monkeys@GridItemTypes)"},
+            {"Count": 3, "Type": "RTID(jackinthebox_candy_speed@GridItemTypes)"},
+            {"Count": 3, "Type": "RTID(jackinthebox_candy_hp@GridItemTypes)"},
+            {"Count": 3, "Type": "RTID(jackinthebox_balls@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_teeth_jumpscare@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_monkeys_jumpscare@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 5, "mY": 3}, {"mX": 7, "mY": 4}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 5, "mY": 1}, {"mX": 8, "mY": 2}, {"mX": 7, "mY": 3}, {"mX": 6, "mY": 1}, {"mX": 5, "mY": 2}, {"mX": 5, "mY": 4}, {"mX": 7, "mY": 1}, {"mX": 6, "mY": 3}, {"mX": 8, "mY": 4}, {"mX": 8, "mY": 1}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 3}, {"mX": 6, "mY": 2}, {"mX": 6, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["CardSpawn36"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 2, "Type": "RTID(carnie_card_sunify@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(carnie_card_basic@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(carnie_card_armor4@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 1, "mY": 0}, {"mX": 1, "mY": 4}, {"mX": 7, "mY": 0}, {"mX": 7, "mY": 4}, {"mX": 4, "mY": 1}, {"mX": 4, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_WITCH_HAZEL_ATTACK_CARNIE",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["JackSpawn36"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 5, "Type": "RTID(jackinthebox_teeth@GridItemTypes)"},
+            {"Count": 3, "Type": "RTID(jackinthebox_candy_speed_jumpscare@GridItemTypes)"},
+            {"Count": 4, "Type": "RTID(jackinthebox_balls_jumpscare@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(jackinthebox_monkeys@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_balls@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 5, "mY": 0}, {"mX": 5, "mY": 1}, {"mX": 5, "mY": 2}, {"mX": 5, "mY": 3}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 0}, {"mX": 6, "mY": 2}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 0}, {"mX": 6, "mY": 1}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 1}, {"mX": 8, "mY": 3}, {"mX": 7, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["JackSpawn39"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 7, "Type": "RTID(jackinthebox_candy_hp@GridItemTypes)"},
+            {"Count": 7, "Type": "RTID(jackinthebox_candy_speed@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_balls_jumpscare@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 5, "mY": 1}, {"mX": 5, "mY": 2}, {"mX": 5, "mY": 3}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 0}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 7, "mY": 2}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 7, "mY": 4}, {"mX": 6, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["JackSpawn42"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 4, "Type": "RTID(jackinthebox_balls@GridItemTypes)"},
+            {"Count": 4, "Type": "RTID(jackinthebox_monkeys@GridItemTypes)"},
+            {"Count": 4, "Type": "RTID(jackinthebox_teeth@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["CardSpawn45"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 15, "Type": "RTID(carnie_card_armor4@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 1}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 3}, {"mX": 6, "mY": 4}, {"mX": 8, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_WITCH_HAZEL_ATTACK_CARNIE",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+    {}
+    ],
+    "version": 1
+}

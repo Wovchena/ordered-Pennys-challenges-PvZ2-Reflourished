@@ -1,0 +1,2643 @@
+{
+  "#comment": "Saucy Changes: Permanent Metal jam. Added Sapphic Panic (Jurassic Panic without the dinos). Moonflower minimum reduced from 5 to 1. Has a more sapphic seed bank. | Maw waz here",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "{PLAYER}'s panic!",
+        "FixedPlantLevel": 1,
+        "SuppressPlantfoodPurchase": true,
+        "DisablePlantBoosts": true,
+        "DisableRestart": false,
+        "LevelPowerupSet": "LevelPowerupsDisabled",
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(SapphicSeedBank@CurrentLevel)",
+          "RTID(Escalation@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(ProtectThePlant@CurrentLevel)",
+          "RTID(GridItems@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "Name": "Saucy Challenge - Sapphic Panic",
+        "MusicType": "MiniGame_B",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(ValentineStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "GridItems"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 3,
+            "GridY": 1,
+            "TypeName": "presentSunOnDestruction_valentines"
+          },
+          {
+            "GridX": 3,
+            "GridY": 2,
+            "TypeName": "presentSunOnDestruction_valentines"
+          },
+          {
+            "GridX": 4,
+            "GridY": 2,
+            "TypeName": "presentSunOnDestruction_valentines"
+          },
+          {
+            "GridX": 5,
+            "GridY": 1,
+            "TypeName": "presentSunOnDestruction_valentines"
+          },
+          {
+            "GridX": 5,
+            "GridY": 2,
+            "TypeName": "presentSunOnDestruction_valentines"
+          },
+          {
+            "GridX": 4,
+            "GridY": 3,
+            "TypeName": "presentSunOnDestruction_valentines"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(BeatTheLevel@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "BeatTheLevel"
+      ],
+      "objclass": "StarChallengeBeatTheLevelProps",
+      "objdata": {
+        "Description": "Survive and protect at least 1 Moonflower",
+        "DescriptiveName": "Custom Objective"
+      }
+    },
+    {
+      "aliases": [
+        "ProtectThePlant"
+      ],
+      "objclass": "ProtectThePlantChallengeProperties",
+      "objdata": {
+        "MustProtectCount": 1,
+        "Plants": [
+          {
+            "GridX": 3,
+            "GridY": 0,
+            "PlantType": "moonflower"
+          },
+          {
+            "GridX": 5,
+            "GridY": 0,
+            "PlantType": "moonflower"   
+          },
+          {
+            "GridX": 2,
+            "GridY": 1,
+            "PlantType": "moonflower"   
+          },
+          {
+            "GridX": 4,
+            "GridY": 1,
+            "PlantType": "moonflower"   
+          },
+          {
+            "GridX": 6,
+            "GridY": 1,
+            "PlantType": "moonflower"   
+          },
+          {
+            "GridX": 2,
+            "GridY": 2,
+            "PlantType": "moonflower"   
+          },
+          {
+            "GridX": 6,
+            "GridY": 2,
+            "PlantType": "moonflower"   
+          },
+          {
+            "GridX": 3,
+            "GridY": 3,
+            "PlantType": "moonflower"   
+          },
+          {
+            "GridX": 5,
+            "GridY": 3,
+            "PlantType": "moonflower"   
+          },
+          {
+            "GridX": 4,
+            "GridY": 4,
+            "PlantType": "moonflower"   
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SapphicSeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "OverrideSeedSlotsCount": 8,
+        "PresetPlantList": [
+          {
+            "PlantType": "moonflower"
+          }
+        ],
+        "PlantIncludeList": [
+"sunflower",
+"bonkchoy",
+"iceburg",
+"twinsunflower",
+"kernelpult",
+"springbean",
+"threepeater",
+"applemortar",
+"chilibean",
+"peapod",
+"citron",
+"magnifyinggrass",
+"zoybeanpod",
+"sunshroom",
+"witchhazel",
+"bowlingbulb",
+"chomper",
+"hotpotato",
+"xshot",
+"firepeashooter",
+"redstinger",
+"akee",
+"stallia",
+"goldleaf",
+"dazeychain",
+"phatbeet", 
+"thymewarp",
+"sporeshroom",
+"intensivecarrot",
+"electricblueberry",
+"gumnut",
+"perfumeshroom",
+"primalsunflower",
+"hocus",
+"moonflower",
+"shadowshroom",
+"dusklobber",
+"grimrose",
+"ghostpepper",
+"cactus",
+"bloominghearts",
+"sweetpotato",
+"boingsetta",
+"unused_47",
+"unused_45",
+"peanut",
+"unused_49",
+"goldbloom",
+"electriccurrant",
+"imppear",
+"powerlily",
+"toadstool",
+"shrinkingviolet",
+"bombegranate",
+"solartomato",
+"missiletoe",
+"escaperoot",
+"kiwibeast",
+"snappea",
+"pokra",
+"icebloom",
+"dartichoke",
+"turkeypult",
+"draftodil",
+"shinevine",
+"pvine",
+"stickybombrice",
+"solarsage",
+"unused_48",
+"teleportatomine",
+"heathseeker",
+"solarpea",
+"potatochip",
+"caramelpopcorn",
+"boomflower",
+"saucer",
+"loquat"
+        ],
+        "PlantExcludeList": [],
+        "SelectionMethod": "chooser"
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "Escalation"
+      ],
+      "objclass": "LevelEscalationModuleProperties",
+      "objdata": {
+        "FlagCount": 5,
+        "WavesPerFlag": 9,
+        "PlantfoodToSpawnCount": 4,
+        "PointIncrementPerWave": 45,
+        "StartingPoints": 100,
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+        "ZombiePool": [
+          "RTID(zcorp_fem@ZombieTypes)",
+          "RTID(zcorp_fem_armor1@ZombieTypes)",
+          "RTID(zcorp_fem_armor2@ZombieTypes)",
+          "RTID(zcorp_fem_armor4@ZombieTypes)",
+          "RTID(beach_fem@ZombieTypes)",
+          "RTID(beach_fem_armor1@ZombieTypes)",
+          "RTID(beach_fem_armor2@ZombieTypes)",
+          "RTID(beach_fem_armor4@ZombieTypes)",
+          "RTID(foodfight_imp@ZombieTypes)",
+          "RTID(hero_neptuna@ZombieTypes)",
+          "RTID(halloween_imp@ZombieTypes)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 9,
+        "WaveCount": 45,
+        "MaxNextWaveHealthPercentage": 0.5,
+        "MinNextWaveHealthPercentage": 0.65,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)",
+						"RTID(jam_metal@.)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(Wave5DinoTimeEvent0@CurrentLevel)",
+            "RTID(GridSpawnII5@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)",
+            "RTID(GravestoneEvent0@CurrentLevel)",
+            "RTID(Wave9DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave9DinoTimeEvent1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)",
+            "RTID(GridSpawnII10@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)",
+            "RTID(Wave13DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave13DinoTimeEvent1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)",
+            "RTID(GridSpawnII14@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave15@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave16@CurrentLevel)",
+            "RTID(Wave16DinoTimeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave17@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave18@CurrentLevel)",
+            "RTID(GravestoneEvent0@CurrentLevel)",
+            "RTID(Wave18DinoTimeEvent0@CurrentLevel)",
+            "RTID(GridSpawnII18@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave19@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave20@CurrentLevel)",
+            "RTID(Wave20DinoTimeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave21@CurrentLevel)",
+            "RTID(GridSpawnII21@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave22@CurrentLevel)",
+            "RTID(Wave22DinoTimeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave23@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave24@CurrentLevel)",
+            "RTID(Wave24DinoTimeEvent0@CurrentLevel)",
+            "RTID(GridSpawnII24@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave25@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave26@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave27@CurrentLevel)",
+            "RTID(Wave27DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave27DinoTimeEvent1@CurrentLevel)",
+            "RTID(GravestoneEvent0@CurrentLevel)",
+            "RTID(GridSpawnII27@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave28@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave29@CurrentLevel)",
+            "RTID(GridSpawnII29@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave30@CurrentLevel)",
+            "RTID(Wave30DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave30DinoTimeEvent1@CurrentLevel)",
+            "RTID(Wave30DinoTimeEvent2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave31@CurrentLevel)",
+            "RTID(GridSpawnII31@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave32@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave33@CurrentLevel)",
+            "RTID(Wave33DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave33DinoTimeEvent1@CurrentLevel)",
+            "RTID(Wave33DinoTimeEvent2@CurrentLevel)",
+            "RTID(GridSpawnII33@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave34@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave35@CurrentLevel)",
+            "RTID(GridSpawnII35@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave36@CurrentLevel)",
+            "RTID(GravestoneEvent0@CurrentLevel)",
+            "RTID(Wave36DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave36DinoTimeEvent1@CurrentLevel)",
+            "RTID(Wave36DinoTimeEvent2@CurrentLevel)",
+            "RTID(GridSpawnII36@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave37@CurrentLevel)",
+            "RTID(GridSpawnII37@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave38@CurrentLevel)",
+            "RTID(GridSpawnII38@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave39@CurrentLevel)",
+            "RTID(GridSpawnII39@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave40@CurrentLevel)",
+            "RTID(Wave40DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave40DinoTimeEvent1@CurrentLevel)",
+            "RTID(Wave40DinoTimeEvent2@CurrentLevel)",
+            "RTID(Wave40DinoTimeEvent3@CurrentLevel)",
+            "RTID(Wave40DinoTimeEvent4@CurrentLevel)",
+            "RTID(GridSpawnII40@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave41@CurrentLevel)",
+            "RTID(GridSpawnII41@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave42@CurrentLevel)",
+            "RTID(GridSpawnII42@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave43@CurrentLevel)",
+            "RTID(GridSpawnII43@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave44@CurrentLevel)",
+            "RTID(Wave44DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave44DinoTimeEvent1@CurrentLevel)",
+            "RTID(Wave44DinoTimeEvent2@CurrentLevel)",
+            "RTID(Wave44DinoTimeEvent3@CurrentLevel)",
+            "RTID(Wave44DinoTimeEvent4@CurrentLevel)",
+            "RTID(GridSpawnII44@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave45@CurrentLevel)",
+            "RTID(GridSpawnII45@CurrentLevel)",
+            "RTID(SapphicPanic_Effects@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_metal"
+        ],
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(zcorp_fem_armor2@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(zcorp_fem@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(beach_fem_armor2@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor2@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor2@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(hero_weaselhoarder@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"  
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(zcorp_fem@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_fem@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave17"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(hero_weaselhoarder@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(hero_weaselhoarder@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave18"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor4@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave19"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(beach_fem_armor2@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave20"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave21"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave22"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(zcorp_fem_armor4@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave23"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave24"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave25"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_fem_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave26"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave27"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(hero_weaselhoarder@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(hero_weaselhoarder@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave28"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave29"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave30"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor4@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave31"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave32"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave33"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(hero_weaselhoarder@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(hero_weaselhoarder@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave34"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave35"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave36"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave37"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave38"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave39"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(hero_weaselhoarder@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(hero_weaselhoarder@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(halloween_witch@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave40"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(valentines_jane@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave41"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave42"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_outhouse@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor4@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave43"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(hero_weaselhoarder@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(hero_weaselhoarder@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(hero_weaselhoarder@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave44"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(stpatrick_glitter_panic@CurrentLevel)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(halloween_witch@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave45"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_inventor@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_fem_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(beach_fem_armor4@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GravestoneEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 6,
+            "Type": "RTID(presentSunOnDestruction_valentines@GridItemTypes)"
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_ZOMBIE_CHILDREN_LOLLIPOPS_HIT",
+        "SpawnPositionsPool": [
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 3,
+            "mY": 2
+          },
+          {
+            "mX": 4,
+            "mY": 2
+          },
+          {
+            "mX": 5,
+            "mY": 1
+          },
+          {
+            "mX": 5,
+            "mY": 2
+          },
+          {
+            "mX": 4,
+            "mY": 3
+          }
+        ],
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
+      }
+    },
+    {
+      "aliases": [
+        "Wave5DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave9DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave9DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave13DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave13DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave16DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave18DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave20DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave22DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave24DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave27DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave27DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave30DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave30DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave30DinoTimeEvent2"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave33DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave33DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave33DinoTimeEvent2"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave36DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave36DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave36DinoTimeEvent2"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave40DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave40DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave40DinoTimeEvent2"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave40DinoTimeEvent3"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave40DinoTimeEvent4"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave44DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave44DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave44DinoTimeEvent2"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave44DinoTimeEvent3"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave44DinoTimeEvent4"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "tyranno"
+      }
+    },
+	{"aliases":["GridSpawnII5"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 6, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 0, "mY": 2}, {"mX": 1, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 7, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII10"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 15, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 1}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 3}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII14"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 18, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 0, "mY": 0}, {"mX": 2, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 3, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 1}, {"mX": 1, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 3}, {"mX": 0, "mY": 4}, {"mX": 2, "mY": 4}, {"mX": 8, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII18"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 13, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 2, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 1, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 1, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 2, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 3, "mY": 4}, {"mX": 5, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII21"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 13, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 5, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 0, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 8, "mY": 1}, {"mX": 6, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 0, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 1, "mY": 4}, {"mX": 6, "mY": 4}, {"mX": 8, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII24"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 15, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 0, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 1, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 1, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 6, "mY": 3}, {"mX": 8, "mY": 3}, {"mX": 0, "mY": 4}, {"mX": 5, "mY": 4}, {"mX": 7, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII27"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 10, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 3, "mY": 0}, {"mX": 5, "mY": 0}, {"mX": 2, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 2, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 3, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 4, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII29"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 25, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 2, "mY": 0}, {"mX": 3, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 2, "mY": 1}, {"mX": 3, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 2, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 2, "mY": 3}, {"mX": 3, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 2, "mY": 4}, {"mX": 3, "mY": 4}, {"mX": 4, "mY": 4}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII31"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 26, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 1, "mY": 0}, {"mX": 3, "mY": 0}, {"mX": 5, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 1, "mY": 1}, {"mX": 2, "mY": 1}, {"mX": 3, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 1, "mY": 2}, {"mX": 2, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 1, "mY": 3}, {"mX": 3, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 1, "mY": 4}, {"mX": 4, "mY": 4}, {"mX": 7, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII33"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 14, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 0, "mY": 0}, {"mX": 1, "mY": 0}, {"mX": 2, "mY": 0}, {"mX": 3, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 5, "mY": 0}, {"mX": 1, "mY": 1}, {"mX": 2, "mY": 1}, {"mX": 2, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 3, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 4, "mY": 4}, {"mX": 5, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII35"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 25, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 2, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 0, "mY": 1}, {"mX": 1, "mY": 1}, {"mX": 2, "mY": 1}, {"mX": 3, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 1}, {"mX": 0, "mY": 2}, {"mX": 1, "mY": 2}, {"mX": 2, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 4, "mY": 3}, {"mX": 2, "mY": 4}, {"mX": 4, "mY": 4}, {"mX": 6, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII36"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 40, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 1, "mY": 0}, {"mX": 2, "mY": 0}, {"mX": 3, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 1, "mY": 1}, {"mX": 2, "mY": 1}, {"mX": 3, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 1}, {"mX": 1, "mY": 2}, {"mX": 2, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 1, "mY": 3}, {"mX": 2, "mY": 3}, {"mX": 3, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 3}, {"mX": 1, "mY": 4}, {"mX": 2, "mY": 4}, {"mX": 3, "mY": 4}, {"mX": 4, "mY": 4}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII37"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 21, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 0, "mY": 0}, {"mX": 1, "mY": 0}, {"mX": 2, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 0, "mY": 2}, {"mX": 1, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 0, "mY": 3}, {"mX": 1, "mY": 3}, {"mX": 2, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII38"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 24, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 0, "mY": 0}, {"mX": 1, "mY": 0}, {"mX": 2, "mY": 0}, {"mX": 3, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 0, "mY": 1}, {"mX": 8, "mY": 1}, {"mX": 0, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 0, "mY": 3}, {"mX": 8, "mY": 3}, {"mX": 0, "mY": 4}, {"mX": 1, "mY": 4}, {"mX": 2, "mY": 4}, {"mX": 3, "mY": 4}, {"mX": 4, "mY": 4}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII39"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 16, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 1, "mY": 1}, {"mX": 2, "mY": 1}, {"mX": 3, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 1, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 1, "mY": 3}, {"mX": 2, "mY": 3}, {"mX": 3, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII40"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 5, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 2, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII41"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 21, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 1, "mY": 1}, {"mX": 2, "mY": 1}, {"mX": 3, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 1, "mY": 2}, {"mX": 2, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 1, "mY": 3}, {"mX": 2, "mY": 3}, {"mX": 3, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII42"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 20, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 1}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 3}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII43"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 21, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 1, "mY": 0}, {"mX": 2, "mY": 0}, {"mX": 3, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 0, "mY": 1}, {"mX": 2, "mY": 1}, {"mX": 3, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 0, "mY": 2}, {"mX": 1, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 1, "mY": 3}, {"mX": 3, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 0, "mY": 4}, {"mX": 2, "mY": 4}, {"mX": 3, "mY": 4}, {"mX": 4, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII44"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 35, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 1, "mY": 0}, {"mX": 2, "mY": 0}, {"mX": 3, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 1, "mY": 1}, {"mX": 2, "mY": 1}, {"mX": 3, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 8, "mY": 1}, {"mX": 1, "mY": 2}, {"mX": 2, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 1, "mY": 3}, {"mX": 2, "mY": 3}, {"mX": 3, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 8, "mY": 3}, {"mX": 1, "mY": 4}, {"mX": 2, "mY": 4}, {"mX": 3, "mY": 4}, {"mX": 4, "mY": 4}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 4}, {"mX": 8, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawnII45"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 45, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 0, "mY": 0}, {"mX": 1, "mY": 0}, {"mX": 2, "mY": 0}, {"mX": 3, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 0, "mY": 1}, {"mX": 1, "mY": 1}, {"mX": 2, "mY": 1}, {"mX": 3, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 1}, {"mX": 0, "mY": 2}, {"mX": 1, "mY": 2}, {"mX": 2, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 0, "mY": 3}, {"mX": 1, "mY": 3}, {"mX": 2, "mY": 3}, {"mX": 3, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 3}, {"mX": 0, "mY": 4}, {"mX": 1, "mY": 4}, {"mX": 2, "mY": 4}, {"mX": 3, "mY": 4}, {"mX": 4, "mY": 4}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": true,
+        "GridClassesToDestroy": []
+}},
+		{
+			"aliases": [
+				"SapphicPanic_Effects"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"GridTypes": [],
+				"WaveStartMessage": "Sapphic Panic!",
+				"SuppressActionIfNoGridItemsFound": false,
+				"ZombieSpawnWaitTime": "0",
+				"Zombies": [
+					{
+						"Type": "RTID(idiot@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"jam_metal"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"NotificationEvents": [
+					"jam_metal"
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"stpatrick_glitter_panic"
+			],
+			"objdata": {
+				"TypeName": "stpatrick_glitter_pop",
+				"ZombieClass": "ZombieEightiesGlitter",
+				"Properties": "RTID(ZombiePaddysGlitterPanic@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieStPatrickGlitterGroup",
+					"ZombieEightiesGlitterGroup"
+				],
+				"AudioGroups": [
+					"ZombieEightiesRollerSkateAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_EightiesGlitter",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_STPATRICK_GLITTER",
+				"HomeWorld": "tutorial",
+				"AlmanacBackdropName": "stpatrick",
+				"IsBasicZombie": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombiePaddysGlitterPanic"
+			],
+			"objclass": "ZombieEightiesGlitterProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "stun",
+						"Percent": 0.25
+					}
+				],
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 490,
+				"JamStyle": "jam_metal",
+				"RainbowTrailLength": 200,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"Speed": 0.19,
+				"WavePointCost": 300,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		}
+  ],
+  "version": 1
+}

@@ -1,0 +1,2527 @@
+{
+  "#comment": "Penny's Challenge - Track & Yield",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "{PLAYER}'s run through Penny's Challenge!",
+        "FixedPlantLevel": 1,
+        "SuppressPlantfoodPurchase": true,
+        "DisablePlantBoosts": true,
+        "LevelPowerupSet": "LevelPowerupsDisabled",
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(Escalation@CurrentLevel)",
+          "RTID(Rails@CurrentLevel)",
+          "RTID(ZombiePotions@CurrentLevel)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(SportzballFoamRandomizer@LevelModules)",
+          "RTID(GridItems@CurrentLevel)",
+          "RTID(FrozenPlantPlacement@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "Name": "Penny's Challenge - Track & Yield",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(SportzballStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(SunHoldout@CurrentLevel)",
+            "RTID(BeatTheLevel@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "SunHoldout"
+      ],
+      "objclass": "StarChallengeSpendSunHoldoutProps",
+      "objdata": {
+        "HoldoutSeconds": 120
+      }
+    },
+    {
+      "aliases": [
+        "BeatTheLevel"
+      ],
+      "objclass": "StarChallengeBeatTheLevelProps",
+      "objdata": {
+        "Description": "Survive while speed boosting potions & holiday drinks boost the zombies",
+        "DescriptiveName": "Custom Objective"
+      }
+    },
+    {
+      "aliases": [
+        "FrozenPlantPlacement"
+      ],
+      "objclass": "InitialPlantProperties",
+      "objdata": {
+        "InitialPlantPlacements": [
+          {
+            "GridX": "5",
+            "GridY": "0",
+            "TypeName": "holonut"
+          },
+          {
+            "GridX": "5",
+            "GridY": "4",
+            "TypeName": "holonut"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ZombiePotions"
+      ],
+      "objclass": "ZombiePotionModuleProperties",
+      "objdata": {
+        "InitialPotionCount": 0,
+        "MaxPotionCount": 15,
+        "PotionSpawnTimer": {
+          "Max": 15,
+          "Min": 10
+        },
+        "PotionTypes": [
+          "zombiepotion_speed",
+          "holidaydrink_valentines",
+          "holidaydrink_heroes",
+          "holidaydrink_children",
+          "holidaydrink_halloween",
+          "holidaydrink_summernights",
+          "holidaydrink_spring",
+          "holidaydrink_foodfight"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Rails"
+      ],
+      "objclass": "RailcartProperties",
+      "objdata": {
+        "RailcartType": "railcart_tutorial",
+        "Railcarts": [
+          {
+            "Column": 5,
+            "Row": 0
+          },
+          {
+            "Column": 5,
+            "Row": 4
+          }
+        ],
+        "Rails": [
+          {
+            "Column": 5,
+            "RowEnd": 4,
+            "RowStart": 0
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GridItems"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 6,
+            "GridY": 0,
+            "TypeName": "slider_down_modern"
+          },
+          {
+            "GridX": 6,
+            "GridY": 4,
+            "TypeName": "slider_up_modern"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "OverrideSeedSlotsCount": 8,
+        "PresetPlantList": [],
+        "PlantIncludeList": [
+          "sunflower",
+          "peashooter",
+          "wallnut",
+          "tallnut",
+          "explodeonut",
+          "bonkchoy",
+          "cabbagepult",
+          "melonpult",
+          "cherry_bomb",
+          "coconutcannon",
+          "gravebuster",
+          "iceburg",
+          "laser_bean",
+          "potatomine",
+          "repeater",
+          "snapdragon",
+          "spikeweed",
+          "threepeater",
+          "torchwood",
+          "kernelpult",
+          "springbean",
+          "snowpea",
+          "chilibean",
+          "splitpea",
+          "lightningreed",
+          "peapod",
+          "magnifyinggrass",
+          "bloomerang",
+          "holonut",
+          "empea",
+          "blover",
+          "starfruit",
+          "jalapeno",
+          "wintermelon",
+          "twinsunflower",
+          "spikerock",
+          "squash",
+          "citron",
+          "powerplant",
+          "sunshroom",
+          "puffshroom",
+          "fumeshroom",
+          "sunbean",
+          "magnetshroom",
+          "hypnoshroom",
+          "peanut",
+          "firepeashooter",
+          "lilypad",
+          "bowlingbulb",
+          "homingthistle",
+          "banana",
+          "chomper",
+          "guacodile",
+          "tanglekelp",
+          "ghostpepper",
+          "sweetpotato",
+          "sapfling",
+          "hurrikale",
+          "xshot",
+          "chardguard",
+          "pepperpult",
+          "kiwibeast",
+          "hotpotato",
+          "stunion",
+          "dandelion",
+          "redstinger",
+          "goldleaf",
+          "akee",
+          "lavaguava",
+          "toadstool",
+          "endurian",
+          "stallia",
+          "strawburst",
+          "cactus",
+          "phatbeet",
+          "thymewarp",
+          "celerystalker",
+          "electricblueberry",
+          "sporeshroom",
+          "garlic",
+          "intensivecarrot",
+          "jackolantern",
+          "primalpeashooter",
+          "grapeshot",
+          "primalwallnut",
+          "perfumeshroom",
+          "coldsnapdragon",
+          "primalsunflower",
+          "primalpotatomine",
+          "shrinkingviolet",
+          "moonflower",
+          "nightshade",
+          "shadowshroom",
+          "bloominghearts",
+          "escaperoot",
+          "grimrose",
+          "dusklobber",
+          "goldbloom",
+          "electriccurrant",
+          "aloe",
+          "wasabiwhip",
+          "applemortar",
+          "bombegranate",
+          "missiletoe",
+          "parsnip",
+          "witchhazel",
+          "hotdate",
+          "caulipower",
+          "solartomato",
+          "electricpeashooter",
+          "hollyknight",
+          "shadowpeashooter",
+          "poisonpeashooter",
+          "slingpea",
+          "snappea",
+          "zoybeanpod",
+          "dazeychain",
+          "electricitea",
+          "blastberry",
+          "imppear",
+          "pumpkin",
+          "icebloom",
+          "dartichoke",
+          "ultomato",
+          "gumnut",
+          "shinevine",
+          "tumbleweed",
+          "murkadamia",
+          "puffball",
+          "stickybombrice",
+          "olivepit",
+          "turkeypult",
+          "boingsetta",
+          "hocus",
+          "gloomvine",
+          "draftodil",
+          "boomflower",
+          "pvine",
+          "inferno",
+          "solarsage",
+          "noctarine",
+          "iceweed",
+          "unused_45",
+          "unused_47",
+          "unused_43",
+          "unused_48",
+          "unused_49",
+          "unused_46",
+          "headbutter",
+          "teleportatomine",
+          "pokra",
+          "pyrevine",
+          "hollybarrierleaf",
+          "potatochip",
+          "caramelpopcorn",
+          "lotuspod",
+          "heathseeker",
+          "blockoli",
+          "buttercup",
+          "bramblebush"
+        ],
+        "PlantExcludeList": [],
+        "SelectionMethod": "chooser"
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "Escalation"
+      ],
+      "objclass": "LevelEscalationModuleProperties",
+      "objdata": {
+        "FlagCount": 4,
+        "WavesPerFlag": 12,
+        "PlantfoodToSpawnCount": 5,
+        "PointIncrementPerWave": 30,
+        "StartingPoints": 60,
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+        "ZombiePool": [
+          "RTID(sportzball@ZombieTypes)",
+          "RTID(sportzball_armor1@ZombieTypes)",
+          "RTID(sportzball_armor2@ZombieTypes)",
+          "RTID(sportzball_imp@ZombieTypes)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 12,
+        "WaveCount": 48,
+        "MaxNextWaveHealthPercentage": 0.5,
+        "MinNextWaveHealthPercentage": 0.65,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(Wave5DinoTimeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)",
+            "RTID(Wave10DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave10DinoTimeEvent1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave15@CurrentLevel)",
+            "RTID(Wave15DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave15DinoTimeEvent1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave16@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave17@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave18@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave19@CurrentLevel)",
+            "RTID(Wave19DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave19DinoTimeEvent1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave20@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave21@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave22@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave23@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave24@CurrentLevel)",
+            "RTID(Wave24DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave24DinoTimeEvent1@CurrentLevel)",
+            "RTID(Wave24DinoTimeEvent2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave25@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave26@CurrentLevel)",
+            "RTID(Wave26DinoTimeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave27@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave28@CurrentLevel)",
+            "RTID(Wave28DinoTimeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave29@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave30@CurrentLevel)",
+            "RTID(Wave30DinoTimeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave31@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave32@CurrentLevel)",
+            "RTID(Wave32DinoTimeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave33@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave34@CurrentLevel)",
+            "RTID(Wave34DinoTimeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave35@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave36@CurrentLevel)",
+            "RTID(Wave36DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave36DinoTimeEvent1@CurrentLevel)",
+            "RTID(Wave36DinoTimeEvent2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave37@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave38@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave39@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave40@CurrentLevel)",
+            "RTID(Wave40DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave40DinoTimeEvent1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave41@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave42@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave43@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave44@CurrentLevel)",
+            "RTID(Wave44DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave44DinoTimeEvent1@CurrentLevel)",
+            "RTID(Wave44DinoTimeEvent2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave45@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave46@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave47@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave48@CurrentLevel)",
+            "RTID(Wave48DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave48DinoTimeEvent1@CurrentLevel)",
+            "RTID(Wave48DinoTimeEvent2@CurrentLevel)",
+            "RTID(Wave48DinoTimeEvent3@CurrentLevel)",
+            "RTID(Wave48DinoTimeEvent4@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_8bit"
+        ],
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(sportzball_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "5",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(sportzball_imp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(sportzball_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(sportzball_imp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(sportzball_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball_imp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave17"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(bighead_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave18"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave19"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave20"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave21"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(pelican@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave22"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave23"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(bighead_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(iceage_dodo_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave24"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave25"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave26"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(pelican@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave27"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave28"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(iceage_dodo_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(bighead_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave29"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave30"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave31"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave32"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave33"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(iceage_dodo_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave34"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(bighead_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(bighead_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave35"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave36"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(iceage_dodo_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(iceage_dodo_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave37"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sportzball_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave38"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave39"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave40"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(iceage_dodo_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(iceage_dodo_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(pelican@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave41"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(bighead_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave42"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave43"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave44"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave45"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(iceage_dodo_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(iceage_dodo_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(bighead_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(bighead_allstar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave46"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave47"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave48"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(bighead_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(bighead_allstar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(pelican@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_gentleman@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(bighead_balloon@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_pitchfork@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(harvest_eggstealer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zcorp_consultant@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(iceage_dodo_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(iceage_dodo_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave10DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave10DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave15DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave15DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave19DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave19DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave24DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave24DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave24DinoTimeEvent2"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave26DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave28DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave30DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave32DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave34DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave36DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave36DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave36DinoTimeEvent2"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave40DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave40DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave44DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave44DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave44DinoTimeEvent2"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave48DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave48DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave48DinoTimeEvent2"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave48DinoTimeEvent3"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave48DinoTimeEvent4"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "tyranno"
+      }
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,1385 @@
+{"#comment": "Penny's Challenge - Last Course | ELM: Ver-10.1-Pre3 [RFL v1.1.2]",
+"#zombies": "harvest, harvest_armor1, harvest_armor2, foodfight, foodfight_armor1, foodfight_armor2, halloween_octopus, foodfight_gobbler_king, harvest_gargantuar, foodfight_imp, harvest_imp, harvest_pitchfork, birthday_pharaoh, west_bull, spring_wizard, spring_camel_onehump, spring_camel_twohump, lostcity_explorer, harvest_eggstealer, lunar_imp",
+"objects": [{
+    "objclass": "LevelDefinition",
+    "objdata": {
+    "StartingSun": 50,
+    "Description": "{PLAYER}'s Run Through Penny's Challenge!",
+    "FirstRewardParam": "moneybag",
+    "LevelPowerupSet": "LevelPowerupsDisabled",
+    "SuppressPlantfoodPurchase": true,
+    "DisablePlantBoosts": true,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+        "DelayLoad_Background_Beach",
+        "DelayLoad_Background_Beach_Compressed",
+        "Tombstone_Dark_Special",
+        "Tombstone_Dark_Effects"
+    ],
+    "Modules": [
+         "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+        "RTID(StandardIntro@LevelModules)",
+        "RTID(GI@CurrentLevel)",
+        "RTID(IPP_Protect@CurrentLevel)",
+        "RTID(ZombieLevelSwaps@CurrentLevel)",
+        "RTID(SeedBank@.)",
+        "RTID(DefaultSunDropper@LevelModules)",
+        "RTID(ChallengeModule@CurrentLevel)",
+        "RTID(Escalation@CurrentLevel)",
+        "RTID(NewWaves@CurrentLevel)",
+        "RTID(ZombiesDeadWinCon@LevelModules)",
+        "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+     "Name": "Penny's Challenge - Last Course",
+    "StageModule": "RTID(FoodStage@LevelModules)",
+    "MusicType": "MiniGame_B"
+}},
+{"aliases":["ChallengeModule"],
+"objclass": "StarChallengeModuleProperties",
+"objdata": {
+    "Challenges": [[
+        "RTID(BeatTheLevel@CurrentLevel)"
+    ]],
+    "ChallengesAlwaysAvailable": true
+}},
+{"aliases":["BeatTheLevel"],
+"objclass": "StarChallengeBeatTheLevelProps",
+"objdata": {
+    "Description": "Survive and protect the endangered plants with a rather tasty seedbank",
+    "DescriptiveName": "Custom Objective"
+}},
+{"aliases": ["SeedBank"],
+"objclass": "SeedBankProperties",
+"objdata": {
+    "OverrideSeedSlotsCount": 8,
+    "PresetPlantList": [
+        
+    ],
+    "PlantIncludeList": [
+        "sunflower",
+        "wallnut",
+        "tallnut",
+        "cabbagepult",
+        "melonpult",
+        "cherry_bomb",
+        "kernelpult",
+        "springbean",
+        "chilibean",
+        "starfruit",
+        "jalapeno",
+        "squash",
+        "peanut",
+        "banana",
+        "sweetpotato",
+        "pepperpult",
+        "stunion",
+        "hotdate",
+        "celerystalker",
+        "laser_bean",
+        "electricblueberry",
+        "strawburst",
+        "bonkchoy",
+        "coconutcannon",
+        "garlic",
+        "intensivecarrot",
+        "grapeshot",
+        "potatochip",
+        "applemortar",
+        "bombegranate",
+        "phatbeet",
+        "endurian",
+        "parsnip",
+        "empea",
+        "zoybeanpod",
+        "blastberry",
+        "pumpkin",
+        "caramelpopcorn",
+        "primalwallnut",
+        "murkadamia",
+        "electriccurrant",
+        "turkeypult",
+        "citron",
+        "unused_46",
+        "noctarine",
+        "potatomine",
+        "primalpotatomine",
+        "powerplant"
+    ],
+    "PlantExcludeList": [
+        
+    ],
+    "SelectionMethod": "chooser"
+}},
+ {"aliases":["GI"],
+"objclass":"InitialGridItemProperties",
+"objdata":{
+    "InitialGridItemPlacements": [
+        {"GridX": 4, "GridY": 0, "TypeName":"presentPlantOnDestruction_valentines"},
+        {"GridX": 6, "GridY": 1, "TypeName":"presentSunOnDestruction"},
+        {"GridX": 5, "GridY": 2, "TypeName":"presentPlantOnDestruction_valentines"},
+        {"GridX": 6, "GridY": 3, "TypeName":"presentSunOnDestruction_birthdayz"},
+        {"GridX": 4, "GridY": 4, "TypeName":"presentPlantOnDestruction_valentines"}
+    ]
+}},
+{"aliases":["IPP_Protect"],
+"objclass": "ProtectThePlantChallengeProperties",
+"objdata": {
+    "Plants": [
+        {"GridX": 5, "GridY": 0, "Level": 0, "PlantType":"chomper"},
+        {"GridX": 5, "GridY": 1, "Level": 0, "PlantType":"toadstool"},
+        {"GridX": 5, "GridY": 3, "Level": 0, "PlantType":"snappea"},
+        {"GridX": 5, "GridY": 4, "Level": 0, "PlantType":"olivepit"}
+    ], 
+    "MustProtectCount": 4
+}},
+{"aliases": ["ZombieLevelSwaps"],
+"objclass": "LevelDifficultyScalingModuleProperties",
+"objdata": {
+    "DifficultyRulesType": "RiftDifficulty",
+    "ZombieLevelSwaps": [
+        {
+            "Level": 0,
+            "Swaps": [
+                {
+                    "From": "RTID(foodfight_imp@ZombieTypes)",
+                    "To": [
+                         "RTID(foodfight_imp@ZombieTypes)",
+                         "RTID(harvest_imp@ZombieTypes)",
+                         "RTID(lunar_imp@ZombieTypes)"
+                    ]
+                }
+            ]
+        }
+    ]
+}},
+ {"aliases": ["Escalation"],
+"objclass": "LevelEscalationModuleProperties",
+"objdata": {
+    "FlagCount": 5,
+    "WavesPerFlag": 9,
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0,
+    "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+    "ZombiePool": [
+
+    ]
+}},
+{"aliases": ["NewWaves"],
+"objclass": "WaveManagerModuleProperties",
+"objdata": {}
+},
+{"aliases": ["WaveManager"],
+"objclass": "WaveManagerProperties",
+"objdata": {
+    "FlagWaveInterval": 9,
+    "WaveCount": 45,
+    "SuppressFlagZombie": false,
+    "Waves": [
+         ["RTID(Wave1@.)"],
+        ["RTID(Wave2@.)", "RTID(SpidRain2_foodfight_imp@.)"],
+        ["RTID(Wave3@.)"],
+        ["RTID(Wave4@.)"],
+        ["RTID(Wave5@.)"],
+        ["RTID(Wave6@.)"],
+        ["RTID(Wave7@.)"],
+        ["RTID(Wave8@.)"],
+        ["RTID(Wave9@.)", "RTID(SpidRain9_foodfight_imp@.)", "RTID(GridSpawnII9@.)"],
+        ["RTID(Wave10@.)"],
+        ["RTID(Wave11@.)"],
+        ["RTID(Wave12@.)"],
+        ["RTID(Wave13@.)"],
+        ["RTID(Wave14@.)", "RTID(SpidRain14_foodfight_imp@.)"],
+        ["RTID(Wave15@.)"],
+        ["RTID(Wave16@.)"],
+        ["RTID(Wave17@.)", "RTID(SpidRain17_foodfight_imp@.)"],
+        ["RTID(Wave18@.)", "RTID(ParaRain18_west_bull@.)", "RTID(GridSpawnII18@.)"],
+        ["RTID(Wave19@.)"],
+        ["RTID(Wave20@.)"],
+        ["RTID(Wave21@.)", "RTID(SpidRain21_foodfight_imp@.)"],
+        ["RTID(Wave22@.)"],
+        ["RTID(Wave23@.)"],
+        ["RTID(Wave24@.)", "RTID(ParaRain24_west_bull@.)"],
+        ["RTID(Wave25@.)"],
+        ["RTID(Wave26@.)"],
+        ["RTID(Wave27@.)", "RTID(SpidRain27_foodfight_imp@.)"],
+        ["RTID(Wave28@.)"],
+        ["RTID(Wave29@.)"],
+        ["RTID(Wave30@.)", "RTID(ParaRain30_west_bull@.)"],
+        ["RTID(Wave31@.)"],
+        ["RTID(Wave32@.)", "RTID(SpidRain32_foodfight_imp@.)"],
+        ["RTID(Wave33@.)"],
+        ["RTID(Wave34@.)"],
+        ["RTID(Wave35@.)", "RTID(ParaRain35_west_bull@.)"],
+        ["RTID(Wave36@.)", "RTID(SpidRain36_foodfight_imp@.)"],
+        ["RTID(Wave37@.)"],
+        ["RTID(Wave38@.)"],
+        ["RTID(Wave39@.)"],
+        ["RTID(Wave40@.)", "RTID(ParaRain40_west_bull@.)", "RTID(SpidRain40_foodfight_imp@.)"],
+        ["RTID(Wave41@.)"],
+        ["RTID(Wave42@.)"],
+        ["RTID(Wave43@.)"],
+        ["RTID(Wave44@.)", "RTID(SpidRain44_foodfight_imp@.)"],
+        ["RTID(Wave45@.)", "RTID(ParaRain45_west_bull@.)"] 
+    ]
+}},
+ {"aliases":["Wave1"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(harvest@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave3"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave4"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(foodfight@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave5"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave6"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave7"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave8"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_twohump@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave9"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave10"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave11"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave12"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave13"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave14"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_eggstealer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave15"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(west_bull@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave16"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(west_bull@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave17"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_wizard@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave18"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave19"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_octopus@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave20"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(west_bull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_eggstealer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave21"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_wizard@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave22"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_octopus@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave23"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(west_bull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_eggstealer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave24"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_onehump@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave25"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_wizard@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave26"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(west_bull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(west_bull@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave27"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave28"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(west_bull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave29"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave30"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_pitchfork@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave31"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(harvest_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave32"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(west_bull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(west_bull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_wizard@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave33"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(birthday_pharaoh@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave34"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave35"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_pitchfork@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave36"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(west_bull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(west_bull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_wizard@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave37"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave38"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave39"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_wizard@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave40"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(harvest_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave41"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(west_bull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(west_bull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_octopus@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave42"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave43"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(west_bull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(west_bull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave44"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_pitchfork@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave45"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(spring_camel_onehump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(birthday_pharaoh@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_camel_twohump@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(harvest_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(harvest_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_gobbler_king@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(spring_wizard@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(harvest_eggstealer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_octopus@ZombieTypes)"}
+    ]
+}},
+ {"aliases":["SpidRain2_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 4,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.5",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 1,
+    "WaveStartMessage": "Bag of Imps!"
+}},
+{"aliases":["SpidRain9_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 4,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.8",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 3,
+    "WaveStartMessage": "Bag of Imps!"
+}},
+{"aliases":["GridSpawnII9"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(presentPlantOnDestruction@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(presentPlantOnDestruction_birthdayz@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 4, "mY": 2}, {"mX": 6, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_ZOMBIE_CHILDREN_LOLLIPOPS_HIT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["SpidRain14_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 4,
+    "GroupSize": 2,
+    "TimeBetweenGroups": "2.5",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 4,
+    "WaveStartMessage": "Bag of Imps!"
+}},
+{"aliases":["SpidRain17_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 4,
+    "GroupSize": 2,
+    "TimeBetweenGroups": "1",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 4,
+    "WaveStartMessage": "Bag of Imps!"
+}},
+{"aliases":["ParaRain18_west_bull"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 10,
+    "ColumnEnd": 11,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.5",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "west_bull",
+    "SpiderCount": 2,
+    "WaveStartMessage": "Stampede!"
+}},
+{"aliases":["GridSpawnII18"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(presentSunOnDestruction@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(presentPlantOnDestruction_valentines@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(presentSunOnDestruction_birthdayz@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 4, "mY": 1}, {"mX": 4, "mY": 3}, {"mX": 6, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_ZOMBIE_CHILDREN_LOLLIPOPS_HIT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["SpidRain21_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 4,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.55",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 5,
+    "WaveStartMessage": "Bag of Imps!"
+}},
+{"aliases":["ParaRain24_west_bull"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 10,
+    "ColumnEnd": 11,
+    "GroupSize": 2,
+    "TimeBetweenGroups": "0.75",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "west_bull",
+    "SpiderCount": 3,
+    "WaveStartMessage": "Stampede!"
+}},
+{"aliases":["SpidRain27_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 4,
+    "GroupSize": 2,
+    "TimeBetweenGroups": "0.8",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 8,
+    "WaveStartMessage": "Bag of Imps!"
+}},
+{"aliases":["ParaRain30_west_bull"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 10,
+    "ColumnEnd": 11,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.2",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "west_bull",
+    "SpiderCount": 5,
+    "WaveStartMessage": "Stampede!"
+}},
+{"aliases":["SpidRain32_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 4,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.75",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 5,
+    "WaveStartMessage": "Bag of Imps!"
+}},
+{"aliases":["ParaRain35_west_bull"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 10,
+    "ColumnEnd": 11,
+    "GroupSize": 2,
+    "TimeBetweenGroups": "1",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "west_bull",
+    "SpiderCount": 3,
+    "WaveStartMessage": "Stampede!"
+}},
+{"aliases":["SpidRain36_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 4,
+    "GroupSize": 2,
+    "TimeBetweenGroups": "1.2",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 6,
+    "WaveStartMessage": "Bag of Imps!"
+}},
+{"aliases":["ParaRain40_west_bull"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 10,
+    "ColumnEnd": 11,
+    "GroupSize": 2,
+    "TimeBetweenGroups": "2.5",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "west_bull",
+    "SpiderCount": 5,
+    "WaveStartMessage": "Stampede!"
+}},
+{"aliases":["SpidRain40_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 4,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.75",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 10,
+    "WaveStartMessage": "Bag of Imps!"
+}},
+{"aliases":["SpidRain44_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 4,
+    "GroupSize": 3,
+    "TimeBetweenGroups": "2.5",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 18,
+    "WaveStartMessage": "Bag of Imps!"
+}},
+{"aliases":["ParaRain45_west_bull"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 10,
+    "ColumnEnd": 11,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "1.4",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "west_bull",
+    "SpiderCount": 12,
+    "WaveStartMessage": "Stampede!"
+}},
+                                {}
+    ],
+    "version": 1
+}

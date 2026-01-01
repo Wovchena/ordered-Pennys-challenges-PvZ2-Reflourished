@@ -1,0 +1,2000 @@
+{
+    "#comment": "Saucy Changes: Start with 300 sun and Imitater enabled. Now takes place at night and is hybridised with Neon Mixtape Tour's jams and zombies (including Punk, Glitter, Breakdancer, MC, Arcade and Hair Metal Garg); waves have been adjusted to fit in the new zombies. Wave progression percentage is lowered to 35-45%. Added 'Retro Dance-Off!' ambush that happens during 8-bit jam. Added a VIP guest star to a few waves. | maw waz here",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "{PLAYER}'s dance at the jungle disco!",
+				"StartingSun": 300,
+                "FixedPlantLevel": 1,
+                "SuppressPlantfoodPurchase": true,
+                "DisablePlantBoosts": true,
+				"AddBonusStartingSun": false,
+                "LevelPowerupSet": "LevelPowerupsDisabled",
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(Escalation@CurrentLevel)",
+                    "RTID(StampedeDinoSpawns@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(GridItems@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)"
+                ],
+                "Name": "Saucy Challenge - DJ Dino's Jungle Disco",
+                "MusicType": "MiniGame_A",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "StageModule": "RTID(DiscoStageNight@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "GridItems"
+            ],
+            "objclass": "InitialGridItemProperties",
+            "objdata": {
+                "InitialGridItemPlacements": [
+                    {
+                        "GridX": 8,
+                        "GridY": 0,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 1,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 2,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 3,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 4,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 1,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 3,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 0,
+                        "GridY": 1,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 2,
+                        "GridY": 0,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 2,
+                        "GridY": 2,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 2,
+                        "GridY": 4,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 0,
+                        "GridY": 3,
+                        "TypeName": "goldtile"
+                    }
+                ]
+            }
+        },
+		{
+			"aliases": ["SeedBank"],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"OverrideSeedSlotsCount": 8,
+				"PresetPlantList": [
+					"goldleaf"
+				],
+				"PlantIncludeList": [
+					"peashooter",
+					"sunflower",
+					"wallnut",
+					"potatomine",
+					"cabbagepult",
+					"bloomerang",
+					"iceburg",
+					"gravebuster",
+					"bonkchoy",
+					"repeater",
+					"twinsunflower",
+					"squash",
+					"snowpea",
+					"kernelpult",
+					"snapdragon",
+					"spikeweed",
+					"coconutcannon",
+					"springbean",
+					"threepeater",
+					"spikerock",
+					"cherry_bomb",
+					"applemortar",
+					"iceweed",
+					"splitpea",
+					"chilibean",
+					"lightningreed",
+					"tallnut",
+					"peapod",
+					"melonpult",
+					"wintermelon",
+					"tumbleweed",
+					"ultomato",
+					"laser_bean",
+					"blover",
+					"citron",
+					"empea",
+					"holonut",
+					"magnifyinggrass",
+					"powerplant",
+					"zoybeanpod",
+					"starfruit",
+					"sunshroom",
+					"puffshroom",
+					"fumeshroom",
+					"sunbean",
+					"magnetshroom",
+					"hypnoshroom",
+					"witchhazel",
+					"lilypad",
+					"tanglekelp",
+					"bowlingbulb",
+					"guacodile",
+					"banana",
+					"chomper",
+					"homingthistle",
+					"hotpotato",
+					"pepperpult",
+					"chardguard",
+					"stunion",
+					"xshot",
+					"hurrikale",
+					"firepeashooter",
+					"redstinger",
+					"akee",
+					"endurian",
+					"stallia",
+					"goldleaf",
+					"lavaguava",
+					"dazeychain",
+					"phatbeet",
+					"celerystalker",
+					"thymewarp",
+					"garlic",
+					"sporeshroom",
+					"intensivecarrot",
+					"electricblueberry",
+					"gumnut",
+					"primalpeashooter",
+					"primalwallnut",
+					"perfumeshroom",
+					"primalsunflower",
+					"primalpotatomine",
+					"hotdate",
+					"parsnip",
+					"hocus",
+					"moonflower",
+					"nightshade",
+					"shadowshroom",
+					"dusklobber",
+					"grimrose",
+					"noctarine",
+					"murkadamia",
+					"shadowpeashooter",
+					"sapfling",
+					"ghostpepper",
+					"dandelion",
+					"cactus",
+					"jalapeno",
+					"bloominghearts",
+					"sweetpotato",
+					"boingsetta",
+					"strawburst",
+					"jackolantern",
+					"caulipower",
+					"unused_47",
+					"unused_43",
+					"unused_45",
+					"peanut",
+					"unused_49",
+					"unused_46",
+					"torchwood",
+					"goldbloom",
+					"electriccurrant",
+					"aloe",
+					"imppear",
+					"hollybarrierleaf",
+					"imitater",
+					"toadstool",
+					"grapeshot",
+					"coldsnapdragon",
+					"shrinkingviolet",
+					"bombegranate",
+					"escaperoot",
+					"electricpeashooter",
+					"solartomato",
+					"missiletoe",
+					"slingpea",
+					"wasabiwhip",
+					"explodeonut",
+					"kiwibeast",
+					"hollyknight",
+					"poisonpeashooter",
+					"snappea",
+					"blastberry",
+					"pokra",
+					"pyrevine",
+					"electricitea",
+					"pumpkin",
+					"icebloom",
+					"dartichoke",
+					"olivepit",
+					"turkeypult",
+					"puffball",
+					"draftodil",
+					"shinevine",
+					"pvine",
+					"gloomvine",
+					"stickybombrice",
+					"inferno",
+					"boomflower",
+					"solarsage",
+					"unused_48",
+					"headbutter",
+					"teleportatomine",
+					"heathseeker",
+					"lotuspod",
+					"buttercup",
+					"blockoli",
+					"bramblebush",
+					"potatochip",
+					"caramelpopcorn"
+				],
+				"PlantExcludeList": [
+					
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Escalation"
+            ],
+            "objclass": "LevelEscalationModuleProperties",
+            "objdata": {
+                "FlagCount": 5,
+                "WavesPerFlag": 10,
+                "PlantfoodToSpawnCount": 5,
+                "PointIncrementPerWave": 0,
+                "StartingPoints": 75,
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+                "ZombiePool": [
+                    "RTID(dino@ZombieTypes)",
+                    "RTID(dino_imp@ZombieTypes)",
+                    "RTID(dino_armor1@ZombieTypes)",
+                    "RTID(dino_armor2@ZombieTypes)",
+                    "RTID(dino_bully_blue@ZombieTypes)",
+                    "RTID(dino_armor3@ZombieTypes)",
+                    "RTID(dino_armor4@ZombieTypes)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 10,
+                "WaveCount": 50,
+                "FlagWaveVeteranOverrideTypes": [
+                    0,
+                    0,
+                    1,
+                    1,
+                    1
+                ],
+                "MaxNextWaveHealthPercentage": 0.35,
+                "MinNextWaveHealthPercentage": 0.45,
+                "Waves": [
+					["RTID(Wave1@.)", "RTID(Dino_R2@.)"],
+					["RTID(Wave2@.)", "RTID(jam_rap@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave3@.)", "RTID(Dino_S4@.)"],
+					["RTID(Wave4@.)"],
+					["RTID(Wave5@.)", "RTID(Dino_A1@.)"],
+					["RTID(Wave6@.)", "RTID(danceoff_8bit@.)", "RTID(jam_8bit@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave7@.)", "RTID(Dino_R3@.)", "RTID(Dino_S5@.)"],
+					["RTID(Wave8@.)", "RTID(JMPanic_25_PlantFling@.)", "RTID(JMPanic_25_Effects@.)"],
+					["RTID(Wave9@.)", "RTID(Dino_S2@.)", "RTID(Dino_A4@.)"],
+					["RTID(Wave10@.)", "RTID(jam_pop@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave11@.)", "RTID(Dino_S1@.)"],
+					["RTID(Wave12@.)"],
+					["RTID(Wave13@.)", "RTID(Dino_S2@.)", "RTID(Dino_S3@.)"],
+					["RTID(Wave14@.)"],
+					["RTID(Wave15@.)", "RTID(Dino_S4@.)", "RTID(Dino_S5@.)"],
+					["RTID(Wave16@.)", "RTID(JMPanic_13_PlantFling@.)", "RTID(JMPanic_13_Effects@.)"],
+					["RTID(Wave17@.)", "RTID(Dino_S2@.)", "RTID(Dino_S4@.)"],
+					["RTID(Wave18@.)", "RTID(jam_punk@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave19@.)", "RTID(jam_8bit@.)", "RTID(Dino_DJ@.)", "RTID(Dino_S1@.)", "RTID(Dino_S3@.)", "RTID(Dino_S5@.)"],
+					["RTID(Wave20@.)"],
+					["RTID(Wave21@.)", "RTID(Dino_R3@.)", "RTID(danceoff_8bit@.)", "RTID(jam_8bit@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave22@.)", "RTID(Dino_R2@.)"],
+					["RTID(Wave23@.)", "RTID(JMPanic_145_PlantFling@.)", "RTID(JMPanic_145_Effects@.)"],
+					["RTID(Wave24@.)", "RTID(Dino_R4@.)", "RTID(jam_rap@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave25@.)"],
+					["RTID(Wave26@.)", "RTID(Dino_R1@.)", "RTID(Dino_R5@.)"],
+					["RTID(Wave27@.)"],
+					["RTID(Wave28@.)", "RTID(Dino_R2@.)", "RTID(Dino_R3@.)", "RTID(Dino_R4@.)"],
+					["RTID(Wave29@.)", "RTID(jam_8bit@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave30@.)", "RTID(JMPanic_234_PlantFling@.)", "RTID(JMPanic_234_Effects@.)", "RTID(danceoff_8bit@.)"],
+					["RTID(Wave31@.)", "RTID(Dino_A3@.)"],
+					["RTID(Wave32@.)", "RTID(jam_punk@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave33@.)", "RTID(Dino_A2@.)", "RTID(Dino_A4@.)"],
+					["RTID(Wave34@.)"],
+					["RTID(Wave35@.)", "RTID(Dino_A1@.)", "RTID(Dino_A5@.)"],
+					["RTID(Wave36@.)", "RTID(JMPanic_24_PlantFling@.)", "RTID(JMPanic_24_Effects@.)", "RTID(jam_metal@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave37@.)"],
+					["RTID(Wave38@.)"],
+					["RTID(Wave39@.)", "RTID(jam_pop@.)", "RTID(Dino_DJ@.)", "RTID(Dino_A1@.)", "RTID(Dino_A2@.)", "RTID(Dino_A3@.)", "RTID(Dino_A4@.)", "RTID(Dino_A5@.)"],
+					["RTID(Wave40@.)", "RTID(danceoff_8bit@.)", "RTID(jam_8bit@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave41@.)", "RTID(Dino_R3@.)", "RTID(Dino_S2@.)"],
+					["RTID(Wave42@.)", "RTID(JMPanic_135_PlantFling@.)", "RTID(JMPanic_135_Effects@.)", "RTID(jam_pop@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave43@.)", "RTID(Dino_R4@.)", "RTID(Dino_S5@.)", "RTID(Dino_A1@.)", "RTID(jam_rap@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave44@.)", "RTID(jam_punk@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave45@.)", "RTID(Dino_R3@.)", "RTID(Dino_A4@.)", "RTID(jam_8bit@.)", "RTID(Dino_DJ@.)", "RTID(danceoff_8bit@.)"],
+					["RTID(Wave46@.)"],
+					["RTID(Wave47@.)", "RTID(Dino_R2@.)", "RTID(Dino_S5@.)", "RTID(Dino_A1@.)", "RTID(jam_metal@.)", "RTID(Dino_DJ@.)"],
+					["RTID(Wave48@.)", "RTID(JMPanic_12345_PlantFling@.)", "RTID(JMPanic_12345_Effects@.)"],
+					["RTID(Wave49@.)", "RTID(Dino_R1@.)", "RTID(Dino_R5@.)", "RTID(Dino_S2@.)", "RTID(Dino_S4@.)", "RTID(Dino_A3@.)"],
+					["RTID(Wave50@.)", "RTID(danceoff_8bit@.)", "RTID(jam_8bit@.)", "RTID(Dino_DJ@.)"] 
+				]
+            }
+        },
+
+{"aliases":["WaveTest1"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(lostcity_impporter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["WaveTest2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"}
+    ]
+}},
+
+{"aliases":["Wave1"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(zcorp_racer_chair@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "4", "Type": "RTID(dino_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave3"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_mc@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_breakdancer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave4"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(dino_armor1@ZombieTypes)"},
+        {"Type": "RTID(dino_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave5"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_mc@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave6"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "5", "Type": "RTID(eighties_glitter_8bit@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_mc_8bit@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(eighties_punk_8bit@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave7"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(dino_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "3", "Type": "RTID(lostcity_impporter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave8"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_excavator@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave9"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(eighties_breakdancer_8bit@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_breakdancer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave10"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave11"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dino_bully_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave12"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_impporter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave13"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave14"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_excavator@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave15"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dino_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dino_gargantuar@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave16"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_impporter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave17"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave18"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave19"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_punk_8bit@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_punk_8bit@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave20"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "2", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "1", "Type": "RTID(eighties_punk_8bit@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_punk_8bit@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk_8bit@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(eighties_punk_8bit@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_punk_8bit@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk_8bit@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave21"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(eighties_punk_8bit@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_mc_8bit@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_glitter_8bit@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_breakdancer_8bit@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk_8bit@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Type": "RTID(zcorp_racer_chair@ZombieTypes)"},
+        {"Type": "RTID(zcorp_racer_chair@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave22"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_glitter_8bit@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_glitter_8bit@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Type": "RTID(eighties_mc_8bit@ZombieTypes)"},
+        {"Type": "RTID(eighties_mc_8bit@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk_8bit@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk_8bit@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk_8bit@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave23"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave24"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave25"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(dino_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dino_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave26"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave27"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave28"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave29"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave30"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "2", "Type": "RTID(eighties_breakdancer_8bit@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_breakdancer_8bit@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_breakdancer_8bit@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_breakdancer_8bit@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave31"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dino_bully_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave32"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave33"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave34"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave35"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dino_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dino_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave36"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave37"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave38"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave39"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "4", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave40"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(eighties_glitter_8bit@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_glitter_8bit@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_glitter_8bit@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_glitter_8bit@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_glitter_8bit@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "5", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "1", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dino_bully_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave41"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "5", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "2", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_impporter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave42"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_glitter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_mc@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_mc@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_mc@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave43"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave44"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "2", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "3", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "4", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "5", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave45"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "2", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_gargantuar_8bit@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave46"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(eighties@ZombieTypes)"},
+        {"Type": "RTID(beach_fem@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(eighties_armor1@ZombieTypes)"},
+        {"Type": "RTID(beach_fem_armor1@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(eighties@ZombieTypes)"},
+        {"Type": "RTID(beach_fem@ZombieTypes)"},
+        {"Type": "RTID(eighties@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(beach_fem@ZombieTypes)"},
+        {"Type": "RTID(eighties@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(beach_fem@ZombieTypes)"},
+        {"Type": "RTID(eighties_armor1@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(beach_fem_armor1@ZombieTypes)"},
+        {"Type": "RTID(eighties@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(beach_fem@ZombieTypes)"},
+        {"Type": "RTID(eighties@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(beach_fem@ZombieTypes)"},
+        {"Type": "RTID(eighties@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(beach_fem@ZombieTypes)"},
+        {"Type": "RTID(eighties@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(beach_fem@ZombieTypes)"},
+        {"Type": "RTID(eighties@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(beach_fem@ZombieTypes)"},
+        {"Type": "RTID(eighties_armor1@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(beach_fem_armor1@ZombieTypes)"},
+        {"Type": "RTID(eighties@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(beach_fem@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(dino_imp@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave47"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave48"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_excavator@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave49"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dino_bully_veteran@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Type": "RTID(zcorp_racer_chair@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave50"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dino_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_gargantuar_8bit@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dino_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_gargantuar_8bit@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dino_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "2", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "3", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "4", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "5", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "1", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "2", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "3", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "4", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "5", "Type": "RTID(lostcity_eighties_arcade@CurrentLevel)"},
+        {"Row": "1", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Dino_DJ"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": -1,
+    "DinoType": "ptero"
+}},
+ {"aliases":["Dino_R2"], 
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 1,
+    "DinoType": "raptor"
+}},
+{"aliases":["jam_rap"],"objclass": "SpawnZombiesJitteredWaveActionProps","objdata": {"NotificationEvents": ["jam_rap"]}},
+{"aliases":["Dino_S4"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 3,
+    "DinoType": "stego"
+}},
+{"aliases":["Dino_A1"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 0,
+    "DinoType": "ankylo"
+}},
+{"aliases":["danceoff_8bit"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Retro Dance-Off!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        
+    ],
+    "Zombies": [
+        
+    ]
+}},
+{"aliases":["jam_8bit"],"objclass": "SpawnZombiesJitteredWaveActionProps","objdata": {"NotificationEvents": ["jam_8bit"]}},
+{"aliases":["Dino_R3"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 2,
+    "DinoType": "raptor"
+}},
+{"aliases":["Dino_S5"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 4,
+    "DinoType": "stego"
+}},
+{"aliases":["JMPanic_25_PlantFling"],
+"objclass": "SpawnGravestonesWaveActionProps",
+"objdata": {
+    "GravestonePool": [{ "Count": 45, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)" }],
+    "SpawnPositionsPool": [
+        {"mX": 0, "mY": 1}, {"mX": 1, "mY": 1}, {"mX": 2, "mY": 1}, {"mX": 3, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 1},
+        {"mX": 0, "mY": 4}, {"mX": 1, "mY": 4}, {"mX": 2, "mY": 4}, {"mX": 3, "mY": 4}, {"mX": 4, "mY": 4}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 4}
+    ],
+    "DisplacePlants": true,
+    "RandomPlacement": false,
+    "ShakeScreen": true,
+    "GridClassesToDestroy": []
+}},
+{"aliases":["JMPanic_25_Effects"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(dino_stampede_ankylo2@GridItemTypes)",
+        "RTID(dino_stampede_ankylo5@GridItemTypes)"
+    ],
+    "WaveStartMessage": "Jurassic Panic!",
+    "ZombieSpawnWaitTime": "0",
+    "Zombies": [
+        {"Type":"RTID(idiot@ZombieTypes)"},
+        {"Type":"RTID(idiot@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Dino_S2"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 1,
+    "DinoType": "stego"
+}},
+{"aliases":["Dino_A4"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 3,
+    "DinoType": "ankylo"
+}},
+{"aliases":["jam_pop"],"objclass": "SpawnZombiesJitteredWaveActionProps","objdata": {"NotificationEvents": ["jam_pop"]}},
+{"aliases":["Dino_S1"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 0,
+    "DinoType": "stego"
+}},
+{"aliases":["Dino_S3"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 2,
+    "DinoType": "stego"
+}},
+{"aliases":["JMPanic_13_PlantFling"],
+"objclass": "SpawnGravestonesWaveActionProps",
+"objdata": {
+    "GravestonePool": [{ "Count": 45, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)" }],
+    "SpawnPositionsPool": [
+        {"mX": 0, "mY": 0}, {"mX": 1, "mY": 0}, {"mX": 2, "mY": 0}, {"mX": 3, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 0},
+        {"mX": 0, "mY": 2}, {"mX": 1, "mY": 2}, {"mX": 2, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2}
+    ],
+    "DisplacePlants": true,
+    "RandomPlacement": false,
+    "ShakeScreen": true,
+    "GridClassesToDestroy": []
+}},
+{"aliases":["JMPanic_13_Effects"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(dino_stampede_ankylo@GridItemTypes)",
+        "RTID(dino_stampede_ankylo3@GridItemTypes)"
+    ],
+    "WaveStartMessage": "Jurassic Panic!",
+    "ZombieSpawnWaitTime": "0",
+    "Zombies": [
+        {"Type":"RTID(idiot@ZombieTypes)"},
+        {"Type":"RTID(idiot@ZombieTypes)"}
+    ]
+}},
+{"aliases":["jam_punk"],"objclass": "SpawnZombiesJitteredWaveActionProps","objdata": {"NotificationEvents": ["jam_punk"]}},
+{"aliases":["JMPanic_145_PlantFling"],
+"objclass": "SpawnGravestonesWaveActionProps",
+"objdata": {
+    "GravestonePool": [{ "Count": 45, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)" }],
+    "SpawnPositionsPool": [
+        {"mX": 0, "mY": 0}, {"mX": 1, "mY": 0}, {"mX": 2, "mY": 0}, {"mX": 3, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 0},
+        {"mX": 0, "mY": 3}, {"mX": 1, "mY": 3}, {"mX": 2, "mY": 3}, {"mX": 3, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 3},
+        {"mX": 0, "mY": 4}, {"mX": 1, "mY": 4}, {"mX": 2, "mY": 4}, {"mX": 3, "mY": 4}, {"mX": 4, "mY": 4}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 4}
+    ],
+    "DisplacePlants": true,
+    "RandomPlacement": false,
+    "ShakeScreen": true,
+    "GridClassesToDestroy": []
+}},
+{"aliases":["JMPanic_145_Effects"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(dino_stampede_ankylo@GridItemTypes)",
+        "RTID(dino_stampede_ankylo4@GridItemTypes)",
+        "RTID(dino_stampede_ankylo5@GridItemTypes)"
+    ],
+    "WaveStartMessage": "Jurassic Panic!",
+    "ZombieSpawnWaitTime": "0",
+    "Zombies": [
+        {"Type":"RTID(idiot@ZombieTypes)"},
+        {"Type":"RTID(idiot@ZombieTypes)"},
+        {"Type":"RTID(idiot@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Dino_R4"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 3,
+    "DinoType": "raptor"
+}},
+{"aliases":["Dino_R1"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 0,
+    "DinoType": "raptor"
+}},
+{"aliases":["Dino_R5"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 4,
+    "DinoType": "raptor"
+}},
+{"aliases":["JMPanic_234_PlantFling"],
+"objclass": "SpawnGravestonesWaveActionProps",
+"objdata": {
+    "GravestonePool": [{ "Count": 45, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)" }],
+    "SpawnPositionsPool": [
+        {"mX": 0, "mY": 1}, {"mX": 1, "mY": 1}, {"mX": 2, "mY": 1}, {"mX": 3, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 1},
+        {"mX": 0, "mY": 2}, {"mX": 1, "mY": 2}, {"mX": 2, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2},
+        {"mX": 0, "mY": 3}, {"mX": 1, "mY": 3}, {"mX": 2, "mY": 3}, {"mX": 3, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 3}
+    ],
+    "DisplacePlants": true,
+    "RandomPlacement": false,
+    "ShakeScreen": true,
+    "GridClassesToDestroy": []
+}},
+{"aliases":["JMPanic_234_Effects"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(dino_stampede_ankylo2@GridItemTypes)",
+        "RTID(dino_stampede_ankylo3@GridItemTypes)",
+        "RTID(dino_stampede_ankylo4@GridItemTypes)"
+    ],
+    "WaveStartMessage": "Jurassic Panic!",
+    "ZombieSpawnWaitTime": "0",
+    "Zombies": [
+        {"Type":"RTID(idiot@ZombieTypes)"},
+        {"Type":"RTID(idiot@ZombieTypes)"},
+        {"Type":"RTID(idiot@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Dino_A3"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 2,
+    "DinoType": "ankylo"
+}},
+{"aliases":["Dino_A2"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 1,
+    "DinoType": "ankylo"
+}},
+{"aliases":["Dino_A5"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 4,
+    "DinoType": "ankylo"
+}},
+{"aliases":["JMPanic_24_PlantFling"],
+"objclass": "SpawnGravestonesWaveActionProps",
+"objdata": {
+    "GravestonePool": [{ "Count": 45, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)" }],
+    "SpawnPositionsPool": [
+        {"mX": 0, "mY": 1}, {"mX": 1, "mY": 1}, {"mX": 2, "mY": 1}, {"mX": 3, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 1},
+        {"mX": 0, "mY": 3}, {"mX": 1, "mY": 3}, {"mX": 2, "mY": 3}, {"mX": 3, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 3}
+    ],
+    "DisplacePlants": true,
+    "RandomPlacement": false,
+    "ShakeScreen": true,
+    "GridClassesToDestroy": []
+}},
+{"aliases":["JMPanic_24_Effects"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(dino_stampede_ankylo2@GridItemTypes)",
+        "RTID(dino_stampede_ankylo4@GridItemTypes)"
+    ],
+    "WaveStartMessage": "Jurassic Panic!",
+    "ZombieSpawnWaitTime": "0",
+    "Zombies": [
+        {"Type":"RTID(idiot@ZombieTypes)"},
+        {"Type":"RTID(idiot@ZombieTypes)"}
+    ]
+}},
+{"aliases":["jam_metal"],"objclass": "SpawnZombiesJitteredWaveActionProps","objdata": {"NotificationEvents": ["jam_metal"]}},
+{"aliases":["JMPanic_135_PlantFling"],
+"objclass": "SpawnGravestonesWaveActionProps",
+"objdata": {
+    "GravestonePool": [{ "Count": 45, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)" }],
+    "SpawnPositionsPool": [
+        {"mX": 0, "mY": 0}, {"mX": 1, "mY": 0}, {"mX": 2, "mY": 0}, {"mX": 3, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 0},
+        {"mX": 0, "mY": 2}, {"mX": 1, "mY": 2}, {"mX": 2, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2},
+        {"mX": 0, "mY": 4}, {"mX": 1, "mY": 4}, {"mX": 2, "mY": 4}, {"mX": 3, "mY": 4}, {"mX": 4, "mY": 4}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 4}
+    ],
+    "DisplacePlants": true,
+    "RandomPlacement": false,
+    "ShakeScreen": true,
+    "GridClassesToDestroy": []
+}},
+{"aliases":["JMPanic_135_Effects"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(dino_stampede_ankylo@GridItemTypes)",
+        "RTID(dino_stampede_ankylo3@GridItemTypes)",
+        "RTID(dino_stampede_ankylo5@GridItemTypes)"
+    ],
+    "WaveStartMessage": "Jurassic Panic!",
+    "ZombieSpawnWaitTime": "0",
+    "Zombies": [
+        {"Type":"RTID(idiot@ZombieTypes)"},
+        {"Type":"RTID(idiot@ZombieTypes)"},
+        {"Type":"RTID(idiot@ZombieTypes)"}
+    ]
+}},
+{"aliases":["JMPanic_12345_PlantFling"],
+"objclass": "SpawnGravestonesWaveActionProps",
+"objdata": {
+    "GravestonePool": [{ "Count": 45, "Type": "RTID(dino_stampede_shuffler@GridItemTypes)" }],
+    "SpawnPositionsPool": [
+        {"mX": 0, "mY": 0}, {"mX": 1, "mY": 0}, {"mX": 2, "mY": 0}, {"mX": 3, "mY": 0}, {"mX": 4, "mY": 0}, {"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 0},
+        {"mX": 0, "mY": 1}, {"mX": 1, "mY": 1}, {"mX": 2, "mY": 1}, {"mX": 3, "mY": 1}, {"mX": 4, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 1},
+        {"mX": 0, "mY": 2}, {"mX": 1, "mY": 2}, {"mX": 2, "mY": 2}, {"mX": 3, "mY": 2}, {"mX": 4, "mY": 2}, {"mX": 5, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2},
+        {"mX": 0, "mY": 3}, {"mX": 1, "mY": 3}, {"mX": 2, "mY": 3}, {"mX": 3, "mY": 3}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 3},
+        {"mX": 0, "mY": 4}, {"mX": 1, "mY": 4}, {"mX": 2, "mY": 4}, {"mX": 3, "mY": 4}, {"mX": 4, "mY": 4}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 4}
+    ],
+    "DisplacePlants": true,
+    "RandomPlacement": false,
+    "ShakeScreen": true,
+    "GridClassesToDestroy": []
+}},
+{"aliases":["JMPanic_12345_Effects"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(dino_stampede_ankylo@GridItemTypes)",
+        "RTID(dino_stampede_ankylo2@GridItemTypes)",
+        "RTID(dino_stampede_ankylo3@GridItemTypes)",
+        "RTID(dino_stampede_ankylo4@GridItemTypes)",
+        "RTID(dino_stampede_ankylo5@GridItemTypes)"
+    ],
+    "WaveStartMessage": "Jurassic Panic!",
+    "ZombieSpawnWaitTime": "0",
+    "Zombies": [
+        {"Type":"RTID(idiot@ZombieTypes)"},
+        {"Type":"RTID(idiot@ZombieTypes)"},
+        {"Type":"RTID(idiot@ZombieTypes)"},
+        {"Type":"RTID(idiot@ZombieTypes)"},
+        {"Type":"RTID(idiot@ZombieTypes)"}
+    ]
+}},
+        {
+            "objclass": "EightiesStageProperties",
+            "aliases": [
+                "DiscoStageNight"
+            ],
+            "objdata": {
+                "ResourceGroupNames": [
+                    "DelayLoad_Background_LostCity_Compressed",
+                    "DelayLoad_Background_Eighties_Compressed",
+                    "Dirt_Spawn_Grass",
+                    "AudioEighties",
+                    "EightiesGroansAudio",
+                    "Eighties_Background_Effects"
+                ],
+                "GroupsToUnloadForAds": [
+                    "DelayLoad_Background_Eighties_Compressed"
+                ],
+                "StagePrefix": "lostcity",
+                "BackgroundResourceGroup": "DelayLoad_Background_LostCity_Compressed",
+                "BackgroundImagePrefix": "IMAGE_BACKGROUNDS_LOST_CITY_NIGHT",
+                "LevelPowerupSet": "LevelPowerupsDefault",
+                "BasicZombieTypeName": "eighties",
+                "FlagZombieTypeName": "eighties_flag",
+                "Armor1ZombieTypeName": "eighties_armor1",
+                "Armor2ZombieTypeName": "eighties_armor2",
+                "RailcartDefaultTypeName": "railcart_egypt",
+                "GravestoneDefaultTypeName": "gravestone_egypt",
+                "DirtSpawnEffectName": "POPANIM_EFFECTS_DIRT_SPAWN_GRASS",
+                "MusicSuffix": "Eighties",
+                "DisabledStreetCells": [
+                    {
+                        "mX": 0,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 9
+                    }
+                ]
+            }
+        },
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"lostcity_eighties_arcade"
+			],
+			"objdata": {
+				"TypeName": "eighties_arcade",
+				"ZombieClass": "ZombieEightiesArcade",
+				"Properties": "RTID(ZombieLostEightiesArcade@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieEightiesArcadeGroup"
+				],
+				"AudioGroups": [
+					"ZombieEightiesArcadeAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_EightiesArcade",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_80S_ARCADE",
+				"HomeWorld": "eighties",
+				"IsBasicZombie": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombieLostEightiesArcade"
+			],
+			"objclass": "ZombieEightiesArcadeProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieLostEightiesArcadePushAction@CurrentLevel)"
+				],
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 490,
+				"JamStyle": "jam_8bit",
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"Speed": 0.19,
+				"WavePointCost": 600,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombiePushGridItemActionDefinition",
+			"aliases": [
+				"ZombieLostEightiesArcadePushAction"
+			],
+			"objdata": {
+				"PushableGridItems": {
+					"ListType": "includelist",
+					"List": [
+						"eightiesarcadecabinet"
+					]
+				},
+				"PushBlockingGridItems": {
+					"ListType": "excludelist",
+					"List": [
+						"lilypad",
+						"powertile_alpha",
+						"powertile_beta",
+						"powertile_gamma",
+						"powertile_delta",
+						"powertile_epsilon",
+						"sap",
+						"plantfoodsap",
+						"lava",
+						"goldtile",
+						"wisp",
+						"bombegranateseeds",
+						"score_2x_tile",
+						"score_3x_tile",
+						"score_5x_tile",
+						"poison_tile",
+						"tent"
+					]
+				},
+				"NotSquashedPlants": {
+					"ListType": "includelist",
+					"List": [
+						"potatomine",
+						"primalpotatomine",
+						"potatochip"
+					]
+				},
+				"RelocationDuration": 0.5,
+				"PushRectangle": {
+					"mX": 15,
+					"mY": 0,
+					"mWidth": 65,
+					"mHeight": 95
+				}
+			}
+		}
+    ],
+    "version": 1
+}

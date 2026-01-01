@@ -1,0 +1,3983 @@
+{
+	"#comment": "Saucy Changes: Only one selectable seed slot. Added 10 gold tiles, pre-picked thyme warp and pre-planted iceberg lettuce. 1000 starting sun. | maw waz here",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"StartingSun": 1000,
+				"Description": "{PLAYER}'s search for the chosen one",
+				"DisablePlantBoosts": true,	
+				"SuppressPlantfoodPurchase": true,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(GoldTiles@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ChallengeModule@.)",
+					"RTID(IPP@CurrentLevel)",
+					"RTID(Gravestones@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
+				"Name": "Saucy Challenge - The True Chosen One",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"StageModule": "RTID(ModernStage@LevelModules)"
+			}
+		},
+		{
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(OneSeedSlot@.)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases":["OneSeedSlot"],
+            "objclass": "StarChallengeBeatTheLevelProps",
+            "objdata": {
+            "Description": "Survive with only one available seed slot",
+            "DescriptiveName": "Custom Objective"
+            }
+        },
+		{
+			"aliases": [
+				"IPP"
+			],
+			"objclass": "InitialPlantProperties",
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"TypeName": "iceburg"
+					}
+				]
+			}
+		},
+        {
+            "aliases": [
+                "Gravestones"
+            ],
+            "objclass": "GravestoneProperties",
+            "objdata": {
+                "ForceSpawnData": [
+                    {
+                        "GridX": 6,
+                        "GridY": 0,
+                        "TypeName": "slider_down_modern"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 1,
+                        "TypeName": "slider_down_modern"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 4,
+                        "TypeName": "slider_up_modern"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 3,
+                        "TypeName": "slider_up_modern"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 0,
+                        "TypeName": "tar"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 2,
+                        "TypeName": "tar"
+                    }
+                ]
+            }
+        },
+		{
+			"aliases": [
+				"GoldTiles"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 0,
+						"GridY": 0,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 1,
+						"GridY": 0,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 0,
+						"GridY": 1,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 0,
+						"GridY": 3,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 1,
+						"GridY": 3,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 0,
+						"GridY": 4,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 1,
+						"GridY": 4,
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		},
+{"aliases": ["SeedBank"],
+"objclass": "SeedBankProperties",
+"objdata": {
+    "OverrideSeedSlotsCount": 2,
+    "PresetPlantList": [
+		{
+			"PlantType": "thymewarp",
+			"Level": -1
+		}
+    ],
+    "PlantIncludeList": [
+        "sunflower",
+        "peashooter",
+        "wallnut",
+        "tallnut",
+        "explodeonut",
+        "bonkchoy",
+        "cabbagepult",
+        "melonpult",
+        "cherry_bomb",
+        "coconutcannon",
+        "gravebuster",
+        "iceburg",
+        "laser_bean",
+        "potatomine",
+        "repeater",
+        "snapdragon",
+        "spikeweed",
+        "threepeater",
+        "torchwood",
+        "kernelpult",
+        "springbean",
+        "snowpea",
+        "chilibean",
+        "splitpea",
+        "lightningreed",
+        "peapod",
+        "magnifyinggrass",
+        "bloomerang",
+        "holonut",
+        "empea",
+        "blover",
+        "starfruit",
+        "jalapeno",
+        "wintermelon",
+        "twinsunflower",
+        "spikerock",
+        "squash",
+        "citron",
+        "powerplant",
+        "sunshroom",
+        "puffshroom",
+        "fumeshroom",
+        "sunbean",
+        "magnetshroom",
+        "hypnoshroom",
+        "peanut",
+        "firepeashooter",
+        "lilypad",
+        "bowlingbulb",
+        "homingthistle",
+        "banana",
+        "chomper",
+        "guacodile",
+        "tanglekelp",
+        "ghostpepper",
+        "sweetpotato",
+        "sapfling",
+        "hurrikale",
+        "xshot",
+        "chardguard",
+        "pepperpult",
+        "kiwibeast",
+        "hotpotato",
+        "stunion",
+        "dandelion",
+        "redstinger",
+        "goldleaf",
+        "akee",
+        "lavaguava",
+        "toadstool",
+        "endurian",
+        "stallia",
+        "strawburst",
+        "cactus",
+        "phatbeet",
+        "thymewarp",
+        "celerystalker",
+        "electricblueberry",
+        "sporeshroom",
+        "garlic",
+        "intensivecarrot",
+        "jackolantern",
+        "primalpeashooter",
+        "grapeshot",
+        "primalwallnut",
+        "perfumeshroom",
+        "coldsnapdragon",
+        "primalsunflower",
+        "primalpotatomine",
+        "shrinkingviolet",
+        "moonflower",
+        "nightshade",
+        "shadowshroom",
+        "bloominghearts",
+        "escaperoot",
+        "grimrose",
+        "dusklobber",
+        "goldbloom",
+        "electriccurrant",
+        "aloe",
+        "wasabiwhip",
+        "applemortar",
+        "bombegranate",
+        "missiletoe",
+        "parsnip",
+        "witchhazel",
+        "hotdate",
+        "caulipower",
+        "solartomato",
+        "electricpeashooter",
+        "hollyknight",
+        "shadowpeashooter",
+        "poisonpeashooter",
+        "slingpea",
+        "snappea",
+        "zoybeanpod",
+        "dazeychain",
+        "electricitea",
+        "blastberry",
+        "imppear",
+        "pumpkin",
+        "icebloom",
+        "dartichoke",
+        "ultomato",
+        "gumnut",
+        "shinevine",
+        "tumbleweed",
+        "murkadamia",
+        "puffball",
+        "stickybombrice",
+        "olivepit",
+        "turkeypult",
+        "boingsetta",
+        "hocus",
+        "gloomvine",
+        "draftodil",
+        "boomflower",
+        "pvine",
+        "inferno",
+        "solarsage",
+        "noctarine",
+        "iceweed",
+        "unused_45",
+        "unused_47",
+        "unused_43",
+        "unused_48",
+        "unused_49",
+        "unused_46",
+        "headbutter",
+        "teleportatomine"
+    ],
+    "PlantExcludeList": [
+        
+    ],
+    "SelectionMethod": "chooser"
+}},
+		{
+			"aliases": [
+				"ColumnMinigame"
+			],
+			"objclass": "ColumnMinigameProperties",
+			"objdata": {}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		},
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 10,
+                "WaveCount": 40,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)",
+                        "RTID(DinoTimeEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)",
+                        "RTID(DinoTimeEvent3@CurrentLevel)",
+                        "RTID(GravestoneEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)",
+                        "RTID(StormEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)",
+                        "RTID(DinoTimeEvent3@CurrentLevel)",
+                        "RTID(DinoTimeEvent15@CurrentLevel)",
+                        "RTID(GravestoneEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)",
+                        "RTID(DinoTimeEvent1@CurrentLevel)",
+                        "RTID(DinoTimeEvent6@CurrentLevel)",
+                        "RTID(GraveSpawnEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9@CurrentLevel)",
+                        "RTID(DinoTimeEvent5@CurrentLevel)",
+                        "RTID(DinoTimeEvent9@CurrentLevel)",
+                        "RTID(DinoTimeEvent10@CurrentLevel)",
+                        "RTID(GravestoneEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave10@CurrentLevel)",
+                        "RTID(StormEvent2@CurrentLevel)",
+                        "RTID(DinoTimeEvent2@CurrentLevel)",
+                        "RTID(GraveSpawnEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave11@CurrentLevel)",
+                        "RTID(DinoTimeEvent5@CurrentLevel)",
+                        "RTID(DinoTimeEvent15@CurrentLevel)",
+                        "RTID(GravestoneEvent2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave12@CurrentLevel)",
+                        "RTID(DinoTimeEvent10@CurrentLevel)",
+                        "RTID(GraveSpawnEvent2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave13@CurrentLevel)",
+                        "RTID(DinoTimeEvent3@CurrentLevel)",
+                        "RTID(DinoTimeEvent6@CurrentLevel)",
+                        "RTID(DinoTimeEvent12@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave14@CurrentLevel)",
+                        "RTID(StormEvent3@CurrentLevel)",
+                        "RTID(DinoTimeEvent8@CurrentLevel)",
+                        "RTID(DinoTimeEvent9@CurrentLevel)",
+                        "RTID(DinoTimeEvent14@CurrentLevel)",
+                        "RTID(GravestoneEvent2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave15@CurrentLevel)",
+                        "RTID(DinoTimeEvent4@CurrentLevel)",
+                        "RTID(DinoTimeEvent10@CurrentLevel)",
+                        "RTID(DinoTimeEvent15@CurrentLevel)",
+                        "RTID(GraveSpawnEvent2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave16@CurrentLevel)",
+                        "RTID(DinoTimeEvent3@CurrentLevel)",
+                        "RTID(DinoTimeEvent8@CurrentLevel)",
+                        "RTID(DinoTimeEvent14@CurrentLevel)",
+                        "RTID(GraveSpawnEvent2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave17@CurrentLevel)",
+                        "RTID(DinoTimeEvent2@CurrentLevel)",
+                        "RTID(DinoTimeEvent14@CurrentLevel)",
+                        "RTID(GravestoneEvent2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave18@CurrentLevel)",
+                        "RTID(DinoTimeEvent1@CurrentLevel)",
+                        "RTID(DinoTimeEvent12@CurrentLevel)",
+                        "RTID(GravestoneEvent2@CurrentLevel)",
+                        "RTID(GraveSpawnEvent2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave19@CurrentLevel)",
+                        "RTID(StormEvent4@CurrentLevel)",
+                        "RTID(DinoTimeEvent5@CurrentLevel)",
+                        "RTID(DinoTimeEvent11@CurrentLevel)",
+                        "RTID(DinoTimeEvent12@CurrentLevel)",
+                        "RTID(DinoTimeEvent13@CurrentLevel)",
+                        "RTID(GraveSpawnEvent2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave20@CurrentLevel)",
+                        "RTID(DinoTimeEvent8@CurrentLevel)",
+                        "RTID(DinoTimeEvent16@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave21@CurrentLevel)",
+                        "RTID(DinoTimeEvent6@CurrentLevel)",
+                        "RTID(DinoTimeEvent9@CurrentLevel)",
+                        "RTID(DinoTimeEvent10@CurrentLevel)",
+                        "RTID(GravestoneEvent3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave22@CurrentLevel)",
+                        "RTID(StormEvent5@CurrentLevel)",
+                        "RTID(DinoTimeEvent8@CurrentLevel)",
+                        "RTID(GraveSpawnEvent3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave23@CurrentLevel)",
+                        "RTID(DinoTimeEvent5@CurrentLevel)",
+                        "RTID(DinoTimeEvent13@CurrentLevel)",
+                        "RTID(GravestoneEvent3@CurrentLevel)",
+                        "RTID(GraveSpawnEvent3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave24@CurrentLevel)",
+                        "RTID(StormEvent1@CurrentLevel)",
+                        "RTID(DinoTimeEvent16@CurrentLevel)",
+                        "RTID(GravestoneEvent3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave25@CurrentLevel)",
+                        "RTID(DinoTimeEvent4@CurrentLevel)",
+                        "RTID(DinoTimeEvent10@CurrentLevel)",
+                        "RTID(GraveSpawnEvent3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave26@CurrentLevel)",
+                        "RTID(StormEvent4@CurrentLevel)",
+                        "RTID(DinoTimeEvent13@CurrentLevel)",
+                        "RTID(GravestoneEvent3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave27@CurrentLevel)",
+                        "RTID(DinoTimeEvent8@CurrentLevel)",
+                        "RTID(GraveSpawnEvent3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave28@CurrentLevel)",
+                        "RTID(StormEvent6@CurrentLevel)",
+                        "RTID(DinoTimeEvent9@CurrentLevel)",
+                        "RTID(DinoTimeEvent17@CurrentLevel)",
+                        "RTID(GravestoneEvent3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave29@CurrentLevel)",
+                        "RTID(DinoTimeEvent12@CurrentLevel)",
+                        "RTID(DinoTimeEvent16@CurrentLevel)",
+                        "RTID(GraveSpawnEvent4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave30@CurrentLevel)",
+                        "RTID(DinoTimeEvent6@CurrentLevel)",
+                        "RTID(DinoTimeEvent10@CurrentLevel)",
+                        "RTID(DinoTimeEvent13@CurrentLevel)",
+                        "RTID(GravestoneEvent4@CurrentLevel)",
+                        "RTID(GraveSpawnEvent4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave31@CurrentLevel)",
+                        "RTID(StormEvent2@CurrentLevel)",
+                        "RTID(DinoTimeEvent8@CurrentLevel)",
+                        "RTID(DinoTimeEvent11@CurrentLevel)",
+                        "RTID(GraveSpawnEvent4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave32@CurrentLevel)",
+                        "RTID(DinoTimeEvent1@CurrentLevel)",
+                        "RTID(DinoTimeEvent6@CurrentLevel)",
+                        "RTID(DinoTimeEvent11@CurrentLevel)",
+                        "RTID(GravestoneEvent4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave33@CurrentLevel)",
+                        "RTID(DinoTimeEvent2@CurrentLevel)",
+                        "RTID(DinoTimeEvent5@CurrentLevel)",
+                        "RTID(DinoTimeEvent17@CurrentLevel)",
+                        "RTID(GraveSpawnEvent4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave34@CurrentLevel)",
+                        "RTID(StormEvent5@CurrentLevel)",
+                        "RTID(DinoTimeEvent3@CurrentLevel)",
+                        "RTID(GravestoneEvent4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave35@CurrentLevel)",
+                        "RTID(DinoTimeEvent4@CurrentLevel)",
+                        "RTID(DinoTimeEvent8@CurrentLevel)",
+                        "RTID(DinoTimeEvent17@CurrentLevel)",
+                        "RTID(GraveSpawnEvent4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave36@CurrentLevel)",
+                        "RTID(StormEvent6@CurrentLevel)",
+                        "RTID(DinoTimeEvent7@CurrentLevel)",
+                        "RTID(DinoTimeEvent11@CurrentLevel)",
+                        "RTID(DinoTimeEvent15@CurrentLevel)",
+                        "RTID(GravestoneEvent4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave37@CurrentLevel)",
+                        "RTID(StormEvent1@CurrentLevel)",
+                        "RTID(DinoTimeEvent4@CurrentLevel)",
+                        "RTID(DinoTimeEvent9@CurrentLevel)",
+                        "RTID(GravestoneEvent4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave38@CurrentLevel)",
+                        "RTID(DinoTimeEvent7@CurrentLevel)",
+                        "RTID(DinoTimeEvent8@CurrentLevel)",
+                        "RTID(DinoTimeEvent11@CurrentLevel)",
+                        "RTID(GraveSpawnEvent4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave39@CurrentLevel)",
+                        "RTID(StormEvent4@CurrentLevel)",
+                        "RTID(DinoTimeEvent13@CurrentLevel)",
+                        "RTID(GravestoneEvent4@CurrentLevel)",
+                        "RTID(GravestoneEvent4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave40@CurrentLevel)",
+                        "RTID(DinoTimeEvent9@CurrentLevel)",
+                        "RTID(DinoTimeEvent17@CurrentLevel)",
+                        "RTID(DinoTimeEvent15@CurrentLevel)",
+                        "RTID(GraveSpawnEvent4@CurrentLevel)",
+                        "RTID(GraveSpawnEvent4@CurrentLevel)",
+                        "RTID(GraveSpawnEvent4@CurrentLevel)"
+                    ]
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "GraveSpawnEvent1"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                        "RTID(gravestone_dark@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "GraveSpawnEvent2"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                        "RTID(gravestone_dark@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "GraveSpawnEvent3"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                        "RTID(gravestone_dark@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "GraveSpawnEvent4"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                        "RTID(gravestone_dark@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "GraveSpawnEvent5"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                        "RTID(gravestone_dark@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "StormEvent1"
+            ],
+            "objclass": "StormZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": "8",
+                "ColumnStart": "5",
+                "GroupSize": "1",
+                "TimeBetweenGroups": "1",
+                "Type": "Sandstorm",
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "StormEvent2"
+            ],
+            "objclass": "StormZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": "7",
+                "ColumnStart": "4",
+                "GroupSize": "1",
+                "TimeBetweenGroups": "1",
+                "Type": "Sandstorm",
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "StormEvent3"
+            ],
+            "objclass": "StormZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": "6",
+                "ColumnStart": "4",
+                "GroupSize": "1",
+                "TimeBetweenGroups": "1",
+                "Type": "Sandstorm",
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "StormEvent4"
+            ],
+            "objclass": "StormZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": "5",
+                "ColumnStart": "3",
+                "GroupSize": "1",
+                "TimeBetweenGroups": "1",
+                "Type": "snowstorm",
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "StormEvent5"
+            ],
+            "objclass": "StormZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": "8",
+                "ColumnStart": "3",
+                "GroupSize": "1",
+                "TimeBetweenGroups": "1",
+                "Type": "Sandstorm",
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "StormEvent6"
+            ],
+            "objclass": "StormZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": "5",
+                "ColumnStart": "2",
+                "GroupSize": "1",
+                "TimeBetweenGroups": "1",
+                "Type": "snowstorm",
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave2"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave4"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave6"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave7"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave8"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave9"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave10"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave11"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave12"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave13"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave14"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave15"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave16"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave17"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave18"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave19"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave20"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave21"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave22"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave23"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave24"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave25"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave26"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave27"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave28"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave29"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave30"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave31"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave32"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave33"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave34"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave35"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave36"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave37"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave38"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave39"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave40"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(dino_bully_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "GravestoneEvent1"
+            ],
+            "objclass": "SpawnGravestonesWaveActionProps",
+            "objdata": {
+                "GravestonePool": [
+                    {
+                        "Count": 2,
+                        "Type": "RTID(gravestone_dark@GridItemTypes)"
+                    }
+                ],
+                "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+                "SpawnPositionsPool": [
+                    {
+                        "mX": 4,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 4
+                    }
+                ],
+                "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
+            }
+        },
+        {
+            "aliases": [
+                "GravestoneEvent2"
+            ],
+            "objclass": "SpawnGravestonesWaveActionProps",
+            "objdata": {
+                "GravestonePool": [
+                    {
+                        "Count": 4,
+                        "Type": "RTID(gravestone_dark@GridItemTypes)"
+                    }
+                ],
+                "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+                "SpawnPositionsPool": [
+                    {
+                        "mX": 4,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 4
+                    }
+                ],
+                "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
+            }
+        },
+        {
+            "aliases": [
+                "GravestoneEvent3"
+            ],
+            "objclass": "SpawnGravestonesWaveActionProps",
+            "objdata": {
+                "GravestonePool": [
+                    {
+                        "Count": 6,
+                        "Type": "RTID(gravestone_dark@GridItemTypes)"
+                    }
+                ],
+                "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+                "SpawnPositionsPool": [
+                    {
+                        "mX": 4,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 4
+                    }
+                ],
+                "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
+            }
+        },
+        {
+            "aliases": [
+                "GravestoneEvent4"
+            ],
+            "objclass": "SpawnGravestonesWaveActionProps",
+            "objdata": {
+                "GravestonePool": [
+                    {
+                        "Count": 8,
+                        "Type": "RTID(gravestone_dark@GridItemTypes)"
+                    }
+                ],
+                "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+                "SpawnPositionsPool": [
+                    {
+                        "mX": 4,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 4
+                    }
+                ],
+                "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
+            }
+        },
+		{
+			"aliases": [
+				"DinoTimeEvent1"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 4,
+				"DinoType": "raptor"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent2"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 2,
+				"DinoType": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent3"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 3,
+				"DinoType": "ptero"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent4"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 2,
+				"DinoType": "raptor"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent5"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 2,
+				"DinoType": "ankylo"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent6"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 4,
+				"DinoType": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent7"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 1,
+				"DinoType": "stego"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent8"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 0,
+				"DinoType": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent9"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 1,
+				"DinoType": "stego"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent10"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 3,
+				"DinoType": "stego"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent11"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 2,
+				"DinoType": "ankylo"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent12"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 1,
+				"DinoType": "ptero"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent13"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 0,
+				"DinoType": "ptero"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent14"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 0,
+				"DinoType": "stego"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent15"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 3,
+				"DinoType": "stego"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent16"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 2,
+				"DinoType": "stego"
+			}
+		},
+		{
+			"aliases": [
+				"DinoTimeEvent17"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 0,
+				"DinoType": "stego"
+			}
+		}
+	],
+	"version": 1
+}

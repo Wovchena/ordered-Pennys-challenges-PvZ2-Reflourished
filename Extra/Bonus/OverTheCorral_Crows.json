@@ -1,0 +1,954 @@
+{"#comment": "Penny's Challenge - Over The Corral - KrisJ",
+"objects": [{
+    "objclass": "LevelDefinition",
+    "objdata": {
+    "Description": "{PLAYER}'s run through Penny's Challenge!",
+    "LevelPowerupSet": "LevelPowerupsDisabled",
+    "SuppressPlantfoodPurchase": true,
+    "DisablePlantBoosts": true,
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "Modules": [
+        "RTID(StandardIntro@LevelModules)",
+        "RTID(Rails@.)",
+        "RTID(DefaultSunDropper@LevelModules)",
+        "RTID(ChallengeModule@.)",
+        "RTID(Escalation@.)",
+        "RTID(NewWaves@.)",
+        "RTID(ChallengeSeedBank@LevelModules)",
+        "RTID(ZombiesDeadWinCon@LevelModules)",
+        "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+    "Name": "Penny's Challenge - Over The Corral",
+    "StageModule": "RTID(HarvestStage@LevelModules)"
+}},
+{"aliases":["ChallengeModule"],
+"objclass": "StarChallengeModuleProperties",
+"objdata": {
+    "Challenges": [[
+        "RTID(FlowerLine@.)",
+        "RTID(IPP_Protect@.)"
+    ]],
+    "ChallengesAlwaysAvailable": true
+}},
+{"aliases":["FlowerLine"],
+"objclass": "StarChallengeZombieDistanceProps",
+"objdata": { "TargetDistance": 7 }
+},
+{"aliases":["IPP_Protect"],
+"objclass": "ProtectThePlantChallengeProperties",
+"objdata": {
+    "Plants": [
+        {"GridX": 7, "GridY": 0, "Level": 0, "PlantType":"holonut"},
+        {"GridX": 8, "GridY": 1, "Level": 0, "PlantType":"holonut"},
+        {"GridX": 8, "GridY": 3, "Level": 0, "PlantType":"holonut"},
+        {"GridX": 7, "GridY": 4, "Level": 0, "PlantType":"holonut"}
+    ], 
+    "MustProtectCount": 4
+}},
+{"aliases": ["Rails"],
+"objclass": "RailcartProperties",
+"objdata": {
+    "RailcartType": "",
+        "Railcarts": [
+            {"Column": 7, "Row": 0},
+            {"Column": 1, "Row": 1},
+            {"Column": 8, "Row": 1},
+            {"Column": 1, "Row": 3},
+            {"Column": 8, "Row": 3},
+            {"Column": 7, "Row": 4}
+        ],
+        "Rails": [
+            {"Column": 1, "RowEnd": 4, "RowStart": 0},
+            {"Column": 7, "RowEnd": 9, "RowStart": 0}
+        ]
+}},
+{"aliases": ["Escalation"],
+"objclass": "LevelEscalationModuleProperties",
+"objdata": {
+    "FlagCount": 5,
+    "WavesPerFlag": 8,
+    "WaveManagerProps": "RTID(WaveManager@.)"
+}},
+{"aliases": ["NewWaves"],
+"objclass": "WaveManagerModuleProperties",
+"objdata": {}
+},
+{"aliases": ["WaveManager"],
+"objclass": "WaveManagerProperties",
+"objdata": {
+    "FlagWaveInterval": 8,
+    "WaveCount": 40,
+    "SuppressFlagZombie": true,
+    "MinNextWaveHealthPercentage": 0.3,
+    "MaxNextWaveHealthPercentage": 0.35,
+    "Waves": [
+        ["RTID(Wave1@.)", "RTID(SpidRain1@.)"],
+        ["RTID(Wave2@.)"],
+        ["RTID(Wave3@.)"],
+        ["RTID(SpidRain4@.)"],
+        ["RTID(Wave5@.)", "RTID(Scarecrow5@.)"],
+        ["RTID(Wave6@.)"],
+        ["RTID(Wave7@.)", "RTID(SpidRain7@.)"],
+        ["RTID(Wave8@.)", "RTID(Scarecrow8@.)"],
+        ["RTID(Wave9@.)"],
+        ["RTID(Wave10@.)", "RTID(SpidRain10@.)"],
+        ["RTID(Wave11@.)", "RTID(Scarecrow11@.)"],
+        ["RTID(Wave12@.)", "RTID(SpidRain12@.)"],
+        ["RTID(Wave13@.)"],
+        ["RTID(Wave14@.)", "RTID(SpidRain14@.)"],
+        ["RTID(Wave15@.)", "RTID(Scarecrow15@.)"],
+        ["RTID(Wave16@.)", "RTID(Scarecrow16@.)"],
+        ["RTID(Wave17@.)"],
+        ["RTID(Wave18@.)", "RTID(SpidRain18@.)"],
+        ["RTID(Wave19@.)", "RTID(Scarecrow19@.)"],
+        ["RTID(Wave20@.)", "RTID(SpidRain20@.)"],
+        ["RTID(Wave21@.)"],
+        ["RTID(Wave22@.)", "RTID(Scarecrow22@.)"],
+        ["RTID(Wave23@.)"],
+        ["RTID(Wave24@.)", "RTID(Scarecrow24@.)"],
+        ["RTID(Wave25@.)", "RTID(SpidRain25@.)"],
+        ["RTID(Wave26@.)", "RTID(Scarecrow26@.)"],
+        ["RTID(Wave27@.)"],
+        ["RTID(Wave28@.)", "RTID(SpidRain28@.)"],
+        ["RTID(Wave29@.)"],
+        ["RTID(Wave30@.)"],
+        ["RTID(Wave31@.)", "RTID(Scarecrow31@.)"],
+        ["RTID(Wave32@.)"],
+        ["RTID(Wave33@.)"],
+        ["RTID(Wave34@.)", "RTID(SpidRain34@.)"],
+        ["RTID(Wave35@.)", "RTID(Scarecrow35@.)"],
+        ["RTID(Wave36@.)"],
+        ["RTID(Wave37@.)", "RTID(SpidRain37@.)", "RTID(SpidRain37_2@.)"],
+        ["RTID(Wave38@.)", "RTID(Scarecrow38@.)"],
+        ["RTID(Wave39@.)"],
+        ["RTID(Wave40@.)", "RTID(Scarecrow40@.)", "RTID(SpidRain40@.)"]
+    ]
+}},
+{"aliases":["Wave1"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave3"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "5", "Type": "RTID(halloween_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave5"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave6"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave7"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave8"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zcorp_racer_chair@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(tutorial_swashbuckler_rally@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave9"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave10"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(west_bull_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave11"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave12"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(zcorp_racer_chair@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zcorp_racer_chair@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave13"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave14"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(cannon@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave15"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zcorp_racer_chair@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zcorp_racer_chair@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave16"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Type": "RTID(tutorial_swashbuckler_rally@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave17"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave18"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zcorp_racer_chair@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(cannon@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave19"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "4", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave20"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zcorp_racer_chair@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave21"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(cannon@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave22"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zcorp_racer_chair@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave23"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave24"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(tutorial_swashbuckler_rally@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave25"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave26"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(west_bull_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave27"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave28"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave29"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave30"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave31"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave32"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "4", "Type": "RTID(tutorial_swashbuckler_rally@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zcorp_racer_chair@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave33"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(cannon@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave34"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave35"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave36"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zcorp_racer_chair@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zcorp_racer_chair@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave37"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(cannon@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave38"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave39"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(cannon@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(steam_gentleman@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(cannon@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave40"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "Zombies": [
+        {"Row": "5", "Type": "RTID(tutorial_swashbuckler_rally@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_relichunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+{"aliases":["SpidRain1"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 6,
+    "ColumnEnd": 7,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.5",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "harvest_imp",
+    "SpiderCount": 1,
+    "WaveStartMessage": "Feather Frenzy!"
+}},
+{"aliases":["SpidRain4"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 6,
+    "ColumnEnd": 7,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "2.5",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "harvest_imp",
+    "SpiderCount": 3,
+    "WaveStartMessage": "Feather Frenzy!"
+}},
+{"aliases":["Scarecrow5"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(pumpkin_scarecrow@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 1}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["SpidRain7"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 6,
+    "ColumnEnd": 7,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "2.5",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "harvest_eggshell",
+    "SpiderCount": 1,
+    "WaveStartMessage": "Eggstravagaza!"
+}},
+{"aliases":["Scarecrow8"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(pumpkin_scarecrow@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["SpidRain10"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 6,
+    "ColumnEnd": 7,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "2.5",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "harvest_imp",
+    "SpiderCount": 5,
+    "WaveStartMessage": "Feather Frenzy!"
+}},
+{"aliases":["Scarecrow11"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(pumpkin_scarecrow@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["SpidRain12"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 6,
+    "ColumnEnd": 7,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "2.5",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "harvest_eggshell",
+    "SpiderCount": 2,
+    "WaveStartMessage": "Eggstravagaza!"
+}},
+{"aliases":["SpidRain14"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 5,
+    "ColumnEnd": 7,
+    "GroupSize": 2,
+    "TimeBetweenGroups": "2.5",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "harvest_imp",
+    "SpiderCount": 8,
+    "WaveStartMessage": "Feather Frenzy!"
+}},
+{"aliases":["Scarecrow15"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(pumpkin_scarecrow@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Scarecrow16"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(pumpkin_scarecrow@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["SpidRain18"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 6,
+    "ColumnEnd": 7,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "2.5",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "harvest_eggshell",
+    "SpiderCount": 4,
+    "WaveStartMessage": "Eggstravagaza!"
+}},
+{"aliases":["Scarecrow19"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 2, "Type": "RTID(pumpkin_scarecrow@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 1}, {"mX": 6, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["SpidRain20"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 4,
+    "ColumnEnd": 6,
+    "GroupSize": 2,
+    "TimeBetweenGroups": "2",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "harvest_imp",
+    "SpiderCount": 10,
+    "WaveStartMessage": "Feather Frenzy!"
+}},
+{"aliases":["Scarecrow22"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 2, "Type": "RTID(pumpkin_scarecrow@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 6, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Scarecrow24"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 2, "Type": "RTID(pumpkin_scarecrow@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 1}, {"mX": 6, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["SpidRain25"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 5,
+    "ColumnEnd": 7,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "2",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "harvest_eggshell",
+    "SpiderCount": 6,
+    "WaveStartMessage": "Eggstravagaza!"
+}},
+{"aliases":["Scarecrow26"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 2, "Type": "RTID(pumpkin_scarecrow@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 3}, {"mX": 6, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["SpidRain28"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 4,
+    "ColumnEnd": 6,
+    "GroupSize": 3,
+    "TimeBetweenGroups": "2",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "harvest_imp",
+    "SpiderCount": 12,
+    "WaveStartMessage": "Feather Frenzy!"
+}},
+{"aliases":["Scarecrow31"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 2, "Type": "RTID(pumpkin_scarecrow@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 6, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["SpidRain34"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 5,
+    "ColumnEnd": 7,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "2",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "harvest_eggshell",
+    "SpiderCount": 8,
+    "WaveStartMessage": "Eggstravagaza!"
+}},
+{"aliases":["Scarecrow35"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 3, "Type": "RTID(pumpkin_scarecrow@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 6, "mY": 4}, {"mX": 0, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["SpidRain37"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 1,
+    "ColumnEnd": 3,
+    "GroupSize": 3,
+    "TimeBetweenGroups": "2",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "harvest_imp",
+    "SpiderCount": 6,
+    "WaveStartMessage": "Feather Frenzy!"
+}},
+{"aliases":["SpidRain37_2"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 4,
+    "ColumnEnd": 6,
+    "GroupSize": 3,
+    "TimeBetweenGroups": "2",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "harvest_imp",
+    "SpiderCount": 12,
+    "WaveStartMessage": "Feather Frenzy!"
+}},
+{"aliases":["Scarecrow38"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 3, "Type": "RTID(pumpkin_scarecrow@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 1}, {"mX": 6, "mY": 2}, {"mX": 6, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Scarecrow40"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 5, "Type": "RTID(pumpkin_scarecrow@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 6, "mY": 1}, {"mX": 6, "mY": 2}, {"mX": 6, "mY": 3}, {"mX": 6, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["SpidRain40"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 4,
+    "ColumnEnd": 7,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "2",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "harvest_eggshell",
+    "SpiderCount": 10,
+    "WaveStartMessage": "Eggstravagaza!"
+}},
+        {}
+    ],
+    "version": 1
+}

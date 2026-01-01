@@ -1,0 +1,3360 @@
+{
+	"#comment": "Penny's Challenge - Handcar Havoc",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s run through Penny's Challenge!",
+				"FixedPlantLevel": 1,
+				"SuppressPlantfoodPurchase": true,
+				"DisablePlantBoosts": true,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(GridItems@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(Rails@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
+				"Name": "Penny's Challenge - Handcar Havoc",
+				"StageModule": "RTID(WestStage@LevelModules)"
+			}
+		},
+    {
+      "aliases": [
+        "GridItems"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 3,
+            "GridY": 0,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 3,
+            "GridY": 1,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 3,
+            "GridY": 2,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 3,
+            "GridY": 3,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 3,
+            "GridY": 4,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 4,
+            "GridY": 0,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 4,
+            "GridY": 1,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 4,
+            "GridY": 2,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 4,
+            "GridY": 3,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 4,
+            "GridY": 4,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 5,
+            "GridY": 0,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 5,
+            "GridY": 1,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 5,
+            "GridY": 2,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 5,
+            "GridY": 3,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 5,
+            "GridY": 4,
+            "TypeName": "crater"
+          },
+          {
+            "GridX": 0,
+            "GridY": 0,
+            "TypeName": "carnie_card_freeze"
+          },
+          {
+            "GridX": 0,
+            "GridY": 1,
+            "TypeName": "carnie_card_basic"
+          },
+          {
+            "GridX": 0,
+            "GridY": 2,
+            "TypeName": "carnie_card_freeze"
+          },
+          {
+            "GridX": 0,
+            "GridY": 3,
+            "TypeName": "carnie_card_basic"
+          },
+          {
+            "GridX": 0,
+            "GridY": 4,
+            "TypeName": "carnie_card_freeze"
+          },
+          {
+            "GridX": 1,
+            "GridY": 0,
+            "TypeName": "carnie_card_basic"
+          },
+          {
+            "GridX": 1,
+            "GridY": 1,
+            "TypeName": "carnie_card_god"
+          },
+          {
+            "GridX": 1,
+            "GridY": 3,
+            "TypeName": "carnie_card_sunify"
+          },
+          {
+            "GridX": 1,
+            "GridY": 4,
+            "TypeName": "carnie_card_armor2"
+          },
+          {
+            "GridX": 2,
+            "GridY": 0,
+            "TypeName": "carnie_card_basic"
+          },
+          {
+            "GridX": 2,
+            "GridY": 1,
+            "TypeName": "carnie_card_sunify"
+          },
+          {
+            "GridX": 2,
+            "GridY": 3,
+            "TypeName": "carnie_card_flag"
+          },
+          {
+            "GridX": 2,
+            "GridY": 4,
+            "TypeName": "carnie_card_freeze"
+          },
+          {
+            "GridX": 6,
+            "GridY": 0,
+            "TypeName": "bufftile_speed"
+          },
+          {
+            "GridX": 6,
+            "GridY": 4,
+            "TypeName": "bufftile_speed"
+          },
+          {
+            "GridX": 7,
+            "GridY": 1,
+            "TypeName": "bufftile_attack"
+          },
+          {
+            "GridX": 7,
+            "GridY": 3,
+            "TypeName": "bufftile_attack"
+          },
+          {
+            "GridX": 8,
+            "GridY": 2,
+            "TypeName": "bufftile_shield"
+          }
+        ]
+      }
+    },
+		{
+			"aliases": [
+				"Rails"
+			],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_cowboy",
+				"Railcarts": [
+					{
+						"Column": 0,
+						"Row": 0
+					},
+					{
+						"Column": 0,
+						"Row": 1
+					},
+					{
+						"Column": 0,
+						"Row": 2
+					},
+					{
+						"Column": 0,
+						"Row": 3
+					},
+					{
+						"Column": 0,
+						"Row": 4
+					},
+					{
+						"Column": 1,
+						"Row": 0
+					},
+					{
+						"Column": 1,
+						"Row": 1
+					},
+					{
+						"Column": 1,
+						"Row": 3
+					},
+					{
+						"Column": 1,
+						"Row": 4
+					},
+					{
+						"Column": 2,
+						"Row": 0
+					},
+					{
+						"Column": 2,
+						"Row": 1
+					},
+					{
+						"Column": 2,
+						"Row": 3
+					},
+					{
+						"Column": 2,
+						"Row": 4
+					},
+					{
+						"Column": 3,
+						"Row": 0
+					},
+					{
+						"Column": 3,
+						"Row": 1
+					},
+					{
+						"Column": 3,
+						"Row": 2
+					},
+					{
+						"Column": 4,
+						"Row": 2
+					},
+					{
+						"Column": 4,
+						"Row": 3
+					},
+					{
+						"Column": 4,
+						"Row": 4
+					},
+					{
+						"Column": 5,
+						"Row": 1
+					},
+					{
+						"Column": 5,
+						"Row": 2
+					},
+					{
+						"Column": 5,
+						"Row": 3
+					},
+					{
+						"Column": 6,
+						"Row": 0
+					},
+					{
+						"Column": 6,
+						"Row": 4
+					},
+					{
+						"Column": 7,
+						"Row": 1
+					},
+					{
+						"Column": 7,
+						"Row": 3
+					},
+					{
+						"Column": 8,
+						"Row": 2
+					}
+				],
+				"Rails": [
+					{
+						"Column": 0,
+						"RowEnd": 4,
+						"RowStart": 0
+					},
+					{
+						"Column": 1,
+						"RowEnd": 4,
+						"RowStart": 0
+					},
+					{
+						"Column": 2,
+						"RowEnd": 4,
+						"RowStart": 0
+					},
+					{
+						"Column": 3,
+						"RowEnd": 4,
+						"RowStart": 0
+					},
+					{
+						"Column": 4,
+						"RowEnd": 4,
+						"RowStart": 0
+					},
+					{
+						"Column": 5,
+						"RowEnd": 4,
+						"RowStart": 0
+					},
+					{
+						"Column": 6,
+						"RowEnd": 4,
+						"RowStart": 0
+					},
+					{
+						"Column": 7,
+						"RowEnd": 4,
+						"RowStart": 0
+					},
+					{
+						"Column": 8,
+						"RowEnd": 4,
+						"RowStart": 0
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Survive without secondary sun producers\nThe middle columns are unplantable until flag 2",
+				"DescriptiveName": "Custom Objective"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"OverrideSeedSlotsCount": 8,
+				"PlantIncludeList": [
+					"sunflower",
+					"twinsunflower",
+					"sunshroom",
+					"primalsunflower",
+					"moonflower",
+					"peashooter",
+					"wallnut",
+					"tallnut",
+					"explodeonut",
+					"bonkchoy",
+					"cabbagepult",
+					"melonpult",
+					"cherry_bomb",
+					"coconutcannon",
+					"gravebuster",
+					"iceburg",
+					"laser_bean",
+					"potatomine",
+					"repeater",
+					"snapdragon",
+					"spikeweed",
+					"threepeater",
+					"torchwood",
+					"kernelpult",
+					"springbean",
+					"snowpea",
+					"chilibean",
+					"splitpea",
+					"lightningreed",
+					"peapod",
+					"magnifyinggrass",
+					"bloomerang",
+					"holonut",
+					"empea",
+					"blover",
+					"starfruit",
+					"jalapeno",
+					"wintermelon",
+					"spikerock",
+					"squash",
+					"citron",
+					"powerplant",
+					"fumeshroom",
+					"magnetshroom",
+					"hypnoshroom",
+					"peanut",
+					"firepeashooter",
+					"lilypad",
+					"bowlingbulb",
+					"homingthistle",
+					"banana",
+					"chomper",
+					"guacodile",
+					"tanglekelp",
+					"ghostpepper",
+					"sweetpotato",
+					"sapfling",
+					"hurrikale",
+					"xshot",
+					"chardguard",
+					"pepperpult",
+					"kiwibeast",
+					"stunion",
+					"dandelion",
+					"redstinger",
+					"akee",
+					"lavaguava",
+					"endurian",
+					"stallia",
+					"strawburst",
+					"cactus",
+					"phatbeet",
+					"thymewarp",
+					"celerystalker",
+					"electricblueberry",
+					"sporeshroom",
+					"garlic",
+					"intensivecarrot",
+					"jackolantern",
+					"primalpeashooter",
+					"grapeshot",
+					"primalwallnut",
+					"perfumeshroom",
+					"coldsnapdragon",
+					"primalpotatomine",
+					"shrinkingviolet",
+					"nightshade",
+					"shadowshroom",
+					"bloominghearts",
+					"escaperoot",
+					"grimrose",
+					"dusklobber",
+					"electriccurrant",
+					"aloe",
+					"wasabiwhip",
+					"applemortar",
+					"bombegranate",
+					"missiletoe",
+					"parsnip",
+					"witchhazel",
+					"hotdate",
+					"caulipower",
+					"electricpeashooter",
+					"hollyknight",
+					"shadowpeashooter",
+					"poisonpeashooter",
+					"slingpea",
+					"snappea",
+					"zoybeanpod",
+					"dazeychain",
+					"electricitea",
+					"blastberry",
+					"imppear",
+					"pumpkin",
+					"icebloom",
+					"dartichoke",
+					"ultomato",
+					"gumnut",
+					"tumbleweed",
+					"murkadamia",
+					"puffball",
+					"stickybombrice",
+					"olivepit",
+					"turkeypult",
+					"boingsetta",
+					"hocus",
+					"gloomvine",
+					"draftodil",
+					"boomflower",
+					"pvine",
+					"inferno",
+					"noctarine",
+					"iceweed",
+					"unused_45",
+					"unused_47",
+					"unused_43",
+					"unused_48",
+					"unused_49",
+					"unused_46",
+					"headbutter",
+					"teleportatomine",
+					"pokra",
+					"pyrevine",
+					"hollybarrierleaf",
+					"heathseeker",
+					"buttercup",
+					"bramblebush",
+					"caramelpopcorn",
+					"lotuspod"
+				],
+				"PlantExcludeList": [],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 9,
+				"WaveCount": 45,
+				"FlagWaveVeteranOverrideTypes": [
+					0,
+					0,
+					1,
+					1,
+					1
+				],
+				"MaxNextWaveHealthPercentage": 0.5,
+				"MinNextWaveHealthPercentage": 0.65,
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)",
+						"RTID(Wave9Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)"
+					],
+					[
+						"RTID(Wave13@CurrentLevel)"
+					],
+					[
+						"RTID(Wave14@CurrentLevel)"
+					],
+					[
+						"RTID(Wave15@CurrentLevel)"
+					],
+					[
+						"RTID(Wave16@CurrentLevel)",
+						"RTID(Wave16Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave17@CurrentLevel)"
+					],
+					[
+						"RTID(Wave18@CurrentLevel)",
+						"RTID(GridSpawn@CurrentLevel)"
+					],
+					[
+						"RTID(Wave19@CurrentLevel)"
+					],
+					[
+						"RTID(Wave20@CurrentLevel)"
+					],
+					[
+						"RTID(Wave21@CurrentLevel)"
+					],
+					[
+						"RTID(Wave22@CurrentLevel)",
+						"RTID(Wave22Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave23@CurrentLevel)"
+					],
+					[
+						"RTID(Wave24@CurrentLevel)"
+					],
+					[
+						"RTID(Wave25@CurrentLevel)"
+					],
+					[
+						"RTID(Wave26@CurrentLevel)"
+					],
+					[
+						"RTID(Wave27@CurrentLevel)",
+						"RTID(Wave27Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave28@CurrentLevel)"
+					],
+					[
+						"RTID(Wave29@CurrentLevel)"
+					],
+					[
+						"RTID(Wave30@CurrentLevel)"
+					],
+					[
+						"RTID(Wave31@CurrentLevel)",
+						"RTID(Wave31Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave32@CurrentLevel)"
+					],
+					[
+						"RTID(Wave33@CurrentLevel)"
+					],
+					[
+						"RTID(Wave34@CurrentLevel)"
+					],
+					[
+						"RTID(Wave35@CurrentLevel)",
+						"RTID(Wave35Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave36@CurrentLevel)"
+					],
+					[
+						"RTID(Wave37@CurrentLevel)"
+					],
+					[
+						"RTID(Wave38@CurrentLevel)"
+					],
+					[
+						"RTID(Wave39@CurrentLevel)",
+						"RTID(Wave39Stampede0@CurrentLevel)",
+						"RTID(Wave39Stampede1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave40@CurrentLevel)"
+					],
+					[
+						"RTID(Wave41@CurrentLevel)"
+					],
+					[
+						"RTID(Wave42@CurrentLevel)",
+						"RTID(Wave42Stampede0@CurrentLevel)",
+						"RTID(Wave42Stampede1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave43@CurrentLevel)"
+					],
+					[
+						"RTID(Wave44@CurrentLevel)"
+					],
+					[
+						"RTID(Wave45@CurrentLevel)",
+						"RTID(Wave45Stampede0@CurrentLevel)",
+						"RTID(Wave45Stampede1@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave19"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave20"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave21"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave22"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave23"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave24"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave25"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave26"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave27"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave28"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave29"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave30"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave31"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave32"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave33"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave34"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave35"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave36"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave37"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave38"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave39"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave40"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave41"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave42"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave43"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave44"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lunar_bandit@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(beach_shell_shield@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lunar_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave45"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 1,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "1",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "4"
+			}
+		},
+		{
+			"aliases": [
+				"Wave16Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 1,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "1",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "4"
+			}
+		},
+		{
+			"aliases": [
+				"Wave22Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 2,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "2",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "4"
+			}
+		},
+		{
+			"aliases": [
+				"Wave27Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 2,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "2",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "4"
+			}
+		},
+		{
+			"aliases": [
+				"Wave31Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 3,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "3",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "4"
+			}
+		},
+		{
+			"aliases": [
+				"Wave35Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 3,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "3",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "4"
+			}
+		},
+		{
+			"aliases": [
+				"Wave39Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 2,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "2",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "4"
+			}
+		},
+		{
+			"aliases": [
+				"Wave39Stampede1"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 1,
+				"SpiderZombieName": "west_bull_veteran",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "1",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "4"
+			}
+		},
+		{
+			"aliases": [
+				"Wave42Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 3,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "3",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "4"
+			}
+		},
+		{
+			"aliases": [
+				"Wave42Stampede1"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 1,
+				"SpiderZombieName": "west_bull_veteran",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "1",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "4"
+			}
+		},
+		{
+			"aliases": [
+				"Wave45Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 3,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "3",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "4"
+			}
+		},
+		{
+			"aliases": [
+				"Wave45Stampede1"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 2,
+				"SpiderZombieName": "west_bull_veteran",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "2",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "4"
+			}
+		},
+    {
+      "aliases": [
+        "GridSpawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(gravestone_pirate@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 1000,
+            "mY": 0
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_WITCH_HAZEL_ATTACK_CARNIE",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": [
+          "GridItemCrater"
+        ]
+      }
+    }
+	],
+	"version": 1
+}

@@ -1,0 +1,3364 @@
+{
+	"#comment": "Saucy changes: Now a Sun Bombs level (all sun producers except Primal Sunflower ￣へ￣ allowed). Gravestones spawn in columns 1-3, starting with 1 column and growing every two waves (also comes with cosmetic speed tiles). | Maw waz here",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s run through Penny's Challenge!",
+				"FixedPlantLevel": 1,
+				"SuppressPlantfoodPurchase": true,
+				"DisablePlantBoosts": true,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(FutureLinkedTileGroups@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultSunDropper@CurrentLevel)",
+					"RTID(SunBombs@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
+				"Name": "Saucy Challenge - Ram Out Of Batteries",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"StageModule": "RTID(FutureStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"DefaultSunDropper"
+			],
+			"objclass": "SunDropperProperties",
+			"objdata": {
+				"InitialSunDropDelay": 2,
+				"SunCountdownBase": 3.5,
+				"SunCountdownIncreasePerSun": 0,
+				"SunCountdownMax": 3.5,
+				"SunCountdownRange": 0
+			}
+		},
+		{
+			"aliases": [
+				"SunBombs"
+			],
+			"objclass": "SunBombChallengeProperties",
+			"objdata": {
+				"PlantBombExplosionRadius": 25,
+				"PlantDamage": 1000,
+				"ZombieBombExplosionRadius": 80,
+				"ZombieDamage": 500
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"OverrideSeedSlotsCount": 8,
+				"PresetPlantList": [],
+				"PlantIncludeList": [
+					"sunflower",
+					"twinsunflower",
+					"sunshroom",
+					"moonflower",
+					"blover",
+					"empea",
+					"peashooter",
+					"wallnut",
+					"tallnut",
+					"explodeonut",
+					"bonkchoy",
+					"cabbagepult",
+					"melonpult",
+					"cherry_bomb",
+					"coconutcannon",
+					"gravebuster",
+					"iceburg",
+					"laser_bean",
+					"potatomine",
+					"repeater",
+					"snapdragon",
+					"spikeweed",
+					"threepeater",
+					"torchwood",
+					"kernelpult",
+					"springbean",
+					"snowpea",
+					"chilibean",
+					"splitpea",
+					"lightningreed",
+					"peapod",
+					"magnifyinggrass",
+					"bloomerang",
+					"holonut",
+					"starfruit",
+					"jalapeno",
+					"wintermelon",
+					"spikerock",
+					"squash",
+					"citron",
+					"powerplant",
+					"puffshroom",
+					"fumeshroom",
+					"sunbean",
+					"magnetshroom",
+					"hypnoshroom",
+					"peanut",
+					"firepeashooter",
+					"lilypad",
+					"bowlingbulb",
+					"homingthistle",
+					"banana",
+					"chomper",
+					"guacodile",
+					"tanglekelp",
+					"ghostpepper",
+					"sweetpotato",
+					"sapfling",
+					"hurrikale",
+					"xshot",
+					"chardguard",
+					"pepperpult",
+					"kiwibeast",
+					"hotpotato",
+					"stunion",
+					"dandelion",
+					"redstinger",
+					"goldleaf",
+					"akee",
+					"lavaguava",
+					"toadstool",
+					"endurian",
+					"stallia",
+					"strawburst",
+					"cactus",
+					"phatbeet",
+					"thymewarp",
+					"celerystalker",
+					"electricblueberry",
+					"sporeshroom",
+					"garlic",
+					"intensivecarrot",
+					"jackolantern",
+					"primalpeashooter",
+					"grapeshot",
+					"primalwallnut",
+					"perfumeshroom",
+					"coldsnapdragon",
+					"primalpotatomine",
+					"shrinkingviolet",
+					"nightshade",
+					"shadowshroom",
+					"bloominghearts",
+					"escaperoot",
+					"grimrose",
+					"dusklobber",
+					"goldbloom",
+					"electriccurrant",
+					"aloe",
+					"wasabiwhip",
+					"applemortar",
+					"bombegranate",
+					"missiletoe",
+					"parsnip",
+					"witchhazel",
+					"hotdate",
+					"caulipower",
+					"solartomato",
+					"electricpeashooter",
+					"hollyknight",
+					"shadowpeashooter",
+					"poisonpeashooter",
+					"slingpea",
+					"snappea",
+					"zoybeanpod",
+					"dazeychain",
+					"electricitea",
+					"blastberry",
+					"imppear",
+					"pumpkin",
+					"icebloom",
+					"dartichoke",
+					"ultomato",
+					"gumnut",
+					"shinevine",
+					"tumbleweed",
+					"murkadamia",
+					"puffball",
+					"stickybombrice",
+					"olivepit",
+					"turkeypult",
+					"boingsetta",
+					"hocus",
+					"gloomvine",
+					"draftodil",
+					"boomflower",
+					"pvine",
+					"inferno",
+					"solarsage",
+					"noctarine",
+					"iceweed",
+					"unused_45",
+					"unused_47",
+					"unused_43",
+					"unused_48",
+					"unused_49",
+					"unused_46",
+					"headbutter",
+					"teleportatomine",
+					"pokra",
+					"pyrevine",
+					"hollybarrierleaf",
+					"pokra",
+					"pyrevine",
+					"headbutter",
+					"teleportatomine"
+				],
+				"PlantExcludeList": [],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Survive while Sun Bombs fall, plus Power Tiles and Gravestones regenerate every flag wave",
+				"DescriptiveName": "Custom Objective"
+			}
+		},
+		{
+			"aliases": [
+				"FutureLinkedTileGroups"
+			],
+			"objclass": "PowerTileProperties",
+			"objdata": {
+				"LinkedTiles": [
+					{
+						"Group": "beta",
+						"Location": {
+							"mX": 4,
+							"mY": 2
+						},
+						"PropagationDelay": 0.2
+					},
+					{
+						"Group": "beta",
+						"Location": {
+							"mX": 1,
+							"mY": 0
+						},
+						"PropagationDelay": 0.2
+					},
+					{
+						"Group": "beta",
+						"Location": {
+							"mX": 1,
+							"mY": 4
+						},
+						"PropagationDelay": 0.2
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 5,
+				"WavesPerFlag": 10,
+				"PlantfoodToSpawnCount": 5,
+				"PointIncrementPerWave": 15,
+				"StartingPoints": 85,
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(future@ZombieTypes)",
+					"RTID(future_imp@ZombieTypes)",
+					"RTID(future_armor1@ZombieTypes)",
+					"RTID(future_armor2@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 10,
+				"WaveCount": 50,
+				"FlagWaveVeteranOverrideTypes": [
+					0,
+					0,
+					1,
+					1,
+					1
+				],
+				"MaxNextWaveHealthPercentage": 0.5,
+				"MinNextWaveHealthPercentage": 0.65,
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)",
+						"RTID(Wave3SpiderRainEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)",
+						"RTID(Wave5Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)",
+						"RTID(Wave8SpiderRainEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)",
+						"RTID(Wave10GravestoneEvent0@CurrentLevel)",
+						"RTID(BatterySpeedTen@CurrentLevel)",
+						"RTID(BatteryGravesTen@CurrentLevel)",
+						"RTID(SunDropperEventTen@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)",
+						"RTID(Wave11Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)"
+					],
+					[
+						"RTID(Wave13@CurrentLevel)",
+						"RTID(Wave13SpiderRainEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave14@CurrentLevel)"
+					],
+					[
+						"RTID(Wave15@CurrentLevel)",
+						"RTID(Wave15Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave16@CurrentLevel)"
+					],
+					[
+						"RTID(Wave17@CurrentLevel)",
+						"RTID(Wave17SpiderRainEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave18@CurrentLevel)"
+					],
+					[
+						"RTID(Wave19@CurrentLevel)"
+					],
+					[
+						"RTID(Wave20@CurrentLevel)",
+						"RTID(Wave20Stampede0@CurrentLevel)",
+						"RTID(Wave20GravestoneEvent0@CurrentLevel)",
+						"RTID(BatteryGravesTen@CurrentLevel)",
+						"RTID(SunDropperEventTen@CurrentLevel)"
+					],
+					[
+						"RTID(Wave21@CurrentLevel)"
+					],
+					[
+						"RTID(Wave22@CurrentLevel)",
+						"RTID(Wave22SpiderRainEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave23@CurrentLevel)"
+					],
+					[
+						"RTID(Wave24@CurrentLevel)",
+						"RTID(Wave24Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave25@CurrentLevel)"
+					],
+					[
+						"RTID(Wave26@CurrentLevel)",
+						"RTID(Wave26SpiderRainEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave27@CurrentLevel)"
+					],
+					[
+						"RTID(Wave28@CurrentLevel)",
+						"RTID(Wave28Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave29@CurrentLevel)"
+					],
+					[
+						"RTID(Wave30@CurrentLevel)",
+						"RTID(Wave30GravestoneEvent0@CurrentLevel)",
+						"RTID(Wave30SpiderRainEvent0@CurrentLevel)",
+						"RTID(BatterySpeedTwenty@CurrentLevel)",
+						"RTID(BatteryGravesTwenty@CurrentLevel)",
+						"RTID(SunDropperEventTen@CurrentLevel)"
+					],
+					[
+						"RTID(Wave31@CurrentLevel)"
+					],
+					[
+						"RTID(Wave32@CurrentLevel)"
+					],
+					[
+						"RTID(Wave33@CurrentLevel)",
+						"RTID(Wave33Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave34@CurrentLevel)"
+					],
+					[
+						"RTID(Wave35@CurrentLevel)",
+						"RTID(Wave35SpiderRainEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave36@CurrentLevel)"
+					],
+					[
+						"RTID(Wave37@CurrentLevel)",
+						"RTID(Wave37Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave38@CurrentLevel)"
+					],
+					[
+						"RTID(Wave39@CurrentLevel)",
+						"RTID(Wave39SpiderRainEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave40@CurrentLevel)",
+						"RTID(Wave40GravestoneEvent0@CurrentLevel)",
+						"RTID(BatteryGravesTwenty@CurrentLevel)",
+						"RTID(SunDropperEventTen@CurrentLevel)"
+					],
+					[
+						"RTID(Wave41@CurrentLevel)",
+						"RTID(Wave41Stampede0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave42@CurrentLevel)"
+					],
+					[
+						"RTID(Wave43@CurrentLevel)",
+						"RTID(Wave43SpiderRainEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave44@CurrentLevel)"
+					],
+					[
+						"RTID(Wave45@CurrentLevel)",
+						"RTID(Wave45Stampede0@CurrentLevel)",
+						"RTID(Wave45Stampede1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave46@CurrentLevel)"
+					],
+					[
+						"RTID(Wave47@CurrentLevel)"
+					],
+					[
+						"RTID(Wave48@CurrentLevel)",
+						"RTID(Wave48SpiderRainEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave49@CurrentLevel)"
+					],
+					[
+						"RTID(Wave50@CurrentLevel)",
+						"RTID(Wave50Stampede0@CurrentLevel)",
+						"RTID(Wave50GravestoneEvent0@CurrentLevel)",
+						"RTID(BatterySpeedThirty@CurrentLevel)",
+						"RTID(BatteryGravesThirty@CurrentLevel)",
+						"RTID(SunDropperEventTen@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(future@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": []
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(future_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave19"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave20"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave21"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave22"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave23"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave24"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave25"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave26"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave27"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave28"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave29"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave30"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave31"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave32"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave33"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave34"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave35"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave36"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave37"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave38"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave39"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave40"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(future_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave41"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave42"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave43"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave44"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave45"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave46"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave47"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(future_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave48"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave49"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_repairimp@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave50"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3SpiderRainEvent0"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": "8",
+				"ColumnStart": 7,
+				"GroupSize": "1",
+				"SpiderCount": 2,
+				"SpiderZombieName": "future_imp",
+				"TimeBeforeFullSpawn": 6,
+				"TimeBetweenGroups": 3,
+				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		},
+		{
+			"aliases": [
+				"Wave8SpiderRainEvent0"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": "7",
+				"ColumnStart": 6,
+				"GroupSize": "2",
+				"SpiderCount": 4,
+				"SpiderZombieName": "future_imp",
+				"TimeBeforeFullSpawn": 1,
+				"TimeBetweenGroups": 0.5,
+				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		},
+		{
+			"aliases": [
+				"Wave13SpiderRainEvent0"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": "7",
+				"ColumnStart": 6,
+				"GroupSize": "3",
+				"SpiderCount": 6,
+				"SpiderZombieName": "future_imp",
+				"TimeBeforeFullSpawn": 2,
+				"TimeBetweenGroups": 1,
+				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		},
+		{
+			"aliases": [
+				"Wave17SpiderRainEvent0"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": "7",
+				"ColumnStart": 5,
+				"GroupSize": "3",
+				"SpiderCount": 6,
+				"SpiderZombieName": "future_imp",
+				"TimeBeforeFullSpawn": 4,
+				"TimeBetweenGroups": 2,
+				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		},
+		{
+			"aliases": [
+				"Wave22SpiderRainEvent0"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": "7",
+				"ColumnStart": 5,
+				"GroupSize": "2",
+				"SpiderCount": 8,
+				"SpiderZombieName": "future_imp",
+				"TimeBeforeFullSpawn": 4,
+				"TimeBetweenGroups": 1,
+				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		},
+		{
+			"aliases": [
+				"Wave26SpiderRainEvent0"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": "7",
+				"ColumnStart": 5,
+				"GroupSize": "3",
+				"SpiderCount": 9,
+				"SpiderZombieName": "future_imp",
+				"TimeBeforeFullSpawn": 9,
+				"TimeBetweenGroups": 3,
+				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		},
+		{
+			"aliases": [
+				"Wave30SpiderRainEvent0"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": "7",
+				"ColumnStart": 5,
+				"GroupSize": "1",
+				"SpiderCount": 10,
+				"SpiderZombieName": "future_imp",
+				"TimeBeforeFullSpawn": 10,
+				"TimeBetweenGroups": 1,
+				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		},
+		{
+			"aliases": [
+				"Wave35SpiderRainEvent0"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": "6",
+				"ColumnStart": 4,
+				"GroupSize": "2",
+				"SpiderCount": 10,
+				"SpiderZombieName": "future_imp",
+				"TimeBeforeFullSpawn": 10,
+				"TimeBetweenGroups": 2,
+				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		},
+		{
+			"aliases": [
+				"Wave39SpiderRainEvent0"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": "3",
+				"ColumnStart": 2,
+				"GroupSize": "1",
+				"SpiderCount": 5,
+				"SpiderZombieName": "future_imp",
+				"TimeBeforeFullSpawn": 50,
+				"TimeBetweenGroups": 50,
+				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		},
+		{
+			"aliases": [
+				"Wave43SpiderRainEvent0"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": "7",
+				"ColumnStart": 5,
+				"GroupSize": "2",
+				"SpiderCount": 10,
+				"SpiderZombieName": "future_imp",
+				"TimeBeforeFullSpawn": 15,
+				"TimeBetweenGroups": 3,
+				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		},
+		{
+			"aliases": [
+				"Wave48SpiderRainEvent0"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": "7",
+				"ColumnStart": 4,
+				"GroupSize": "1",
+				"SpiderCount": 15,
+				"SpiderZombieName": "future_imp",
+				"TimeBeforeFullSpawn": 7.5,
+				"TimeBetweenGroups": 0.5,
+				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		},
+		{
+			"aliases": [
+				"Wave10GravestoneEvent0"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"DisplacePlants": false,
+				"GravestonePool": [
+					{
+						"Count": 3,
+						"Type": "RTID(powertile_alpha@GridItemTypes)"
+					}
+				],
+				"GridClassesToDestroy": [
+					"GridItemPowerTile"
+				],
+				"RandomPlacement": false,
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_DIRT_SPAWN_FUTURE",
+				"SpawnPositionsPool": [
+					{
+						"mX": 1,
+						"mY": 0
+					},
+					{
+						"mX": 0,
+						"mY": 2
+					},
+					{
+						"mX": 1,
+						"mY": 4
+					}
+				],
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"SpawnEffectAnimPlay": "tomb_dirt_anim"
+			}
+		},
+		{
+			"aliases": [
+				"Wave20GravestoneEvent0"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"DisplacePlants": false,
+				"GravestonePool": [
+					{
+						"Count": 3,
+						"Type": "RTID(powertile_gamma@GridItemTypes)"
+					}
+				],
+				"GridClassesToDestroy": [
+					"GridItemPowerTile"
+				],
+				"RandomPlacement": false,
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_DIRT_SPAWN_FUTURE",
+				"SpawnPositionsPool": [
+					{
+						"mX": 5,
+						"mY": 1
+					},
+					{
+						"mX": 5,
+						"mY": 2
+					},
+					{
+						"mX": 5,
+						"mY": 3
+					}
+				],
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"SpawnEffectAnimPlay": "tomb_dirt_anim"
+			}
+		},
+		{
+			"aliases": [
+				"Wave30GravestoneEvent0"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"DisplacePlants": false,
+				"GravestonePool": [
+					{
+						"Count": 2,
+						"Type": "RTID(powertile_beta@GridItemTypes)"
+					},
+					{
+						"Count": 3,
+						"Type": "RTID(powertile_delta@GridItemTypes)"
+					}
+				],
+				"GridClassesToDestroy": [
+					"GridItemPowerTile"
+				],
+				"RandomPlacement": false,
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_DIRT_SPAWN_FUTURE",
+				"SpawnPositionsPool": [
+					{
+						"mX": 4,
+						"mY": 1
+					},
+					{
+						"mX": 4,
+						"mY": 3
+					},
+					{
+						"mX": 3,
+						"mY": 0
+					},
+					{
+						"mX": 2,
+						"mY": 2
+					},
+					{
+						"mX": 3,
+						"mY": 4
+					}
+				],
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"SpawnEffectAnimPlay": "tomb_dirt_anim"
+			}
+		},
+		{
+			"aliases": [
+				"Wave40GravestoneEvent0"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"DisplacePlants": false,
+				"GravestonePool": [
+					{
+						"Count": 2,
+						"Type": "RTID(powertile_alpha@GridItemTypes)"
+					},
+					{
+						"Count": 2,
+						"Type": "RTID(powertile_gamma@GridItemTypes)"
+					}
+				],
+				"GridClassesToDestroy": [
+					"GridItemPowerTile"
+				],
+				"RandomPlacement": false,
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_DIRT_SPAWN_FUTURE",
+				"SpawnPositionsPool": [
+					{
+						"mX": 4,
+						"mY": 3
+					},
+					{
+						"mX": 6,
+						"mY": 1
+					},
+					{
+						"mX": 4,
+						"mY": 1
+					},
+					{
+						"mX": 6,
+						"mY": 3
+					}
+				],
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"SpawnEffectAnimPlay": "tomb_dirt_anim"
+			}
+		},
+		{
+			"aliases": [
+				"Wave50GravestoneEvent0"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"DisplacePlants": false,
+				"GravestonePool": [
+					{
+						"Count": 2,
+						"Type": "RTID(powertile_beta@GridItemTypes)"
+					},
+					{
+						"Count": 2,
+						"Type": "RTID(powertile_delta@GridItemTypes)"
+					},
+					{
+						"Count": 2,
+						"Type": "RTID(powertile_alpha@GridItemTypes)"
+					},
+					{
+						"Count": 2,
+						"Type": "RTID(powertile_gamma@GridItemTypes)"
+					}
+				],
+				"GridClassesToDestroy": [
+					"GridItemPowerTile"
+				],
+				"RandomPlacement": false,
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_DIRT_SPAWN_FUTURE",
+				"SpawnPositionsPool": [
+					{
+						"mX": 4,
+						"mY": 0
+					},
+					{
+						"mX": 5,
+						"mY": 0
+					},
+					{
+						"mX": 5,
+						"mY": 1
+					},
+					{
+						"mX": 6,
+						"mY": 1
+					},
+					{
+						"mX": 5,
+						"mY": 3
+					},
+					{
+						"mX": 6,
+						"mY": 3
+					},
+					{
+						"mX": 4,
+						"mY": 4
+					},
+					{
+						"mX": 5,
+						"mY": 4
+					}
+				],
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"SpawnEffectAnimPlay": "tomb_dirt_anim"
+			}
+		},
+		{
+			"aliases": [
+				"BatteryGravesTen"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 99,
+						"Type": "RTID(gravestone_battery@CurrentLevel)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 0,
+						"mY": 0
+					},
+					{
+						"mX": 0,
+						"mY": 1
+					},
+					{
+						"mX": 0,
+						"mY": 2
+					},
+					{
+						"mX": 0,
+						"mY": 3
+					},
+					{
+						"mX": 0,
+						"mY": 4
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": []
+			}
+		},
+		{
+			"aliases": [
+				"BatteryGravesTwenty"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 99,
+						"Type": "RTID(gravestone_battery@CurrentLevel)",
+						"GridItemLevel": 11
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 0,
+						"mY": 0
+					},
+					{
+						"mX": 0,
+						"mY": 1
+					},
+					{
+						"mX": 0,
+						"mY": 2
+					},
+					{
+						"mX": 0,
+						"mY": 3
+					},
+					{
+						"mX": 0,
+						"mY": 4
+					},
+					{
+						"mX": 1,
+						"mY": 0
+					},
+					{
+						"mX": 1,
+						"mY": 1
+					},
+					{
+						"mX": 1,
+						"mY": 2
+					},
+					{
+						"mX": 1,
+						"mY": 3
+					},
+					{
+						"mX": 1,
+						"mY": 4
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": []
+			}
+		},
+		{
+			"aliases": [
+				"BatteryGravesThirty"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 99,
+						"Type": "RTID(gravestone_battery@CurrentLevel)",
+						"GridItemLevel": 11
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 0,
+						"mY": 0
+					},
+					{
+						"mX": 0,
+						"mY": 1
+					},
+					{
+						"mX": 0,
+						"mY": 2
+					},
+					{
+						"mX": 0,
+						"mY": 3
+					},
+					{
+						"mX": 0,
+						"mY": 4
+					},
+					{
+						"mX": 1,
+						"mY": 0
+					},
+					{
+						"mX": 1,
+						"mY": 1
+					},
+					{
+						"mX": 1,
+						"mY": 2
+					},
+					{
+						"mX": 1,
+						"mY": 3
+					},
+					{
+						"mX": 1,
+						"mY": 4
+					},
+					{
+						"mX": 2,
+						"mY": 0
+					},
+					{
+						"mX": 2,
+						"mY": 1
+					},
+					{
+						"mX": 2,
+						"mY": 2
+					},
+					{
+						"mX": 2,
+						"mY": 3
+					},
+					{
+						"mX": 2,
+						"mY": 4
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": []
+			}
+		},
+		{
+			"aliases": [
+				"BatterySpeedTen"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 99,
+						"Type": "RTID(bufftile_speed@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 0,
+						"mY": 0
+					},
+					{
+						"mX": 0,
+						"mY": 1
+					},
+					{
+						"mX": 0,
+						"mY": 2
+					},
+					{
+						"mX": 0,
+						"mY": 3
+					},
+					{
+						"mX": 0,
+						"mY": 4
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": []
+			}
+		},
+		{
+			"aliases": [
+				"BatterySpeedTwenty"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 99,
+						"Type": "RTID(bufftile_speed@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 1,
+						"mY": 0
+					},
+					{
+						"mX": 1,
+						"mY": 1
+					},
+					{
+						"mX": 1,
+						"mY": 2
+					},
+					{
+						"mX": 1,
+						"mY": 3
+					},
+					{
+						"mX": 1,
+						"mY": 4
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": []
+			}
+		},
+		{
+			"aliases": [
+				"BatterySpeedThirty"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 99,
+						"Type": "RTID(bufftile_speed@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 2,
+						"mY": 0
+					},
+					{
+						"mX": 2,
+						"mY": 1
+					},
+					{
+						"mX": 2,
+						"mY": 2
+					},
+					{
+						"mX": 2,
+						"mY": 3
+					},
+					{
+						"mX": 2,
+						"mY": 4
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": []
+			}
+		},
+		{
+			"aliases": [
+				"SunDropperEventTen"
+			],
+			"objclass": "SunDropperWaveActionProps",
+			"objdata": {
+				"SunAmountToDrop": 350
+			}
+		},
+		{
+			"aliases": [
+				"Wave5Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 1,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "2",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "2"
+			}
+		},
+		{
+			"aliases": [
+				"Wave11Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 2,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "4",
+				"TimeBetweenGroups": "2",
+				"ZombieFallTime": "2"
+			}
+		},
+		{
+			"aliases": [
+				"Wave15Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 3,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "6",
+				"TimeBetweenGroups": "2",
+				"ZombieFallTime": "2"
+			}
+		},
+		{
+			"aliases": [
+				"Wave20Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 3,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "3",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "2"
+			}
+		},
+		{
+			"aliases": [
+				"Wave24Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 1,
+				"SpiderZombieName": "west_bull_veteran",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "1",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "2"
+			}
+		},
+		{
+			"aliases": [
+				"Wave28Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 3,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "4",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "2"
+			}
+		},
+		{
+			"aliases": [
+				"Wave33Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 3,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "12",
+				"TimeBetweenGroups": "4",
+				"ZombieFallTime": "2"
+			}
+		},
+		{
+			"aliases": [
+				"Wave37Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 2,
+				"SpiderZombieName": "west_bull_veteran",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "6",
+				"TimeBetweenGroups": "3",
+				"ZombieFallTime": "2"
+			}
+		},
+		{
+			"aliases": [
+				"Wave41Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 3,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "10",
+				"TimeBetweenGroups": "2",
+				"ZombieFallTime": "2"
+			}
+		},
+		{
+			"aliases": [
+				"Wave45Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 2,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "3",
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "2"
+			}
+		},
+		{
+			"aliases": [
+				"Wave45Stampede1"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 2,
+				"SpiderZombieName": "west_bull_veteran",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "6",
+				"TimeBetweenGroups": "3",
+				"ZombieFallTime": "2"
+			}
+		},
+		{
+			"aliases": [
+				"Wave50Stampede0"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 12,
+				"ColumnStart": 11,
+				"GroupSize": 1,
+				"SpiderCount": 4,
+				"SpiderZombieName": "west_bull",
+				"WaveStartMessage": "Stampede!",
+				"TimeBeforeFullSpawn": "3.75",
+				"TimeBetweenGroups": "0.75",
+				"ZombieFallTime": "2"
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"gravestone_battery"
+			],
+			"objdata": {
+				"TypeName": "gravestone_future",
+				"GridItemClass": "GridItemGravestone",
+				"ResourceGroups": [
+					"Future_Gravestone"
+				],
+				"Properties": "RTID(GridItemGravestoneBattery@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"GridItemGravestoneBattery"
+			],
+			"objclass": "GridItemGravestonePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 98,
+					"y": 127
+				},
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_FUTURE_DAMAGE",
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble",
+				"DamageStateCount": 5,
+				"HitRectOffsetWidth": -30,
+				"HitRectOffsetX": 15,
+				"Hitpoints": 1800,
+				"IsAnimated": true,
+				"PopAnim": "POPANIM_GRAVESTONES_FUTURE_GRAVESTONE",
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		},
+		{}
+	],
+	"version": 1
+}

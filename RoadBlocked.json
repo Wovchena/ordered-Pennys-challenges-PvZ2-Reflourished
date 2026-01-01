@@ -1,0 +1,2799 @@
+{
+	"#comment": "Pterry_derp",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s run through Penny's Challenge!",
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"DisablePlantBoosts": true,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(HolidayDrinkToughness@.)",
+					"RTID(ChallengeSeedBank@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(Escalation@.)",
+					"RTID(NewWaves@.)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "Penny's Challenge - Road Blocked",
+				"StageModule": "RTID(MashupStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"HolidayDrinkToughness"
+			],
+			"objclass": "ZombiePotionModuleProperties",
+			"objdata": {
+				"InitialPotionCount": 0,
+				"MaxPotionCount": 15,
+				"PotionSpawnTimer": {
+					"Min": 11,
+					"Max": 12
+				},
+				"PotionTypes": [
+					"holidaydrink_bighead",
+					"holidaydrink_feastivus",
+					"holidaydrink_stpatrick",
+					"holidaydrink_bighead"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 5,
+				"WavesPerFlag": 10,
+				"WaveManagerProps": "RTID(WaveManager@.)"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 10,
+				"WaveCount": 50,
+				"SuppressFlagZombie": true,
+				"MinNextWaveHealthPercentage": 0.5,
+				"MaxNextWaveHealthPercentage": 0.55,
+				"Waves": [
+					[
+						"RTID(Wave1@.)"
+					],
+					[
+						"RTID(Wave2@.)"
+					],
+					[
+						"RTID(Wave3@.)"
+					],
+					[
+						"RTID(Wave4@.)"
+					],
+					[
+						"RTID(Wave5@.)"
+					],
+					[
+						"RTID(Wave6@.)"
+					],
+					[
+						"RTID(Wave7@.)",
+						"RTID(SpidRain7@.)"
+					],
+					[
+						"RTID(Wave8@.)"
+					],
+					[
+						"RTID(Wave9@.)"
+					],
+					[
+						"RTID(Wave10@.)"
+					],
+					[
+						"RTID(Wave11@.)"
+					],
+					[
+						"RTID(Wave12@.)"
+					],
+					[
+						"RTID(Wave13@.)"
+					],
+					[
+						"RTID(Wave14@.)"
+					],
+					[
+						"RTID(Wave15@.)",
+						"RTID(SpidRain15@.)"
+					],
+					[
+						"RTID(Wave16@.)"
+					],
+					[
+						"RTID(Wave17@.)"
+					],
+					[
+						"RTID(Wave18@.)"
+					],
+					[
+						"RTID(Wave19@.)"
+					],
+					[
+						"RTID(Wave20@.)"
+					],
+					[
+						"RTID(Wave21@.)",
+						"RTID(SpidRain21@.)"
+					],
+					[
+						"RTID(Wave22@.)"
+					],
+					[
+						"RTID(Wave23@.)"
+					],
+					[
+						"RTID(Wave24@.)",
+						"RTID(SpidRain24@.)"
+					],
+					[
+						"RTID(Wave25@.)"
+					],
+					[
+						"RTID(Wave26@.)"
+					],
+					[
+						"RTID(Wave27@.)"
+					],
+					[
+						"RTID(Wave28@.)",
+						"RTID(SpidRain28@.)"
+					],
+					[
+						"RTID(Wave29@.)"
+					],
+					[
+						"RTID(Wave30@.)"
+					],
+					[
+						"RTID(Wave31@.)"
+					],
+					[
+						"RTID(Wave32@.)"
+					],
+					[
+						"RTID(Wave33@.)",
+						"RTID(SpidRain33@.)",
+						"RTID(SpidRain33_2@.)"
+					],
+					[
+						"RTID(Wave34@.)"
+					],
+					[
+						"RTID(Wave35@.)"
+					],
+					[
+						"RTID(Wave36@.)"
+					],
+					[
+						"RTID(Wave37@.)",
+						"RTID(SpidRain37@.)",
+						"RTID(SpidRain37_2@.)"
+					],
+					[
+						"RTID(Wave38@.)"
+					],
+					[
+						"RTID(Wave39@.)"
+					],
+					[
+						"RTID(Wave40@.)"
+					],
+					[
+						"RTID(Wave41@.)",
+						"RTID(SpidRain41@.)",
+						"RTID(SpidRain41_2@.)"
+					],
+					[
+						"RTID(Wave42@.)"
+					],
+					[
+						"RTID(Wave43@.)"
+					],
+					[
+						"RTID(Wave44@.)"
+					],
+					[
+						"RTID(Wave45@.)"
+					],
+					[
+						"RTID(SpidRain46@.)",
+						"RTID(SpidRain46_2@.)",
+						"RTID(SpidRain46_3@.)"
+					],
+					[
+						"RTID(Wave47@.)"
+					],
+					[
+						"RTID(Wave48@.)"
+					],
+					[
+						"RTID(Wave49@.)"
+					],
+					[
+						"RTID(Wave50@.)",
+						"RTID(SpidRain50@.)",
+						"RTID(SpidRain50_2@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_flag@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave19"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave20"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_flag@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave21"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave22"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave23"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave24"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave25"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave26"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave27"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave28"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave29"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave30"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_flag@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave31"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave32"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave33"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave34"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave35"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave36"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave37"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave38"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave39"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave40"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_flag@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave41"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave42"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave43"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave44"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave45"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave47"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave48"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(valentines_jane@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave49"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave50"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_fisherman@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_flag@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(children_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(children_basic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(children_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain7"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 6,
+				"ColumnEnd": 8,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "3",
+				"ZombieFallTime": "2.5",
+				"SpiderZombieName": "leprachaun_imp",
+				"SpiderCount": 3,
+				"WaveStartMessage": "Leprechauns!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain15"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 7,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "2.5",
+				"ZombieFallTime": "2.5",
+				"SpiderZombieName": "spring_imp",
+				"SpiderCount": 7,
+				"WaveStartMessage": "[WARNING_EGGS]"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain21"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 6,
+				"GroupSize": 4,
+				"TimeBetweenGroups": "2.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "leprachaun_imp",
+				"SpiderCount": 12,
+				"WaveStartMessage": "Leprechauns!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain24"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 6,
+				"GroupSize": 4,
+				"TimeBetweenGroups": "2",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "spring_imp",
+				"SpiderCount": 16,
+				"WaveStartMessage": "[WARNING_EGGS]"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain28"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 7,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "2",
+				"ZombieFallTime": "2.5",
+				"SpiderZombieName": "harvest_eggshell",
+				"SpiderCount": 3,
+				"WaveStartMessage": "Eggstravaganza!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain33"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 6,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "1.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "leprachaun_imp",
+				"SpiderCount": 10,
+				"WaveStartMessage": "Bag of Imps!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain33_2"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 7,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "1.5",
+				"ZombieFallTime": "2.5",
+				"SpiderZombieName": "harvest_eggshell",
+				"SpiderCount": 4,
+				"WaveStartMessage": "Bag of Imps!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain37"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 7,
+				"GroupSize": 5,
+				"TimeBetweenGroups": "1.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "harvest_eggshell",
+				"SpiderCount": 5,
+				"WaveStartMessage": "Bag of Imps!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain37_2"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 3,
+				"ColumnEnd": 5,
+				"GroupSize": 5,
+				"TimeBetweenGroups": "1.5",
+				"ZombieFallTime": "1",
+				"SpiderZombieName": "spring_imp",
+				"SpiderCount": 15,
+				"WaveStartMessage": "Bag of Imps!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain41"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 6,
+				"GroupSize": 5,
+				"TimeBetweenGroups": "1.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "harvest_eggshell",
+				"SpiderCount": 6,
+				"WaveStartMessage": "Bag of Imps!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain41_2"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 3,
+				"ColumnEnd": 5,
+				"GroupSize": 5,
+				"TimeBetweenGroups": "1.5",
+				"ZombieFallTime": "1.5",
+				"SpiderZombieName": "spring_imp",
+				"SpiderCount": 20,
+				"WaveStartMessage": "Bag of Imps!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain46"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 3,
+				"ColumnEnd": 6,
+				"GroupSize": 10,
+				"TimeBetweenGroups": "10",
+				"ZombieFallTime": "1",
+				"SpiderZombieName": "leprachaun_imp",
+				"SpiderCount": 10,
+				"WaveStartMessage": "Bag of Imps!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain46_2"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 6,
+				"GroupSize": 10,
+				"TimeBetweenGroups": "10",
+				"ZombieFallTime": "1",
+				"SpiderZombieName": "harvest_eggshell",
+				"SpiderCount": 10,
+				"WaveStartMessage": "Bag of Imps!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain46_3"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 3,
+				"ColumnEnd": 6,
+				"GroupSize": 10,
+				"TimeBetweenGroups": "10",
+				"ZombieFallTime": "1",
+				"SpiderZombieName": "spring_imp",
+				"SpiderCount": 7,
+				"WaveStartMessage": "Bag of Imps!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain50"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 5,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "0.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "harvest_eggshell",
+				"SpiderCount": 15,
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain50_2"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 2,
+				"ColumnEnd": 6,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "0.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "leprachaun_imp",
+				"SpiderCount": 25,
+				"WaveStartMessage": ""
+			}
+		},
+		{}
+	],
+	"version": 1
+}

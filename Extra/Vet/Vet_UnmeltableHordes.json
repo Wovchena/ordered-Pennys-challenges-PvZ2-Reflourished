@@ -1,0 +1,1811 @@
+{"#comment": "Plankton's Tip: Don't use the Winter Melon Pult, despite it being pre-picked, it shant melt my hordes. For this is an Unmeltable Horde.",
+"#zombies": "valentines_gargantuar, iceage_armor4, feastivus_armor2, hero_armor1, hero_armor2, hero_disco_mech, hero_weaselhoarder, hero_superbrainz, feastivus_fisherman, feastivus_hunter, feastivus_swashbuckler, iceage_charred, feastivus_poncho_plate, iceage_weaselhoarder_veteran, iceage_hunter_veteran, valentines_jane, foodfight_imp, holiday_gargantuar, feastivus_caketank",
+"objects": [{
+    "objclass": "LevelDefinition",
+    "objdata": {
+    "StartingSun": 50,
+    "Description": "{PLAYER}'s run through Penny's Challenge!",
+          "LevelPowerupSet": "LevelPowerupsDisabled",
+    "SuppressPlantfoodPurchase": true,
+    "DisablePlantBoosts": true,
+    "FixedPlantLevel": 1,
+    "FirstRewardParam": "moneybag",
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+        "DelayLoad_Background_Beach",
+        "DelayLoad_Background_Beach_Compressed",
+        "Tombstone_Dark_Special",
+        "Tombstone_Dark_Effects"
+    ],
+    "Modules": [
+         "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+        "RTID(StandardIntro@LevelModules)",
+        "RTID(GI@CurrentLevel)",
+        "RTID(IPP_Protect@CurrentLevel)",
+        "RTID(HolidayDrinksFeastivus@LevelModules)",
+        "RTID(SeedBank@CurrentLevel)",
+        "RTID(ChallengeModule@CurrentLevel)",
+        "RTID(Escalation@CurrentLevel)",
+        "RTID(NewWaves@CurrentLevel)",
+        "RTID(ZombiesDeadWinCon@LevelModules)",
+        "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+     "Name": "Penny's Challenge - Unmeltable Hordes",
+    "StageModule": "RTID(XmasNightStage@LevelModules)",
+    "MusicType": "MiniGame_MiniBoss"
+}},
+{"aliases": ["SeedBank"],
+"objclass": "SeedBankProperties",
+"objdata": {
+    "OverrideSeedSlotsCount": 8,
+    "PresetPlantList": [
+          {
+            "PlantType": "lilypad" 
+          }
+    ],
+    "PlantIncludeList": [
+        "sunflower",
+        "peashooter",
+        "wallnut",
+        "tallnut",
+        "explodeonut",
+        "bonkchoy",
+        "cabbagepult",
+        "melonpult",
+        "cherry_bomb",
+        "coconutcannon",
+        "gravebuster",
+        "iceburg",
+        "laser_bean",
+        "potatomine",
+        "repeater",
+        "snapdragon",
+        "spikeweed",
+        "threepeater",
+        "torchwood",
+        "kernelpult",
+        "springbean",
+        "snowpea",
+        "chilibean",
+        "splitpea",
+        "lightningreed",
+        "peapod",
+        "magnifyinggrass",
+        "bloomerang",
+        "holonut",
+        "empea",
+        "blover",
+        "starfruit",
+        "jalapeno",
+        "wintermelon",
+        "twinsunflower",
+        "spikerock",
+        "squash",
+        "citron",
+        "powerplant",
+        "sunshroom",
+        "puffshroom",
+        "fumeshroom",
+        "sunbean",
+        "magnetshroom",
+        "hypnoshroom",
+        "peanut",
+        "firepeashooter",
+        "lilypad",
+        "bowlingbulb",
+        "homingthistle",
+        "banana",
+        "chomper",
+        "guacodile",
+        "tanglekelp",
+        "ghostpepper",
+        "sweetpotato",
+        "sapfling",
+        "hurrikale",
+        "xshot",
+        "chardguard",
+        "pepperpult",
+        "kiwibeast",
+        "hotpotato",
+        "stunion",
+        "dandelion",
+        "redstinger",
+        "goldleaf",
+        "akee",
+        "lavaguava",
+        "toadstool",
+        "endurian",
+        "stallia",
+        "strawburst",
+        "cactus",
+        "phatbeet",
+        "thymewarp",
+        "celerystalker",
+        "electricblueberry",
+        "sporeshroom",
+        "garlic",
+        "intensivecarrot",
+        "jackolantern",
+        "primalpeashooter",
+        "grapeshot",
+        "primalwallnut",
+        "perfumeshroom",
+        "coldsnapdragon",
+        "primalsunflower",
+        "primalpotatomine",
+        "shrinkingviolet",
+        "moonflower",
+        "nightshade",
+        "shadowshroom",
+        "bloominghearts",
+        "escaperoot",
+        "grimrose",
+        "dusklobber",
+        "goldbloom",
+        "electriccurrant",
+        "aloe",
+        "wasabiwhip",
+        "applemortar",
+        "bombegranate",
+        "missiletoe",
+        "parsnip",
+        "witchhazel",
+        "hotdate",
+        "caulipower",
+        "solartomato",
+        "electricpeashooter",
+        "hollyknight",
+        "shadowpeashooter",
+        "poisonpeashooter",
+        "slingpea",
+        "snappea",
+        "zoybeanpod",
+        "dazeychain",
+        "electricitea",
+        "blastberry",
+        "imppear",
+        "pumpkin",
+        "icebloom",
+        "dartichoke",
+        "ultomato",
+        "gumnut",
+        "shinevine",
+        "tumbleweed",
+        "murkadamia",
+        "puffball",
+        "stickybombrice",
+        "olivepit",
+        "turkeypult",
+        "boingsetta",
+        "hocus",
+        "gloomvine",
+        "draftodil",
+        "boomflower",
+        "pvine",
+        "inferno",
+        "solarsage",
+        "noctarine",
+        "iceweed",
+        "unused_45",
+        "unused_47",
+        "unused_43",
+        "unused_48",
+        "unused_49",
+        "unused_46",
+        "headbutter",
+        "teleportatomine",
+        "pokra",
+        "pyrevine",
+        "hollybarrierleaf"
+    ],
+    "PlantExcludeList": [
+        
+    ],
+    "SelectionMethod": "chooser"
+}},
+{"aliases":["ChallengeModule"],
+"objclass": "StarChallengeModuleProperties",
+"objdata": {
+    "Challenges": [[
+        "RTID(BeatTheLevel@CurrentLevel)"
+    ]],
+    "ChallengesAlwaysAvailable": true
+}},
+{"aliases":["BeatTheLevel"],
+"objclass": "StarChallengeBeatTheLevelProps",
+"objdata": {
+    "Description": "Survive and protect the endangered plant",
+    "DescriptiveName": "Custom Objective"
+}},
+ {"aliases":["GI"],
+"objclass":"InitialGridItemProperties",
+"objdata":{
+    "InitialGridItemPlacements": [
+        {"GridX": 6, "GridY": 0, "TypeName":"presentSunOnDestruction"},
+        {"GridX": 4, "GridY": 1, "TypeName":"presentSunOnDestruction"},
+        {"GridX": 6, "GridY": 1, "TypeName":"presentSunOnDestruction"},
+        {"GridX": 5, "GridY": 2, "TypeName":"presentSunOnDestruction"},
+        {"GridX": 3, "GridY": 3, "TypeName":"presentPlantOnDestruction"},
+        {"GridX": 4, "GridY": 4, "TypeName":"presentPlantOnDestruction"}
+    ]
+}},
+{"aliases":["IPP_Protect"],
+"objclass": "ProtectThePlantChallengeProperties",
+"objdata": {
+    "Plants": [
+        {"GridX": 3, "GridY": 2, "Level": 0, "PlantType":"wintermelon"}
+    ], 
+    "MustProtectCount": 1
+}},
+ {"aliases": ["Escalation"],
+"objclass": "LevelEscalationModuleProperties",
+"objdata": {
+    "FlagCount": 5,
+    "WavesPerFlag": 10,
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0,
+    "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+    "ZombiePool": [
+        "RTID(tutorial@ZombieTypes)"
+    ]
+}},
+{"aliases": ["NewWaves"],
+"objclass": "WaveManagerModuleProperties",
+"objdata": {}
+},
+{"aliases": ["WaveManager"],
+"objclass": "WaveManagerProperties",
+"objdata": {
+    "FlagWaveInterval": 10,
+    "WaveCount": 50,
+    "SuppressFlagZombie": false,
+    "MinNextWaveHealthPercentage": 0.1,
+    "MaxNextWaveHealthPercentage": 0.1,
+    "Waves": [
+         ["RTID(Wave1@.)", "RTID(frost_L4R@.)"],
+        ["RTID(Wave2@.)"],
+        ["RTID(Wave3@.)", "RTID(SpidRain3_foodfight_imp@.)"],
+        ["RTID(Wave4@.)"],
+        ["RTID(Wave5@.)", "RTID(frost_LR2@.)", "RTID(Dino_T2@.)"],
+        ["RTID(Wave6@.)", "RTID(Dino_T1@.)"],
+        ["RTID(Wave7@.)"],
+        ["RTID(Wave8@.)", "RTID(frost_LR145@.)"],
+        ["RTID(Wave9@.)", "RTID(SpidRain9_foodfight_imp@.)"],
+        ["RTID(Wave10@.)", "RTID(Dino_T4@.)", "RTID(Dino_T5@.)", "RTID(GridSpawn10@.)"],
+        ["RTID(Wave11@.)"],
+        ["RTID(Wave12@.)", "RTID(frost_L123R@.)"],
+        ["RTID(Wave13@.)", "RTID(PortalSpawn13_60@.)", "RTID(PortalSpawn13_63@.)", "RTID(PortalSpawn13_71@.)"],
+        ["RTID(Wave14@.)", "RTID(Dino_T3@.)", "RTID(Dino_T4@.)", "RTID(Dino_T5@.)"],
+        ["RTID(Wave15@.)", "RTID(GridSpawn40@.)"],
+        ["RTID(Wave16@.)", "RTID(frost_L2345R3@.)"],
+        ["RTID(Wave17@.)", "RTID(Dino_T1@.)", "RTID(Dino_T3@.)", "RTID(Dino_T5@.)"],
+        ["RTID(Wave18@.)", "RTID(PortalSpawn18_64@.)", "RTID(PortalSpawn18_70@.)", "RTID(PortalSpawn18_71@.)", "RTID(PortalSpawn18_73@.)", "RTID(PortalSpawn18_82@.)"],
+        ["RTID(Wave19@.)"],
+        ["RTID(Wave20@.)", "RTID(frost_L14R1235@.)", "RTID(Dino_T1@.)", "RTID(Dino_T2@.)", "RTID(Dino_T3@.)", "RTID(Dino_T4@.)", "RTID(Dino_T5@.)", "RTID(SpidRain20_foodfight_imp@.)"],
+        ["RTID(Wave21@.)", "RTID(GridSpawn21@.)", "RTID(frost_L12345R@.)"],
+        ["RTID(Wave22@.)", "RTID(PortalSpawn22_70@.)", "RTID(PortalSpawn22_71@.)", "RTID(PortalSpawn22_73@.)", "RTID(PortalSpawn22_84@.)"],
+        ["RTID(Wave23@.)", "RTID(GridSpawn40@.)"],
+        ["RTID(Wave24@.)", "RTID(Dino_T1@.)", "RTID(Dino_T2@.)", "RTID(Dino_T4@.)"],
+        ["RTID(Wave25@.)", "RTID(SpidRain25_foodfight_imp@.)", "RTID(frost_L234R14@.)"],
+        ["RTID(Wave26@.)", "RTID(Dino_T1@.)", "RTID(Dino_T2@.)", "RTID(Dino_T3@.)"],
+        ["RTID(Wave27@.)", "RTID(PortalSpawn27_71@.)", "RTID(PortalSpawn27_73@.)"],
+        ["RTID(Wave28@.)", "RTID(frost_L12345R@.)"],
+        ["RTID(Wave29@.)"],
+        ["RTID(Wave30@.)", "RTID(Dino_T1@.)", "RTID(Dino_T3@.)", "RTID(Dino_T4@.)"],
+        ["RTID(Wave31@.)"],
+        ["RTID(Wave32@.)", "RTID(frost_L23R34@.)"],
+        ["RTID(Wave33@.)", "RTID(GridSpawn40@.)"],
+        ["RTID(Wave34@.)", "RTID(Dino_T1@.)", "RTID(Dino_T2@.)", "RTID(Dino_T5@.)"],
+        ["RTID(Wave35@.)", "RTID(PortalSpawn35_60@.)", "RTID(PortalSpawn35_71@.)", "RTID(PortalSpawn35_72@.)", "RTID(PortalSpawn35_83@.)", "RTID(PortalSpawn35_84@.)"],
+        ["RTID(Wave36@.)", "RTID(SpidRain36_foodfight_imp@.)", "RTID(Dino_T1@.)", "RTID(Dino_T2@.)", "RTID(Dino_T3@.)", "RTID(Dino_T5@.)"],
+        ["RTID(Wave37@.)", "RTID(PortalSpawn37_70@.)", "RTID(PortalSpawn37_73@.)", "RTID(PortalSpawn37_74@.)"],
+        ["RTID(Wave38@.)", "RTID(Dino_T1@.)", "RTID(Dino_T2@.)", "RTID(Dino_T3@.)", "RTID(Dino_T4@.)", "RTID(Dino_T5@.)"],
+        ["RTID(Wave39@.)", "RTID(frost_L125R2345@.)"],
+        ["RTID(Wave40@.)", "RTID(SpidRain40_foodfight_imp@.)", "RTID(GridSpawn40@.)"],
+        ["RTID(Wave41@.)"],
+        ["RTID(Wave42@.)", "RTID(Dino_T3@.)", "RTID(GridSpawn42@.)"],
+        ["RTID(Wave43@.)", "RTID(frost_L1345R2@.)"],
+        ["RTID(Wave44@.)", "RTID(PortalSpawn44_70@.)", "RTID(PortalSpawn44_71@.)", "RTID(PortalSpawn44_72@.)", "RTID(PortalSpawn44_73@.)", "RTID(PortalSpawn44_74@.)", "RTID(PortalSpawn44_82@.)"],
+        ["RTID(Wave45@.)", "RTID(Dino_T2@.)", "RTID(Dino_T3@.)", "RTID(Dino_T4@.)", "RTID(Dino_T5@.)"],
+        ["RTID(Wave46@.)", "RTID(frost_L123R134@.)"],
+        ["RTID(Wave47@.)", "RTID(SpidRain47_foodfight_imp@.)"],
+        ["RTID(Wave48@.)", "RTID(Dino_T1@.)", "RTID(Dino_T2@.)", "RTID(Dino_T3@.)", "RTID(SpidRain47_foodfight_imp@.)"],
+        ["RTID(Wave49@.)", "RTID(Dino_T3@.)", "RTID(Dino_T4@.)", "RTID(Dino_T5@.)", "RTID(SpidRain47_foodfight_imp@.)"],
+        ["RTID(Wave50@.)", "RTID(PortalSpawn50_70@.)", "RTID(PortalSpawn50_72@.)", "RTID(PortalSpawn50_73@.)", "RTID(PortalSpawn50_81@.)", "RTID(PortalSpawn50_82@.)", "RTID(PortalSpawn50_84@.)", "RTID(SpidRain47_foodfight_imp@.)"]
+    ]
+}},
+ {"aliases":["Wave1"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(feastivus@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "5", "Type": "RTID(feastivus@ZombieTypes)"},
+        {"Type": "RTID(hero_superbrainz@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave3"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(feastivus_hunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave4"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave5"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "4", "Type": "RTID(feastivus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_electricboogaloo@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_hunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave6"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave7"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Type": "RTID(hero_weaselhoarder@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave8"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Type": "RTID(hero_armor1@ZombieTypes)"},
+        {"Type": "RTID(hero_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave9"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Type": "RTID(hero_disco_mech@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave10"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_hunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave11"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave12"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave13"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave14"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Type": "RTID(hero_disco_mech@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave15"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(holiday_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave16"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Type": "RTID(hero_armor1@ZombieTypes)"},
+        {"Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Type": "RTID(hero_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave17"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave18"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(valentines_gargantuar@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave19"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave20"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(holiday_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave21"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave22"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Type": "RTID(feastivus_swashbuckler@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave23"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(valentines_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave24"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave25"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(holiday_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(holiday_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave26"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Type": "RTID(hero_weaselhoarder@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave27"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(valentines_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave28"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave29"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_overstuff@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave30"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(holiday_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(valentines_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave31"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave32"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Type": "RTID(hero_superbrainz@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave33"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave34"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(valentines_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(holiday_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Type": "RTID(valentines_jane@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave35"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(valentines_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(valentines_gargantuar@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave36"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_fisherman@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave37"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave38"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave39"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(holiday_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(holiday_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_overstuff@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_disco_mech@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave40"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(valentines_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Type": "RTID(hero_weaselhoarder@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave41"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_overstuff@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Type": "RTID(feastivus_poncho_plate@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave42"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave43"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(holiday_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave44"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Type": "RTID(hero_weaselhoarder@ZombieTypes)"},
+        {"Type": "RTID(hero_weaselhoarder@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave45"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(holiday_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Type": "RTID(feastivus_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave46"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(valentines_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave47"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(holiday_gargantuar@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave48"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_charred@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave49"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_disco_mech@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_overstuff@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(valentines_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(hero_superbrainz@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_overstuff@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_poncho_plate@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_swashbuckler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_weaselhoarder_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave50"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(valentines_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_caketank@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(valentines_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_armor4@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(valentines_jane@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_armor4@ZombieTypes)"}
+    ]
+}},
+ {"aliases":["frost_L4R"], 
+"objclass": "FrostWindWaveActionProps",
+"objdata": {
+    "Winds": [
+        {"Direction": "left", "Row": "3"}
+    ]
+}},
+{"aliases":["SpidRain3_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 7,
+    "ColumnEnd": 8,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.5",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 3,
+    "WaveStartMessage": "Taco Tuesday!"
+}},
+{"aliases":["frost_LR2"], 
+"objclass": "FrostWindWaveActionProps",
+"objdata": {
+    "Winds": [
+        {"Direction": "right", "Row": "1"}
+    ]
+}},
+{"aliases":["Dino_T2"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 1,
+    "DinoType": "tyranno"
+}},
+{"aliases":["Dino_T1"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 0,
+    "DinoType": "tyranno"
+}},
+{"aliases":["frost_LR145"], 
+"objclass": "FrostWindWaveActionProps",
+"objdata": {
+    "Winds": [
+        {"Direction": "right", "Row": "0"},
+        {"Direction": "right", "Row": "3"},
+        {"Direction": "right", "Row": "4"}
+    ]
+}},
+{"aliases":["SpidRain9_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 7,
+    "ColumnEnd": 8,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "1",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 4,
+    "WaveStartMessage": "Taco Tuesday!"
+}},
+{"aliases":["Dino_T4"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 3,
+    "DinoType": "tyranno"
+}},
+{"aliases":["Dino_T5"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 4,
+    "DinoType": "tyranno"
+}},
+{"aliases":["GridSpawn10"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 8, "Type": "RTID(presentPlantOnDestruction@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 5, "mY": 1}, {"mX": 5, "mY": 2}, {"mX": 4, "mY": 3}, {"mX": 5, "mY": 3}, {"mX": 5, "mY": 4}, {"mX": 7, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_ZOMBIE_CHILDREN_LOLLIPOPS_HIT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["frost_L123R"], 
+"objclass": "FrostWindWaveActionProps",
+"objdata": {
+    "Winds": [
+        {"Direction": "left", "Row": "0"},
+        {"Direction": "left", "Row": "1"},
+        {"Direction": "left", "Row": "2"}
+    ]
+}},
+{"aliases":["PortalSpawn13_60"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 6,
+    "PortalRow": 0,
+    "PortalType": "holiday_4"
+}},
+{"aliases":["PortalSpawn13_63"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 6,
+    "PortalRow": 3,
+    "PortalType": "holiday_4"
+}},
+{"aliases":["PortalSpawn13_71"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 1,
+    "PortalType": "iceage_hollows"
+}},
+{"aliases":["Dino_T3"],
+"objclass": "DinoWaveActionProps",
+"objdata": {
+    "DinoRow": 2,
+    "DinoType": "tyranno"
+}},
+{"aliases":["frost_L2345R3"], 
+"objclass": "FrostWindWaveActionProps",
+"objdata": {
+    "Winds": [
+        {"Direction": "left", "Row": "1"},
+        {"Direction": "left", "Row": "2"},
+        {"Direction": "left", "Row": "3"},
+        {"Direction": "left", "Row": "4"},
+        {"Direction": "right", "Row": "2"}
+    ]
+}},
+{"aliases":["PortalSpawn18_64"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 6,
+    "PortalRow": 4,
+    "PortalType": "holiday_4"
+}},
+{"aliases":["PortalSpawn18_70"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 0,
+    "PortalType": "holiday_1"
+}},
+{"aliases":["PortalSpawn18_71"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 1,
+    "PortalType": "holiday_1"
+}},
+{"aliases":["PortalSpawn18_73"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 3,
+    "PortalType": "holiday_4"
+}},
+{"aliases":["PortalSpawn18_82"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 8,
+    "PortalRow": 2,
+    "PortalType": "iceage_hollows"
+}},
+{"aliases":["frost_L14R1235"], 
+"objclass": "FrostWindWaveActionProps",
+"objdata": {
+    "Winds": [
+        {"Direction": "left", "Row": "0"},
+        {"Direction": "left", "Row": "3"},
+        {"Direction": "right", "Row": "0"},
+        {"Direction": "right", "Row": "1"},
+        {"Direction": "right", "Row": "2"},
+        {"Direction": "right", "Row": "4"}
+    ]
+}},
+{"aliases":["SpidRain20_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 7,
+    "GroupSize": 2,
+    "TimeBetweenGroups": "0.5",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 14,
+    "WaveStartMessage": "Taco Tuesday!"
+}},
+{"aliases":["GridSpawn21"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 6, "Type": "RTID(presentPlantOnDestruction@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(presentSunOnDestruction@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 6, "mY": 1}, {"mX": 6, "mY": 2}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 5, "mY": 4}, {"mX": 6, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["frost_L12345R"], 
+"objclass": "FrostWindWaveActionProps",
+"objdata": {
+    "Winds": [
+        {"Direction": "left", "Row": "0"},
+        {"Direction": "left", "Row": "1"},
+        {"Direction": "left", "Row": "2"},
+        {"Direction": "left", "Row": "3"},
+        {"Direction": "left", "Row": "4"}
+    ]
+}},
+{"aliases":["PortalSpawn22_70"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 0,
+    "PortalType": "iceage_hollows"
+}},
+{"aliases":["PortalSpawn22_71"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 1,
+    "PortalType": "iceage_hollows_2"
+}},
+{"aliases":["PortalSpawn22_73"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 3,
+    "PortalType": "iceage_hollows"
+}},
+{"aliases":["PortalSpawn22_84"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 8,
+    "PortalRow": 4,
+    "PortalType": "holiday_1"
+}},
+{"aliases":["SpidRain25_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 7,
+    "GroupSize": 5,
+    "TimeBetweenGroups": "2",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 15,
+    "WaveStartMessage": "Taco Tuesday!"
+}},
+{"aliases":["frost_L234R14"], 
+"objclass": "FrostWindWaveActionProps",
+"objdata": {
+    "Winds": [
+        {"Direction": "left", "Row": "1"},
+        {"Direction": "left", "Row": "2"},
+        {"Direction": "left", "Row": "3"},
+        {"Direction": "right", "Row": "0"},
+        {"Direction": "right", "Row": "3"}
+    ]
+}},
+{"aliases":["PortalSpawn27_71"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 1,
+    "PortalType": "iceage_hollows_2"
+}},
+{"aliases":["PortalSpawn27_73"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 3,
+    "PortalType": "iceage_hollows_2"
+}},
+{"aliases":["frost_L23R34"], 
+"objclass": "FrostWindWaveActionProps",
+"objdata": {
+    "Winds": [
+        {"Direction": "left", "Row": "1"},
+        {"Direction": "left", "Row": "2"},
+        {"Direction": "right", "Row": "2"},
+        {"Direction": "right", "Row": "3"}
+    ]
+}},
+{"aliases":["PortalSpawn35_60"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 6,
+    "PortalRow": 0,
+    "PortalType": "iceage_hollows_2"
+}},
+{"aliases":["PortalSpawn35_71"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 1,
+    "PortalType": "iceage_hollows"
+}},
+{"aliases":["PortalSpawn35_72"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 2,
+    "PortalType": "holiday_4"
+}},
+{"aliases":["PortalSpawn35_83"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 8,
+    "PortalRow": 3,
+    "PortalType": "iceage_hollows_2"
+}},
+{"aliases":["PortalSpawn35_84"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 8,
+    "PortalRow": 4,
+    "PortalType": "iceage_hollows_2"
+}},
+{"aliases":["SpidRain36_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 2,
+    "ColumnEnd": 7,
+    "GroupSize": 2,
+    "TimeBetweenGroups": "1",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 18,
+    "WaveStartMessage": "Taco Tuesday!"
+}},
+{"aliases":["PortalSpawn37_70"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 0,
+    "PortalType": "holiday_1"
+}},
+{"aliases":["PortalSpawn37_73"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 3,
+    "PortalType": "holiday_1"
+}},
+{"aliases":["PortalSpawn37_74"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 4,
+    "PortalType": "holiday_1"
+}},
+{"aliases":["frost_L125R2345"], 
+"objclass": "FrostWindWaveActionProps",
+"objdata": {
+    "Winds": [
+        {"Direction": "left", "Row": "0"},
+        {"Direction": "left", "Row": "1"},
+        {"Direction": "left", "Row": "4"},
+        {"Direction": "right", "Row": "1"},
+        {"Direction": "right", "Row": "2"},
+        {"Direction": "right", "Row": "3"},
+        {"Direction": "right", "Row": "4"}
+    ]
+}},
+{"aliases":["SpidRain40_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 5,
+    "ColumnEnd": 8,
+    "GroupSize": 4,
+    "TimeBetweenGroups": "2",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 20,
+    "WaveStartMessage": "Taco Tuesday!"
+}},
+{"aliases":["GridSpawn40"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 12, "Type": "RTID(presentSunOnDestruction@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 1}, {"mX": 5, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 3}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["GridSpawn42"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 13, "Type": "RTID(presentSunOnDestruction@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 5, "mY": 0}, {"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 6, "mY": 1}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 1}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["frost_L1345R2"], 
+"objclass": "FrostWindWaveActionProps",
+"objdata": {
+    "Winds": [
+        {"Direction": "left", "Row": "0"},
+        {"Direction": "left", "Row": "2"},
+        {"Direction": "left", "Row": "3"},
+        {"Direction": "left", "Row": "4"},
+        {"Direction": "right", "Row": "1"}
+    ]
+}},
+{"aliases":["PortalSpawn44_70"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 0,
+    "PortalType": "iceage_hollows_2"
+}},
+{"aliases":["PortalSpawn44_71"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 1,
+    "PortalType": "iceage_hollows_2"
+}},
+{"aliases":["PortalSpawn44_72"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 2,
+    "PortalType": "holiday_4"
+}},
+{"aliases":["PortalSpawn44_73"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 3,
+    "PortalType": "iceage_hollows_2"
+}},
+{"aliases":["PortalSpawn44_74"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 4,
+    "PortalType": "iceage_hollows_2"
+}},
+{"aliases":["PortalSpawn44_82"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 8,
+    "PortalRow": 2,
+    "PortalType": "holiday_1"
+}},
+{"aliases":["frost_L123R134"], 
+"objclass": "FrostWindWaveActionProps",
+"objdata": {
+    "Winds": [
+        {"Direction": "left", "Row": "0"},
+        {"Direction": "left", "Row": "1"},
+        {"Direction": "left", "Row": "2"},
+        {"Direction": "right", "Row": "0"},
+        {"Direction": "right", "Row": "2"},
+        {"Direction": "right", "Row": "3"}
+    ]
+}},
+{"aliases":["SpidRain47_foodfight_imp"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 8,
+    "GroupSize": 2,
+    "TimeBetweenGroups": "1",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "foodfight_imp",
+    "SpiderCount": 20,
+    "WaveStartMessage": "Taco Tuesday!"
+}},
+{"aliases":["PortalSpawn50_70"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 0,
+    "PortalType": "iceage_hollows_2"
+}},
+{"aliases":["PortalSpawn50_72"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 2,
+    "PortalType": "holiday_4"
+}},
+{"aliases":["PortalSpawn50_73"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 7,
+    "PortalRow": 3,
+    "PortalType": "iceage_hollows_2"
+}},
+{"aliases":["PortalSpawn50_81"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 8,
+    "PortalRow": 1,
+    "PortalType": "holiday_1"
+}},
+{"aliases":["PortalSpawn50_82"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 8,
+    "PortalRow": 2,
+    "PortalType": "holiday_4"
+}},
+{"aliases":["PortalSpawn50_84"],
+"objclass": "SpawnModernPortalsWaveActionProps",
+"objdata": {
+    "PortalColumn": 8,
+    "PortalRow": 4,
+    "PortalType": "holiday_1"
+}},
+                                 {}
+    ],
+    "version": 1
+}

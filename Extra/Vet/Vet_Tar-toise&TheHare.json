@@ -1,0 +1,2687 @@
+{
+  "#comment": "Changes: Mold added on Tar; Fisherman added; Parachute Rains are denser and target the back of your lawn.",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "{PLAYER}'s run through Penny's Challenge!",
+        "FixedPlantLevel": 1,
+        "SuppressPlantfoodPurchase": true,
+        "DisablePlantBoosts": true,
+        "LevelPowerupSet": "LevelPowerupsDisabled",
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(Escalation@CurrentLevel)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(ChallengeSeedBank@LevelModules)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(GridItems@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "Name": "Penny's Challenge - Tar-toise & The Hare",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(MashupStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(ZombieDistance@CurrentLevel)",
+            "RTID(DoNotPlantBeforeLine@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "ZombieDistance"
+      ],
+      "objclass": "StarChallengeZombieDistanceProps",
+      "objdata": {
+        "TargetDistance": 7
+      }
+    },
+    {
+      "aliases": [
+        "DoNotPlantBeforeLine"
+      ],
+      "objclass": "MoldColonyChallengeProps",
+      "objdata": {
+        "Locations": "RTID(MoldColonies@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "MoldColonies"
+      ],
+      "objclass": "BoardGridMapProps",
+      "objdata": {
+        "Values": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GridItems"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 8,
+            "GridY": 0,
+            "TypeName": "tar"
+          },
+          {
+            "GridX": 8,
+            "GridY": 1,
+            "TypeName": "tar"
+          },
+          {
+            "GridX": 8,
+            "GridY": 2,
+            "TypeName": "tar"
+          },
+          {
+            "GridX": 8,
+            "GridY": 3,
+            "TypeName": "tar"
+          },
+          {
+            "GridX": 8,
+            "GridY": 4,
+            "TypeName": "tar"
+          },
+          {
+            "GridX": 7,
+            "GridY": 0,
+            "TypeName": "tar"
+          },
+          {
+            "GridX": 7,
+            "GridY": 1,
+            "TypeName": "tar"
+          },
+          {
+            "GridX": 7,
+            "GridY": 2,
+            "TypeName": "tar"
+          },
+          {
+            "GridX": 7,
+            "GridY": 3,
+            "TypeName": "tar"
+          },
+          {
+            "GridX": 7,
+            "GridY": 4,
+            "TypeName": "tar"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "Escalation"
+      ],
+      "objclass": "LevelEscalationModuleProperties",
+      "objdata": {
+        "FlagCount": 5,
+        "WavesPerFlag": 9,
+        "PlantfoodToSpawnCount": 5,
+        "PointIncrementPerWave": 15,
+        "StartingPoints": 70,
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+        "ZombiePool": [
+          "RTID(dark@ZombieTypes)",
+          "RTID(dark_armor1@ZombieTypes)",
+          "RTID(dark_armor2@ZombieTypes)",
+          "RTID(dark_armor3@ZombieTypes)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 9,
+        "WaveCount": 45,
+        "MaxNextWaveHealthPercentage": 0.5,
+        "MinNextWaveHealthPercentage": 0.65,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)",
+            "RTID(Wave2ParachuteRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)",
+            "RTID(Wave6DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave6DinoTimeEvent1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)",
+            "RTID(Wave8ParachuteRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)",
+            "RTID(Wave12DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave12DinoTimeEvent1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)",
+            "RTID(Wave14ParachuteRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave15@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave16@CurrentLevel)",
+            "RTID(Wave16DinoTimeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave17@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave18@CurrentLevel)",
+            "RTID(Wave18ParachuteRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave19@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave20@CurrentLevel)",
+            "RTID(Wave20DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave20DinoTimeEvent1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave21@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave22@CurrentLevel)",
+            "RTID(Wave22ParachuteRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave23@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave24@CurrentLevel)",
+            "RTID(Wave24DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave24DinoTimeEvent1@CurrentLevel)",
+            "RTID(Wave24DinoTimeEvent2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave25@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave26@CurrentLevel)",
+            "RTID(Wave26ParachuteRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave27@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave28@CurrentLevel)",
+            "RTID(Wave28DinoTimeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave29@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave30@CurrentLevel)",
+            "RTID(Wave30ParachuteRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave31@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave32@CurrentLevel)",
+            "RTID(Wave32DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave32DinoTimeEvent1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave33@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave34@CurrentLevel)",
+            "RTID(Wave34ParachuteRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave35@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave36@CurrentLevel)",
+            "RTID(Wave36DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave36DinoTimeEvent1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave37@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave38@CurrentLevel)",
+            "RTID(Wave38ParachuteRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave39@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave40@CurrentLevel)",
+            "RTID(Wave40DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave40DinoTimeEvent1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave41@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave42@CurrentLevel)",
+            "RTID(Wave42ParachuteRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave43@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave44@CurrentLevel)",
+            "RTID(Wave44DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave44DinoTimeEvent1@CurrentLevel)",
+            "RTID(Wave44DinoTimeEvent2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave45@CurrentLevel)",
+            "RTID(Wave45ParachuteRainEvent0@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": []
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(pirate_captain@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_armor1@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(pirate_captain@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(harvest_pterry@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave17"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave18"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_pterry@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave19"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_piano@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave20"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "5",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave21"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(halloween_octopus@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave22"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave23"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(harvest_pterry@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave24"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave25"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave26"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave27"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_pterry@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave28"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave29"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave30"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_mechanic@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave31"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave32"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(harvest_pterry@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave33"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_piano@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave34"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave35"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave36"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave37"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(pirate_captain@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave38"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_mechanic@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave39"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave40"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_piano@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave41"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave42"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_mechanic@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_hunter@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave43"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(sportzball_wizard@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave44"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_piano@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_piano@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(dark_king@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(feastivus_fisherman@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave45"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(harvest_pterry@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(harvest_pterry@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(halloween_octopus@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(pirate_captain@ZombieTypes)" 
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(spring_prospector@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(halloween_relichunter@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2ParachuteRainEvent0"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 4,
+        "ColumnStart": "2",
+        "GroupSize": "1",
+        "SpiderCount": "1",
+        "SpiderZombieName": "bighead_lostpilot",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "1",
+        "WaveStartMessage": "Parachute Rain!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave8ParachuteRainEvent0"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 4,
+        "ColumnStart": "2",
+        "GroupSize": "1",
+        "SpiderCount": "4",
+        "SpiderZombieName": "bighead_lostpilot",
+        "TimeBeforeFullSpawn": "4",
+        "TimeBetweenGroups": "1",
+        "WaveStartMessage": "Parachute Rain!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave14ParachuteRainEvent0"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 5,
+        "ColumnStart": "2",
+        "GroupSize": "1",
+        "SpiderCount": "6",
+        "SpiderZombieName": "bighead_lostpilot",
+        "TimeBeforeFullSpawn": "4.5",
+        "TimeBetweenGroups": "0.75",
+        "WaveStartMessage": "Parachute Rain!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave18ParachuteRainEvent0"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 4,
+        "ColumnStart": "1",
+        "GroupSize": "2",
+        "SpiderCount": "6",
+        "SpiderZombieName": "bighead_lostpilot",
+        "TimeBeforeFullSpawn": "6",
+        "TimeBetweenGroups": "2",
+        "WaveStartMessage": "Parachute Rain!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave22ParachuteRainEvent0"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 4,
+        "ColumnStart": "1",
+        "GroupSize": "1",
+        "SpiderCount": "8",
+        "SpiderZombieName": "bighead_lostpilot",
+        "TimeBeforeFullSpawn": "8",
+        "TimeBetweenGroups": "1",
+        "WaveStartMessage": "Parachute Rain!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave26ParachuteRainEvent0"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 3,
+        "ColumnStart": "1",
+        "GroupSize": "1",
+        "SpiderCount": "10",
+        "SpiderZombieName": "bighead_lostpilot",
+        "TimeBeforeFullSpawn": "40",
+        "TimeBetweenGroups": "40",
+        "WaveStartMessage": "Parachute Rain!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave30ParachuteRainEvent0"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 3,
+        "ColumnStart": "2",
+        "GroupSize": "2",
+        "SpiderCount": "8",
+        "SpiderZombieName": "bighead_lostpilot",
+        "TimeBeforeFullSpawn": "8",
+        "TimeBetweenGroups": "2",
+        "WaveStartMessage": "Parachute Rain!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave34ParachuteRainEvent0"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 3,
+        "ColumnStart": "1",
+        "GroupSize": "3",
+        "SpiderCount": "9",
+        "SpiderZombieName": "bighead_lostpilot",
+        "TimeBeforeFullSpawn": "6",
+        "TimeBetweenGroups": "2",
+        "WaveStartMessage": "Parachute Rain!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave38ParachuteRainEvent0"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 2,
+        "ColumnStart": "1",
+        "GroupSize": "1",
+        "SpiderCount": "12",
+        "SpiderZombieName": "bighead_lostpilot",
+        "TimeBeforeFullSpawn": "18",
+        "TimeBetweenGroups": "1.5",
+        "WaveStartMessage": "Parachute Rain!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave42ParachuteRainEvent0"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 2,
+        "ColumnStart": "1",
+        "GroupSize": "15",
+        "SpiderCount": "15",
+        "SpiderZombieName": "bighead_lostpilot",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "1",
+        "WaveStartMessage": "Parachute Rain!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave45ParachuteRainEvent0"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 2,
+        "ColumnStart": "1",
+        "GroupSize": "1",
+        "SpiderCount": "20",
+        "SpiderZombieName": "bighead_lostpilot",
+        "TimeBeforeFullSpawn": "5",
+        "TimeBetweenGroups": "0.25",
+        "WaveStartMessage": "Parachute Rain!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave6DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "raptor"
+      }
+    },
+    {
+      "aliases": [
+        "Wave6DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "raptor"
+      }
+    },
+    {
+      "aliases": [
+        "Wave12DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "stego"
+      }
+    },
+    {
+      "aliases": [
+        "Wave12DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "stego"
+      }
+    },
+    {
+      "aliases": [
+        "Wave16DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "raptor"
+      }
+    },
+    {
+      "aliases": [
+        "Wave20DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "stego"
+      }
+    },
+    {
+      "aliases": [
+        "Wave20DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "stego"
+      }
+    },
+    {
+      "aliases": [
+        "Wave24DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "raptor"
+      }
+    },
+    {
+      "aliases": [
+        "Wave24DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "stego"
+      }
+    },
+    {
+      "aliases": [
+        "Wave24DinoTimeEvent2"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "raptor"
+      }
+    },
+    {
+      "aliases": [
+        "Wave28DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "raptor"
+      }
+    },
+    {
+      "aliases": [
+        "Wave32DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "stego"
+      }
+    },
+    {
+      "aliases": [
+        "Wave32DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "stego"
+      }
+    },
+    {
+      "aliases": [
+        "Wave36DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "raptor"
+      }
+    },
+    {
+      "aliases": [
+        "Wave36DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "raptor"
+      }
+    },
+    {
+      "aliases": [
+        "Wave40DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "stego"
+      }
+    },
+    {
+      "aliases": [
+        "Wave40DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "stego"
+      }
+    },
+    {
+      "aliases": [
+        "Wave44DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "raptor"
+      }
+    },
+    {
+      "aliases": [
+        "Wave44DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "stego"
+      }
+    },
+    {
+      "aliases": [
+        "Wave44DinoTimeEvent2"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "raptor"
+      }
+    }
+  ],
+  "version": 1
+}

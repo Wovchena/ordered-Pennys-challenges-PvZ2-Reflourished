@@ -1,0 +1,1640 @@
+{"#comment": "Penny's Challenge - On The Grind | ELM: Ver-10.2 [RFL v1.23]",
+"#zombies": "mummy, mummy_armor1, mummy_armor2, mummy_armor4, pharaoh, egypt_gargantuar, carnie_imp_twins, carnie_trapeze_blue, carnie_trapeze_red, carnie_trapeze_yellow, carnie_cottoncandy_pink, carnie_cottoncandy_blue, carnie_gargantuar, eighties_punk, eighties_punk_veteran, dark_wizard_veteran, eighties_breakdancer, carnie_stiltwalker, disco_mech",
+"objects": [{
+    "objclass": "LevelDefinition",
+    "objdata": {
+    "StartingSun": 50,
+    "Description": "{PLAYER}'s Run through Penny's Challenge!",
+    "FirstRewardParam": "moneybag",
+    "LevelPowerupSet": "LevelPowerupsDisabled",
+    "SuppressPlantfoodPurchase": true,
+    "DisablePlantBoosts": true,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+        "DelayLoad_Background_Beach",
+        "DelayLoad_Background_Beach_Compressed",
+        "Tombstone_Dark_Special",
+        "Tombstone_Dark_Effects"
+    ],
+    "Modules": [
+         "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+        "RTID(StandardIntro@LevelModules)",
+        "RTID(GI@CurrentLevel)",
+        "RTID(DefaultSunDropper@LevelModules)",
+        "RTID(Escalation@CurrentLevel)",
+        "RTID(NewWaves@CurrentLevel)",
+        "RTID(JamZombiesModule@LevelModules)",
+        "RTID(TrapezeStreetModule@LevelModules)",
+        "RTID(HeyFanillaDIE@CurrentLevel)",
+        "RTID(ZombiesDeadWinCon@LevelModules)",
+        "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+     "Name": "Penny's Challenge - On The Grind",
+    "StageModule": "RTID(EgyptStage@LevelModules)",
+    "MusicType": "MiniGame_B"
+}},
+ {"aliases":["GI"],
+"objclass":"InitialGridItemProperties",
+"objdata":{
+    "InitialGridItemPlacements": [
+        {"GridX": 2, "GridY": 0, "TypeName":"carnie_card_unactivated"},
+        {"GridX": 8, "GridY": 0, "TypeName":"gravestone_egypt"},
+        {"GridX": 2, "GridY": 1, "TypeName":"carnie_card_unactivated"},
+        {"GridX": 7, "GridY": 1, "TypeName":"gravestone_egypt"},
+        {"GridX": 2, "GridY": 2, "TypeName":"carnie_card_unactivated"},
+        {"GridX": 6, "GridY": 2, "TypeName":"gravestone_egypt"},
+        {"GridX": 8, "GridY": 2, "TypeName":"gravestone_egypt"},
+        {"GridX": 2, "GridY": 3, "TypeName":"carnie_card_unactivated"},
+        {"GridX": 7, "GridY": 3, "TypeName":"gravestone_egypt"},
+        {"GridX": 2, "GridY": 4, "TypeName":"carnie_card_unactivated"},
+        {"GridX": 8, "GridY": 4, "TypeName":"gravestone_egypt"}
+    ]
+}},
+{"aliases": ["HeyFanillaDIE"],
+"objclass": "SeedBankProperties",
+"objdata": {
+    "OverrideSeedSlotsCount": 8,
+    "PresetPlantList": [
+        
+    ],
+    "PlantIncludeList": [
+        "sunflower",
+        "peashooter",
+        "wallnut",
+        "tallnut",
+        "explodeonut",
+        "bonkchoy",
+        "cabbagepult",
+        "melonpult",
+        "cherry_bomb",
+        "coconutcannon",
+        "gravebuster",
+        "iceburg",
+        "laser_bean",
+        "potatomine",
+        "repeater",
+        "snapdragon",
+        "spikeweed",
+        "threepeater",
+        "torchwood",
+        "kernelpult",
+        "springbean",
+        "snowpea",
+        "chilibean",
+        "splitpea",
+        "lightningreed",
+        "peapod",
+        "magnifyinggrass",
+        "bloomerang",
+        "holonut",
+        "empea",
+        "blover",
+        "starfruit",
+        "jalapeno",
+        "wintermelon",
+        "twinsunflower",
+        "spikerock",
+        "squash",
+        "citron",
+        "powerplant",
+        "sunshroom",
+        "puffshroom",
+        "fumeshroom",
+        "sunbean",
+        "magnetshroom",
+        "hypnoshroom",
+        "peanut",
+        "firepeashooter",
+        "lilypad",
+        "bowlingbulb",
+        "homingthistle",
+        "banana",
+        "chomper",
+        "guacodile",
+        "tanglekelp",
+        "ghostpepper",
+        "sweetpotato",
+        "sapfling",
+        "hurrikale",
+        "xshot",
+        "chardguard",
+        "pepperpult",
+        "kiwibeast",
+        "hotpotato",
+        "stunion",
+        "dandelion",
+        "redstinger",
+        "goldleaf",
+        "akee",
+        "lavaguava",
+        "toadstool",
+        "endurian",
+        "stallia",
+        "strawburst",
+        "cactus",
+        "phatbeet",
+        "thymewarp",
+        "celerystalker",
+        "electricblueberry",
+        "sporeshroom",
+        "garlic",
+        "intensivecarrot",
+        "jackolantern",
+        "primalpeashooter",
+        "grapeshot",
+        "primalwallnut",
+        "perfumeshroom",
+        "coldsnapdragon",
+        "primalsunflower",
+        "primalpotatomine",
+        "shrinkingviolet",
+        "moonflower",
+        "nightshade",
+        "shadowshroom",
+        "bloominghearts",
+        "escaperoot",
+        "grimrose",
+        "dusklobber",
+        "goldbloom",
+        "electriccurrant",
+        "aloe",
+        "wasabiwhip",
+        "applemortar",
+        "bombegranate",
+        "missiletoe",
+        "parsnip",
+        "witchhazel",
+        "hotdate",
+        "caulipower",
+        "solartomato",
+        "electricpeashooter",
+        "hollyknight",
+        "shadowpeashooter",
+        "poisonpeashooter",
+        "slingpea",
+        "snappea",
+        "zoybeanpod",
+        "dazeychain",
+        "electricitea",
+        "blastberry",
+        "imppear",
+        "pumpkin",
+        "icebloom",
+        "dartichoke",
+        "ultomato",
+        "gumnut",
+        "shinevine",
+        "tumbleweed",
+        "murkadamia",
+        "puffball",
+        "stickybombrice",
+        "olivepit",
+        "turkeypult",
+        "boingsetta",
+        "hocus",
+        "gloomvine",
+        "draftodil",
+        "boomflower",
+        "pvine",
+        "inferno",
+        "solarsage",
+        "noctarine",
+        "iceweed",
+        "pokra",
+        "pyrevine",
+        "teleportatomine",
+        "headbutter",
+        "unused_45",
+        "unused_47",
+        "blockoli",
+        "buttercup",
+        "headbutter",
+        "teleportatomine",
+        "bramblebush",
+        "caramelpopcorn",
+        "potatochip",
+        "unused_48",
+        "unused_49",
+        "unused_46",
+        "hollybarrierleaf"
+    ],
+    "PlantExcludeList": [
+        
+    ],
+    "SelectionMethod": "chooser"
+}},
+ {"aliases": ["Escalation"],
+"objclass": "LevelEscalationModuleProperties",
+"objdata": {
+    "FlagCount": 6,
+    "WavesPerFlag": 8,
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0,
+    "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+    "ZombiePool": [
+        "RTID(tutorial@ZombieTypes)"
+    ]
+}},
+{"aliases": ["NewWaves"],
+"objclass": "WaveManagerModuleProperties",
+"objdata": {}
+},
+{"aliases": ["WaveManager"],
+"objclass": "WaveManagerProperties",
+"objdata": {
+    "FlagWaveInterval": 8,
+    "WaveCount": 48,
+    "SuppressFlagZombie": false,
+    "Waves": [
+         ["RTID(Wave1@.)", "RTID(GridSpawn1@.)"],
+        ["RTID(Wave2@.)"],
+        ["RTID(Wave3@.)"],
+        ["RTID(Wave4@.)"],
+        ["RTID(Wave5@.)"],
+        ["RTID(Wave6@.)"],
+        ["RTID(Wave7@.)"],
+        ["RTID(Wave8@.)", "RTID(Sandstorm8_C3@.)", "RTID(Sandstorm8_C4@.)", "RTID(Sandstorm8_C6@.)"],
+        ["RTID(Wave9@.)"],
+        ["RTID(Wave10@.)", "RTID(GridSpawnII10@.)"],
+        ["RTID(Wave11@.)"],
+        ["RTID(Wave12@.)"],
+        ["RTID(Wave13@.)", "RTID(Sandstorm13_C3@.)", "RTID(Sandstorm13_C4@.)"],
+        ["RTID(Wave14@.)", "RTID(GridSpawnII14@.)"],
+        ["RTID(Wave15@.)"],
+        ["RTID(Wave16@.)", "RTID(Sandstorm16_C2@.)", "RTID(Sandstorm16_C4@.)", "RTID(Sandstorm16_C5@.)"],
+        ["RTID(Wave17@.)"],
+        ["RTID(Wave18@.)"],
+        ["RTID(Wave19@.)"],
+        ["RTID(Wave20@.)"],
+        ["RTID(Wave21@.)", "RTID(GridSpawnII21@.)"],
+        ["RTID(Wave22@.)", "RTID(Sandstorm22_C4@.)", "RTID(Sandstorm22_C5@.)", "RTID(Sandstorm22_C7@.)"],
+        ["RTID(Wave23@.)"],
+        ["RTID(Wave24@.)", "RTID(Sandstorm24_C4@.)", "RTID(Sandstorm24_C5@.)", "RTID(Sandstorm24_C6@.)"],
+        ["RTID(Wave25@.)"],
+        ["RTID(Wave26@.)"],
+        ["RTID(Wave27@.)", "RTID(GridSpawnII27@.)"],
+        ["RTID(Wave28@.)", "RTID(Sandstorm28_C2@.)", "RTID(Sandstorm28_C4@.)"],
+        ["RTID(Wave29@.)"],
+        ["RTID(Wave30@.)"],
+        ["RTID(Wave31@.)"],
+        ["RTID(Wave32@.)", "RTID(GridSpawnII32@.)"],
+        ["RTID(Wave33@.)", "RTID(Sandstorm33_C3@.)", "RTID(Sandstorm33_C5@.)", "RTID(Sandstorm33_C6@.)", "RTID(Sandstorm33_C7@.)"],
+        ["RTID(Wave34@.)"],
+        ["RTID(Wave35@.)"],
+        ["RTID(Wave36@.)", "RTID(GridSpawnII36@.)"],
+        ["RTID(Wave37@.)"],
+        ["RTID(Wave38@.)"],
+        ["RTID(Wave39@.)"],
+        ["RTID(Wave40@.)", "RTID(Sandstorm40_C2@.)", "RTID(Sandstorm40_C3@.)", "RTID(Sandstorm40_C4@.)", "RTID(Sandstorm40_C5@.)"],
+        ["RTID(Wave41@.)", "RTID(GridSpawnII41@.)"],
+        ["RTID(Wave42@.)"],
+        ["RTID(Wave43@.)"],
+        ["RTID(Wave44@.)", "RTID(Sandstorm44_C3@.)", "RTID(Sandstorm44_C4@.)"],
+        ["RTID(Wave45@.)"],
+        ["RTID(Wave46@.)"],
+        ["RTID(Wave47@.)", "RTID(GridSpawnII47@.)"],
+        ["RTID(Wave48@.)", "RTID(Sandstorm48_C2@.)", "RTID(Sandstorm48_C3@.)", "RTID(Sandstorm48_C4@.)", "RTID(Sandstorm48_C5@.)", "RTID(Sandstorm48_C6@.)", "RTID(Sandstorm48_C7@.)", "RTID(Sandstorm48_C8@.)"] 
+    ]
+}},
+ {"aliases":["Wave1"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(carnie@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave3"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "5", "Type": "RTID(mummy_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave4"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave5"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_punk@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave6"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave7"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave8"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave9"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(pharaoh@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave10"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave11"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave12"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(pharaoh@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave13"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(mummy_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave14"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_breakdancer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave15"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave16"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(mummy_armor4@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave17"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(mummy_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave18"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_breakdancer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave19"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(mummy_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave20"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave21"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave22"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave23"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(mummy_armor4@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave24"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(egypt_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave25"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_breakdancer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave26"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(mummy_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave27"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave28"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(disco_mech@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave29"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(egypt_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave30"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave31"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(disco_mech@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(mummy_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave32"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(disco_mech@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(mummy_armor4@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave33"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(mummy_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave34"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(mummy_armor4@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(mummy_armor4@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_breakdancer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave35"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(disco_mech@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(egypt_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave36"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(mummy_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave37"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(disco_mech@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave38"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave39"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave40"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(mummy_armor4@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(disco_mech@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave41"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(mummy_armor4@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(egypt_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave42"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(disco_mech@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave43"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(mummy_armor4@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave44"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave45"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(egypt_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(mummy_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave46"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(disco_mech@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(mummy_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_stiltwalker@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave47"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(mummy_armor4@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(mummy_armor4@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave48"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_trapeze_red@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(egypt_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(pharaoh@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(disco_mech@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_wizard_veteran@ZombieTypes)"}
+    ]
+}},
+ {"aliases":["GridSpawn1"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 5, "Type": "RTID(carnie_card_armor4@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 2, "mY": 0}, {"mX": 2, "mY": 1}, {"mX": 2, "mY": 2}, {"mX": 2, "mY": 3}, {"mX": 2, "mY": 4}],
+        "SpawnEffectAnimID": "",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": ["GridItemCrater"]
+}},
+{"aliases":["Sandstorm8_C3"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 3,
+    "ColumnEnd": 3,
+    "TimeBetweenGroups": 0.5,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(mummy@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm8_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 0.5,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(carnie@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm8_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 0.5,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Type": "RTID(mummy_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["GridSpawnII10"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(jackinthebox_balls@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_candy_speed@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 7, "mY": 0}, {"mX": 6, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Sandstorm13_C3"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 3,
+    "ColumnEnd": 3,
+    "TimeBetweenGroups": 0.33,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(carnie@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm13_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 0.33,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk@ZombieTypes)"}
+    ]
+}},
+{"aliases":["GridSpawnII14"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(jackinthebox_candy_speed@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_teeth@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 5, "mY": 1}, {"mX": 6, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Sandstorm16_C2"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 2,
+    "ColumnEnd": 2,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(mummy_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm16_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm16_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Type": "RTID(eighties_breakdancer@ZombieTypes)"},
+        {"Type": "RTID(eighties_breakdancer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["GridSpawnII21"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(jackinthebox_teeth@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_balls@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_monkeys@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 1}, {"mX": 7, "mY": 2}, {"mX": 6, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Sandstorm22_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 0.33,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm22_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 0.33,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(eighties_punk@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm22_C7"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 7,
+    "ColumnEnd": 7,
+    "TimeBetweenGroups": 0.33,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(eighties_punk_veteran@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm24_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 0.1,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Type": "RTID(carnie_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm24_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 0.1,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(carnie_stiltwalker@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm24_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 0.1,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk@ZombieTypes)"}
+    ]
+}},
+{"aliases":["GridSpawnII27"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 3, "Type": "RTID(jackinthebox_candy_hp_jumpscare@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_balls@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 7, "mY": 0}, {"mX": 5, "mY": 1}, {"mX": 8, "mY": 4}, {"mX": 7, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Sandstorm28_C2"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 2,
+    "ColumnEnd": 2,
+    "TimeBetweenGroups": 0.33,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(mummy@ZombieTypes)"},
+        {"Type": "RTID(mummy@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm28_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 0.33,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk@ZombieTypes)"}
+    ]
+}},
+{"aliases":["GridSpawnII32"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(jackinthebox_teeth@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_monkeys_jumpscare@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_monkeys@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Sandstorm33_C3"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 3,
+    "ColumnEnd": 3,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(eighties_punk@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm33_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Type": "RTID(dark_wizard_veteran@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm33_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(eighties_breakdancer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm33_C7"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 7,
+    "ColumnEnd": 7,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(eighties_breakdancer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["GridSpawnII36"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 2, "Type": "RTID(jackinthebox_candy_hp@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(jackinthebox_candy_speed@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 7, "mY": 0}, {"mX": 6, "mY": 4}, {"mX": 5, "mY": 2}, {"mX": 7, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Sandstorm40_C2"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 2,
+    "ColumnEnd": 2,
+    "TimeBetweenGroups": 0.2,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(mummy@ZombieTypes)"},
+        {"Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Type": "RTID(mummy@ZombieTypes)"},
+        {"Type": "RTID(mummy_armor1@ZombieTypes)"},
+        {"Type": "RTID(mummy@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm40_C3"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 3,
+    "ColumnEnd": 3,
+    "TimeBetweenGroups": 0.2,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm40_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 0.2,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm40_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 0.2,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+{"aliases":["GridSpawnII41"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(jackinthebox_monkeys_jumpscare@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(jackinthebox_teeth@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_monkeys@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 8, "mY": 0}, {"mX": 6, "mY": 1}, {"mX": 5, "mY": 3}, {"mX": 6, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Sandstorm44_C3"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 3,
+    "ColumnEnd": 3,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm44_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk_veteran@ZombieTypes)"}
+    ]
+}},
+{"aliases":["GridSpawnII47"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(jackinthebox_monkeys@GridItemTypes)"},
+            {"Count": 5, "Type": "RTID(jackinthebox_candy_hp_jumpscare@GridItemTypes)"},
+            {"Count": 5, "Type": "RTID(jackinthebox_candy_speed_jumpscare@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_balls@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(jackinthebox_teeth@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 1}, {"mX": 7, "mY": 2}, {"mX": 8, "mY": 3}, {"mX": 7, "mY": 4}, {"mX": 8, "mY": 0}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 2}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 4}, {"mX": 5, "mY": 1}, {"mX": 6, "mY": 3}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Sandstorm48_C2"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 2,
+    "ColumnEnd": 2,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(carnie_armor1@ZombieTypes)"},
+        {"Type": "RTID(mummy_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm48_C3"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 3,
+    "ColumnEnd": 3,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(carnie_imp_twins@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk@ZombieTypes)"},
+        {"Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm48_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(eighties_punk_veteran@ZombieTypes)"},
+        {"Type": "RTID(carnie_stiltwalker@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm48_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(carnie_imp_twins@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm48_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(mummy_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm48_C7"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 7,
+    "ColumnEnd": 7,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(eighties_breakdancer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm48_C8"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 8,
+    "ColumnEnd": 8,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(eighties_breakdancer@ZombieTypes)"}
+    ]
+}},
+                                 {}
+    ],
+    "version": 1
+}

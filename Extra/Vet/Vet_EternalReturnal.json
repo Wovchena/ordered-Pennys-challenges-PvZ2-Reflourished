@@ -1,0 +1,1263 @@
+{"#comment": "Revinylized...?",
+"objects": [{
+    "objclass": "LevelDefinition",
+    "objdata": {
+    "StartingSun": 50,
+    "Description": "{PLAYER}'s Run through Penny's Challenge!",
+    "FirstRewardParam": "moneybag",
+    "LevelPowerupSet": "LevelPowerupsDisabled",
+    "SuppressPlantfoodPurchase": true,
+    "DisablePlantBoosts": true,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+        "DelayLoad_Background_Beach",
+        "DelayLoad_Background_Beach_Compressed",
+        "Tombstone_Dark_Special",
+        "Tombstone_Dark_Effects"
+    ],
+    "Modules": [
+         "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+        "RTID(StandardIntro@LevelModules)",
+        "RTID(GI@CurrentLevel)",
+        "RTID(IPP@CurrentLevel)",
+        "RTID(Rails@CurrentLevel)",
+        "RTID(DefaultSunDropper@LevelModules)",
+        "RTID(ChallengeModule@CurrentLevel)",
+        "RTID(Escalation@CurrentLevel)",
+        "RTID(NewWaves@CurrentLevel)",
+        "RTID(JamZombiesModule@LevelModules)",
+        "RTID(ERSeedbank@CurrentLevel)",
+        "RTID(ZombiesDeadWinCon@LevelModules)",
+        "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+     "Name": "Penny's Challenge - Eternal Returnal",
+    "StageModule": "RTID(MeteorZStage@LevelModules)",
+    "MusicType": "MiniGame_B"
+}},
+{"aliases":["ChallengeModule"],
+"objclass": "StarChallengeModuleProperties",
+"objdata": {
+    "Challenges": [[
+        "RTID(PlantsLost@CurrentLevel)"
+    ]],
+    "ChallengesAlwaysAvailable": true
+}},
+{"aliases":["PlantsLost"],
+"objclass": "StarChallengePlantsLostProps",
+"objdata": { "MaximumPlantsLost": 35 }
+},
+ {"aliases":["GI"],
+"objclass":"InitialGridItemProperties",
+"objdata":{
+    "InitialGridItemPlacements": [
+        {"GridX": 4, "GridY": 0, "TypeName":"boosttile"},
+        {"GridX": 7, "GridY": 0, "TypeName":"bufftile_speed"},
+        {"GridX": 6, "GridY": 1, "TypeName":"bufftile_attack"},
+        {"GridX": 4, "GridY": 2, "TypeName":"boosttile"},
+        {"GridX": 7, "GridY": 2, "TypeName":"bufftile_speed"},
+        {"GridX": 6, "GridY": 3, "TypeName":"bufftile_attack"},
+        {"GridX": 4, "GridY": 4, "TypeName":"boosttile"},
+        {"GridX": 7, "GridY": 4, "TypeName":"bufftile_speed"},
+        {"GridX": 6, "GridY": 7, "TypeName":"tar"}
+    ]
+}},
+{"aliases":["IPP"],
+"objclass": "InitialPlantProperties",
+"objdata": {
+    "InitialPlantPlacements": [
+        {"GridX": 4, "GridY": 0, "Level": -1, "TypeName":"pineapple"},
+        {"GridX": 4, "GridY": 2, "Level": -1, "TypeName":"pineapple"},
+        {"GridX": 4, "GridY": 4, "Level": -1, "TypeName":"pineapple"}
+    ]
+}},
+{"aliases": ["Rails"],
+"objclass": "RailcartProperties",
+"objdata": {
+    "RailcartType": "",
+        "Railcarts": [
+            {"Column": 4, "Row": 0},
+            {"Column": 4, "Row": 2},
+            {"Column": 4, "Row": 4}
+        ],
+        "Rails": [
+            {"Column": 4, "RowEnd": 0, "RowStart": 0},
+            {"Column": 4, "RowEnd": 1, "RowStart": 1},
+            {"Column": 4, "RowEnd": 2, "RowStart": 2},
+            {"Column": 4, "RowEnd": 3, "RowStart": 3},
+            {"Column": 4, "RowEnd": 4, "RowStart": 4}
+        ]
+}},
+ {"aliases": ["Escalation"],
+"objclass": "LevelEscalationModuleProperties",
+"objdata": {
+    "FlagCount": 5,
+    "WavesPerFlag": 9,
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0,
+    "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+    "ZombiePool": [
+        "RTID(tutorial@ZombieTypes)"
+    ]
+}},
+{"aliases": ["NewWaves"],
+"objclass": "WaveManagerModuleProperties",
+"objdata": {}
+},
+{"aliases": ["WaveManager"],
+"objclass": "WaveManagerProperties",
+"objdata": {
+    "FlagWaveInterval": 9,
+    "WaveCount": 45,
+    "SuppressFlagZombie": false,
+    "MinNextWaveHealthPercentage": 0.5,
+    "MaxNextWaveHealthPercentage": 0.65,
+    "Waves": [
+         ["RTID(Wave1@.)", "RTID(Necro1@.)"],
+        ["RTID(Wave2@.)", "RTID(Necro2@.)", "RTID(Necro2@.)", "RTID(Necro1@.)"],
+        ["RTID(Wave3@.)", "RTID(Necro2@.)", "RTID(Necro1@.)"],
+        ["RTID(Wave4@.)"],
+        ["RTID(Wave5@.)", "RTID(Necro2@.)"],
+        ["RTID(Wave6@.)"],
+        ["RTID(Wave7@.)", "RTID(Necro2@.)"],
+        ["RTID(Wave8@.)"],
+        ["RTID(Wave9@.)", "RTID(Necro2@.)"],
+        ["RTID(Wave10@.)"],
+        ["RTID(Wave11@.)", "RTID(ParaRain11_zcorp_helpdesk@.)"],
+        ["RTID(Wave12@.)", "RTID(Necro2@.)"],
+        ["RTID(Wave13@.)"],
+        ["RTID(Wave14@.)"],
+        ["RTID(Wave15@.)"],
+        ["RTID(Wave16@.)", "RTID(ParaRain16_zcorp_helpdesk@.)"],
+        ["RTID(Wave17@.)", "RTID(Necro2@.)"],
+        ["RTID(Wave18@.)", "RTID(Necro2@.)"],
+        ["RTID(Wave19@.)"],
+        ["RTID(Wave20@.)"],
+        ["RTID(Wave21@.)", "RTID(Necro2@.)"],
+        ["RTID(Wave22@.)"],
+        ["RTID(Wave23@.)", "RTID(ParaRain23_zcorp_helpdesk@.)"],
+        ["RTID(Wave24@.)", "RTID(Necro2@.)"],
+        ["RTID(Wave25@.)"],
+        ["RTID(Wave26@.)"],
+        ["RTID(Wave27@.)", "RTID(Necro2@.)"],
+        ["RTID(Wave28@.)"],
+        ["RTID(Wave29@.)", "RTID(ParaRain29_zcorp_helpdesk@.)"],
+        ["RTID(Wave30@.)", "RTID(Necro2@.)"],
+        ["RTID(Wave31@.)"],
+        ["RTID(Wave32@.)", "RTID(Necro2@.)"],
+        ["RTID(Wave33@.)", "RTID(ParaRain33_zcorp_helpdesk@.)"],
+        ["RTID(Wave34@.)"],
+        ["RTID(Wave35@.)", "RTID(Necro2@.)"],
+        ["RTID(Wave36@.)", "RTID(Necro2@.)"],
+        ["RTID(Wave37@.)"],
+        ["RTID(Wave38@.)"],
+        ["RTID(Wave39@.)", "RTID(WaveExt39@.)", "RTID(WaveExt39_2@.)"],
+        ["RTID(Wave40@.)"],
+        ["RTID(Wave41@.)"],
+        ["RTID(Wave42@.)"],
+        ["RTID(Wave43@.)"],
+        ["RTID(Wave44@.)", "RTID(ParaRain44_zcorp_helpdesk@.)"],
+        ["RTID(Wave45@.)"] 
+    ]
+}},
+ {"aliases":["Wave1"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_bass_c7@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave3"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_bass_c7@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave4"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_peashooter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave5"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave6"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave7"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_bass_c6@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave8"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_torchwood@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave9"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_peashooter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave10"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(beach_octopus@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave11"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_peashooter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave12"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_bass_c6@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave13"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave14"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_peashooter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave15"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave16"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_gatling@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave17"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_torchwood@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave18"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_gatling@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave19"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave20"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(beach_octopus@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave21"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave22"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave23"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_peashooter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave24"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave25"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_peashooter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave26"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_torchwood@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave27"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_peashooter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave28"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_peashooter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave29"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(beach_octopus@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave30"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave31"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave32"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_bass_c7@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave33"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_torchwood@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave34"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_gatling@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave35"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_torchwood@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave36"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_peashooter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave37"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave38"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave39"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_torchwood@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave40"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_torchwood@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave41"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_peashooter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave42"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(beach_octopus@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave43"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave44"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(children_captain@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(children_captain@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave45"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(eighties_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(stpatrick_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(halloween_octopus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hero_bass_c6@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(beach_octopus@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_hunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_hunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hero_bass_c7@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_hunter_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(zombotany_peashooter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zombotany_gatling@ZombieTypes)"}
+    ]
+}},
+ {"aliases":["Necro1"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(tar@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(steam_back@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Bass Debut!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(score_2x_tile@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(hero_bass@ZombieTypes)"}
+    ]
+}},
+{"aliases":["ParaRain11_zcorp_helpdesk"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 6,
+    "ColumnEnd": 9,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.8",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "zcorp_helpdesk",
+    "SpiderCount": 5,
+    "WaveStartMessage": "Tech Support!"
+}},
+{"aliases":["ParaRain16_zcorp_helpdesk"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 7,
+    "ColumnEnd": 8,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.2",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "zcorp_helpdesk",
+    "SpiderCount": 5,
+    "WaveStartMessage": "Tech Support!"
+}},
+{"aliases":["ParaRain23_zcorp_helpdesk"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 4,
+    "ColumnEnd": 5,
+    "GroupSize": 5,
+    "TimeBetweenGroups": "1",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "zcorp_helpdesk",
+    "SpiderCount": 5,
+    "WaveStartMessage": "Tech Support!"
+}},
+{"aliases":["ParaRain29_zcorp_helpdesk"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 5,
+    "ColumnEnd": 9,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.8",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "zcorp_helpdesk",
+    "SpiderCount": 5,
+    "WaveStartMessage": "Tech Support!"
+}},
+{"aliases":["ParaRain33_zcorp_helpdesk"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 4,
+    "ColumnEnd": 7,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.5",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "zcorp_helpdesk",
+    "SpiderCount": 8,
+    "WaveStartMessage": "Tech Support!"
+}},
+{"aliases":["WaveExt39"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_torchwood@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"}
+    ]
+}},
+{"aliases":["WaveExt39_2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zombotany_gatling@ZombieTypes)"}
+    ]
+}},
+{"aliases":["ParaRain44_zcorp_helpdesk"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 4,
+    "ColumnEnd": 8,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "1",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "zcorp_helpdesk",
+    "SpiderCount": 10,
+    "WaveStartMessage": "Tech Support!"
+}},
+      {
+      "aliases": [
+        "ERSeedbank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "OverrideSeedSlotsCount": 8,
+        "PresetPlantList": [],
+        "PlantIncludeList": [
+          "sunflower",
+          "peashooter",
+          "sweetpea",
+          "tigergrass",
+          "greatzucchini",
+          "bonkchoy",
+          "cabbagepult",
+          "melonpult",
+          "cherry_bomb",
+          "coconutcannon",
+          "gravebuster",
+          "iceburg",
+          "laser_bean",
+          "potatomine",
+          "repeater",
+          "snapdragon",
+          "spikeweed",
+          "threepeater",
+          "torchwood",
+          "kernelpult",
+          "springbean",
+          "snowpea",
+          "chilibean",
+          "splitpea",
+          "lightningreed",
+          "peapod",
+          "magnifyinggrass",
+          "bloomerang",
+          "meteorflower",
+          "empea",
+          "blover",
+          "starfruit",
+          "jalapeno",
+          "wintermelon",
+          "twinsunflower",
+          "spikerock",
+          "squash",
+          "citron",
+          "sunshroom",
+          "puffshroom",
+          "fumeshroom",
+          "sunbean",
+          "magnetshroom",
+          "hypnoshroom",
+          "peanut",
+          "firepeashooter",
+          "lilypad",
+          "bowlingbulb",
+          "homingthistle",
+          "banana",
+          "chomper",
+          "guacodile",
+          "tanglekelp",
+          "ghostpepper",
+          "sapfling",
+          "hurrikale",
+          "xshot",
+          "chardguard",
+          "pepperpult",
+          "kiwibeast",
+          "hotpotato",
+          "stunion",
+          "dandelion",
+          "redstinger",
+          "goldleaf",
+          "akee",
+          "lavaguava",
+          "toadstool",
+          "stallia",
+          "strawburst",
+          "cactus",
+          "phatbeet",
+          "celerystalker",
+          "electricblueberry",
+          "sporeshroom",
+          "powerplant",
+          "garlic",
+          "intensivecarrot",
+          "jackolantern",
+          "primalpeashooter",
+          "grapeshot",
+          "thymewarp",
+          "perfumeshroom",
+          "coldsnapdragon",
+          "primalsunflower",
+          "primalpotatomine",
+          "shrinkingviolet",
+          "moonflower",
+          "nightshade",
+          "shadowshroom",
+          "bloominghearts",
+          "escaperoot",
+          "grimrose",
+          "dusklobber",
+          "goldbloom",
+          "electriccurrant",
+          "aloe",
+          "wasabiwhip",
+          "applemortar",
+          "bombegranate",
+          "missiletoe",
+          "parsnip",
+          "witchhazel",
+          "hotdate",
+          "caulipower",
+          "solartomato",
+          "electricpeashooter",
+          "hollyknight",
+          "shadowpeashooter",
+          "poisonpeashooter",
+          "slingpea",
+          "snappea",
+          "zoybeanpod",
+          "dazeychain",
+          "electricitea",
+          "blastberry",
+          "imppear",
+          "icebloom",
+          "dartichoke",
+          "ultomato",
+          "gumnut",
+          "shinevine",
+          "tumbleweed",
+          "murkadamia",
+          "puffball",
+          "stickybombrice",
+          "olivepit",
+          "turkeypult",
+          "boingsetta",
+          "hocus",
+          "gloomvine",
+          "draftodil",
+          "boomflower",
+          "pvine",
+          "inferno",
+          "solarsage",
+          "noctarine",
+          "heathseeker",
+          "iceweed",
+          "unused_45",
+          "unused_47",
+          "unused_43",
+          "unused_48",
+          "unused_49",
+          "unused_46",
+          "headbutter",
+          "teleportatomine",
+          "pokra",
+          "pyrevine",
+          "hollybarrierleaf",
+          "potatochip",
+          "caramelpopcorn",
+          "buttercup",
+          "bramblebush",
+          "acidlemon",
+          "asparagus",
+          "horsebean",
+          "saucer",
+          "gatling",
+          "loquat"
+        ],
+        "PlantExcludeList": [],
+        "SelectionMethod": "chooser"
+      }
+    },
+                                {}
+    ],
+    "version": 1
+}

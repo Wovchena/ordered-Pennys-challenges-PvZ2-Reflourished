@@ -1,0 +1,2974 @@
+{
+	"#comment": "Changes: Added Flower Line",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"StartingSun": 50,
+				"Description": "{PLAYER}'s run through Penny's Challenge!",
+				"FirstRewardParam": "moneybag",
+				"FixedPlantLevel": 1,
+				"DisablePlantBoosts": true,
+				"SuppressPlantfoodPurchase": true,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(OffScreenZombiesCoinOverride@LevelModules)",
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(HolidayDrinksSpring@LevelModules)",
+					"RTID(ChallengeSeedBank@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "Penny's Challenge - Wiltening",
+				"StageModule": "RTID(SpringStage@LevelModules)",
+				"MusicType": "MiniGame_MiniBoss"
+			}
+		},
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(ZombieDistance@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "ZombieDistance"
+      ],
+      "objclass": "StarChallengeZombieDistanceProps",
+      "objdata": {
+        "TargetDistance": 4
+      }
+    },
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 4,
+				"WavesPerFlag": 11,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 0,
+				"PointIncrementPerWave": 0,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(tutorial@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 11,
+				"WaveCount": 44,
+				"SuppressFlagZombie": false,
+				"MinNextWaveHealthPercentage": 0.4,
+				"MaxNextWaveHealthPercentage": 0.5,
+				"Waves": [
+					[
+						"RTID(Wave1@.)",
+						"RTID(jam_8bit@.)"
+					],
+					[
+						"RTID(Wave2@.)"
+					],
+					[
+						"RTID(Wave3@.)",
+						"RTID(Necro3@.)"
+					],
+					[
+						"RTID(Wave4@.)",
+						"RTID(SpidRain4_spring_imp@.)"
+					],
+					[
+						"RTID(Wave5@.)",
+						"RTID(Necro3@.)"
+					],
+					[
+						"RTID(Wave6@.)"
+					],
+					[
+						"RTID(Wave7@.)"
+					],
+					[
+						"RTID(Wave8@.)"
+					],
+					[
+						"RTID(Wave9@.)",
+						"RTID(Necro3@.)"
+					],
+					[
+						"RTID(Wave10@.)"
+					],
+					[
+						"RTID(Wave11@.)",
+						"RTID(SpidRain11_harvest_eggshell@.)"
+					],
+					[
+						"RTID(Wave12@.)"
+					],
+					[
+						"RTID(Wave13@.)",
+						"RTID(Necro3@.)"
+					],
+					[
+						"RTID(Wave14@.)"
+					],
+					[
+						"RTID(Wave15@.)",
+						"RTID(Necro3@.)"
+					],
+					[
+						"RTID(Wave16@.)"
+					],
+					[
+						"RTID(Wave17@.)",
+						"RTID(SpidRain17_spring_imp@.)"
+					],
+					[
+						"RTID(Wave18@.)"
+					],
+					[
+						"RTID(Wave19@.)",
+						"RTID(SpidRain19_harvest_eggshell@.)"
+					],
+					[
+						"RTID(Wave20@.)",
+						"RTID(Necro3@.)"
+					],
+					[
+						"RTID(Wave21@.)"
+					],
+					[
+						"RTID(Wave22@.)",
+						"RTID(Necro3@.)"
+					],
+					[
+						"RTID(Wave23@.)",
+						"RTID(SpidRain23_spring_imp@.)"
+					],
+					[
+						"RTID(Wave24@.)"
+					],
+					[
+						"RTID(Wave25@.)",
+						"RTID(Necro3@.)"
+					],
+					[
+						"RTID(Wave26@.)",
+						"RTID(SpidRain26_spring_imp@.)"
+					],
+					[
+						"RTID(Wave27@.)",
+						"RTID(Necro3@.)"
+					],
+					[
+						"RTID(Wave28@.)",
+						"RTID(SpidRain28_harvest_eggshell@.)"
+					],
+					[
+						"RTID(Wave29@.)"
+					],
+					[
+						"RTID(Wave30@.)",
+						"RTID(Necro3@.)"
+					],
+					[
+						"RTID(Wave31@.)"
+					],
+					[
+						"RTID(Wave32@.)",
+						"RTID(SpidRain32_spring_imp@.)"
+					],
+					[
+						"RTID(Wave33@.)",
+						"RTID(Necro3@.)"
+					],
+					[
+						"RTID(Wave34@.)",
+						"RTID(SpidRain34_harvest_eggshell@.)"
+					],
+					[
+						"RTID(Wave35@.)"
+					],
+					[
+						"RTID(Wave36@.)",
+						"RTID(Necro3@.)"
+					],
+					[
+						"RTID(Wave37@.)"
+					],
+					[
+						"RTID(Wave38@.)",
+						"RTID(SpidRain38_spring_imp@.)"
+					],
+					[
+						"RTID(Wave39@.)"
+					],
+					[
+						"RTID(Wave40@.)",
+						"RTID(SpidRain40_harvest_eggshell@.)"
+					],
+					[
+						"RTID(Wave41@.)",
+						"RTID(Necro3@.)"
+					],
+					[
+						"RTID(Wave42@.)"
+					],
+					[
+						"RTID(Wave43@.)",
+						"RTID(SpidRain43_spring_imp@.)"
+					],
+					[
+						"RTID(Wave44@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave19"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave20"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chocolate_launcher2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave21"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave22"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher3@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chocolate_launcher2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave23"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave24"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave25"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chocolate_launcher2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave26"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave27"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave28"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave29"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave30"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chocolate_launcher2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chocolate_launcher2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave31"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave32"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave33"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chocolate_launcher2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(chocolate_launcher3@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave34"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave35"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave36"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chocolate_launcher2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher3@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chocolate_launcher3@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave37"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave38"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave39"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave40"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave41"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chocolate_launcher3@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher3@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave42"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave43"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_camel_twohump@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_prospector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave44"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(chocolate_launcher3@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chocolate_launcher2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher3@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chocolate_launcher3@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(chocolate_launcher2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(easter_troglobite@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_poncho_plate@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_armor4_red@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spring_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chocolate_launcher4@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_punk_veteran_8bit@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"jam_8bit"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"NotificationEvents": [
+					"jam_8bit"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro3"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Chocolate Rain!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [],
+				"Zombies": []
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain4_spring_imp"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 6,
+				"ColumnEnd": 8,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "spring_imp",
+				"SpiderCount": 4,
+				"WaveStartMessage": "Egg Raid!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain11_harvest_eggshell"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 7,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "1",
+				"SpiderZombieName": "harvest_eggshell",
+				"SpiderCount": 1,
+				"WaveStartMessage": "Eggstravaganza!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain17_spring_imp"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 7,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "2",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "spring_imp",
+				"SpiderCount": 14,
+				"WaveStartMessage": "Egg Raid!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain19_harvest_eggshell"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 6,
+				"ColumnEnd": 8,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "1",
+				"SpiderZombieName": "harvest_eggshell",
+				"SpiderCount": 4,
+				"WaveStartMessage": "Eggstravaganza!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain23_spring_imp"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 7,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "0.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "spring_imp",
+				"SpiderCount": 9,
+				"WaveStartMessage": "Egg Raid!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain26_spring_imp"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 7,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "spring_imp",
+				"SpiderCount": 14,
+				"WaveStartMessage": "Egg Raid!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain28_harvest_eggshell"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 6,
+				"ColumnEnd": 8,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "0.5",
+				"ZombieFallTime": "1",
+				"SpiderZombieName": "harvest_eggshell",
+				"SpiderCount": 8,
+				"WaveStartMessage": "Eggstravaganza!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain32_spring_imp"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 3,
+				"ColumnEnd": 7,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "0.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "spring_imp",
+				"SpiderCount": 22,
+				"WaveStartMessage": "Egg Raid!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain34_harvest_eggshell"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 6,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "1",
+				"SpiderZombieName": "harvest_eggshell",
+				"SpiderCount": 8,
+				"WaveStartMessage": "Eggstravaganza!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain38_spring_imp"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 2,
+				"ColumnEnd": 7,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "0.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "spring_imp",
+				"SpiderCount": 24,
+				"WaveStartMessage": "Egg Raid!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain40_harvest_eggshell"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 3,
+				"ColumnEnd": 7,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "0.5",
+				"ZombieFallTime": "1",
+				"SpiderZombieName": "harvest_eggshell",
+				"SpiderCount": 10,
+				"WaveStartMessage": "Eggstravaganza!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain43_spring_imp"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 2,
+				"ColumnEnd": 6,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "0.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "spring_imp",
+				"SpiderCount": 26,
+				"WaveStartMessage": "Egg Raid!"
+			}
+		},
+		{}
+	],
+	"version": 1
+}

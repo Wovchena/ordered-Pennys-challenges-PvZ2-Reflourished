@@ -1,0 +1,1771 @@
+{"#comment": "Changes: Added endangered Pepper-pults; All SN Cone and Buckets are now Bugs; Charred added; Fanilla banned; Early waves reworked to account for changes,",
+"#zombies": "feastivus, feastivus_armor1, summer_bug_armor1, summer_bug_armor2, summer_explorer, explorer, lostcity_explorer, explorer_veteran, lostcity_gargantuar, summer_gargantuar, steam_furnace, feastivus_armor2, steam_miner_armor1, steam_miner_armor2, feastivus_fisherman, foodfight_imp, feastivus_gargantuar, iceage_charred",
+"objects": [{
+    "objclass": "LevelDefinition",
+    "objdata": {
+    "StartingSun": 50,
+    "Description": "{PLAYER}'s run through Penny's Challenge!",
+    "FirstRewardParam": "moneybag",
+    "LevelPowerupSet": "LevelPowerupsDisabled",
+    "SuppressPlantfoodPurchase": true,
+    "DisablePlantBoosts": true,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+        "DelayLoad_Background_Beach",
+        "DelayLoad_Background_Beach_Compressed",
+        "Tombstone_Dark_Special",
+        "Tombstone_Dark_Effects"
+    ],
+    "Modules": [
+         "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+        "RTID(StandardIntro@LevelModules)",
+        "RTID(GI@CurrentLevel)",
+        "RTID(IPP_Protect@CurrentLevel)",
+        "RTID(SeedBank@CurrentLevel)",
+        "RTID(DefaultSunDropper@LevelModules)",
+        "RTID(ChallengeModule@CurrentLevel)",
+        "RTID(Escalation@CurrentLevel)",
+        "RTID(NewWaves@CurrentLevel)",
+        "RTID(ZombiesDeadWinCon@LevelModules)",
+        "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+     "Name": "Penny's Challenge - Feel the Burn",
+    "StageModule": "RTID(SummerStage@LevelModules)"
+}},
+{"aliases":["ChallengeModule"],
+"objclass": "StarChallengeModuleProperties",
+"objdata": {
+    "Challenges": [[
+        "RTID(BeatTheLevel@CurrentLevel)"
+    ]],
+    "ChallengesAlwaysAvailable": true
+}},
+{"aliases":["BeatTheLevel"],
+"objclass": "StarChallengeBeatTheLevelProps",
+"objdata": {
+    "Description": "Survive and protect the endangered plants",
+    "DescriptiveName": "Custom Objective"
+}},
+ {"aliases":["GI"],
+"objclass":"InitialGridItemProperties",
+"objdata":{
+    "InitialGridItemPlacements": [
+        {"GridX": 7, "GridY": 0, "TypeName":"presentPlantOnDestruction_birthdayz"},
+        {"GridX": 4, "GridY": 1, "TypeName":"presentSunOnDestruction_valentines"},
+        {"GridX": 1, "GridY": 2, "TypeName":"presentPlantOnDestruction"},
+        {"GridX": 4, "GridY": 3, "TypeName":"presentSunOnDestruction_valentines"},
+        {"GridX": 7, "GridY": 4, "TypeName":"presentPlantOnDestruction_birthdayz"}
+    ]
+}},
+{"aliases":["IPP_Protect"],
+"objclass": "ProtectThePlantChallengeProperties",
+"objdata": {
+    "Plants": [
+        {"GridX": 1, "GridY": 0, "Level": 0, "PlantType":"pepperpult"},
+        {"GridX": 1, "GridY": 1, "Level": 0, "PlantType":"pepperpult"},
+        {"GridX": 1, "GridY": 3, "Level": 0, "PlantType":"pepperpult"},
+        {"GridX": 1, "GridY": 4, "Level": 0, "PlantType":"pepperpult"}
+    ], 
+    "MustProtectCount": 4
+}},
+ {"aliases": ["Escalation"],
+"objclass": "LevelEscalationModuleProperties",
+"objdata": {
+    "FlagCount": 5,
+    "WavesPerFlag": 9,
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0,
+    "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+    "ZombiePool": [
+
+    ]
+}},
+{"aliases": ["NewWaves"],
+"objclass": "WaveManagerModuleProperties",
+"objdata": {}
+},
+{"aliases": ["WaveManager"],
+"objclass": "WaveManagerProperties",
+"objdata": {
+    "FlagWaveInterval": 9,
+    "WaveCount": 45,
+    "SuppressFlagZombie": false,
+    "Waves": [
+         ["RTID(Wave1@.)"],
+        ["RTID(Wave2@.)"],
+        ["RTID(Wave3@.)"],
+        ["RTID(Wave4@.)"],
+        ["RTID(Wave5@.)"],
+        ["RTID(Wave6@.)"],
+        ["RTID(Wave7@.)"],
+        ["RTID(Wave8@.)"],
+        ["RTID(Wave9@.)", "RTID(Sandstorm9_0_C5@.)", "RTID(GridSpawnII9@.)"],
+        ["RTID(Wave10@.)"],
+        ["RTID(Wave11@.)"],
+        ["RTID(Wave12@.)", "RTID(Sandstorm12_0_C4@.)", "RTID(Sandstorm12_0_C5@.)", "RTID(Sandstorm12_0_C6@.)"],
+        ["RTID(Wave13@.)"],
+        ["RTID(Wave14@.)"],
+        ["RTID(Wave15@.)"],
+        ["RTID(Wave16@.)", "RTID(Sandstorm16_0_C5@.)", "RTID(Sandstorm16_0_C6@.)"],
+        ["RTID(Wave17@.)"],
+        ["RTID(Wave18@.)", "RTID(Sandstorm18_C4@.)", "RTID(Sandstorm18_C5@.)", "RTID(Sandstorm18_C6@.)", "RTID(GridSpawnII18@.)"],
+        ["RTID(Wave19@.)"],
+        ["RTID(Wave20@.)"],
+        ["RTID(Wave21@.)"],
+        ["RTID(Wave22@.)", "RTID(Sandstorm22_0_C4@.)", "RTID(Sandstorm22_0_C5@.)", "RTID(Sandstorm22_0_C6@.)"],
+        ["RTID(Wave23@.)"],
+        ["RTID(Wave24@.)"],
+        ["RTID(Wave25@.)"],
+        ["RTID(Wave26@.)"],
+        ["RTID(Wave27@.)", "RTID(Sandstorm27_0_C3@.)", "RTID(Sandstorm27_0_C4@.)", "RTID(Sandstorm27_0_C5@.)", "RTID(Sandstorm27_0_C6@.)", "RTID(Sandstorm27_0_C7@.)", "RTID(GridSpawnII27@.)"],
+        ["RTID(Wave28@.)"],
+        ["RTID(Wave29@.)"],
+        ["RTID(Wave30@.)", "RTID(Sandstorm30_0_C4@.)", "RTID(Sandstorm30_0_C5@.)", "RTID(Sandstorm30_0_C6@.)", "RTID(Sandstorm30_0_C7@.)"],
+        ["RTID(Wave31@.)"],
+        ["RTID(Wave32@.)", "RTID(Sandstorm32_C3@.)", "RTID(Sandstorm32_C4@.)", "RTID(Sandstorm32_C5@.)", "RTID(Sandstorm32_C6@.)", "RTID(Sandstorm32_C7@.)"],
+        ["RTID(Wave33@.)"],
+        ["RTID(Wave34@.)"],
+        ["RTID(Wave35@.)"],
+        ["RTID(Wave36@.)", "RTID(Sandstorm36_0_C3@.)", "RTID(Sandstorm36_0_C4@.)", "RTID(Sandstorm36_0_C5@.)", "RTID(Sandstorm36_0_C6@.)", "RTID(GridSpawnII36@.)"],
+        ["RTID(Wave37@.)", "RTID(Sandstorm37_0_C3@.)", "RTID(Sandstorm37_0_C4@.)", "RTID(Sandstorm37_0_C5@.)", "RTID(Sandstorm37_0_C6@.)"],
+        ["RTID(Wave38@.)"],
+        ["RTID(Wave39@.)"],
+        ["RTID(Wave40@.)"],
+        ["RTID(Wave41@.)"],
+        ["RTID(Wave42@.)"],
+        ["RTID(Wave43@.)"],
+        ["RTID(Wave44@.)", "RTID(Sandstorm44_0_C3@.)", "RTID(Sandstorm44_0_C4@.)", "RTID(Sandstorm44_0_C5@.)", "RTID(Sandstorm44_0_C6@.)", "RTID(Sandstorm44_0_C7@.)", "RTID(Sandstorm44_0_C8@.)"],
+        ["RTID(Wave45@.)", "RTID(Sandstorm45_0_C3@.)", "RTID(Sandstorm45_0_C4@.)", "RTID(Sandstorm45_0_C5@.)", "RTID(Sandstorm45_0_C6@.)", "RTID(Sandstorm45_0_C7@.)", "RTID(Sandstorm45_0_C8@.)", "RTID(GridSpawnII45@.)"] 
+    ]
+}},
+ {"aliases":["Wave1"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(feastivus@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(summer_bug_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave3"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave4"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave5"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(summer_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave6"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_bug_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave7"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave8"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave9"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave10"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(steam_furnace@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave11"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave12"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_furnace@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave13"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave14"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_miner_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave15"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave16"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave17"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_bug_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave18"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_fisherman@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave19"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_furnace@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave20"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave21"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave22"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave23"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(summer_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_charred@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave24"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_miner_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave25"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_furnace@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave26"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_miner_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave27"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_gargantuar@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave28"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave29"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave30"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave31"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_fisherman@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave32"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_furnace@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave33"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(summer_gargantuar@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave34"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(iceage_charred@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave35"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave36"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(summer_gargantuar@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave37"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(summer_bug_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave38"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave39"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(summer_explorer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave40"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave41"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave42"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(iceage_charred@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave43"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_furnace@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave44"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(summer_bug_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave45"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(feastivus_fisherman@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(summer_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(explorer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(feastivus_gargantuar@ZombieTypes)"}
+    ]
+}},
+ {"aliases":["Sandstorm9_0_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 0.5,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Type": "RTID(summer_explorer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["GridSpawnII9"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 2, "Type": "RTID(presentSunOnDestruction_valentines@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(presentPlantOnDestruction_birthdayz@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(presentSunOnDestruction_birthdayz@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(presentPlantOnDestruction@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(presentSunOnDestruction@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(presentPlantfoodOnDestruction_birthdayz@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 0}, {"mX": 7, "mY": 4}, {"mX": 6, "mY": 1}, {"mX": 6, "mY": 3}, {"mX": 8, "mY": 1}, {"mX": 8, "mY": 3}, {"mX": 6, "mY": 2}, {"mX": 7, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Sandstorm12_0_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 0.8,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm12_0_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 0.8,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Type": "RTID(explorer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm12_0_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 0.8,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(feastivus_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm16_0_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 0.33,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Type": "RTID(summer_explorer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm16_0_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 0.33,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(summer_bug_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm18_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 1.5,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(explorer@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(summer_explorer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm18_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 1.5,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Type": "RTID(steam_furnace@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm18_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 1.5,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["GridSpawnII18"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 2, "Type": "RTID(presentPlantOnDestruction@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(presentSunOnDestruction@GridItemTypes)"},
+            {"Count": 3, "Type": "RTID(presentSunOnDestruction_valentines@GridItemTypes)"},
+            {"Count": 4, "Type": "RTID(presentPlantOnDestruction_birthdayz@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 8, "mY": 3}, {"mX": 8, "mY": 0}, {"mX": 6, "mY": 3}, {"mX": 6, "mY": 1}, {"mX": 8, "mY": 1}, {"mX": 7, "mY": 4}, {"mX": 6, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 6, "mY": 4}, {"mX": 8, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Sandstorm22_0_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 1.5,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm22_0_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 1.5,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm22_0_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 1.5,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm27_0_C3"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 3,
+    "ColumnEnd": 3,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm27_0_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Type": "RTID(explorer@ZombieTypes)"},
+        {"Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm27_0_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm27_0_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm27_0_C7"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 7,
+    "ColumnEnd": 7,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"}
+    ]
+}},
+{"aliases":["GridSpawnII27"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 4, "Type": "RTID(presentSunOnDestruction@GridItemTypes)"},
+            {"Count": 3, "Type": "RTID(presentPlantOnDestruction_valentines@GridItemTypes)"},
+            {"Count": 3, "Type": "RTID(presentPlantOnDestruction_birthdayz@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(presentPlantfoodOnDestruction@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 6, "mY": 4}, {"mX": 8, "mY": 4}, {"mX": 7, "mY": 0}, {"mX": 8, "mY": 1}, {"mX": 8, "mY": 3}, {"mX": 6, "mY": 1}, {"mX": 6, "mY": 2}, {"mX": 6, "mY": 3}, {"mX": 7, "mY": 2}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_ZOMBIE_CHILDREN_LOLLIPOPS_HIT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Sandstorm30_0_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 0.4,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(steam_furnace@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm30_0_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 0.4,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm30_0_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 0.4,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Type": "RTID(feastivus_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm30_0_C7"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 7,
+    "ColumnEnd": 7,
+    "TimeBetweenGroups": 0.4,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(steam_miner_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm32_C3"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 3,
+    "ColumnEnd": 3,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm32_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(feastivus_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm32_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm32_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm32_C7"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 7,
+    "ColumnEnd": 7,
+    "TimeBetweenGroups": 1,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm36_0_C3"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 3,
+    "ColumnEnd": 3,
+    "TimeBetweenGroups": 2,
+    "GroupSize": 5,
+    "Zombies": [
+        {"Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Type": "RTID(summer_explorer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm36_0_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 2,
+    "GroupSize": 5,
+    "Zombies": [
+        {"Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm36_0_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 2,
+    "GroupSize": 5,
+    "Zombies": [
+        {"Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Type": "RTID(explorer@ZombieTypes)"},
+        {"Type": "RTID(feastivus_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm36_0_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 2,
+    "GroupSize": 5,
+    "Zombies": [
+        {"Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Type": "RTID(explorer@ZombieTypes)"},
+        {"Type": "RTID(explorer@ZombieTypes)"},
+        {"Type": "RTID(feastivus_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["GridSpawnII36"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 1, "Type": "RTID(presentSunOnDestruction_valentines@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(presentPlantOnDestruction@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(presentPlantOnDestruction_birthdayz@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(presentSunOnDestruction_birthdayz@GridItemTypes)"},
+            {"Count": 1, "Type": "RTID(presentPlantfoodOnDestruction@GridItemTypes)"},
+            {"Count": 3, "Type": "RTID(presentPlantOnDestruction_valentines@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(presentSunOnDestruction@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 4, "mY": 0}, {"mX": 8, "mY": 0}, {"mX": 4, "mY": 1}, {"mX": 5, "mY": 1}, {"mX": 8, "mY": 4}, {"mX": 8, "mY": 1}, {"mX": 4, "mY": 2}, {"mX": 6, "mY": 2}, {"mX": 8, "mY": 2}, {"mX": 4, "mY": 3}, {"mX": 7, "mY": 3}, {"mX": 8, "mY": 3}, {"mX": 4, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+{"aliases":["Sandstorm37_0_C3"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 3,
+    "ColumnEnd": 3,
+    "TimeBetweenGroups": 0.9,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm37_0_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 0.9,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Type": "RTID(steam_miner_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm37_0_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 0.9,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Type": "RTID(steam_furnace@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm37_0_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 0.9,
+    "GroupSize": 2,
+    "Zombies": [
+        {"Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Type": "RTID(summer_bug_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm44_0_C3"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 3,
+    "ColumnEnd": 3,
+    "TimeBetweenGroups": 0.15,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm44_0_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 0.15,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(steam_furnace@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm44_0_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 0.15,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm44_0_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 0.15,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm44_0_C7"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 7,
+    "ColumnEnd": 7,
+    "TimeBetweenGroups": 0.15,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm44_0_C8"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 8,
+    "ColumnEnd": 8,
+    "TimeBetweenGroups": 0.15,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm45_0_C3"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 3,
+    "ColumnEnd": 3,
+    "TimeBetweenGroups": 1.25,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(summer_explorer@ZombieTypes)"},
+        {"Type": "RTID(summer_bug_armor1@ZombieTypes)"},
+        {"Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm45_0_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 1.25,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(explorer@ZombieTypes)"},
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Type": "RTID(steam_miner_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm45_0_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 1.25,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Type": "RTID(feastivus_armor2@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(feastivus_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm45_0_C6"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 6,
+    "ColumnEnd": 6,
+    "TimeBetweenGroups": 1.25,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Type": "RTID(steam_furnace@ZombieTypes)"},
+        {"Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Type": "RTID(lostcity_explorer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm45_0_C7"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 7,
+    "ColumnEnd": 7,
+    "TimeBetweenGroups": 1.25,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(feastivus_armor1@ZombieTypes)"},
+        {"Type": "RTID(summer_bug_armor2@ZombieTypes)"},
+        {"Type": "RTID(lostcity_explorer@ZombieTypes)"},
+        {"Type": "RTID(iceage_charred@ZombieTypes)"},
+        {"Type": "RTID(explorer@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm45_0_C8"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 8,
+    "ColumnEnd": 8,
+    "TimeBetweenGroups": 1.25,
+    "GroupSize": 3,
+    "Zombies": [
+        {"Type": "RTID(foodfight_imp@ZombieTypes)"},
+        {"Type": "RTID(steam_miner_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["GridSpawnII45"],
+    "objclass": "SpawnGravestonesWaveActionProps",
+    "objdata": {
+        "GravestonePool": [
+            {"Count": 4, "Type": "RTID(presentPlantOnDestruction@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(presentPlantOnDestruction_valentines@GridItemTypes)"},
+            {"Count": 4, "Type": "RTID(presentSunOnDestruction_birthdayz@GridItemTypes)"},
+            {"Count": 2, "Type": "RTID(presentSunOnDestruction_valentines@GridItemTypes)"}
+        ],
+        "SpawnPositionsPool": [{"mX": 6, "mY": 0}, {"mX": 6, "mY": 1}, {"mX": 6, "mY": 2}, {"mX": 6, "mY": 4}, {"mX": 7, "mY": 0}, {"mX": 7, "mY": 1}, {"mX": 8, "mY": 0}, {"mX": 8, "mY": 1}, {"mX": 8, "mY": 2}, {"mX": 8, "mY": 4}, {"mX": 7, "mY": 2}, {"mX": 7, "mY": 4}],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": false,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+}},
+ {"aliases": ["SeedBank"],
+"objclass": "SeedBankProperties",
+"objdata": {
+    "OverrideSeedSlotsCount": 8,
+    "PresetPlantList": [
+        
+    ],
+    "PlantIncludeList": [
+        "sunflower",
+        "peashooter",
+        "wallnut",
+        "tallnut",
+        "explodeonut",
+        "bonkchoy",
+        "cabbagepult",
+        "melonpult",
+        "cherry_bomb",
+        "coconutcannon",
+        "gravebuster",
+        "iceburg",
+        "laser_bean",
+        "potatomine",
+        "repeater",
+        "snapdragon",
+        "spikeweed",
+        "threepeater",
+        "torchwood",
+        "kernelpult",
+        "springbean",
+        "snowpea",
+        "chilibean",
+        "splitpea",
+        "lightningreed",
+        "peapod",
+        "magnifyinggrass",
+        "bloomerang",
+        "holonut",
+        "empea",
+        "blover",
+        "starfruit",
+        "jalapeno",
+        "wintermelon",
+        "twinsunflower",
+        "spikerock",
+        "squash",
+        "citron",
+        "powerplant",
+        "sunshroom",
+        "puffshroom",
+        "fumeshroom",
+        "sunbean",
+        "magnetshroom",
+        "hypnoshroom",
+        "peanut",
+        "firepeashooter",
+        "lilypad",
+        "bowlingbulb",
+        "homingthistle",
+        "banana",
+        "chomper",
+        "guacodile",
+        "tanglekelp",
+        "ghostpepper",
+        "sweetpotato",
+        "sapfling",
+        "hurrikale",
+        "xshot",
+        "chardguard",
+        "pepperpult",
+        "kiwibeast",
+        "hotpotato",
+        "stunion",
+        "dandelion",
+        "redstinger",
+        "goldleaf",
+        "akee",
+        "lavaguava",
+        "toadstool",
+        "endurian",
+        "stallia",
+        "strawburst",
+        "cactus",
+        "phatbeet",
+        "thymewarp",
+        "celerystalker",
+        "electricblueberry",
+        "sporeshroom",
+        "garlic",
+        "intensivecarrot",
+        "jackolantern",
+        "primalpeashooter",
+        "grapeshot",
+        "primalwallnut",
+        "perfumeshroom",
+        "coldsnapdragon",
+        "primalsunflower",
+        "primalpotatomine",
+        "shrinkingviolet",
+        "moonflower",
+        "nightshade",
+        "shadowshroom",
+        "bloominghearts",
+        "escaperoot",
+        "grimrose",
+        "dusklobber",
+        "goldbloom",
+        "electriccurrant",
+        "aloe",
+        "wasabiwhip",
+        "applemortar",
+        "bombegranate",
+        "missiletoe",
+        "parsnip",
+        "witchhazel",
+        "hotdate",
+        "caulipower",
+        "solartomato",
+        "electricpeashooter",
+        "hollyknight",
+        "shadowpeashooter",
+        "poisonpeashooter",
+        "slingpea",
+        "snappea",
+        "zoybeanpod",
+        "dazeychain",
+        "electricitea",
+        "blastberry",
+        "imppear",
+        "pumpkin",
+        "icebloom",
+        "dartichoke",
+        "ultomato",
+        "gumnut",
+        "shinevine",
+        "tumbleweed",
+        "murkadamia",
+        "puffball",
+        "stickybombrice",
+        "olivepit",
+        "turkeypult",
+        "boingsetta",
+        "hocus",
+        "gloomvine",
+        "draftodil",
+        "boomflower",
+        "pvine",
+        "inferno",
+        "solarsage",
+        "noctarine",
+        "iceweed",
+        "pokra",
+        "pyrevine",
+        "teleportatomine",
+        "headbutter",
+        "unused_45",
+        "unused_47",
+        "unused_48",
+        "unused_49",
+        "unused_46",
+        "hollybarrierleaf"
+    ],
+    "PlantExcludeList": [
+        
+    ],
+    "SelectionMethod": "chooser"
+}},
+                                {}
+    ],
+    "version": 1
+}

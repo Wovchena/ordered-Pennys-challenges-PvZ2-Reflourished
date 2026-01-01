@@ -1,0 +1,413 @@
+{"#comment": "Puffshroom can die when there endangered plant - Shadow Lurkers Challenge",
+"objects": [{
+    "objclass": "LevelDefinition",
+    "objdata": {
+    "Description": "{PLAYER}'s run through Penny's Challenge!",
+    "LevelNumber": "5",
+    "LevelPowerupSet": "LevelPowerupsDisabled",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+        "ModernPortalGroup",
+        "PlantRepeater",
+        "PlantRepeaterAudio",
+        "PeaEffects",
+        "PlantDusklobber",
+        "PlantDuskLobberAudio",
+        "PlantTallnut",
+        "PlantTallnutAudio",
+        "PlantSnowPea",
+        "PlantSnowPeaAudio",
+        "PlantPepperpult",
+        "PlantPepperpultAudio",
+        "PlantMelonpult",
+        "PlantMelonpultAudio",
+        "PlantPrimalPeaShooter",
+        "PlantPrimalPeaShooterAudio",
+        "PlantEndurian",
+        "PlantEndurianAudio",
+        "PlantAppleMortar",
+        "PlantAppleMortarAudio",
+        "PlantWinterMelon",
+        "PlantWinterMelonAudio",
+        "PlantPeanut",
+        "PlantPeanutAudio",
+        "PlantHolonut",
+        "PlantInfinutAudio"
+    ],
+    "Modules": [
+        "RTID(BeghouledIntro@LevelModules)",
+        "RTID(GI@.)",
+        "RTID(ChallengeModule@.)",
+        "RTID(IPP@.)",
+        "RTID(PortalSpawn1@.)",
+        "RTID(PortalSpawn2@.)",
+        "RTID(SeedBank@.)",
+        "RTID(BeghouledArcade@LevelModules)",
+        "RTID(BeghouledProps@.)",
+        "RTID(BeghouledSpawner@.)",
+        "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+    "Name": "Penny's Challenge - Shadow Matcher",
+    "StageModule": "RTID(ModernNightStage@LevelModules)",
+    "MusicType": "MiniGame_B"
+}},
+{"aliases":["IPP"],
+"objclass": "InitialPlantProperties",
+"objdata": {
+    "InitialPlantPlacements": [
+        {"GridX": 5, "GridY": 2, "Level": -1, "TypeName":"gloomvine"},
+        {"GridX": 4, "GridY": 1, "Level": -1, "TypeName":"gloomvine"},
+        {"GridX": 4, "GridY": 3, "Level": -1, "TypeName":"gloomvine"},
+        {"GridX": 3, "GridY": 0, "Level": -1, "TypeName":"gloomvine"},
+        {"GridX": 3, "GridY": 4, "Level": -1, "TypeName":"gloomvine"},
+        {"GridX": 1, "GridY": 4, "Level": -1, "TypeName":"gloomvine"},
+        {"GridX": 1, "GridY": 0, "Level": -1, "TypeName":"gloomvine"},
+        {"GridX": 1, "GridY": 2, "Level": -1, "TypeName":"gloomvine"},
+        {"GridX": 5, "GridY": 0, "Level": -1, "TypeName":"gloomvine"},
+        {"GridX": 5, "GridY": 4, "Level": -1, "TypeName":"gloomvine"},
+        {"GridX": 3, "GridY": 2, "Level": -1, "TypeName":"gloomvine"},
+        {"GridX": 0, "GridY": 1, "Level": -1, "TypeName":"gloomvine"},
+        {"GridX": 0, "GridY": 3, "Level": -1, "TypeName":"gloomvine"}
+    ]
+}},
+{"aliases":["ChallengeModule"],
+"objclass": "StarChallengeModuleProperties",
+"objdata": {
+    "Challenges": [[
+        "RTID(IPP_Protect@.)"
+    ]],
+    "ChallengesAlwaysAvailable": true
+}},
+{"aliases":["IPP_Protect"],
+"objclass": "ProtectThePlantChallengeProperties",
+"objdata": {
+    "Plants": [
+        {"GridX": 2, "GridY": 1, "Level": 0, "PlantType":"gloomvine"},
+        {"GridX": 2, "GridY": 3, "Level": 0, "PlantType":"gloomvine"}
+    ], 
+    "MustProtectCount": 2
+}},
+{"aliases": ["SeedBank"],
+"objclass": "BeghouledSeedBankProperties",
+"objdata": {
+    "PresetPlantList": [
+        {"PlantType": "shadowpeashooter", "Level": -1},
+        {"PlantType": "redstinger", "Level": -1},
+        {"PlantType": "kernelpult", "Level": -1},
+        {"PlantType": "tallnut", "Level": -1}
+    ],
+    "BeghouledUpgradeList": [  ],
+    "SelectionMethod": "beghouled"
+}},
+{"aliases":["BeghouledProps"],
+"objclass":"BeghouledPresetProperties",
+"objdata":{
+    "MatchesToWin": 500,
+    "InitialPlants": ["cabbagepult", "nightshade", "puffshroom", "wallnut"],
+    "UpgradeMap":[
+        {"BasePlant":"nightshade", "UpgradedPlant":"shadowpeashooter"},
+        {"BasePlant":"shadowpeashooter", "UpgradedPlant":"dusklobber"},
+        {"BasePlant":"wallnut", "UpgradedPlant":"tallnut"},
+        {"BasePlant":"tallnut", "UpgradedPlant":"endurian"},
+        {"BasePlant":"endurian", "UpgradedPlant":"peanut"},
+        {"BasePlant":"peanut", "UpgradedPlant":"holonut"},
+        {"BasePlant":"puffshroom", "UpgradedPlant":"redstinger"},
+        {"BasePlant":"redstinger", "UpgradedPlant":"repeater"},
+        {"BasePlant":"repeater", "UpgradedPlant":"snowpea"},
+         {"BasePlant":"snowpea", "UpgradedPlant":"primalpeashooter"},
+         {"BasePlant":"cabbagepult", "UpgradedPlant":"kernelpult"},
+         {"BasePlant":"kernelpult", "UpgradedPlant":"pepperpult"},
+         {"BasePlant":"pepperpult", "UpgradedPlant":"melonpult"},
+         {"BasePlant":"melonpult", "UpgradedPlant":"applemortar"},
+         {"BasePlant":"applemortar", "UpgradedPlant":"wintermelon"}
+    ]
+}},
+{"aliases": ["BeghouledSpawner"],
+"objclass": "BeghouledZombieSpawnerProperties",
+"objdata": {
+    "MatchCountsToStageAdvance": [
+        {"MatchCount": 25, "StageNumber": 1},
+        {"MatchCount": 75, "StageNumber": 2},
+        {"MatchCount": 125, "StageNumber": 3},
+        {"MatchCount": 175, "StageNumber": 4},
+        {"MatchCount": 225, "StageNumber": 5},
+        {"MatchCount": 275, "StageNumber": 6},
+        {"MatchCount": 325, "StageNumber": 7},
+        {"MatchCount": 375, "StageNumber": 8},
+        {"MatchCount": 445, "StageNumber": 9},
+        {"MatchCount": 475, "StageNumber": 10}
+    ],
+    "Stages": [
+        {
+            "Types": [
+                { "ZombieType": "tutorial" },
+                { "ZombieType": "tutorial_imp" }
+            ], 
+            "SpawnDelay": 4
+        },
+        {
+            "Types": [
+                { "ZombieType": "tutorial" },
+                { "ZombieType": "tutorial_imp" },
+                { "ZombieType": "modern_superfanimp" }
+            ], 
+            "SpawnDelay": 4
+        },
+        {
+            "Types": [
+                { "ZombieType": "tutorial" },
+                { "ZombieType": "tutorial_imp" },
+                { "ZombieType": "tutorial_armor1" },
+                { "ZombieType": "modern_superfanimp" }
+            ], 
+            "SpawnDelay": 4.5
+        },
+        {
+            "Types": [
+                { "ZombieType": "tutorial" },
+                { "ZombieType": "tutorial_imp" },
+                { "ZombieType": "tutorial_armor1" },
+                { "ZombieType": "tutorial_armor2" },
+                { "ZombieType": "modern_superfanimp" }
+            ], 
+            "SpawnDelay": 4.5
+        },
+        {
+            "Types": [
+                { "ZombieType": "tutorial" },
+                { "ZombieType": "tutorial_armor1" },
+                { "ZombieType": "tutorial_armor2" },
+                { "ZombieType": "modern_balloon" },
+                { "ZombieType": "modern_superfanimp" }
+            ], 
+            "SpawnDelay": 5
+        },
+        {
+            "Types": [
+                { "ZombieType": "tutorial_armor1" },
+                { "ZombieType": "tutorial_armor2" },
+                { "ZombieType": "modern_balloon" },
+                { "ZombieType": "modern_superfanimp" },
+                { "ZombieType": "tutorial_armor4" }
+            ], 
+            "SpawnDelay": 5
+        },
+        {
+            "Types": [
+                { "ZombieType": "tutorial_armor2" },
+                { "ZombieType": "modern_balloon" },
+                { "ZombieType": "modern_superfanimp" },
+                { "ZombieType": "tutorial_armor4" },
+                { "ZombieType": "modern_newspaper" }
+            ], 
+            "SpawnDelay": 5.5
+        },
+        {
+            "Types": [
+                { "ZombieType": "modern_balloon" },
+                { "ZombieType": "modern_superfanimp" },
+                { "ZombieType": "tutorial_armor4" },
+                { "ZombieType": "modern_newspaper" },
+                { "ZombieType": "modern_allstar" }
+            ], 
+            "SpawnDelay": 5.5
+        },
+        {
+            "Types": [
+                { "ZombieType": "modern_balloon" },
+                { "ZombieType": "tutorial_armor4" },
+                { "ZombieType": "modern_newspaper" },
+                { "ZombieType": "modern_allstar" },
+                { "ZombieType": "newspaper_veteran" }
+            ], 
+            "SpawnDelay": 6
+        },
+        {
+            "Types": [
+                { "ZombieType": "tutorial_armor4" },
+                { "ZombieType": "modern_balloon" },
+                { "ZombieType": "modern_newspaper" },
+                { "ZombieType": "modern_allstar" },
+                { "ZombieType": "newspaper_veteran" },
+                { "ZombieType": "tutorial_gargantuar" }
+            ], 
+            "SpawnDelay": 7.5
+        },
+        {
+            "Types": [
+                { "ZombieType": "tutorial_imp" }
+            ], 
+            "SpawnDelay": 0.25
+        }
+    ]
+}},
+{"aliases":["GI"],
+"objclass":"InitialGridItemProperties",
+"objdata":{
+    "InitialGridItemPlacements": [
+        {"GridX": 7, "GridY": 0, "TypeName":"inviscrater"},
+        {"GridX": 7, "GridY": 1, "TypeName":"inviscrater"},
+        {"GridX": 7, "GridY": 2, "TypeName":"inviscrater"},
+        {"GridX": 7, "GridY": 3, "TypeName":"inviscrater"},
+        {"GridX": 7, "GridY": 4, "TypeName":"inviscrater"},
+        {"GridX": 6, "GridY": 0, "TypeName":"inviscrater"},
+        {"GridX": 6, "GridY": 1, "TypeName":"inviscrater"},
+        {"GridX": 6, "GridY": 2, "TypeName":"inviscrater"},
+        {"GridX": 6, "GridY": 3, "TypeName":"inviscrater"},
+        {"GridX": 6, "GridY": 4, "TypeName":"inviscrater"},
+        {"GridX": 7, "GridY": 0, "TypeName":"bufftile_attack"},
+        {"GridX": 7, "GridY": 1, "TypeName":"slider_down_modern"},
+        {"GridX": 7, "GridY": 2, "TypeName":"slider_up_modern"},
+        {"GridX": 7, "GridY": 3, "TypeName":"bufftile_shield"},
+        {"GridX": 7, "GridY": 4, "TypeName":"bufftile_speed"},
+        {"GridX": 6, "GridY": 0, "TypeName":"bufftile_speed"},
+        {"GridX": 6, "GridY": 1, "TypeName":"bufftile_attack"},
+        {"GridX": 6, "GridY": 2, "TypeName":"bufftile_speed"},
+        {"GridX": 6, "GridY": 3, "TypeName":"bufftile_attack"},
+        {"GridX": 6, "GridY": 4, "TypeName":"slider_up_modern"},
+        {"GridX": 1, "GridY": 0, "TypeName":"goldtile"},
+        {"GridX": 1, "GridY": 1, "TypeName":"goldtile"},
+        {"GridX": 2, "GridY": 3, "TypeName":"goldtile"},
+        {"GridX": 2, "GridY": 4, "TypeName":"goldtile"}
+    ]
+}},
+{"aliases": ["PortalSpawn1"],
+"objclass": "ZombiePotionModuleProperties",
+"objdata": {
+    "InitialPotionCount": 0,
+    "MaxPotionCount": 99,
+    "PotionSpawnTimer": {
+        "Min": 30,
+        "Max": 30
+    },
+        "PotionTypes": [
+            "zombieportal_egypt",
+            "zombieportal_blank_5",
+            "zombieportal_blank_1",
+            "zombieportal_blank_2",
+            "zombieportal_dino"
+    ]
+}},
+{"aliases": ["PortalSpawn2"],
+"objclass": "ZombiePotionModuleProperties",
+"objdata": {
+    "InitialPotionCount": 0,
+    "MaxPotionCount": 99,
+    "PotionSpawnTimer": {
+        "Min": 50,
+        "Max": 50
+    },
+        "PotionTypes": [
+            "zombieportal_blank_3",
+            "zombieportal_dangerroom_west_2",
+            "zombieportal_dangerroom_beach",
+            "zombieportal_blank_4",
+            "zombieportal_dangerroom_iceage_2"
+    ]
+}},
+{"aliases": ["GridItemZombiePortal_Blank_1"],
+"objclass": "GridItemZombiePortalProps",
+"objdata": {
+    "CanBeMowed": false,
+    "CloseAnimation": "end",
+    "Height": "ground",
+    "Hitpoints": 600,
+    "PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL",
+    "PopAnimRenderOffset": { "x": 96, "y": 125 },
+    "PopAnimRigClass": "GridItemZombiePortal_AnimRig",
+    "SpawnAnimation": "spawn",
+    "World": "dark",
+    "ZombieSpawnMethod": "NonRandomShuffled",
+    "ZombieSpawnPointOffset": -20,
+    "TimeBetweenSpawns": {"Min": 10, "Max": 12},
+    "ZombieTypesToSpawn": [
+        {"Weight": 1, "ZombieTypeName": "dark_wizard"},
+        {"Weight": 1, "ZombieTypeName": "dark_explorer"},
+        {"Weight": 1, "ZombieTypeName": "dark_imp_dragon"}
+    ]
+}},
+{"aliases": ["GridItemZombiePortal_Blank_2"],
+"objclass": "GridItemZombiePortalProps",
+"objdata": {
+    "CanBeMowed": false,
+    "CloseAnimation": "end",
+    "Height": "ground",
+    "Hitpoints": 600,
+    "PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL",
+    "PopAnimRenderOffset": { "x": 96, "y": 125 },
+    "PopAnimRigClass": "GridItemZombiePortal_AnimRig",
+    "SpawnAnimation": "spawn",
+    "World": "lostcity",
+    "ZombieSpawnMethod": "NonRandomShuffled",
+    "ZombieSpawnPointOffset": -20,
+    "TimeBetweenSpawns": {"Min": 10, "Max": 12},
+    "ZombieTypesToSpawn": [
+        {"Weight": 1, "ZombieTypeName": "lostcity_impporter"},
+        {"Weight": 1, "ZombieTypeName": "lostcity_excavator"},
+        {"Weight": 1, "ZombieTypeName": "lostcity_crystalskull"}
+    ]
+}},
+{"aliases": ["GridItemZombiePortal_Blank_3"],
+"objclass": "GridItemZombiePortalProps",
+"objdata": {
+    "CanBeMowed": false,
+    "CloseAnimation": "end",
+    "Height": "ground",
+    "Hitpoints": 600,
+    "PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL",
+    "PopAnimRenderOffset": { "x": 96, "y": 125 },
+    "PopAnimRigClass": "GridItemZombiePortal_AnimRig",
+    "SpawnAnimation": "spawn",
+    "World": "pirate",
+    "ZombieSpawnMethod": "NonRandomShuffled",
+    "ZombieSpawnPointOffset": -20,
+    "TimeBetweenSpawns": {"Min": 10, "Max": 12},
+    "ZombieTypesToSpawn": [
+        {"Weight": 1, "ZombieTypeName": "barrelroller_explosive"},
+        {"Weight": 1, "ZombieTypeName": "cannon"}
+    ]
+}},
+{"aliases": ["GridItemZombiePortal_Blank_4"],
+"objclass": "GridItemZombiePortalProps",
+"objdata": {
+    "CanBeMowed": false,
+    "CloseAnimation": "end",
+    "Height": "ground",
+    "Hitpoints": 600,
+    "PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL",
+    "PopAnimRenderOffset": { "x": 96, "y": 125 },
+    "PopAnimRigClass": "GridItemZombiePortal_AnimRig",
+    "SpawnAnimation": "spawn",
+    "World": "eighties",
+    "ZombieSpawnMethod": "NonRandomShuffled",
+    "ZombieSpawnPointOffset": -20,
+    "TimeBetweenSpawns": {"Min": 10, "Max": 12},
+    "ZombieTypesToSpawn": [
+        {"Weight": 1, "ZombieTypeName": "eighties_8bit_armor2"},
+        {"Weight": 1, "ZombieTypeName": "eighties_boombox"}
+    ]
+}},
+{"aliases": ["GridItemZombiePortal_Blank_5"],
+"objclass": "GridItemZombiePortalProps",
+"objdata": {
+    "CanBeMowed": false,
+    "CloseAnimation": "end",
+    "Height": "ground",
+    "Hitpoints": 600,
+    "PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL",
+    "PopAnimRenderOffset": { "x": 96, "y": 125 },
+    "PopAnimRigClass": "GridItemZombiePortal_AnimRig",
+    "SpawnAnimation": "spawn",
+    "World": "future",
+    "ZombieSpawnMethod": "NonRandomShuffled",
+    "ZombieSpawnPointOffset": -20,
+    "TimeBetweenSpawns": {"Min": 10, "Max": 12},
+    "ZombieTypesToSpawn": [
+        {"Weight": 1, "ZombieTypeName": "future_protector_generator"},
+        {"Weight": 1, "ZombieTypeName": "future_protector_generator"}
+    ]
+}},
+        {}
+    ],
+    "version": 1
+}

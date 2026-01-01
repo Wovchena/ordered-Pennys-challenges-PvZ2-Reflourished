@@ -1,0 +1,3889 @@
+{
+  "#comment": "Penny's Challenge - Lunar-tics",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "{PLAYER}'s run through Penny's Challenge!",
+        "FixedPlantLevel": 1,
+        "StartingSun": 250,
+        "SuppressPlantfoodPurchase": true,
+        "DisablePlantBoosts": true,
+        "LevelPowerupSet": "LevelPowerupsDisabled",
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(TrapezeStreetModule@LevelModules)",
+          "RTID(GridItems@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(SteamSewers@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)"
+        ],
+        "Name": "Penny's Challenge - Lunar-tics",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(LunarStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "GridItems"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 3,
+            "GridY": 0,
+            "TypeName": "carnie_card_unactivated"
+          },
+          {
+            "GridX": 2,
+            "GridY": 1,
+            "TypeName": "carnie_card_unactivated"
+          },
+          {
+            "GridX": 3,
+            "GridY": 2,
+            "TypeName": "carnie_card_unactivated"
+          },
+          {
+            "GridX": 2,
+            "GridY": 3,
+            "TypeName": "carnie_card_unactivated"
+          },
+          {
+            "GridX": 3,
+            "GridY": 4,
+            "TypeName": "carnie_card_unactivated"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(BeatTheLevel@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "BeatTheLevel"
+      ],
+      "objclass": "StarChallengeBeatTheLevelProps",
+      "objdata": {
+        "Description": "Survive with a special seed bank with extra starting sun",
+        "DescriptiveName": "Custom Objective"
+      }
+    },
+    {
+      "aliases": [
+        "SteamSewers"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 1,
+            "GridY": 0,
+            "TypeName": "steam_sewer"
+          },
+          {
+            "GridX": 3,
+            "GridY": 1,
+            "TypeName": "steam_sewer"
+          },
+          {
+            "GridX": 2,
+            "GridY": 2,
+            "TypeName": "steam_sewer"
+          },
+          {
+            "GridX": 1,
+            "GridY": 3,
+            "TypeName": "steam_sewer"
+          },
+          {
+            "GridX": 4,
+            "GridY": 4,
+            "TypeName": "steam_sewer"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "OverrideSeedSlotsCount": 8,
+        "PlantIncludeList": [
+          "twinsunflower",
+          "gravebuster",
+          "snapdragon",
+          "springbean",
+          "cherry_bomb",
+          "tallnut",
+          "blover",
+          "empea",
+          "holonut",
+          "powerplant",
+          "sunshroom",
+          "sunbean",
+          "magnetshroom",
+          "hotpotato",
+          "pepperpult",
+          "chardguard",
+          "hurrikale",
+          "firepeashooter",
+          "stallia",
+          "lavaguava",
+          "garlic",
+          "thymewarp",
+          "intensivecarrot",
+          "gumnut",
+          "primalwallnut",
+          "perfumeshroom",
+          "primalsunflower",
+          "hotdate",
+          "sunflower",
+          "wallnut",
+          "moonflower",
+          "sapfling",
+          "jalapeno",
+          "sweetpotato",
+          "jackolantern",
+          "torchwood",
+          "shrinkingviolet",
+          "escaperoot",
+          "bombegranate",
+          "solartomato",
+          "wasabiwhip",
+          "explodeonut",
+          "shinevine",
+          "inferno",
+          "goldbloom",
+          "aloe",
+          "hollybarrierleaf",
+          "pyrevine"
+        ],
+        "SelectionMethod": "chooser"
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 8,
+        "WaveCount": 40,
+        "MinNextWaveHealthPercentage": 0.5,
+        "MaxNextWaveHealthPercentage": 0.65,
+        "Waves": [
+          [
+            "RTID(Wave1@.)",
+            "RTID(GridSpawn1@.)"
+          ],
+          [
+            "RTID(Wave2@.)"
+          ],
+          [
+            "RTID(Wave3@.)"
+          ],
+          [
+            "RTID(Wave4@.)",
+            "RTID(Wave4SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave4SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@.)"
+          ],
+          [
+            "RTID(Wave6@.)",
+            "RTID(GridSpawn6@.)"
+          ],
+          [
+            "RTID(Wave7@.)",
+            "RTID(Wave7SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave7SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@.)",
+            "RTID(Wave8SpiderRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@.)"
+          ],
+          [
+            "RTID(Wave10@.)",
+            "RTID(Wave10SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave10SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@.)"
+          ],
+          [
+            "RTID(Wave12@.)",
+            "RTID(GridSpawn12@.)"
+          ],
+          [
+            "RTID(Wave13@.)",
+            "RTID(Wave13SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave13SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@.)"
+          ],
+          [
+            "RTID(Wave15@.)",
+            "RTID(Wave15SpiderRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave16@.)",
+            "RTID(Wave16SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave16SteamSewersEvent1@CurrentLevel)",
+            "RTID(Wave16SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave17@.)"
+          ],
+          [
+            "RTID(Wave18@.)",
+            "RTID(GridSpawn18@.)"
+          ],
+          [
+            "RTID(Wave19@.)"
+          ],
+          [
+            "RTID(Wave20@.)",
+            "RTID(Wave20SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave20SteamSewersEvent1@CurrentLevel)",
+            "RTID(Wave20SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave21@.)",
+            "RTID(Wave21SpiderRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave22@.)"
+          ],
+          [
+            "RTID(Wave23@.)",
+            "RTID(GridSpawn23@.)"
+          ],
+          [
+            "RTID(Wave24@.)",
+            "RTID(Wave24SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave24SteamSewersEvent1@CurrentLevel)",
+            "RTID(Wave24SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave25@.)"
+          ],
+          [
+            "RTID(Wave26@.)"
+          ],
+          [
+            "RTID(Wave27@.)",
+            "RTID(Wave27SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave27SteamSewersEvent1@CurrentLevel)",
+            "RTID(Wave27SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave28@.)",
+            "RTID(Wave28SpiderRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave29@.)",
+            "RTID(GridSpawn29@.)"
+          ],
+          [
+            "RTID(Wave30@.)",
+            "RTID(Wave30SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave30SteamSewersEvent1@CurrentLevel)",
+            "RTID(Wave30SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave31@.)"
+          ],
+          [
+            "RTID(Wave32@.)",
+            "RTID(Wave32SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave32SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave33@.)",
+            "RTID(Wave33SpiderRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave34@.)"
+          ],
+          [
+            "RTID(Wave35@.)",
+            "RTID(Wave35SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave35SteamSewersEvent1@CurrentLevel)",
+            "RTID(Wave35SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave36@.)",
+            "RTID(GridSpawn36@.)"
+          ],
+          [
+            "RTID(Wave37@.)",
+            "RTID(Wave37SpiderRainEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave38@.)"
+          ],
+          [
+            "RTID(Wave39@.)",
+            "RTID(Wave39SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave39SteamSewersEvent1@CurrentLevel)",
+            "RTID(Wave39SteamSewersEvent2@CurrentLevel)",
+            "RTID(Wave39SteamSewersEvent3@CurrentLevel)",
+            "RTID(Wave39SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave40@.)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(modern_allstar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave17"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave18"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_trapeze_blue@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(modern_allstar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave19"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave20"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(modern_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lion_dancer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave21"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave22"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_trapeze_red@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave23"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(modern_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(modern_allstar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave24"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lion_dancer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave25"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave26"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_trapeze_red@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_trapeze_red@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave27"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(modern_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave28"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lion_dancer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave29"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave30"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_trapeze_red@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_trapeze_red@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(modern_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave31"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lion_dancer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave32"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave33"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave34"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(modern_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lion_dancer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave35"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave36"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave37"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(modern_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_trapeze_yellow@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lion_dancer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lion_dancer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave38"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lion_dancer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lion_dancer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_firebreather@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave39"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(modern_allstar@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lion_dancer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lion_dancer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave40"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_camel_manyhump@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lostcity_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lunar_moneytree@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_bandit@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lunar_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave7SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave10SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave13SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave16SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16SteamSewersEvent1"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 6,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave20SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave20SteamSewersEvent1"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 7,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave20SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave24SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave24SteamSewersEvent1"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 8,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave24SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave27SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave27SteamSewersEvent1"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 4,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave27SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave30SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave30SteamSewersEvent1"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 4,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave30SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave32SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave32SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave35SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave35SteamSewersEvent1"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 4,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave35SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave39SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave39SteamSewersEvent1"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 4,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave39SteamSewersEvent2"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave39SteamSewersEvent3"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 4,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave39SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn1"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 2,
+            "Type": "RTID(carnie_card_sunify@GridItemTypes)"
+          },
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_armor2@GridItemTypes)"
+          },
+          {
+            "Count": 2,
+            "Type": "RTID(carnie_card_basic@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 3,
+            "mY": 0
+          },
+          {
+            "mX": 2,
+            "mY": 1
+          },
+          {
+            "mX": 3,
+            "mY": 2
+          },
+          {
+            "mX": 2,
+            "mY": 3
+          },
+          {
+            "mX": 3,
+            "mY": 4
+          }
+        ],
+        "SpawnEffectAnimID": "",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": [
+          "GridItemCrater"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn6"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_sunify@GridItemTypes)"
+          },
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_armor2@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 3,
+            "mY": 1
+          },
+          {
+            "mX": 0,
+            "mY": 0
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_WITCH_HAZEL_ATTACK_CARNIE",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn12"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_basic@GridItemTypes)"
+          },
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_armor2@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 0,
+            "mY": 1
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_WITCH_HAZEL_ATTACK_CARNIE",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn18"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_sunify@GridItemTypes)"
+          },
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_basic@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 4,
+            "mY": 4
+          },
+          {
+            "mX": 0,
+            "mY": 2
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_WITCH_HAZEL_ATTACK_CARNIE",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn23"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_sunify@GridItemTypes)"
+          },
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_armor2@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 0,
+            "mY": 3
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_WITCH_HAZEL_ATTACK_CARNIE",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn29"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_basic@GridItemTypes)"
+          },
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_armor2@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 0,
+            "mY": 4
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_WITCH_HAZEL_ATTACK_CARNIE",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn36"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_PFify@GridItemTypes)"
+          },
+          {
+            "Count": 2,
+            "Type": "RTID(carnie_card_basic@GridItemTypes)"
+          },
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_armor2@GridItemTypes)"
+          },
+          {
+            "Count": 1,
+            "Type": "RTID(carnie_card_sunify@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 4,
+            "mY": 0
+          },
+          {
+            "mX": 4,
+            "mY": 1
+          },
+          {
+            "mX": 4,
+            "mY": 2
+          },
+          {
+            "mX": 4,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_WITCH_HAZEL_ATTACK_CARNIE",
+        "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "Wave8SpiderRainEvent0"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "7",
+        "ColumnStart": 5,
+        "GroupSize": "1",
+        "SpiderCount": 2,
+        "SpiderZombieName": "lunar_superfanimp",
+        "TimeBeforeFullSpawn": 2,
+        "TimeBetweenGroups": 1,
+        "WaveStartMessage": "Lunar Landing!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave15SpiderRainEvent0"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "7",
+        "ColumnStart": 5,
+        "GroupSize": "1",
+        "SpiderCount": 4,
+        "SpiderZombieName": "lunar_superfanimp",
+        "TimeBeforeFullSpawn": 8,
+        "TimeBetweenGroups": 2,
+        "WaveStartMessage": "Lunar Landing!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave21SpiderRainEvent0"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "7",
+        "ColumnStart": 5,
+        "GroupSize": "4",
+        "SpiderCount": 4,
+        "SpiderZombieName": "lunar_superfanimp",
+        "TimeBeforeFullSpawn": 1,
+        "TimeBetweenGroups": 1,
+        "WaveStartMessage": "Lunar Landing!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave28SpiderRainEvent0"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "7",
+        "ColumnStart": 5,
+        "GroupSize": "1",
+        "SpiderCount": 5,
+        "SpiderZombieName": "lunar_superfanimp",
+        "TimeBeforeFullSpawn": 7.5,
+        "TimeBetweenGroups": 1.5,
+        "WaveStartMessage": "Lunar Landing!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave33SpiderRainEvent0"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "7",
+        "ColumnStart": 5,
+        "GroupSize": "2",
+        "SpiderCount": 6,
+        "SpiderZombieName": "lunar_superfanimp",
+        "TimeBeforeFullSpawn": 1.05,
+        "TimeBetweenGroups": 0.35,
+        "WaveStartMessage": "Lunar Landing!",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave37SpiderRainEvent0"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "7",
+        "ColumnStart": 5,
+        "GroupSize": "1",
+        "SpiderCount": 6,
+        "SpiderZombieName": "lunar_superfanimp",
+        "TimeBeforeFullSpawn": 18,
+        "TimeBetweenGroups": 3,
+        "WaveStartMessage": "Lunar Landing!",
+        "ZombieFallTime": "1.5"
+      }
+    }
+  ],
+  "version": 1
+}

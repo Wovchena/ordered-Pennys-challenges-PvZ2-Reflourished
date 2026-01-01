@@ -1,0 +1,2071 @@
+{"#comment": "Penny's Challenge - Closer Encounters | ELM: Ver-10.2 [RFL v1.23]",
+"#zombies": "future, future_armor1, future_armor2, future_armor4, skycity_armor2, skycity_armor3, skycity_armor4, skycity_electric, skycity_gas, skycity_battleplane, modern_newspaper, disco_mech, dark_wizard, lostcity_relichunter, lostcity_gargantuar, lostcity_lostpilot, hero_glitter, steam_gentleman, skycity_rocket",
+"objects": [{
+    "objclass": "LevelDefinition",
+    "objdata": {
+    "StartingSun": 50,
+    "Description": "{PLAYER}'s Run through Penny's Challenge!",
+    "FirstRewardParam": "moneybag",
+    "GridItemLevel": 125,
+    "LevelPowerupSet": "LevelPowerupsSkyCityChallenges",
+    "SuppressPlantfoodPurchase": true,
+    "DisablePlantBoosts": true,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+        "DelayLoad_Background_Beach",
+        "DelayLoad_Background_Beach_Compressed",
+        "Tombstone_Dark_Special",
+        "Tombstone_Dark_Effects"
+    ],
+    "Modules": [
+         "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+        "RTID(StandardIntro@LevelModules)",
+        "RTID(GI@CurrentLevel)",
+        "RTID(DefaultSunDropper@LevelModules)",
+        "RTID(ChallengeModule@CurrentLevel)",
+        "RTID(Escalation@CurrentLevel)",
+        "RTID(NewWaves@CurrentLevel)",
+        "RTID(CE2Seedbank@CurrentLevel)",
+        "RTID(HomeHealthHurt@LevelModules)",
+        "RTID(SkyCityZombieWinCondition@LevelModules)",
+        "RTID(JamZombiesModule@LevelModules)",
+        "RTID(ZombiesDeadWinCon@LevelModules)",
+        "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+     "Name": "Penny's Challenge - Closer Encounters",
+    "StageModule": "RTID(SkyCityStage@LevelModules)",
+    "MusicType": "MiniGame_B"
+}},
+{"aliases":["ChallengeModule"],
+"objclass": "StarChallengeModuleProperties",
+"objdata": {
+    "Challenges": [[
+        "RTID(BeatTheLevel@CurrentLevel)",
+        "RTID(MoldColonies@CurrentLevel)"
+    ]],
+    "ChallengesAlwaysAvailable": true
+}},
+{"aliases":["BeatTheLevel"],
+"objclass": "StarChallengeBeatTheLevelProps",
+"objdata": {
+    "Description": "Note: The Graves are simply immortal as opposed to always respawning on destruction",
+    "DescriptiveName": "Custom Objective"
+}},
+{"aliases":["MoldColonies"],
+"objclass": "MoldColonyChallengeProps",
+"objdata": { "Locations": "RTID(Mold@CurrentLevel)" }
+},
+{"aliases": ["Mold"],
+"objclass": "BoardGridMapProps",
+"objdata": {
+    "Values": [
+        [1, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0]
+    ]
+}},
+ {"aliases":["GI"],
+"objclass":"InitialGridItemProperties",
+"objdata":{
+    "InitialGridItemPlacements": [
+        {"GridX": 3, "GridY": 0, "TypeName":"cloud"},
+        {"GridX": 4, "GridY": 0, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 0, "TypeName":"gravestone_future"},
+        {"GridX": 10, "GridY": 0, "TypeName":"cloud"},
+        {"GridX": 11, "GridY": 0, "TypeName":"cloud"},
+        {"GridX": 12, "GridY": 0, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 0, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 0, "TypeName":"inviscrater"},
+        {"GridX": 3, "GridY": 1, "TypeName":"cloud"},
+        {"GridX": 4, "GridY": 1, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 1, "TypeName":"gravestone_future"},
+        {"GridX": 10, "GridY": 1, "TypeName":"cloud"},
+        {"GridX": 11, "GridY": 1, "TypeName":"cloud"},
+        {"GridX": 12, "GridY": 1, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 1, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 1, "TypeName":"inviscrater"},
+        {"GridX": 3, "GridY": 2, "TypeName":"cloud"},
+        {"GridX": 4, "GridY": 2, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 2, "TypeName":"gravestone_future"},
+        {"GridX": 10, "GridY": 2, "TypeName":"cloud"},
+        {"GridX": 11, "GridY": 2, "TypeName":"cloud"},
+        {"GridX": 12, "GridY": 2, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 2, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 2, "TypeName":"inviscrater"},
+        {"GridX": 3, "GridY": 3, "TypeName":"cloud"},
+        {"GridX": 4, "GridY": 3, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 3, "TypeName":"gravestone_future"},
+        {"GridX": 10, "GridY": 3, "TypeName":"cloud"},
+        {"GridX": 11, "GridY": 3, "TypeName":"cloud"},
+        {"GridX": 12, "GridY": 3, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 3, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 3, "TypeName":"inviscrater"},
+        {"GridX": 3, "GridY": 4, "TypeName":"cloud"},
+        {"GridX": 4, "GridY": 4, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 4, "TypeName":"gravestone_future"},
+        {"GridX": 10, "GridY": 4, "TypeName":"cloud"},
+        {"GridX": 11, "GridY": 4, "TypeName":"cloud"},
+        {"GridX": 12, "GridY": 4, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 4, "TypeName":"cloud"},
+        {"GridX": 5, "GridY": 4, "TypeName":"inviscrater"}
+    ]
+}},
+ {"aliases": ["Escalation"],
+"objclass": "LevelEscalationModuleProperties",
+"objdata": {
+    "FlagCount": 4,
+    "WavesPerFlag": 10,
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0,
+    "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+    "ZombiePool": [
+        "RTID(tutorial@ZombieTypes)"
+    ]
+}},
+{"aliases": ["NewWaves"],
+"objclass": "WaveManagerModuleProperties",
+"objdata": {}
+},
+{"aliases": ["WaveManager"],
+"objclass": "WaveManagerProperties",
+"objdata": {
+    "FlagWaveInterval": 10,
+    "WaveCount": 40,
+    "SuppressFlagZombie": false,
+    "Waves": [
+         ["RTID(Necro1@.)"],
+        ["RTID(Wave2@.)", "RTID(Necro2@.)"],
+        ["RTID(Necro3@.)"],
+        ["RTID(Wave4@.)", "RTID(ParaRain4_lostcity_lostpilot@.)"],
+        ["RTID(Necro5@.)"],
+        ["RTID(Wave6@.)", "RTID(Necro6@.)"],
+        ["RTID(Wave7@.)", "RTID(Necro7@.)"],
+        ["RTID(Wave8@.)", "RTID(Necro8@.)"],
+        ["RTID(Wave9@.)", "RTID(Necro9@.)"],
+        ["RTID(Wave10@.)", "RTID(Necro10@.)", "RTID(ParaRain10_lostcity_lostpilot@.)", "RTID(GasPodx5y2@.)", "RTID(WarnGas@.)"],
+        ["RTID(Wave11@.)", "RTID(Necro11@.)"],
+        ["RTID(Wave12@.)", "RTID(Necro12@.)"],
+        ["RTID(Wave13@.)", "RTID(Necro13@.)", "RTID(ParaRain13_lostcity_lostpilot@.)"],
+        ["RTID(Wave14@.)", "RTID(Necro14@.)"],
+        ["RTID(Wave15@.)", "RTID(Necro15@.)"],
+        ["RTID(Wave16@.)", "RTID(Necro16@.)"],
+        ["RTID(Necro17@.)", "RTID(Necro17_2@.)", "RTID(GasPodx3y1@.)", "RTID(GasPodx3y4@.)", "RTID(WarnGas@.)"],
+        ["RTID(Wave18@.)", "RTID(Necro18@.)", "RTID(ParaRain18_lostcity_lostpilot@.)"],
+        ["RTID(Wave19@.)", "RTID(Necro19@.)", "RTID(Necro19_2@.)"],
+        ["RTID(Wave20@.)", "RTID(Necro20@.)", "RTID(Necro20_2@.)", "RTID(GasPodx5y2@.)", "RTID(GasPodx4y4@.)", "RTID(WarnGas@.)"],
+        ["RTID(Necro21@.)", "RTID(Necro21_2@.)"],
+        ["RTID(Wave22@.)", "RTID(Necro22@.)"],
+        ["RTID(Wave23@.)", "RTID(Necro23@.)", "RTID(ParaRain23_lostcity_lostpilot@.)", "RTID(GasPodx1y1@.)", "RTID(GasPodx1y3@.)", "RTID(WarnGas@.)"],
+        ["RTID(Wave24@.)", "RTID(Necro24@.)", "RTID(Necro24_2@.)"],
+        ["RTID(Wave25@.)", "RTID(Necro25@.)", "RTID(GasPodx5y2@.)", "RTID(GasPodx3y4@.)", "RTID(GasPodx4y0@.)", "RTID(GasPodx1y1@.)", "RTID(GasPodx1y3@.)", "RTID(WarnGas@.)"],
+        ["RTID(Wave26@.)", "RTID(Necro26@.)", "RTID(Necro26_2@.)"],
+        ["RTID(Wave27@.)", "RTID(Necro27@.)", "RTID(Necro27_2@.)"],
+        ["RTID(Wave28@.)", "RTID(Necro28@.)", "RTID(ParaRain28_lostcity_lostpilot@.)"],
+        ["RTID(Wave29@.)", "RTID(Necro29@.)", "RTID(Necro29_2@.)", "RTID(GasPodx4y0@.)", "RTID(GasPodx4y1@.)", "RTID(GasPodx4y3@.)", "RTID(GasPodx4y4@.)", "RTID(WarnGas@.)"],
+        ["RTID(Wave30@.)", "RTID(Necro30@.)", "RTID(Necro30_2@.)", "RTID(Necro30_3@.)"],
+        ["RTID(Wave31@.)", "RTID(Necro31@.)", "RTID(Necro31_2@.)"],
+        ["RTID(Wave32@.)", "RTID(Necro32@.)", "RTID(ParaRain32_lostcity_lostpilot@.)", "RTID(Necro32_2@.)"],
+        ["RTID(Wave33@.)", "RTID(Necro33@.)", "RTID(Necro33_2@.)"],
+        ["RTID(Wave34@.)", "RTID(Necro34@.)", "RTID(Necro34_2@.)", "RTID(GasPodx5y0@.)", "RTID(GasPodx4y1@.)", "RTID(GasPodx3y2@.)", "RTID(GasPodx4y3@.)", "RTID(GasPodx5y4@.)", "RTID(WarnGas@.)"],
+        ["RTID(Wave35@.)", "RTID(Necro35@.)", "RTID(Necro35_2@.)", "RTID(Necro35_3@.)"],
+        ["RTID(Wave36@.)", "RTID(Necro36@.)", "RTID(Necro36_2@.)"],
+        ["RTID(Wave37@.)", "RTID(Necro37@.)", "RTID(Necro37_2@.)"],
+        ["RTID(Wave38@.)", "RTID(Necro38@.)", "RTID(Necro38_2@.)", "RTID(Necro38_3@.)"],
+        ["RTID(Wave39@.)", "RTID(ParaRain39_lostcity_lostpilot@.)", "RTID(Necro39@.)", "RTID(Necro39_2@.)", "RTID(Necro39_3@.)"],
+        ["RTID(Wave40@.)", "RTID(Necro40@.)", "RTID(Necro40_2@.)", "RTID(Necro40_3@.)", "RTID(Necro40_4@.)", "RTID(Necro40_5@.)", "RTID(GasPodx3y0@.)", "RTID(GasPodx3y2@.)", "RTID(GasPodx3y4@.)", "RTID(GasPodx4y1@.)", "RTID(GasPodx4y3@.)", "RTID(GasPodx5y0@.)", "RTID(GasPodx5y2@.)", "RTID(GasPodx5y4@.)", "RTID(GasPodx1y1@.)", "RTID(GasPodx1y3@.)"] 
+    ]
+}},
+ {"aliases":["Wave2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "4", "Type": "RTID(skycity_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave4"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(skycity_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave6"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(skycity_battleplane@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave7"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "5", "Type": "RTID(skycity_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave8"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "5", "Type": "RTID(skycity_battleplane@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave9"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(skycity_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(skycity_armor3@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave10"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_armor3@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(skycity_battleplane@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave11"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(skycity_electric@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave12"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(skycity_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave13"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave14"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(skycity_armor3@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave15"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave16"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(skycity_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_electric@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave18"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(skycity_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(skycity_battleplane@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave19"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(skycity_armor4@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave20"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(skycity_electric@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave22"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(skycity_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave23"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(skycity_electric@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave24"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "5", "Type": "RTID(skycity_rocket@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave25"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave26"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(skycity_armor4@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(skycity_rocket@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave27"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave28"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(skycity_rocket@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave29"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave30"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(skycity_armor3@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(skycity_armor3@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(skycity_armor3@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(skycity_rocket@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_rocket@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave31"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(skycity_rocket@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave32"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_battleplane@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave33"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(skycity_armor4@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(skycity_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(skycity_electric@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave34"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(skycity_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave35"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(skycity_armor4@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave36"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(skycity_rocket@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(skycity_battleplane@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave37"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave38"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_relichunter@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave39"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(skycity_electric@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(skycity_rocket@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_rocket@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave40"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(skycity_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(skycity_armor3@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(skycity_armor4@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_armor3@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(skycity_armor2@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lostcity_relichunter@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(skycity_rocket@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(skycity_battleplane@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(skycity_rocket@ZombieTypes)"}
+    ]
+}},
+ {"aliases":["Necro1"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(future@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro3"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+{"aliases":["ParaRain4_lostcity_lostpilot"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 4,
+    "ColumnEnd": 6,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.66",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "lostcity_lostpilot",
+    "SpiderCount": 3,
+    "WaveStartMessage": "Parachute Rain!"
+}},
+{"aliases":["Necro5"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro6"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(future@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro7"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(future@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro8"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "1",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro9"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro10"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["ParaRain10_lostcity_lostpilot"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 4,
+    "ColumnEnd": 6,
+    "GroupSize": 2,
+    "TimeBetweenGroups": "0.5",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "lostcity_lostpilot",
+    "SpiderCount": 8,
+    "WaveStartMessage": "Parachute Rain!"
+}},
+{"aliases":["Necro11"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro12"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro13"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"}
+    ]
+}},
+{"aliases":["ParaRain13_lostcity_lostpilot"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 4,
+    "ColumnEnd": 6,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.5",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "lostcity_lostpilot",
+    "SpiderCount": 4,
+    "WaveStartMessage": "Parachute Rain!"
+}},
+{"aliases":["Necro14"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro15"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro16"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "1",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(lostcity_gargantuar@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro17"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro17_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro18"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["ParaRain18_lostcity_lostpilot"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 5,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.33",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "lostcity_lostpilot",
+    "SpiderCount": 9,
+    "WaveStartMessage": "Parachute Rain!"
+}},
+{"aliases":["Necro19"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro19_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro20"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro20_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro21"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(disco_mech@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro21_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro22"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro23"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["ParaRain23_lostcity_lostpilot"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 5,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.15",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "lostcity_lostpilot",
+    "SpiderCount": 7,
+    "WaveStartMessage": "Parachute Rain!"
+}},
+{"aliases":["Necro24"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(disco_mech@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro24_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(dark_wizard@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro25"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "1",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro26"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro26_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro27"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(disco_mech@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro27_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro28"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(lostcity_gargantuar@ZombieTypes)"}
+    ]
+}},
+{"aliases":["ParaRain28_lostcity_lostpilot"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 6,
+    "GroupSize": 3,
+    "TimeBetweenGroups": "0.4",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "lostcity_lostpilot",
+    "SpiderCount": 18,
+    "WaveStartMessage": "Parachute Rain!"
+}},
+{"aliases":["Necro29"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(disco_mech@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro29_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro30"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro30_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro30_3"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 4,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(disco_mech@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(disco_mech@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro31"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro31_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro32"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(disco_mech@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["ParaRain32_lostcity_lostpilot"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 5,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0.1",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "lostcity_lostpilot",
+    "SpiderCount": 15,
+    "WaveStartMessage": "Parachute Rain!"
+}},
+{"aliases":["Necro32_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro33"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro33_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(disco_mech@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro34"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro34_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro35"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro35_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(disco_mech@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro35_3"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 4,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro36"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(disco_mech@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro36_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro37"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro37_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro38"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(disco_mech@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro38_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro38_3"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 4,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"}
+    ]
+}},
+{"aliases":["ParaRain39_lostcity_lostpilot"],
+"objclass": "ParachuteRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 3,
+    "ColumnEnd": 6,
+    "GroupSize": 3,
+    "TimeBetweenGroups": "0.25",
+    "ZombieFallTime": "1.5",
+    "SpiderZombieName": "lostcity_lostpilot",
+    "SpiderCount": 24,
+    "WaveStartMessage": "Parachute Rain!"
+}},
+{"aliases":["Necro39"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro39_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro39_3"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 4,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(dark_wizard@ZombieTypes)"},
+        {"Type":"RTID(dark_wizard@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro40"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"},
+        {"Type":"RTID(hero_glitter@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro40_2"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 2,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(future_armor4@ZombieTypes)"},
+        {"Type":"RTID(lostcity_gargantuar@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro40_3"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 4,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(disco_mech@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro40_4"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 6,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(future_armor2@ZombieTypes)"},
+        {"Type":"RTID(lostcity_gargantuar@ZombieTypes)"},
+        {"Type":"RTID(future_armor1@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Necro40_5"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Necromancy!",
+    "ZombieSpawnWaitTime": 8,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(gravestone_future@GridItemTypes)"
+    ],
+    "Zombies": [
+        {"Type":"RTID(disco_mech@ZombieTypes)"},
+        {"Type":"RTID(steam_gentleman@ZombieTypes)"},
+        {"Type":"RTID(modern_newspaper@ZombieTypes)"}
+    ]
+}},
+      {
+      "aliases": [
+        "CE2Seedbank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "OverrideSeedSlotsCount": 8,
+        "PresetPlantList": [],
+        "PlantIncludeList": [
+          "sunflower",
+          "peashooter",
+          "wallnut",
+          "tallnut",
+          "explodeonut",
+          "bonkchoy",
+          "cabbagepult",
+          "melonpult",
+          "cherry_bomb",
+          "iceburg",
+          "laser_bean",
+          "potatomine",
+          "repeater",
+          "snapdragon",
+          "spikeweed",
+          "threepeater",
+          "torchwood",
+          "kernelpult",
+          "snowpea",
+          "chilibean",
+          "splitpea",
+          "lightningreed",
+          "peapod",
+          "magnifyinggrass",
+          "bloomerang",
+          "empea",
+          "blover",
+          "starfruit",
+          "jalapeno",
+          "wintermelon",
+          "twinsunflower",
+          "spikerock",
+          "squash",
+          "sunshroom",
+          "puffshroom",
+          "sunbean",
+          "magnetshroom",
+          "peanut",
+          "firepeashooter",
+          "lilypad",
+          "bowlingbulb",
+          "homingthistle",
+          "banana",
+          "guacodile",
+          "tanglekelp",
+          "shinevine",
+          "ghostpepper",
+          "sweetpotato",
+          "sapfling",
+          "xshot",
+          "pepperpult",
+          "hotpotato",
+          "stunion",
+          "dandelion",
+          "redstinger",
+          "goldleaf",
+          "akee",
+          "lavaguava",
+          "toadstool",
+          "endurian",
+          "stallia",
+          "strawburst",
+          "cactus",
+          "phatbeet",
+          "celerystalker",
+          "electricblueberry",
+          "sporeshroom",
+          "powerplant",
+          "garlic",
+          "intensivecarrot",
+          "jackolantern",
+          "grapeshot",
+          "primalwallnut",
+          "perfumeshroom",
+          "coldsnapdragon",
+          "primalsunflower",
+          "primalpotatomine",
+          "shrinkingviolet",
+          "nightshade",
+          "shadowshroom",
+          "bloominghearts",
+          "escaperoot",
+          "grimrose",
+          "dusklobber",
+          "goldbloom",
+          "electriccurrant",
+          "aloe",
+          "wasabiwhip",
+          "applemortar",
+          "bombegranate",
+          "missiletoe",
+          "parsnip",
+          "witchhazel",
+          "hotdate",
+          "solartomato",
+          "electricpeashooter",
+          "shadowpeashooter",
+          "poisonpeashooter",
+          "slingpea",
+          "snappea",
+          "zoybeanpod",
+          "dazeychain",
+          "electricitea",
+          "blastberry",
+          "imppear",
+          "pumpkin",
+          "icebloom",
+          "dartichoke",
+          "ultomato",
+          "gumnut",
+          "murkadamia",
+          "puffball",
+          "stickybombrice",
+          "olivepit",
+          "turkeypult",
+          "gloomvine",
+          "draftodil",
+          "boomflower",
+          "pvine",
+          "solarsage",
+          "noctarine",
+          "unused_45",
+          "unused_47",
+          "unused_43",
+          "unused_48",
+          "unused_49",
+          "unused_46",
+          "headbutter",
+          "teleportatomine",
+          "pokra",
+          "pyrevine",
+          "hollybarrierleaf",
+          "potatochip",
+          "caramelpopcorn",
+          "buttercup",
+          "heathseeker",
+          "blockoli",
+          "bramblebush",
+          "acidlemon",
+          "asparagus",
+          "pineapple",
+          "loquat",
+          "gatling",
+          "horsebean",
+          "saucer"
+        ],
+        "PlantExcludeList": [],
+        "SelectionMethod": "chooser"
+      }
+    },
+ {
+    "aliases": [
+        "GasPodx3y1"
+    ],
+    "objclass": "SpawnGasPodWaveActionProps",
+    "objdata": {
+        "Row": 1,
+        "Col": 3
+    }
+},
+ {
+    "aliases": [
+        "GasPodx5y2"
+    ],
+    "objclass": "SpawnGasPodWaveActionProps",
+    "objdata": {
+        "Row": 2,
+        "Col": 5
+    }
+},
+ {
+    "aliases": [
+        "GasPodx4y4"
+    ],
+    "objclass": "SpawnGasPodWaveActionProps",
+    "objdata": {
+        "Row": 4,
+        "Col": 4
+    }
+},
+ {
+    "aliases": [
+        "GasPodx4y0"
+    ],
+    "objclass": "SpawnGasPodWaveActionProps",
+    "objdata": {
+        "Row": 0,
+        "Col": 4
+    }
+},
+ {
+    "aliases": [
+        "GasPodx3y4"
+    ],
+    "objclass": "SpawnGasPodWaveActionProps",
+    "objdata": {
+        "Row": 4,
+        "Col": 3
+    }
+},
+ {
+    "aliases": [
+        "GasPodx4y1"
+    ],
+    "objclass": "SpawnGasPodWaveActionProps",
+    "objdata": {
+        "Row": 1,
+        "Col": 4
+    }
+},
+ {
+    "aliases": [
+        "GasPodx4y3"
+    ],
+    "objclass": "SpawnGasPodWaveActionProps",
+    "objdata": {
+        "Row": 3,
+        "Col": 4
+    }
+},
+ {
+    "aliases": [
+        "GasPodx3y2"
+    ],
+    "objclass": "SpawnGasPodWaveActionProps",
+    "objdata": {
+        "Row": 2,
+        "Col": 3
+    }
+},
+ {
+    "aliases": [
+        "GasPodx5y0"
+    ],
+    "objclass": "SpawnGasPodWaveActionProps",
+    "objdata": {
+        "Row": 0,
+        "Col": 5
+    }
+},
+ {
+    "aliases": [
+        "GasPodx5y4"
+    ],
+    "objclass": "SpawnGasPodWaveActionProps",
+    "objdata": {
+        "Row": 2,
+        "Col": 5
+    }
+},
+ {
+    "aliases": [
+        "GasPodx3y0"
+    ],
+    "objclass": "SpawnGasPodWaveActionProps",
+    "objdata": {
+        "Row": 0,
+        "Col": 3
+    }
+},
+ {
+    "aliases": [
+        "GasPodx1y1"
+    ],
+    "objclass": "SpawnGasPodWaveActionProps",
+    "objdata": {
+        "Row": 1,
+        "Col": 1
+    }
+},
+ {
+    "aliases": [
+        "GasPodx1y3"
+    ],
+    "objclass": "SpawnGasPodWaveActionProps",
+    "objdata": {
+        "Row": 3,
+        "Col": 1
+    }
+},
+ {"aliases":["WarnGas"],
+"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+"objdata": {
+    "WaveStartMessage": "Gas Wave!",
+    "ZombieSpawnWaitTime": 0,
+    "SuppressActionIfNoGridItemsFound": false,
+    "AdditionalPlantfood": "0",
+    "GridTypes": [
+        "RTID(tar@GridItemTypes)"
+    ],
+    "Zombies": [
+        
+    ]
+}},
+                  {}
+    ],
+    "version": 1
+}

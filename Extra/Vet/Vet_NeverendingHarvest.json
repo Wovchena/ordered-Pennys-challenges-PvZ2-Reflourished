@@ -1,0 +1,2799 @@
+{
+	"#comment": "its time to farm some impfinity clones... again, tower blitz edition",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"StartingSun": 5000,
+				"Description": "{PLAYER}'s run through Penny's Challenge!",
+				"FirstRewardParam": "moneybag",
+				"FixedPlantLevel": 1,
+				"DisablePlantBoosts": true,
+				"SuppressPlantfoodPurchase": true,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(OffScreenZombiesCoinOverride@LevelModules)",
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(Rails@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "Penny's Challenge - Neverending Harvest",
+				"StageModule": "RTID(HarvestStage@LevelModules)",
+				"MusicType": "MiniGame_MiniBoss"
+			}
+		},
+		{
+			"aliases": [
+				"Rails"
+			],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_cowboy",
+				"Railcarts": [
+					{
+						"Column": 0,
+						"Row": 0
+					},
+					{
+						"Column": 0,
+						"Row": 4
+					}
+				],
+				"Rails": [
+					{
+						"Column": 0,
+						"RowEnd": 0,
+						"RowStart": 0
+					},
+					{
+						"Column": 0,
+						"RowEnd": 1,
+						"RowStart": 1
+					},
+					{
+						"Column": 0,
+						"RowEnd": 2,
+						"RowStart": 2
+					},
+					{
+						"Column": 0,
+						"RowEnd": 3,
+						"RowStart": 3
+					},
+					{
+						"Column": 0,
+						"RowEnd": 4,
+						"RowStart": 4
+					}
+				]
+			}
+		},
+{"aliases": ["SeedBank"],
+"objclass": "SeedBankProperties",
+"objdata": {
+    "OverrideSeedSlotsCount": 8,
+    "PresetPlantList": [
+        
+    ],
+    "PlantIncludeList": [
+        "sunflower",
+        "peashooter",
+        "wallnut",
+        "tallnut",
+        "explodeonut",
+        "bonkchoy",
+        "cabbagepult",
+        "melonpult",
+        "cherry_bomb",
+        "coconutcannon",
+        "gravebuster",
+        "iceburg",
+        "laser_bean",
+        "potatomine",
+        "repeater",
+        "snapdragon",
+        "spikeweed",
+        "threepeater",
+        "torchwood",
+        "kernelpult",
+        "springbean",
+        "snowpea",
+        "chilibean",
+        "splitpea",
+        "lightningreed",
+        "peapod",
+        "magnifyinggrass",
+        "bloomerang",
+        "holonut",
+        "empea",
+        "blover",
+        "starfruit",
+        "jalapeno",
+        "wintermelon",
+        "twinsunflower",
+        "spikerock",
+        "squash",
+        "citron",
+        "powerplant",
+        "sunshroom",
+        "puffshroom",
+        "fumeshroom",
+        "sunbean",
+        "magnetshroom",
+        "hypnoshroom",
+        "peanut",
+        "firepeashooter",
+        "lilypad",
+        "bowlingbulb",
+        "homingthistle",
+        "banana",
+        "chomper",
+        "guacodile",
+        "tanglekelp",
+        "ghostpepper",
+        "sweetpotato",
+        "sapfling",
+        "hurrikale",
+        "xshot",
+        "chardguard",
+        "pepperpult",
+        "kiwibeast",
+        "hotpotato",
+        "stunion",
+        "dandelion",
+        "redstinger",
+        "goldleaf",
+        "akee",
+        "lavaguava",
+        "toadstool",
+        "endurian",
+        "stallia",
+        "strawburst",
+        "cactus",
+        "phatbeet",
+        "thymewarp",
+        "celerystalker",
+        "electricblueberry",
+        "sporeshroom",
+        "garlic",
+        "intensivecarrot",
+        "jackolantern",
+        "primalpeashooter",
+        "grapeshot",
+        "primalwallnut",
+        "perfumeshroom",
+        "coldsnapdragon",
+        "primalsunflower",
+        "primalpotatomine",
+        "shrinkingviolet",
+        "moonflower",
+        "nightshade",
+        "shadowshroom",
+        "bloominghearts",
+        "escaperoot",
+        "grimrose",
+        "dusklobber",
+        "goldbloom",
+        "electriccurrant",
+        "aloe",
+        "wasabiwhip",
+        "applemortar",
+        "bombegranate",
+        "missiletoe",
+        "parsnip",
+        "witchhazel",
+        "hotdate",
+        "caulipower",
+        "hollyknight",
+        "shadowpeashooter",
+        "poisonpeashooter",
+        "slingpea",
+        "snappea",
+        "zoybeanpod",
+        "dazeychain",
+        "electricitea",
+        "blastberry",
+        "imppear",
+        "pumpkin",
+        "dartichoke",
+        "ultomato",
+        "gumnut",
+        "shinevine",
+        "tumbleweed",
+        "murkadamia",
+        "puffball",
+        "stickybombrice",
+        "olivepit",
+        "turkeypult",
+        "boingsetta",
+        "hocus",
+        "gloomvine",
+        "draftodil",
+        "boomflower",
+        "pvine",
+        "inferno",
+        "solarsage",
+        "noctarine",
+        "iceweed",
+        "unused_45",
+        "unused_47",
+        "unused_43",
+        "unused_48",
+        "unused_49",
+        "unused_46",
+					"headbutter",
+					"teleportatomine",
+					"pokra",
+					"pyrevine",
+					"hollybarrierleaf",
+					"heathseeker"
+    ],
+    "PlantExcludeList": [
+        
+    ],
+    "SelectionMethod": "chooser"
+}},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Start the level after Flag 2 with extra starting sun, Flag 4 repeats twice.",
+				"DescriptiveName": "Custom Objective"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 4,
+				"WavesPerFlag": 10,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 0,
+				"PointIncrementPerWave": 0,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(tutorial@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 10,
+				"WaveCount": 40,
+				"SuppressFlagZombie": false,
+				"MinNextWaveHealthPercentage": 0.4,
+				"MaxNextWaveHealthPercentage": 0.5,
+        "ZombieCountdownFirstWaveSecs": 65,
+				"Waves": [
+					[
+						"RTID(Wave21@.)",
+						"RTID(ParaRain21_west_bull@.)"
+					],
+					[
+						"RTID(Wave22@.)",
+						"RTID(SpidRain22_hero_impfinity@.)"
+					],
+					[
+						"RTID(Wave23@.)"
+					],
+					[
+						"RTID(Wave24@.)"
+					],
+					[
+						"RTID(Wave25@.)",
+						"RTID(ParaRain25_west_bull@.)"
+					],
+					[
+						"RTID(Wave26@.)"
+					],
+					[
+						"RTID(Wave27@.)",
+						"RTID(SpidRain27_harvest_imp@.)"
+					],
+					[
+						"RTID(Wave28@.)",
+						"RTID(ParaRain28_west_bull@.)"
+					],
+					[
+						"RTID(Wave29@.)"
+					],
+					[
+						"RTID(Wave30@.)",
+						"RTID(SpidRain30_hero_impfinity@.)"
+					],
+					[
+						"RTID(Wave31@.)"
+					],
+					[
+						"RTID(Wave32@.)",
+						"RTID(ParaRain32_west_bull_veteran@.)"
+					],
+					[
+						"RTID(Wave33@.)"
+					],
+					[
+						"RTID(Wave34@.)",
+						"RTID(SpidRain34_hero_impfinity@.)"
+					],
+					[
+						"RTID(Wave35@.)"
+					],
+					[
+						"RTID(Wave36@.)",
+						"RTID(ParaRain36_west_bull_veteran@.)",
+						"RTID(ParaRain36_2_west_bull@.)"
+					],
+					[
+						"RTID(Wave37@.)"
+					],
+					[
+						"RTID(Wave38@.)",
+						"RTID(SpidRain38_harvest_imp@.)"
+					],
+					[
+						"RTID(Wave39@.)",
+						"RTID(ParaRain32_west_bull_veteran@.)"
+					],
+					[
+						"RTID(Wave40@.)",
+						"RTID(ParaRain40_west_bull_veteran@.)",
+						"RTID(SpidRain38_harvest_imp@.)"
+					],
+					[
+						"RTID(Wave31@.)"
+					],
+					[
+						"RTID(Wave32@.)",
+						"RTID(ParaRain32_west_bull_veteran@.)"
+					],
+					[
+						"RTID(Wave33@.)"
+					],
+					[
+						"RTID(Wave34@.)",
+						"RTID(SpidRain34_hero_impfinity@.)"
+					],
+					[
+						"RTID(Wave35@.)"
+					],
+					[
+						"RTID(Wave36@.)",
+						"RTID(ParaRain36_west_bull_veteran@.)",
+						"RTID(ParaRain36_2_west_bull@.)"
+					],
+					[
+						"RTID(Wave37@.)"
+					],
+					[
+						"RTID(Wave38@.)",
+						"RTID(SpidRain38_harvest_imp@.)"
+					],
+					[
+						"RTID(Wave39@.)",
+						"RTID(ParaRain32_west_bull_veteran@.)"
+					],
+					[
+						"RTID(Wave40@.)",
+						"RTID(ParaRain40_west_bull_veteran@.)",
+						"RTID(SpidRain38_harvest_imp@.)"
+					],
+					[
+						"RTID(Wave31@.)"
+					],
+					[
+						"RTID(Wave32@.)",
+						"RTID(ParaRain32_west_bull_veteran@.)"
+					],
+					[
+						"RTID(Wave33@.)"
+					],
+					[
+						"RTID(Wave34@.)",
+						"RTID(SpidRain34_hero_impfinity@.)"
+					],
+					[
+						"RTID(Wave35@.)"
+					],
+					[
+						"RTID(Wave36@.)",
+						"RTID(ParaRain36_west_bull_veteran@.)",
+						"RTID(ParaRain36_2_west_bull@.)"
+					],
+					[
+						"RTID(Wave37@.)"
+					],
+					[
+						"RTID(Wave38@.)",
+						"RTID(SpidRain38_harvest_imp@.)"
+					],
+					[
+						"RTID(Wave39@.)",
+						"RTID(ParaRain32_west_bull_veteran@.)"
+					],
+					[
+						"RTID(Wave40@.)",
+						"RTID(ParaRain40_west_bull_veteran@.)",
+						"RTID(SpidRain38_harvest_imp@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(harvest@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(west_bull@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(west_bull@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(west_bull@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(west_bull@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(west_bull@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(west_bull@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave19"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(west_bull@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(west_bull@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave20"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave21"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave22"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave23"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave24"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave25"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave26"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave27"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave28"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave29"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave30"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave31"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave32"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave33"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(west_bull@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(west_bull@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave34"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave35"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggshell@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave36"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave37"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(west_bull@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(west_bull@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(west_bull@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave38"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave39"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(west_bull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave40"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(miniboss_impfinity@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_outhouse@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pitchfork@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(harvest_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain5_harvest_imp"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 6,
+				"ColumnEnd": 8,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "harvest_imp",
+				"SpiderCount": 3,
+				"WaveStartMessage": "Feathery Frenzy!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain7_hero_impfinity"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 8,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "2",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "hero_impfinity",
+				"SpiderCount": 8,
+				"WaveStartMessage": "Impfinity Clones!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain14_harvest_imp"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 6,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "0.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "harvest_imp",
+				"SpiderCount": 12,
+				"WaveStartMessage": "Feathery Frenzy!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain15_hero_impfinity"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 7,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "2",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "hero_impfinity",
+				"SpiderCount": 12,
+				"WaveStartMessage": "Impfinity Clones!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain19_harvest_imp"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 7,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "harvest_imp",
+				"SpiderCount": 14,
+				"WaveStartMessage": "Feathery Frenzy!"
+			}
+		},
+		{
+			"aliases": [
+				"ParaRain21_west_bull"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 10,
+				"ColumnEnd": 13,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "1.5",
+				"SpiderZombieName": "west_bull",
+				"SpiderCount": 1,
+				"WaveStartMessage": "Stampede!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain22_hero_impfinity"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 7,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "2",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "hero_impfinity",
+				"SpiderCount": 7,
+				"WaveStartMessage": "Impfinity Clones!"
+			}
+		},
+		{
+			"aliases": [
+				"ParaRain25_west_bull"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 10,
+				"ColumnEnd": 13,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "3",
+				"ZombieFallTime": "1.5",
+				"SpiderZombieName": "west_bull",
+				"SpiderCount": 4,
+				"WaveStartMessage": "Stampede!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain27_harvest_imp"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 3,
+				"ColumnEnd": 5,
+				"GroupSize": 4,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "harvest_imp",
+				"SpiderCount": 8,
+				"WaveStartMessage": "Feathery Frenzy!"
+			}
+		},
+		{
+			"aliases": [
+				"ParaRain28_west_bull"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 10,
+				"ColumnEnd": 13,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "3",
+				"ZombieFallTime": "1.5",
+				"SpiderZombieName": "west_bull",
+				"SpiderCount": 4,
+				"WaveStartMessage": "Stampede!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain30_hero_impfinity"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 8,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "hero_impfinity",
+				"SpiderCount": 26,
+				"WaveStartMessage": "Impfinity Clones!"
+			}
+		},
+		{
+			"aliases": [
+				"ParaRain32_west_bull_veteran"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 10,
+				"ColumnEnd": 13,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "0.2",
+				"ZombieFallTime": "1.5",
+				"SpiderZombieName": "west_bull_veteran",
+				"SpiderCount": 3,
+				"WaveStartMessage": "Stampede!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain34_hero_impfinity"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 6,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "2",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "hero_impfinity",
+				"SpiderCount": 24,
+				"WaveStartMessage": "Impfinity Clones!"
+			}
+		},
+		{
+			"aliases": [
+				"ParaRain36_west_bull_veteran"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 10,
+				"ColumnEnd": 13,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "4",
+				"ZombieFallTime": "1.5",
+				"SpiderZombieName": "west_bull_veteran",
+				"SpiderCount": 2,
+				"WaveStartMessage": "Stampede!"
+			}
+		},
+		{
+			"aliases": [
+				"ParaRain36_2_west_bull"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 10,
+				"ColumnEnd": 13,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "2",
+				"ZombieFallTime": "1.5",
+				"SpiderZombieName": "west_bull",
+				"SpiderCount": 4,
+				"WaveStartMessage": "Stampede!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain38_harvest_imp"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 3,
+				"ColumnEnd": 7,
+				"GroupSize": 4,
+				"TimeBetweenGroups": "2",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "harvest_imp",
+				"SpiderCount": 26,
+				"WaveStartMessage": "Feathery Frenzy!"
+			}
+		},
+		{
+			"aliases": [
+				"ParaRain40_west_bull_veteran"
+			],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 10,
+				"ColumnEnd": 13,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "4",
+				"ZombieFallTime": "1.5",
+				"SpiderZombieName": "west_bull_veteran",
+				"SpiderCount": 8,
+				"WaveStartMessage": "Stampede!"
+			}
+		},
+		{}
+	],
+	"version": 1
+}

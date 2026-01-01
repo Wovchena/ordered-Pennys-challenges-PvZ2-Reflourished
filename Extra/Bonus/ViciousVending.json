@@ -1,0 +1,3583 @@
+{
+  "#comment": "Penny's Challenge - Vicious Vending",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "{PLAYER}'s run through Penny's Challenge!",
+        "FixedPlantLevel": 1,
+        "SuppressPlantfoodPurchase": true,
+        "DisablePlantBoosts": true,
+        "LevelPowerupSet": "LevelPowerupsDisabled",
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(ChallengeSeedBank@LevelModules)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(GridItems@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "Name": "Penny's Challenge - Vicious Vending",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(SteamStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "GridItems"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 1,
+            "GridY": 0,
+            "TypeName": "steam_sewer"
+          },
+          {
+            "GridX": 1,
+            "GridY": 1,
+            "TypeName": "steam_sewer"
+          },
+          {
+            "GridX": 1,
+            "GridY": 2,
+            "TypeName": "steam_sewer"
+          },
+          {
+            "GridX": 1,
+            "GridY": 3,
+            "TypeName": "steam_sewer"
+          },
+          {
+            "GridX": 1,
+            "GridY": 4,
+            "TypeName": "steam_sewer"
+          },
+          {
+            "GridX": 0,
+            "GridY": 0,
+            "TypeName": "steam_sewer"
+          },
+          {
+            "GridX": 0,
+            "GridY": 1,
+            "TypeName": "steam_sewer"
+          },
+          {
+            "GridX": 0,
+            "GridY": 2,
+            "TypeName": "steam_sewer"
+          },
+          {
+            "GridX": 0,
+            "GridY": 3,
+            "TypeName": "steam_sewer"
+          },
+          {
+            "GridX": 0,
+            "GridY": 4,
+            "TypeName": "steam_sewer"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(BeatTheLevel@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "BeatTheLevel"
+      ],
+      "objclass": "StarChallengeBeatTheLevelProps",
+      "objdata": {
+        "Description": "Survive with extra prep time",
+        "DescriptiveName": "Custom Objective"
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 10,
+        "WaveCount": 40,
+        "ZombieCountdownFirstWaveSecs": 80,
+        "ZombieCountdownFirstWaveConveyorSecs": 80,
+        "MaxNextWaveHealthPercentage": 0.5,
+        "MinNextWaveHealthPercentage": 0.65,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)",
+            "RTID(Wave1SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave1SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)",
+            "RTID(Wave4SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave4SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)",
+            "RTID(Wave6SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave6SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)",
+            "RTID(Wave9SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave9SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)",
+            "RTID(Wave12SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave12SteamSewersEvent1@CurrentLevel)",
+            "RTID(Wave12SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)",
+            "RTID(Wave14SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave14SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave15@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave16@CurrentLevel)",
+            "RTID(Wave16SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave16SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave17@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave18@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave19@CurrentLevel)",
+            "RTID(Wave19SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave19SteamSewersEvent1@CurrentLevel)",
+            "RTID(Wave19SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave20@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave21@CurrentLevel)",
+            "RTID(Wave21SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave21SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave22@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave23@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave24@CurrentLevel)",
+            "RTID(Wave24SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave24SteamSewersEvent1@CurrentLevel)",
+            "RTID(Wave24SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave25@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave26@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave27@CurrentLevel)",
+            "RTID(Wave27SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave27SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave28@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave29@CurrentLevel)",
+            "RTID(Wave29SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave29SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave30@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave31@CurrentLevel)",
+            "RTID(Wave31SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave31SteamSewersEvent1@CurrentLevel)",
+            "RTID(Wave31SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave32@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave33@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave34@CurrentLevel)",
+            "RTID(Wave34SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave34SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave35@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave36@CurrentLevel)",
+            "RTID(Wave36SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave36SteamSewersEvent1@CurrentLevel)",
+            "RTID(Wave36SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave37@CurrentLevel)",
+            "RTID(Wave37SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave37SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave38@CurrentLevel)",
+            "RTID(Wave38SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave38SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave39@CurrentLevel)",
+            "RTID(Wave39SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave39SewerChangeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave40@CurrentLevel)",
+            "RTID(Wave40SteamSewersEvent0@CurrentLevel)",
+            "RTID(Wave40SewerChangeEvent0@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "5",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"  
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"  
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave17"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave18"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"  
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave19"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave20"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(future_gargantuar@ZombieTypes)"  
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave21"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave22"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave23"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"  
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave24"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"  
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave25"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(future_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"  
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave26"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"  
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave27"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"  
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave28"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"  
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave29"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "5",
+            "Type": "RTID(future_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave30"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave31"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave32"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave33"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(future_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(future_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave34"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave35"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave36"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave37"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(future_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(future_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave38"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave39"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave40"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(future_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(future_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(future_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_mechanic@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_repairimp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_pink@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_furnace@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(carnie_cottoncandy_blue@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave4SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave6SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave9SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"  
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)"  
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave12SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 4,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12SteamSewersEvent1"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 8,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave14SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave16SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 5,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave19SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave19SteamSewersEvent1"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 7,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave19SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave21SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 5,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave21SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave24SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 4,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave24SteamSewersEvent1"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 9,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave24SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave27SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 4,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave27SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave29SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 4,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave29SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave31SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave31SteamSewersEvent1"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 8,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave31SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave34SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 9,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave34SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave36SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 4,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave36SteamSewersEvent1"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 10,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave36SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave37SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave37SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave38SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave38SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave39SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor1@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave39SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    },
+    {
+      "aliases": [
+        "Wave40SteamSewersEvent0"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(steam_sewer@GridItemTypes)"
+        ],
+        "WaveStartMessage": " ",
+        "ZombieSpawnWaitTime": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(steam_back@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back@ZombieTypes)" 
+          },
+          {
+            "Type": "RTID(steam_back_armor2@ZombieTypes)" 
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave40SewerChangeEvent0"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "DisplacePlants": false,
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+          }
+        ],
+        "RandomPlacement": false,
+        "SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnSoundID": ""
+      }
+    }
+  ],
+  "version": 1
+}

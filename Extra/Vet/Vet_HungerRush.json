@@ -1,0 +1,3565 @@
+{
+	"#comment": "Hi hungry, im dad",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s run through Penny's Challenge!",
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"DisablePlantBoosts": true,
+				"DisableRestart": false,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(IZP@.)",
+					"RTID(HolidayDrinksFoodfight@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(FuguEqualityModule@.)",
+					"RTID(Escalation@.)",
+					"RTID(NewWaves@.)",
+					"RTID(ChallengeSeedBank@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "Penny's Challenge - Hunger Rush",
+				"StageModule": "RTID(FoodStage@LevelModules)",
+				"MusicType": "MiniGame_MiniBoss"
+			}
+		},
+		{
+			"aliases": [
+				"IZP"
+			],
+			"objclass": "InitialZombieProperties",
+			"objdata": {
+				"InitialZombiePlacements": [
+					{
+						"GridX": 7,
+						"GridY": 3,
+						"TypeName": "foodfight_turkey_boss",
+						"Condition": "present_boxed"
+					},
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"TypeName": "foodfight_turkey_boss",
+						"Condition": "present_boxed"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"TypeName": "lostcity_crystalskull_veteran",
+						"Condition": "present_boxed"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "lostcity_crystalskull_veteran",
+						"Condition": "present_boxed"
+					},
+					{
+						"GridX": 4,
+						"GridY": 3,
+						"TypeName": "lostcity_crystalskull_veteran",
+						"Condition": "present_boxed"
+					},
+					{
+						"GridX": 4,
+						"GridY": 1,
+						"TypeName": "lostcity_crystalskull_veteran",
+						"Condition": "present_boxed"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"FuguEqualityModule"
+			],
+			"objclass": "LevelDifficultyScalingModuleProperties",
+			"objdata": {
+				"DifficultyRulesType": "RiftDifficulty",
+				"ZombieLevelSwaps": [
+					{
+						"Level": 0,
+						"Swaps": [
+							{
+								"From": "RTID(steam_clockwork@ZombieTypes)",
+								"To": [
+									"RTID(steam_clockwork@ZombieTypes)",
+									"RTID(steam_clockwork_blue@ZombieTypes)",
+									"RTID(steam_clockwork_green@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(foodfight_gobbler_king@ZombieTypes)",
+								"To": [
+									"RTID(foodfight_gobbler_king_BOSS@.)"
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 5,
+				"WavesPerFlag": 8,
+				"WaveManagerProps": "RTID(WaveManager@.)"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 8,
+				"WaveCount": 40,
+				"SuppressFlagZombie": false,
+				"MinNextWaveHealthPercentage": 0.5,
+				"MaxNextWaveHealthPercentage": 0.55,
+				"Waves": [
+					[
+						"RTID(Wave1@.)"
+					],
+					[
+						"RTID(Wave2@.)"
+					],
+					[
+						"RTID(Wave3@.)",
+						"RTID(Dino_T1@.)"
+					],
+					[
+						"RTID(Wave4@.)",
+						"RTID(SpidRain4_carnie_imp_twins@.)"
+					],
+					[
+						"RTID(Wave5@.)"
+					],
+					[
+						"RTID(Wave6@.)"
+					],
+					[
+						"RTID(Wave7@.)"
+					],
+					[
+						"RTID(Wave8@.)",
+						"RTID(GridSpawn8@.)",
+						"RTID(Dino_T3@.)"
+					],
+					[
+						"RTID(Wave9@.)"
+					],
+					[
+						"RTID(Wave10@.)"
+					],
+					[
+						"RTID(Wave11@.)"
+					],
+					[
+						"RTID(Wave12@.)",
+						"RTID(SpidRain12_carnie_imp_twins@.)"
+					],
+					[
+						"RTID(Wave13@.)",
+						"RTID(Dino_T1@.)",
+						"RTID(Dino_T4@.)"
+					],
+					[
+						"RTID(Wave14@.)",
+						"RTID(GridSpawn14@.)"
+					],
+					[
+						"RTID(Wave15@.)"
+					],
+					[
+						"RTID(Wave16@.)",
+						"RTID(Dino_T2@.)",
+						"RTID(Dino_T3@.)"
+					],
+					[
+						"RTID(Wave17@.)"
+					],
+					[
+						"RTID(Wave18@.)"
+					],
+					[
+						"RTID(Wave19@.)",
+						"RTID(SpidRain19_carnie_imp_twins@.)"
+					],
+					[
+						"RTID(Wave20@.)",
+						"RTID(GridSpawn20@.)",
+						"RTID(Dino_T2@.)",
+						"RTID(Dino_T4@.)",
+						"RTID(Dino_T5@.)"
+					],
+					[
+						"RTID(Wave21@.)"
+					],
+					[
+						"RTID(Wave22@.)"
+					],
+					[
+						"RTID(Wave23@.)"
+					],
+					[
+						"RTID(Wave24@.)",
+						"RTID(SpidRain24_carnie_imp_twins@.)",
+						"RTID(Dino_T1@.)",
+						"RTID(Dino_T3@.)",
+						"RTID(Dino_T5@.)"
+					],
+					[
+						"RTID(Wave25@.)"
+					],
+					[
+						"RTID(Wave26@.)",
+						"RTID(GridSpawn26@.)"
+					],
+					[
+						"RTID(Wave27@.)"
+					],
+					[
+						"RTID(Wave28@.)",
+						"RTID(SpidRain28_carnie_imp_twins@.)",
+						"RTID(Dino_T2@.)",
+						"RTID(Dino_T3@.)",
+						"RTID(Dino_T4@.)"
+					],
+					[
+						"RTID(Wave29@.)"
+					],
+					[
+						"RTID(Wave30@.)",
+						"RTID(GridSpawn30@.)",
+						"RTID(GridSpawn30_Evil@.)"
+					],
+					[
+						"RTID(Wave31@.)"
+					],
+					[
+						"RTID(Wave32@.)",
+						"RTID(SpidRain32_carnie_imp_twins@.)",
+						"RTID(Dino_T1@.)",
+						"RTID(Dino_T2@.)",
+						"RTID(Dino_T5@.)"
+					],
+					[
+						"RTID(Wave33@.)"
+					],
+					[
+						"RTID(Wave34@.)",
+						"RTID(Dino_T1@.)",
+						"RTID(Dino_T3@.)",
+						"RTID(Dino_T4@.)"
+					],
+					[
+						"RTID(Wave35@.)",
+						"RTID(GridSpawn35@.)"
+					],
+					[
+						"RTID(Wave36@.)",
+						"RTID(SpidRain36_carnie_imp_twins@.)",
+						"RTID(Dino_T1@.)",
+						"RTID(Dino_T2@.)",
+						"RTID(Dino_T3@.)",
+						"RTID(Dino_T5@.)"
+					],
+					[
+						"RTID(Wave37@.)"
+					],
+					[
+						"RTID(Wave38@.)",
+						"RTID(Dino_T1@.)",
+						"RTID(Dino_T2@.)",
+						"RTID(Dino_T3@.)",
+						"RTID(Dino_T4@.)",
+						"RTID(Dino_T5@.)"
+					],
+					[
+						"RTID(Wave39@.)",
+						"RTID(GridSpawn39@.)"
+					],
+					[
+						"RTID(Wave40@.)",
+						"RTID(SpidRain40_carnie_imp_twins@.)",
+						"RTID(Dino_T1@.)",
+						"RTID(Dino_T2@.)",
+						"RTID(Dino_T3@.)",
+						"RTID(Dino_T4@.)",
+						"RTID(Dino_T5@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave19"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave20"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave21"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave22"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave23"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave24"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave25"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave26"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(joustyeti@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave27"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave28"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave29"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave30"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave31"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave32"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave33"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave34"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(joustyeti@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(joustyeti@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave35"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave36"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave37"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave38"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_charred@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_turkey_boss@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave39"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(joustyeti@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(joustyeti@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_overstuff@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(foodfight_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave40"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(spongebob_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(foodfight_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_eggstealer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(harvest_pterry@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_clockwork@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(foodfight_gobbler_king@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Dino_T1"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 0,
+				"DinoType": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain4_carnie_imp_twins"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 7,
+				"ColumnEnd": 9,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "2.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "carnie_imp_twins",
+				"SpiderCount": 2,
+				"WaveStartMessage": "Twinsanity!"
+			}
+		},
+		{
+			"aliases": [
+				"GridSpawn8"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 3,
+						"Type": "RTID(jackinthebox_teeth@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 8,
+						"mY": 0
+					},
+					{
+						"mX": 8,
+						"mY": 1
+					},
+					{
+						"mX": 8,
+						"mY": 2
+					},
+					{
+						"mX": 8,
+						"mY": 3
+					},
+					{
+						"mX": 8,
+						"mY": 4
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+				"SpawnSoundID": "",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": [
+
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Dino_T3"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 2,
+				"DinoType": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain12_carnie_imp_twins"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 6,
+				"ColumnEnd": 8,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "2.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "carnie_imp_twins",
+				"SpiderCount": 4,
+				"WaveStartMessage": "Twinsanity!"
+			}
+		},
+		{
+			"aliases": [
+				"Dino_T4"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 3,
+				"DinoType": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"GridSpawn14"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 5,
+						"Type": "RTID(jackinthebox_teeth@GridItemTypes)"
+					},
+					{
+						"Count": 3,
+						"Type": "RTID(jackinthebox_teeth_jumpscare@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 7,
+						"mY": 0
+					},
+					{
+						"mX": 7,
+						"mY": 0
+					},
+					{
+						"mX": 7,
+						"mY": 1
+					},
+					{
+						"mX": 8,
+						"mY": 1
+					},
+					{
+						"mX": 7,
+						"mY": 2
+					},
+					{
+						"mX": 8,
+						"mY": 2
+					},
+					{
+						"mX": 7,
+						"mY": 3
+					},
+					{
+						"mX": 8,
+						"mY": 3
+					},
+					{
+						"mX": 7,
+						"mY": 4
+					},
+					{
+						"mX": 8,
+						"mY": 4
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+				"SpawnSoundID": "",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": [
+
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Dino_T2"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 1,
+				"DinoType": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain19_carnie_imp_twins"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 7,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "2.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "carnie_imp_twins",
+				"SpiderCount": 6,
+				"WaveStartMessage": "Twinsanity!"
+			}
+		},
+		{
+			"aliases": [
+				"GridSpawn20"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 10,
+						"Type": "RTID(jackinthebox_teeth@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 6,
+						"mY": 0
+					},
+					{
+						"mX": 7,
+						"mY": 0
+					},
+					{
+						"mX": 6,
+						"mY": 1
+					},
+					{
+						"mX": 7,
+						"mY": 1
+					},
+					{
+						"mX": 6,
+						"mY": 2
+					},
+					{
+						"mX": 7,
+						"mY": 2
+					},
+					{
+						"mX": 6,
+						"mY": 3
+					},
+					{
+						"mX": 7,
+						"mY": 3
+					},
+					{
+						"mX": 6,
+						"mY": 4
+					},
+					{
+						"mX": 7,
+						"mY": 4
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+				"SpawnSoundID": "",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": [
+
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Dino_T5"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 4,
+				"DinoType": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain24_carnie_imp_twins"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 7,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "2",
+				"ZombieFallTime": "1.5",
+				"SpiderZombieName": "carnie_imp_twins",
+				"SpiderCount": 9,
+				"WaveStartMessage": "Twinsanity!"
+			}
+		},
+		{
+			"aliases": [
+				"GridSpawn26"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 12,
+						"Type": "RTID(jackinthebox_teeth_jumpscare@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 6,
+						"mY": 0
+					},
+					{
+						"mX": 7,
+						"mY": 0
+					},
+					{
+						"mX": 6,
+						"mY": 1
+					},
+					{
+						"mX": 7,
+						"mY": 1
+					},
+					{
+						"mX": 6,
+						"mY": 2
+					},
+					{
+						"mX": 7,
+						"mY": 2
+					},
+					{
+						"mX": 6,
+						"mY": 3
+					},
+					{
+						"mX": 7,
+						"mY": 3
+					},
+					{
+						"mX": 6,
+						"mY": 4
+					},
+					{
+						"mX": 7,
+						"mY": 4
+					},
+					{
+						"mX": 5,
+						"mY": 0
+					},
+					{
+						"mX": 5,
+						"mY": 1
+					},
+					{
+						"mX": 5,
+						"mY": 2
+					},
+					{
+						"mX": 5,
+						"mY": 3
+					},
+					{
+						"mX": 5,
+						"mY": 4
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+				"SpawnSoundID": "",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": [
+
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain28_carnie_imp_twins"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 7,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "1.5",
+				"ZombieFallTime": "1.5",
+				"SpiderZombieName": "carnie_imp_twins",
+				"SpiderCount": 11,
+				"WaveStartMessage": "Twinsanity!"
+			}
+		},
+		{
+			"aliases": [
+				"GridSpawn30"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 12,
+						"Type": "RTID(jackinthebox_teeth@GridItemTypes)"
+					},
+					{
+						"Count": 5,
+						"Type": "RTID(jackinthebox_teeth_jumpscare@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 4,
+						"mY": 0
+					},
+					{
+						"mX": 4,
+						"mY": 1
+					},
+					{
+						"mX": 4,
+						"mY": 2
+					},
+					{
+						"mX": 4,
+						"mY": 3
+					},
+					{
+						"mX": 4,
+						"mY": 4
+					},
+					{
+						"mX": 4,
+						"mY": 5
+					},
+					{
+						"mX": 5,
+						"mY": 0
+					},
+					{
+						"mX": 5,
+						"mY": 1
+					},
+					{
+						"mX": 6,
+						"mY": 0
+					},
+					{
+						"mX": 6,
+						"mY": 1
+					},
+					{
+						"mX": 5,
+						"mY": 2
+					},
+					{
+						"mX": 6,
+						"mY": 2
+					},
+					{
+						"mX": 5,
+						"mY": 3
+					},
+					{
+						"mX": 6,
+						"mY": 3
+					},
+					{
+						"mX": 5,
+						"mY": 4
+					},
+					{
+						"mX": 7,
+						"mY": 0
+					},
+					{
+						"mX": 7,
+						"mY": 1
+					},
+					{
+						"mX": 7,
+						"mY": 2
+					},
+					{
+						"mX": 7,
+						"mY": 3
+					},
+					{
+						"mX": 7,
+						"mY": 4
+					},
+					{
+						"mX": 7,
+						"mY": 5
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+				"SpawnSoundID": "",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": [
+
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GridSpawn30_Evil"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 1,
+						"Type": "RTID(jackinthebox_candy_hp_jumpscare@GridItemTypes)"
+					},
+					{
+						"Count": 1,
+						"Type": "RTID(jackinthebox_candy_speed_jumpscare@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 0,
+						"mY": 1
+					},
+					{
+						"mX": 0,
+						"mY": 3
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+				"SpawnSoundID": "",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": [
+
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain32_carnie_imp_twins"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 6,
+				"GroupSize": 3,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "1.5",
+				"SpiderZombieName": "carnie_imp_twins",
+				"SpiderCount": 13,
+				"WaveStartMessage": "Twinsanity!"
+			}
+		},
+		{
+			"aliases": [
+				"GridSpawn35"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 11,
+						"Type": "RTID(jackinthebox_teeth@GridItemTypes)"
+					},
+					{
+						"Count": 7,
+						"Type": "RTID(jackinthebox_teeth_jumpscare@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 5,
+						"mY": 0
+					},
+					{
+						"mX": 6,
+						"mY": 0
+					},
+					{
+						"mX": 7,
+						"mY": 0
+					},
+					{
+						"mX": 5,
+						"mY": 1
+					},
+					{
+						"mX": 6,
+						"mY": 1
+					},
+					{
+						"mX": 7,
+						"mY": 1
+					},
+					{
+						"mX": 5,
+						"mY": 2
+					},
+					{
+						"mX": 6,
+						"mY": 2
+					},
+					{
+						"mX": 7,
+						"mY": 2
+					},
+					{
+						"mX": 5,
+						"mY": 3
+					},
+					{
+						"mX": 6,
+						"mY": 3
+					},
+					{
+						"mX": 7,
+						"mY": 3
+					},
+					{
+						"mX": 5,
+						"mY": 4
+					},
+					{
+						"mX": 6,
+						"mY": 4
+					},
+					{
+						"mX": 7,
+						"mY": 4
+					},
+					{
+						"mX": 4,
+						"mY": 0
+					},
+					{
+						"mX": 4,
+						"mY": 1
+					},
+					{
+						"mX": 4,
+						"mY": 2
+					},
+					{
+						"mX": 4,
+						"mY": 3
+					},
+					{
+						"mX": 4,
+						"mY": 4
+					},
+					{
+						"mX": 4,
+						"mY": 5
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+				"SpawnSoundID": "",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": [
+
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain36_carnie_imp_twins"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 6,
+				"GroupSize": 3,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "1",
+				"SpiderZombieName": "carnie_imp_twins",
+				"SpiderCount": 16,
+				"WaveStartMessage": "Twinsanity!"
+			}
+		},
+		{
+			"aliases": [
+				"GridSpawn39"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 15,
+						"Type": "RTID(jackinthebox_teeth@GridItemTypes)"
+					},
+					{
+						"Count": 6,
+						"Type": "RTID(jackinthebox_teeth_jumpscare@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 5,
+						"mY": 0
+					},
+					{
+						"mX": 6,
+						"mY": 0
+					},
+					{
+						"mX": 7,
+						"mY": 0
+					},
+					{
+						"mX": 5,
+						"mY": 1
+					},
+					{
+						"mX": 6,
+						"mY": 1
+					},
+					{
+						"mX": 7,
+						"mY": 1
+					},
+					{
+						"mX": 5,
+						"mY": 2
+					},
+					{
+						"mX": 6,
+						"mY": 2
+					},
+					{
+						"mX": 7,
+						"mY": 2
+					},
+					{
+						"mX": 5,
+						"mY": 3
+					},
+					{
+						"mX": 6,
+						"mY": 3
+					},
+					{
+						"mX": 7,
+						"mY": 3
+					},
+					{
+						"mX": 5,
+						"mY": 4
+					},
+					{
+						"mX": 6,
+						"mY": 4
+					},
+					{
+						"mX": 7,
+						"mY": 4
+					},
+					{
+						"mX": 8,
+						"mY": 0
+					},
+					{
+						"mX": 8,
+						"mY": 1
+					},
+					{
+						"mX": 8,
+						"mY": 2
+					},
+					{
+						"mX": 8,
+						"mY": 3
+					},
+					{
+						"mX": 8,
+						"mY": 4
+					},
+					{
+						"mX": 8,
+						"mY": 5
+					},
+					{
+						"mX": 4,
+						"mY": 0
+					},
+					{
+						"mX": 4,
+						"mY": 1
+					},
+					{
+						"mX": 4,
+						"mY": 2
+					},
+					{
+						"mX": 4,
+						"mY": 3
+					},
+					{
+						"mX": 4,
+						"mY": 4
+					},
+					{
+						"mX": 4,
+						"mY": 5
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_MOWER_SPAWN",
+				"SpawnSoundID": "",
+				"DisplacePlants": true,
+				"RandomPlacement": true,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": [
+
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain40_carnie_imp_twins"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 7,
+				"GroupSize": 25,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "0.5",
+				"SpiderZombieName": "carnie_imp_twins",
+				"SpiderCount": 20,
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"foodfight_gobbler_king_BOSS"
+			],
+			"objdata": {
+				"TypeName": "hero_crystalskull",
+				"ZombieClass": "ZombieChickenFarmer",
+				"Properties": "RTID(ZombieTurkeyGobblerBOSS@.)",
+				"AnimRigClass": "ZombieAnimRig_ChickenFarmer",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_GOBBLER_KING",
+				"HomeWorld": "tutorial"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieTurkeyGobblerBOSS"
+			],
+			"objclass": "ZombieChickenFarmerProps",
+			"objdata": {
+				"ArtScale": 1.15,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "butter"
+					},
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "terrified"
+					},
+					{
+						"Condition": "blockolistunned"
+					},
+					{
+						"Condition": "gummed"
+					},
+					{
+						"Condition": "stickybombed"
+					}
+				],
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": -99999
+				},
+				"CanSpawnPlantFood": true,
+				"ChickenTypeName": "foodfight_turkey_boss",
+				"ChickeningDuration": 2,
+				"ChickeningDurationVariance": 1,
+				"ChickeningHealthPercentage": 0.5,
+				"ChickeningInterval": 0.2,
+				"ChickeningIntervalVariance": 0.1,
+				"ChickeningSound": "Play_TurkeyAction",
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 2000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 3
+				},
+				"Speed": 0.2,
+				"WavePointCost": 350,
+				"Weight": 3000
+			}
+		},
+		{
+
+		}
+	],
+	"version": 1
+}

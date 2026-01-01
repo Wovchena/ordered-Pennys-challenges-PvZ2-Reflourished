@@ -1,0 +1,991 @@
+{"#comment": "when the waxing is more dreadful | Ramp: 1+1 | revision A | maw waz here",
+"#zombies": "zcorp_fem, zcorp_fem_armor1, zcorp_fem_armor2, zcorp_racer_chair, lunar_camel_onehump, lunar_camel_twohump, lion_dance, steam_miner, steam_miner_armor1, steam_miner_armor2, steam_gargantuar, chicken_farmer, prospector, lunar_relichunter, lunar_bandit, dark_juggler, dark_wizard, partialwealth@, endlesswealth",
+"objects": [{
+    "objclass": "LevelDefinition",
+    "objdata": {
+    "StartingSun": 50,
+    "Description": "{PLAYER}'s run through Penny's Challenge!",
+    "FirstRewardParam": "moneybag",
+    "LevelPowerupSet": "LevelPowerupsDisabled",
+    "SuppressPlantfoodPurchase": true,
+    "DisablePlantBoosts": true,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+        "DelayLoad_Background_Beach",
+        "DelayLoad_Background_Beach_Compressed",
+        "Tombstone_Dark_Special",
+        "Tombstone_Dark_Effects"
+    ],
+    "Modules": [
+        "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+        "RTID(StandardIntro@LevelModules)",
+        "RTID(GI@CurrentLevel)",
+        "RTID(SeedBank@CurrentLevel)",
+				"RTID(ChallengeModule@CurrentLevel)",
+        "RTID(CooldownMultiplier@CurrentLevel)",
+        "RTID(MaxSun@CurrentLevel)",
+        "RTID(Escalation@CurrentLevel)",
+        "RTID(NewWaves@CurrentLevel)",
+        "RTID(ZombiesDeadWinCon@LevelModules)",
+        "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+    "Name": "Penny's Challenge - Appease the Wealth God",
+    "StageModule": "RTID(LunarStage@LevelModules)",
+    "MusicType": "MiniGame_MiniBoss"
+}},
+{
+  "aliases": [
+    "CooldownMultiplier"
+  ],
+  "objclass": "PlantCooldownModifierProperties",
+  "objdata": {
+    "CooldownMultiplier": 1.5
+  }
+},
+{
+  "aliases": [
+    "MaxSun"
+  ],
+  "objclass": "LevelMutatorMaxSunProps",
+  "objdata": {
+    "MaxSunOverride": 800
+  }
+},
+{"aliases": ["SeedBank"],
+"objclass": "SeedBankProperties",
+"objdata": {
+    "OverrideSeedSlotsCount": 8,
+    "PresetPlantList": [
+        {"PlantType": "peashooter", "Level":0},
+        {"PlantType": "sunflower", "Level":0}
+    ],
+    "PlantIncludeList": [
+        "peashooter",
+        "sunflower",
+        "wallnut",
+        "potatomine",
+        "cabbagepult",
+        "iceburg",
+        "gravebuster",
+        "twinsunflower",
+        "squash",
+        "springbean",
+        "cherry_bomb",
+        "splitpea",
+        "chilibean",
+        "tallnut",
+        "tumbleweed",
+        "blover",
+        "empea",
+        "holonut",
+        "powerplant",
+        "sunshroom",
+        "sunbean",
+        "magnetshroom",
+        "hypnoshroom",
+        "lilypad",
+        "tanglekelp",
+        "hotpotato",
+        "chardguard",
+        "stunion",
+        "hurrikale",
+        "stallia",
+        "goldleaf",
+        "lavaguava",
+        "thymewarp",
+        "garlic",
+        "gumnut",
+        "primalwallnut",
+        "perfumeshroom",
+        "primalpotatomine",
+        "hotdate",
+        "hocus",
+        "moonflower",
+        "shadowshroom",
+        "grimrose",
+        "noctarine",
+        "sapfling",
+        "ghostpepper",
+        "jalapeno",
+        "sweetpotato",
+        "boingsetta",
+        "torchwood",
+        "goldbloom",
+        "aloe",
+        "imppear",
+        "shrinkingviolet",
+        "bombegranate",
+        "escaperoot",
+        "solartomato",
+        "missiletoe",
+        "hollyknight",
+        "electricitea",
+        "pumpkin",
+        "icebloom",
+        "puffball",
+        "draftodil",
+        "shinevine",
+        "solarsage",
+        "teleportatomine",
+        "heathseeker",
+        "buttercup",
+        "bramblebush",
+        "potatochip",
+        "pineapple",
+        "saucer",
+        "loquat"
+    ],
+    "PlantExcludeList": [
+        
+    ],
+    "SelectionMethod": "chooser"
+}},
+{
+  "aliases": [
+    "ChallengeModule"
+  ],
+  "objclass": "StarChallengeModuleProperties",
+  "objdata": {
+    "Challenges": [
+      [
+        "RTID(BeatTheLevel@CurrentLevel)"
+      ]
+    ],
+    "ChallengesAlwaysAvailable": true
+  }
+},
+{
+  "aliases": [
+    "BeatTheLevel"
+  ],
+  "objclass": "StarChallengeBeatTheLevelProps",
+  "objdata": {
+    "Description": "Survive with a special seed bank and slower seed packet cooldowns\nSurvive while only being able to store up to 800 sun",
+    "DescriptiveName": "Custom Objective"
+  }
+},
+{"aliases":["GI"],
+"objclass":"InitialGridItemProperties",
+"objdata":{
+    "InitialGridItemPlacements": [
+        {"GridX": 1, "GridY": 1, "TypeName":"goldtile"},
+        {"GridX": 1, "GridY": 3, "TypeName":"goldtile"}
+    ]
+}},
+{"aliases": ["Escalation"],
+"objclass": "LevelEscalationModuleProperties",
+"objdata": {
+    "FlagCount": 5,
+    "WavesPerFlag": 8,
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": -400,
+    "PointIncrementPerWave": 50,
+    "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+    "ZombiePool": [
+        "RTID(zcorp_fem@ZombieTypes)",
+        "RTID(zcorp_fem_armor1@ZombieTypes)",
+        "RTID(zcorp_fem_armor2@ZombieTypes)"
+    ]
+}},
+{"aliases": ["NewWaves"],
+"objclass": "WaveManagerModuleProperties",
+"objdata": {}
+},
+{"aliases": ["WaveManager"],
+"objclass": "WaveManagerProperties",
+"objdata": {
+    "FlagWaveInterval": 8,
+    "WaveCount": 40,
+    "SuppressFlagZombie": false,
+    "MinNextWaveHealthPercentage": 0.4,
+    "MaxNextWaveHealthPercentage": 0.5,
+    "Waves": [
+        ["RTID(Wave1@.)"],
+        ["RTID(Wave2@.)"],
+        ["RTID(Wave3@.)"],
+        ["RTID(Wave4@.)"],
+        ["RTID(Wave5@.)"],
+        ["RTID(Wave6@.)"],
+        ["RTID(Wave7@.)"],
+        ["RTID(Wave8@.)"],
+        ["RTID(Wave9@.)"],
+        ["RTID(Wave10@.)"],
+        ["RTID(Wave11@.)"],
+        ["RTID(Wave12@.)"],
+        ["RTID(Wave13@.)"],
+        ["RTID(Wave14@.)"],
+        ["RTID(Wave15@.)"],
+        ["RTID(Wave16@.)"],
+        ["RTID(Wave17@.)"],
+        ["RTID(Wave18@.)"],
+        ["RTID(Wave19@.)"],
+        ["RTID(Wave20@.)"],
+        ["RTID(Wave21@.)"],
+        ["RTID(Wave22@.)"],
+        ["RTID(Wave23@.)"],
+        ["RTID(Wave24@.)"],
+        ["RTID(Wave25@.)"],
+        ["RTID(Wave26@.)"],
+        ["RTID(Wave27@.)"],
+        ["RTID(Wave28@.)"],
+        ["RTID(Wave29@.)"],
+        ["RTID(Wave30@.)"],
+        ["RTID(Wave31@.)"],
+        ["RTID(Wave32@.)"],
+        ["RTID(Wave33@.)"],
+        ["RTID(Wave34@.)"],
+        ["RTID(Wave35@.)"],
+        ["RTID(Wave36@.)"],
+        ["RTID(Wave37@.)"],
+        ["RTID(Wave38@.)"],
+        ["RTID(Wave39@.)"],
+        ["RTID(Wave40@.)"]
+    ]
+}},
+{"aliases":["Wave1"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(zcorp_fem@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave3"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(zcorp_fem@ZombieTypes)"},
+        {"Type": "RTID(zcorp_fem@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave4"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"},
+        {"Type": "RTID(zcorp_fem@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave5"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(zcorp_fem@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave6"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(lunar_camel_onehump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave7"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_wizard@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave8"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lunar_camel_onehump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lunar_camel_onehump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zcorp_fem_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave9"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(steam_miner@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(chicken_farmer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave10"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"},
+        {"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"},
+        {"Type": "RTID(zcorp_fem@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave11"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "4", "Type": "RTID(dark_juggler@ZombieTypes)"},
+        {"Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave12"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(chicken_farmer@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave13"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(steam_gargantuar@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave14"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(dark_wizard@ZombieTypes)"},
+        {"Type": "RTID(dark_juggler@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave15"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(zcorp_racer_chair@ZombieTypes)"},
+        {"Type": "RTID(chicken_farmer@ZombieTypes)"},
+        {"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave16"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark_juggler@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_miner@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lion_dance@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lunar_camel_twohump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(steam_miner@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave17"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "4", "Type": "RTID(lunar_bandit@ZombieTypes)"},
+        {"Type": "RTID(steam_miner_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave18"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(lunar_camel_twohump@ZombieTypes)"},
+        {"Type": "RTID(lunar_camel_twohump@ZombieTypes)"},
+        {"Type": "RTID(lunar_moneytree@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave19"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(dark_juggler@ZombieTypes)"},
+        {"Type": "RTID(dark_juggler@ZombieTypes)"},
+        {"Type": "RTID(dark_wizard@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave20"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Type": "RTID(steam_gargantuar@ZombieTypes)"},
+        {"Type": "RTID(chicken_farmer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave21"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Type": "RTID(lunar_relichunter@ZombieTypes)"},
+        {"Type": "RTID(lunar_bandit@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave22"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(zcorp_racer_chair@ZombieTypes)"},
+        {"Type": "RTID(lion_dance@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave23"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(chicken_farmer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_miner@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(chicken_farmer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(steam_miner@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(chicken_farmer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave24"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(partialwealth@CurrentLevel)"},
+        {"Row": "5", "Type": "RTID(lunar_moneytree@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave25"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(lunar_relichunter@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lunar_bandit@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave26"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(chicken_farmer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(steam_miner_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(chicken_farmer@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(chicken_farmer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave27"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(lunar_camel_twohump@ZombieTypes)"},
+        {"Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"},
+        {"Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Type": "RTID(lunar_camel_twohump@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave28"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 1,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(zcorp_fem_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_juggler@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_juggler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_juggler@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(zcorp_fem_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave29"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(lion_dance@ZombieTypes)"},
+        {"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave30"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_wizard@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_wizard@ZombieTypes)"},
+        {"Type": "RTID(lunar_moneytree@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave31"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(chicken_farmer@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(chicken_farmer@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(chicken_farmer@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(chicken_farmer@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(chicken_farmer@ZombieTypes)"},
+        {"Type": "RTID(lunar_moneytree@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave32"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lion_dance@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(partialwealth@CurrentLevel)"},
+        {"Row": "3", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(steam_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lunar_moneytree@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave33"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(prospector@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"},
+        {"Type": "RTID(dark_juggler@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave34"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(lunar_bandit@ZombieTypes)"},
+        {"Type": "RTID(lunar_bandit@ZombieTypes)"},
+        {"Type": "RTID(zcorp_racer_chair@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave35"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(steam_gargantuar@ZombieTypes)"},
+        {"Type": "RTID(lion_dance@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave36"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dark_wizard@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_wizard@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_wizard@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave37"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(zcorp_racer_chair@ZombieTypes)"},
+        {"Type": "RTID(zcorp_racer_chair@ZombieTypes)"},
+        {"Type": "RTID(lunar_moneytree@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave38"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(dark_juggler@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_juggler@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(steam_miner_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave39"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lunar_camel_twohump@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lunar_camel_twohump@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lunar_camel_twohump@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lunar_camel_twohump@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lunar_camel_twohump@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave40"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(idiot@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(endlesswealth@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(lunar_moneytree@ZombieTypes)"},
+        {"Type": "RTID(lunar_relichunter@ZombieTypes)"},
+        {"Type": "RTID(chicken_farmer@ZombieTypes)"},
+        {"Type": "RTID(chicken_farmer@ZombieTypes)"}
+    ]
+}},
+
+                {
+                        "objclass": "ZombieType",
+                        "aliases": [
+                                "partialwealth"
+                        ],
+                        "objdata": {
+                                "TypeName": "cardio_template_2",
+                                "DisplayTypeName": "wealth_god",
+                                "ZombieClass": "ZombieGeneralZmech",
+                                "Properties": "RTID(ZombieWealthGod@CurrentLevel)",
+                                "ResourceGroups": [
+                                        "ZombieWealthGodGroup",
+                                        "ZombieEgyptZombossVeteranGroup",
+                                        "ZombieLNYBasicGroup",
+                                        "ZombieLNYDragonWallGroup",
+                                        "ZombieLNYSuperfanImpGroup",
+                                        "ZombieLunarSwashbucklerGroup",
+                                        "ZombieLunarGargantuarGroup",
+                                        "ZombieLunarImpGroup",
+                                        "ZombieMoneyTreeGroup",
+                                        "ZombieDummyGroup",
+                                        "Dirt_Spawn_Dirt"
+                                ],
+                                "AudioGroups": [
+                                        "ZombieTreadmillAudio"
+                                ],
+                                "AnimRigClass": "ZombieAnimRig_GeneralZmech",
+                                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_WEALTH_GOD",
+                                "AlmanacBackdropName": "lunar",
+                                "HomeWorld": "tutorial",
+                                "Placeable": true
+                        }
+                },
+                {
+                        "aliases": [
+                                "ZombieWealthGod"
+                        ],
+                        "objclass": "ZombieGeneralZmechProps",
+                        "objdata": {
+                                "Actions": [
+                                        "RTID(ZombieWealthGodWalkOn@ZombieActions)",
+                                        "RTID(ZombieWealthGodWakeUp@ZombieActions)",
+                                        "RTID(ZombieWealthGodIdle@ZombieActions)",
+                                        "RTID(ZombieWealthGodRainAction@CurrentLevel)",
+                                        "RTID(ZombieWealthGodSummonAction@CurrentLevel)",
+                                        "RTID(ZombieWealthGodDragonDanceAction@CurrentLevel)",
+                                        "RTID(ZombieWealthGodBanditAction@CurrentLevel)",
+                                        "RTID(ZombieWealthGodRetreatInjured@CurrentLevel)",
+                                        "RTID(ZombieWealthGodWalkOff@ZombieActions)"
+                                ],
+                                "LifetimeSeconds": 100,
+                                "GeneralPhase": 0,
+                                "ScoreOverride": 1000,
+                                "FireDamageMultiplier": 0.1,
+                                "ConditionImmunities": [
+                                        {
+                                                "Condition": "butter"
+                                        },
+                                        {
+                                                "Condition": "poison"
+                                        }
+                                ],
+                                "StreetSize": {
+                                        "x": 3,
+                                        "y": 2
+                                },
+                                "ArtCenter": {
+                                        "x": 100,
+                                        "y": 125
+                                },
+                                "AlmanacOffset": {
+                                        "x": 10
+                                },
+                                "ShadowOffset": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "z": 1.2
+                                },
+                                "AttackRect": {
+                                        "mHeight": 95,
+                                        "mWidth": 60,
+                                        "mX": 0,
+                                        "mY": 0
+                                },
+                                "HitRect": {
+                                        "mX": 0,
+                                        "mY": 10,
+                                        "mWidth": 70,
+                                        "mHeight": 110
+                                },
+                                "CrosshairAnimation": "",
+                                "CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBIE_WEALTH_GOD_BULLET",
+                                "RocketAnimation": "attack",
+                                "RocketExplosionAnimation": "",
+                                "CraterLifetime": 0,
+                                "StunTime": 0,
+                                "CollideHypnotizedZombies": "burn",
+                                "CanSpawnPlantFood": false,
+                                "Cost": 150,
+                                "EatDPS": 100,
+                                "GroundTrackName": "ground_swatch",
+                                "Hitpoints": 3600,
+                                "ScaledProps": [
+                                        {
+                                                "Arg1": 1.3,
+                                                "Arg2": 0.05,
+                                                "Formula": "standard",
+                                                "Key": "Hitpoints"
+                                        },
+                                        {
+                                                "Formula": "constant",
+                                                "Key": "Speed"
+                                        }
+                                ],
+                                "Speed": 1.0,
+                                "WavePointCost": 1000,
+                                "Weight": 1500,
+                                "ZombieStats": [
+                                        {
+                                                "Type": "toughness",
+                                                "Value": "toughness7"
+                                        },
+                                        {
+                                                "Type": "speed",
+                                                "Value": "speed0"
+                                        }
+                                ]
+                        }
+                },
+                
+                {
+                        "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+                        "aliases": [
+                                "ZombieWealthGodRainAction"
+                        ],
+                        "objdata": {
+                                "Weight": 2,
+                                "RepeatMin": 0,
+                                "RepeatMax": 0,
+                                "ColumnEnd": "6",
+                                "ColumnStart": "0",
+                                "MinSpawn": "1",
+                                "MaxSpawn": "1",
+                                "ZombieNames": [
+                                        "wealthgod_rocket"
+                                ],
+                                "ZombieWeights": [
+                                        100
+                                ],
+                                "TimeBeforeSpawn": 1.25,
+                                "ZombieFallTime": 0.5,
+                                "Phase": "Attacking",
+                                "PhaseAfter": "Attacking",
+                                "RampUpAnimation": "",
+                                "LoopingAnimation": "orbital_strike",
+                                "RampDownAnimation": "",
+                                "EffectTypeToShow": "",
+                                "DropAudioEvent": ""
+                        }
+                },
+                {
+                        "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+                        "aliases": [
+                                "ZombieWealthGodSummonAction"
+                        ],
+                        "objdata": {
+                                "Weight": 2,
+                                "RepeatMin": 0,
+                                "RepeatMax": 1,
+                                "ColumnEnd": "8",
+                                "ColumnStart": "7",
+                                "MinSpawn": "1",
+                                "MaxSpawn": "1",
+                                "ZombieNames": [
+                                        "lunar_moneytree",
+                                        "lunar_armor1",
+                                        "lunar_superfanimp"
+                                ],
+                                "ZombieWeights": [
+                                        45,
+                                        80,
+                                        100
+                                ],
+                                "TimeBeforeSpawn": 1.25,
+                                "ZombieFallTime": 0,
+                                "Phase": "Attacking",
+                                "PhaseAfter": "Attacking",
+                                "RiseFromGround": "true",
+                                "RampUpAnimation": "",
+                                "LoopingAnimation": "orbital_strike",
+                                "RampDownAnimation": "",
+                                "EffectTypeToShow": "",
+                                "DropAudioEvent": ""
+                        }
+                },
+                {
+                        "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+                        "aliases": [
+                                "ZombieWealthGodDragonDanceAction"
+                        ],
+                        "objdata": {
+                                "Weight": 2,
+                                "RepeatMin": 0,
+                                "RepeatMax": 0,
+                                "ColumnEnd": "9",
+                                "ColumnStart": "7",
+                                "MinSpawn": "1",
+                                "MaxSpawn": "1",
+                                "ZombieNames": [
+                                        "lunar_camel_twohump",
+                                        "lunar_camel_onehump"
+                                ],
+                                "ZombieWeights": [
+                                        60,
+                                        100
+                                ],
+                                "TimeBeforeSpawn": 1.25,
+                                "ZombieFallTime": 0,
+                                "Phase": "Attacking",
+                                "PhaseAfter": "Attacking",
+                                "RiseFromGround": "true",
+                                "RampUpAnimation": "",
+                                "LoopingAnimation": "orbital_strike",
+                                "RampDownAnimation": "",
+                                "EffectTypeToShow": "",
+                                "DropAudioEvent": ""
+                        }
+                },
+                {
+                        "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+                        "aliases": [
+                                "ZombieWealthGodBanditAction"
+                        ],
+                        "objdata": {
+                                "Weight": 1,
+                                "RepeatMin": 0,
+                                "RepeatMax": 0,
+                                "Phase": "Attacking",
+                                "ColumnEnd": "5",
+                                "ColumnStart": "4",
+                                "MinSpawn": "1",
+                                "MaxSpawn": "1",
+                                "ZombieNames": [
+                                        "lunar_bandit"
+                                ],
+                                "ZombieWeights": [
+                                        100
+                                ],
+                                "TimeBeforeSpawn": 0.0,
+                                "ZombieFallTime": 0,
+                                "RampUpAnimation": "",
+                                "LoopingAnimation": "orbital_strike",
+                                "RampDownAnimation": "",
+                                "EffectTypeToShow": "",
+                                "DropAudioEvent": ""
+                        }
+                },
+                
+                
+                {
+                                "objclass": "ZombieDropActionDefinition",
+                                "aliases": [
+                                                "ZombieWealthGodRetreatInjured"
+                                ],
+                                "objdata": {
+                                                "Weight": 1,
+                                                "RepeatMin": 0,
+                                                "RepeatMax": 0,
+                                                "Phase": "Dying",
+                                                "PhaseAfter": "Retreat",
+                                                "Animation": "die"
+                                }
+                },
+        {}
+    ],
+    "version": 1
+}

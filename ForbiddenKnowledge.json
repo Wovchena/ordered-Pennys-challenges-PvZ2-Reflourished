@@ -1,0 +1,4496 @@
+{
+	"#comment": "thought sa 20 was bad?",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"StartingSun": 50,
+				"Description": "{PLAYER}'s run through Penny's Challenge!",
+				"FirstRewardParam": "moneybag",
+				"FixedPlantLevel": 1,
+				"DisablePlantBoosts": true,
+				"SuppressPlantfoodPurchase": true,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(OffScreenZombiesCoinOverride@LevelModules)",
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(IPP_Protect@CurrentLevel)",
+					"RTID(ChallengeSeedBank@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(JamActivatorSteam@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "Penny's Challenge - Forbidden Knowledge",
+				"StageModule": "RTID(SteamStage@LevelModules)",
+				"MusicType": "MiniGame_B"
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "[STARCHALLENGE_STEAM_BLUEPRINTS]",
+				"DescriptiveName": "[STARCHALLENGE_STEAM_BLUEPRINTS_NAME]"
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 2,
+						"GridY": 0,
+						"TypeName": "steam_sewer2"
+					},
+					{
+						"GridX": 8,
+						"GridY": 0,
+						"TypeName": "inviscrater"
+					},
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"TypeName": "steam_sewer2"
+					},
+					{
+						"GridX": 6,
+						"GridY": 1,
+						"TypeName": "inviscrater"
+					},
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"TypeName": "steam_sewer"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"TypeName": "inviscrater"
+					},
+					{
+						"GridX": 1,
+						"GridY": 3,
+						"TypeName": "steam_sewer2"
+					},
+					{
+						"GridX": 6,
+						"GridY": 3,
+						"TypeName": "inviscrater"
+					},
+					{
+						"GridX": 2,
+						"GridY": 4,
+						"TypeName": "steam_sewer2"
+					},
+					{
+						"GridX": 8,
+						"GridY": 4,
+						"TypeName": "inviscrater"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IPP_Protect"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 28,
+						"GridY": 0,
+						"Level": 0,
+						"PlantType": "steam_blueprints"
+					},
+					{
+						"GridX": 26,
+						"GridY": 1,
+						"Level": 0,
+						"PlantType": "steam_blueprints"
+					},
+					{
+						"GridX": 21,
+						"GridY": 2,
+						"Level": 0,
+						"PlantType": "steam_blueprints"
+					},
+					{
+						"GridX": 26,
+						"GridY": 3,
+						"Level": 0,
+						"PlantType": "steam_blueprints"
+					},
+					{
+						"GridX": 28,
+						"GridY": 4,
+						"Level": 0,
+						"PlantType": "steam_blueprints"
+					}
+				],
+				"MustProtectCount": 5
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 5,
+				"WavesPerFlag": 10,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 0,
+				"PointIncrementPerWave": 0,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(tutorial@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 10,
+				"WaveCount": 50,
+				"SuppressFlagZombie": true,
+				"MinNextWaveHealthPercentage": 0.2,
+				"MaxNextWaveHealthPercentage": 0.3,
+				"Waves": [
+					[
+						"RTID(Wave1@.)"
+					],
+					[
+						"RTID(Wave2@.)"
+					],
+					[
+						"RTID(Wave3@.)",
+						"RTID(Necro3@.)",
+						"RTID(GridSpawn3@.)"
+					],
+					[
+						"RTID(Wave4@.)"
+					],
+					[
+						"RTID(Wave5@.)",
+						"RTID(Necro5@.)",
+						"RTID(GridSpawn3@.)"
+					],
+					[
+						"RTID(Wave6@.)"
+					],
+					[
+						"RTID(Wave7@.)"
+					],
+					[
+						"RTID(Wave8@.)",
+						"RTID(Necro8@.)",
+						"RTID(GridSpawn3@.)"
+					],
+					[
+						"RTID(Wave9@.)"
+					],
+					[
+						"RTID(Wave10@.)",
+						"RTID(Necro10@.)",
+						"RTID(Necro10_2@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave11@.)",
+						"RTID(Necro11@.)",
+						"RTID(Necro11_2@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave12@.)"
+					],
+					[
+						"RTID(Wave13@.)"
+					],
+					[
+						"RTID(Wave14@.)"
+					],
+					[
+						"RTID(Wave15@.)",
+						"RTID(Necro15@.)",
+						"RTID(Necro15_2@.)",
+						"RTID(Necro15_3@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave16@.)"
+					],
+					[
+						"RTID(Wave17@.)"
+					],
+					[
+						"RTID(Wave18@.)",
+						"RTID(Necro18@.)",
+						"RTID(Necro18_2@.)",
+						"RTID(Necro18_3@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave19@.)"
+					],
+					[
+						"RTID(Wave20@.)",
+						"RTID(Necro20@.)",
+						"RTID(Necro20_2@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave21@.)"
+					],
+					[
+						"RTID(Wave22@.)",
+						"RTID(Necro22@.)",
+						"RTID(Necro22_2@.)",
+						"RTID(Necro22_3@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave23@.)"
+					],
+					[
+						"RTID(Wave24@.)",
+						"RTID(Necro24@.)",
+						"RTID(Necro24_2@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave25@.)"
+					],
+					[
+						"RTID(Wave26@.)"
+					],
+					[
+						"RTID(Wave27@.)",
+						"RTID(Necro27@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave28@.)"
+					],
+					[
+						"RTID(Wave29@.)"
+					],
+					[
+						"RTID(Wave30@.)",
+						"RTID(Necro30@.)",
+						"RTID(Necro30_2@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave31@.)"
+					],
+					[
+						"RTID(Wave32@.)",
+						"RTID(Necro32@.)",
+						"RTID(Necro32_2@.)",
+						"RTID(Necro32_3@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave33@.)"
+					],
+					[
+						"RTID(Wave34@.)"
+					],
+					[
+						"RTID(Wave35@.)",
+						"RTID(Necro35@.)",
+						"RTID(Necro35_2@.)",
+						"RTID(Necro35_3@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave36@.)"
+					],
+					[
+						"RTID(Wave37@.)"
+					],
+					[
+						"RTID(Wave38@.)",
+						"RTID(Necro38@.)",
+						"RTID(Necro38_2@.)",
+						"RTID(Necro38_3@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave39@.)"
+					],
+					[
+						"RTID(Wave40@.)",
+						"RTID(Necro40@.)",
+						"RTID(Necro40_2@.)",
+						"RTID(Necro40_3@.)",
+						"RTID(Necro40_4@.)",
+						"RTID(Necro40_5@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave41@.)"
+					],
+					[
+						"RTID(Wave42@.)",
+						"RTID(Necro42@.)",
+						"RTID(Necro42_2@.)",
+						"RTID(Necro42_3@.)",
+						"RTID(Necro42_4@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave43@.)"
+					],
+					[
+						"RTID(Wave44@.)"
+					],
+					[
+						"RTID(Wave45@.)"
+					],
+					[
+						"RTID(Wave46@.)"
+					],
+					[
+						"RTID(Wave47@.)",
+						"RTID(Necro47@.)",
+						"RTID(Necro47_2@.)",
+						"RTID(Necro47_3@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave48@.)"
+					],
+					[
+						"RTID(Wave49@.)",
+						"RTID(Necro49@.)",
+						"RTID(GridSpawn10@.)"
+					],
+					[
+						"RTID(Wave50@.)",
+						"RTID(Necro50@.)",
+						"RTID(Necro50_2@.)",
+						"RTID(Necro50_3@.)",
+						"RTID(Necro50_4@.)",
+						"RTID(Necro50_5@.)",
+						"RTID(Necro50_6@.)",
+						"RTID(Necro50_7@.)",
+						"RTID(Necro50_8@.)",
+						"RTID(Necro50_9@.)",
+						"RTID(GridSpawn10@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave19"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave20"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave21"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave22"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave23"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave24"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave25"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave26"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave27"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave28"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave29"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave30"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave31"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave32"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave33"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave34"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave35"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave36"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave37"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave38"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave39"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave40"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave41"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave42"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave43"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave44"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave45"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave46"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave47"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave48"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave49"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_mechanic@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave50"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_inventor@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_miner_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_relichunter@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_barrel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(football_mech@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_furnace@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_miner_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro3"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GridSpawn3"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 4,
+						"Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 2,
+						"mY": 0
+					},
+					{
+						"mX": 1,
+						"mY": 1
+					},
+					{
+						"mX": 1,
+						"mY": 3
+					},
+					{
+						"mX": 2,
+						"mY": 4
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"DisplacePlants": false,
+				"RandomPlacement": false,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": []
+			}
+		},
+		{
+			"aliases": [
+				"Necro5"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro8"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro10"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_flag@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro10_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 4,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GridSpawn10"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 5,
+						"Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 2,
+						"mY": 0
+					},
+					{
+						"mX": 1,
+						"mY": 1
+					},
+					{
+						"mX": 0,
+						"mY": 2
+					},
+					{
+						"mX": 1,
+						"mY": 3
+					},
+					{
+						"mX": 2,
+						"mY": 4
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EVENT_SMOKE_MANHOLE_ROAR",
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"DisplacePlants": false,
+				"RandomPlacement": false,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": []
+			}
+		},
+		{
+			"aliases": [
+				"Necro11"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro11_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 4,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro15"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro15_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 4,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro15_3"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 4,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro18"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)",
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro18_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 5,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro18_3"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 5,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro20"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 3,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)",
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_flag@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro20_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 6,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro22"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro22_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 4,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro22_3"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 6,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro24"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)",
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro24_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 5,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro27"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 3,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)",
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro30"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 3,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)",
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_flag@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro30_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 6,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)",
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro32"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro32_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 4,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro32_3"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 6,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro35"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)",
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro35_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 3,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)",
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro35_3"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 4,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)",
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro38"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro38_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 4,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro38_3"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 4,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro40"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_flag@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro40_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 3,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro40_3"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 4,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro40_4"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 5,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro40_5"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 5,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro42"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 1,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro42_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro42_3"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 3,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro42_4"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 5,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro47"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 3,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)",
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro47_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 4,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)",
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro47_3"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 6,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro49"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 1,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro50"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 1,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_flag@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro50_2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 2,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro50_3"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 3,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer2@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_back_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro50_4"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 6,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro50_5"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 7,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro50_6"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 8,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro50_7"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 9,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro50_8"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 10,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro50_9"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"ZombieSpawnWaitTime": 11,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(steam_sewer@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(steam_back@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{}
+	],
+	"version": 1
+}
