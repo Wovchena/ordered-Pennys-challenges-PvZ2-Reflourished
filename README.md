@@ -1,6 +1,6 @@
-# Ordered Penny's Challenges PvZ2 Reflourished
+# Ordered Penny's Challenges PvZ2: Reflourished
 
-Penny's Challenges are renamed here so they can be played in release order according to https://reflourished.fandom.com/wiki/Penny%27s_Challenge. Visit https://discord.gg/ba9rC7QdKb for instructions where to place the `json`s. To determine the challenge type, check the remainder when dividing the in-game level number by 4:
+Penny's Challenges are renamed here so they can be played in release order according to https://reflourished.fandom.com/wiki/Penny%27s_Challenge. Copy `.json`s and `.txt` to `Android/data/com.ea.game.pvz2_rfl/files/No_Backup/CDN.<ver.si.on>/levels/`. To determine the challenge type, check the remainder when dividing the in-game level number by 4:
 1. Remainder `1`: `normal` challenge
 2. Remainder `2`: `Veteran` challenge
 3. Remainder `3`: `Saucy` challenge
